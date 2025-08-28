@@ -1,0 +1,165 @@
+{
+    "id": "SG01",
+    "name": "Stefano Giunchi",
+    "role": "Gestione Magazzino",
+    "department": "Logistica",
+    "section": "Operativa/Logistica",
+    "coreActivities": [
+        "Gestione operativa su Business Central",
+        "Analisi delle giacenze e delle scorte di magazzino",
+        "Supporto agli acquisti tramite analisi dei consumi e generazione di previsioni",
+        "Gestione (CRUD operations) dell'Anagrafica Articoli e delle Distinte Basi",
+        "Controllo inventario e mantenimento dell'allineamento tra giacenza fisica e quella a sistema"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Operativa su Business Central",
+            "objective": "Eseguire le attività quotidiane di gestione del magazzino all'interno del sistema Business Central.",
+            "steps": [
+                "Fase A (Formazione): Stefano ha ricevuto formazione da Evantis per l'utilizzo del sistema.",
+                "Fase B (Operatività): Esecuzione delle operazioni di gestione attiva su Business Central."
+            ],
+            "notes": "Input necessari: Dati operativi di magazzino. Output prodotto: Movimenti e aggiornamenti a sistema."
+        },
+        {
+            "name": "Analisi delle Giacenze e Movimentazioni",
+            "objective": "Ottenere un'analisi dettagliata delle giacenze e delle movimentazioni (materie prime e prodotti) per anno e mese, sfruttando i dettagli dei lotti.",
+            "steps": [
+                "Fase A (Estrazione Dati): Lettura e estrazione dati da Stocksystem (per dettagli lotti) e Business Central.",
+                "Fase B (Elaborazione): Costruzione manuale dell'analisi (con Michele) per ottenere le movimentazioni."
+            ],
+            "notes": "Input necessari: Dati da Stocksystem e Business Central. Output prodotto: Analisi delle giacenze e movimentazioni."
+        },
+        {
+            "name": "Supporto Acquisto Materiali",
+            "objective": "Fornire analisi di consumo e consulenza per le decisioni di acquisto, generando previsioni.",
+            "steps": [
+                "Fase A (Estrazione Dati): Estrazione di richieste e storico da Business Central.",
+                "Fase B (Analisi): Analisi dei dati estratti su un file Excel personale.",
+                "Fase C (Generazione Risultati): Creazione di previsioni e consulenza per gli acquisti."
+            ],
+            "notes": "Input necessari: Dati \"richieste\" e \"storico\" da Business Central. Output prodotto: Previsionale e consulenza per gli acquisti."
+        },
+        {
+            "name": "Analisi di Magazzino (Scorte e Ottimizzazione)",
+            "objective": "Capire le materie prime e i prodotti rimanenti, le scorte di magazzino per gestire ordini e carichi futuri, ottimizzando e riducendo gli sprechi.",
+            "steps": [
+                "Fase A (Estrazione Dati): Estrazione dati da Business Central.",
+                "Fase B (Elaborazione Manuale): Creazione manuale di view e analisi su Excel personale."
+            ],
+            "notes": "Input necessari: Dati da Business Central. Output prodotto: Analisi delle scorte e supporto alla gestione ordini/carichi."
+        },
+        {
+            "name": "Gestione Conti Lavoro",
+            "objective": "Gestire le lavorazioni esterne (es. San Patrignano) per beni Oikos, inclusi carico e scarico dei prodotti.",
+            "steps": [
+                "Fase A (Invio Materiale): Invio di materiale al fornitore esterno per lavorazione.",
+                "Fase B (Ricezione Prodotti): Ricezione dei prodotti finiti dal fornitore esterno.",
+                "Fase C (Gestione a Sistema): Utilizzo della suite dedicata per carico e scarico (ancora in fase di apprendimento)."
+            ],
+            "notes": "Input necessari: Materiali da inviare, prodotti ricevuti. Output prodotto: Prodotti finiti a magazzino, movimenti a sistema."
+        },
+        {
+            "name": "Anagrafica Articoli e Distinte Basi (CRUD Operations)",
+            "objective": "Creare, leggere, aggiornare ed eliminare le anagrafiche degli articoli.",
+            "steps": [
+                "Fase A (Richiesta): Ricezione della richiesta di creazione tramite extranet (procedurata).",
+                "Fase B (Creazione): Creazione dell'anagrafica su Business Central."
+            ],
+            "notes": "Input necessari: Richiesta da extranet. Output prodotto: Anagrafica articolo creata/aggiornata in Business Central."
+        },
+        {
+            "name": "Controllo Inventario e Allineamento Giacenze",
+            "objective": "Mantenere allineata la giacenza fisica con quella salvata a sistema per fornire dati corretti a vendite e pianificazione.",
+            "steps": [
+                "Fase A (Analisi Anomalie): Analisi su Business Central e Stocksystem per identificare anomalie.",
+                "Fase B (Richiesta Controllo): Richiesta di controllo ai magazzinieri.",
+                "Fase C (Correzione): Ricezione della risposta, correzione e inserimento del movimento a sistema, anche con nota."
+            ],
+            "notes": "Input necessari: Dati da Business Central e Stocksystem, feedback dai magazzinieri. Output prodotto: Giacenza a sistema allineata con quella fisica."
+        },
+        {
+            "name": "Metodo di Costing (Costi Prodotti Finiti)",
+            "objective": "Aggiornare in tempo reale i costi dei prodotti finiti, che risultano sballati a sistema, per riflettere il costo effettivo calcolato.",
+            "steps": [
+                "Fase A (Estrazione Dati): Estrazione dei dati da Business Central.",
+                "Fase B (Calcolo Costo Effettivo): Calcolo del costo effettivo (non specificato come).",
+                "Fase C (Aggiornamento): Aggiornamento dei costi a sistema (obiettivo: a costo standard)."
+            ],
+            "notes": "Input necessari: Dati da Business Central. Output prodotto: Costi dei prodotti finiti aggiornati a sistema."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Business Central",
+            "Stocksystem",
+            "Suite per gestione conti lavoro",
+            "Extranet",
+            "File Excel personale"
+        ],
+        "communication": [
+            "Comunicazione con Michele",
+            "Comunicazione con IT",
+            "Comunicazione con magazzinieri"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Incompleta/Mancante per diversi processi chiave. Esiste documentazione per Business Central ma non per tutto. Mancante per Conto Lavoro e Anagrafica Articoli. Le procedure di analisi sono da migliorare per diventare strumenti completi.",
+        "storageMethods": [
+            "Dati estratti da Business Central",
+            "Dati estratti da Stocksystem",
+            "Analisi personali create su \"proprio file Excel\""
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Stefano Giunchi detiene una conoscenza critica e non documentata per diversi processi chiave.",
+            "La metodologia di lettura e correlazione dei dati da Stocksystem e Business Central per l'analisi delle giacenze potrebbe essere tacita.",
+            "L'estrazione e l'analisi dei dati per generare previsioni e view avvengono su un \"proprio file Excel\" con una logica di analisi personale.",
+            "La procedura di creazione dell'Anagrafica Articoli non ha \"traccia documentazione o versione scritta\" per la parte operativa.",
+            "Il metodo per estrarre dati e aggiornare i costi dei prodotti finiti è una soluzione custom e non necessariamente documentata.",
+            "La mancanza di documentazione per processi chiave come il Conto Lavoro e l'Anagrafica Articoli, unita all'uso di soluzioni personali (Excel), rende Stefano una risorsa con un know-how insostituibile a breve termine."
+        ]
+    },
+    "criticalities": [
+        "Documentazione incompleta/mancante per Business Central, Conto Lavoro, Anagrafica Articoli.",
+        "Procedure di analisi da migliorare per diventare \"strumenti completi\".",
+        "Dipendenza da soluzioni personali (propri file Excel) per analisi cruciali.",
+        "Dati non veritieri a sistema (costi prodotti finiti in Business Central sono \"sballati\").",
+        "Necessità di formazione su nuovi strumenti (suite per la gestione dei conti lavoro)."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Standardizzazione e Documentazione dei Processi Chiave",
+            "description": "Documentare in modo esaustivo tutte le procedure operative di Stefano, in particolare quelle relative a: analisi giacenze e movimentazioni, logica dei file Excel personali per analisi consumi, previsionale e magazzino, procedura di creazione Anagrafica Articoli, metodo di Costing. Utilizzare una piattaforma centralizzata per la documentazione e formare Stefano a documentare attivamente il suo know-how."
+        },
+        {
+            "title": "Automazione e Integrazione delle Analisi",
+            "description": "Valutare l'implementazione di reportistica automatizzata direttamente da Business Central o tramite strumenti di Business Intelligence (es. Power BI) che replichino la logica delle analisi Excel di Stefano. Investigare la possibilità di integrare i dati di Stocksystem con Business Central. Digitalizzare e automatizzare il \"metodo di costing\" per l'aggiornamento dei costi dei prodotti finiti."
+        },
+        {
+            "title": "Formazione e Adozione della Suite Conti Lavoro",
+            "description": "Fornire a Stefano e al team la formazione necessaria e mirata per l'utilizzo completo della suite dedicata alla gestione dei conti lavoro (carico e scarico), per poi documentare la procedura standardizzata."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.2,
+        "livello_formalizzazione": 0.3,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.6,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.5,
+        "facilita_passaggio_consegne": 0.2,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.6,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.4,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.7,
+        "qualita_controlli": 0.4,
+        "frammentazione_integrazioni": 0.8
+    }
+}

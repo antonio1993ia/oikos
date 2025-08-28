@@ -1,0 +1,127 @@
+{
+    "id": "BP01",
+    "name": "Beatrice Paganelli",
+    "role": "Ufficio Approvvigionamenti",
+    "department": "Ufficio Approvvigionamenti",
+    "section": "Area GOA",
+    "coreActivities": [
+        "Acquisti di materie prime per la produzione",
+        "Analisi del fabbisogno e gestione completa degli ordini con i fornitori",
+        "Invio quotidiano delle liste di carico al magazzino",
+        "Gestione e risoluzione di casi problematici (ordini mancati, in ritardo)",
+        "Inserimento e controllo dei Documenti di Trasporto (DDT) in Business Central",
+        "Processo di scelta e qualifica di nuovi fornitori o prodotti analoghi"
+    ],
+    "processes": [
+        {
+            "name": "Acquisto Materie Prime (Produzione)",
+            "objective": "Garantire l'approvvigionamento delle materie prime necessarie alla produzione.",
+            "steps": [
+                "Il collega \"Biguzzi\" inserisce e trasforma gli ordini a sistema in fabbisogno di materie prime da acquistare.",
+                "Beatrice procede ad eseguire l'ordine con i fornitori in base agli impegni inseriti.",
+                "Utilizzo di \"RDA\" (all'interno di Business Central) che richiede approvazioni.",
+                "Beatrice segue l'ordine dall'inizio alla fine."
+            ],
+            "notes": "Il processo di approvazione tramite RDA è descritto come lungo."
+        },
+        {
+            "name": "Gestione Arrivi Merce in Magazzino",
+            "objective": "Coordinare la ricezione delle merci e registrare gli arrivi.",
+            "steps": [
+                "Ogni giorno, Beatrice invia una lista di carico al personale del magazzino per il giorno successivo, indicando chi arriva e cosa.",
+                "Il personale di magazzino scannerizza i prodotti all'arrivo.",
+                "Il magazzino invia il DDT (Documento di Trasporto) a Beatrice.",
+                "Beatrice apre, legge il DDT e lo inserisce in Business Central, registrando l'arrivo come \"fatto\" o segnalando eventuali \"mancanze\"."
+            ],
+            "notes": "Non esiste uno strumento sistematico per segnare le mancanze negli ordini."
+        },
+        {
+            "name": "Gestione Casi Problematici (Ordini Mancati/In Ritardo)",
+            "objective": "Risolvere le problematiche relative alla consegna degli ordini.",
+            "steps": [
+                "Beatrice si attiva direttamente con il fornitore per la gestione del problema.",
+                "Beatrice scrive una mail ai direttori per informarli della situazione."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Scelta Nuovi Fornitori / Gestione Anomalie (Prodotti Sostitutivi)",
+            "objective": "Identificare, valutare e qualificare nuovi fornitori o prodotti analoghi/sostitutivi.",
+            "steps": [
+                "Incontro settimanale con il laboratorio per discutere criticità e il bisogno di un prodotto analogo.",
+                "Il laboratorio individua un prodotto analogo.",
+                "Il laboratorio comunica a Beatrice l'identificazione dell'analogo e/o i fornitori proposti.",
+                "Beatrice inizia una fase di analisi per decidere se procedere con il fornitore o i fornitori proposti.",
+                "Utilizzo di processi guidati sull'extranet per inviare documenti per la firma e muovere al prossimo step."
+            ],
+            "notes": "Il processo è stato imparato da Beatrice \"da sola\" e non è documentato. I cicli approvativi sull'extranet sono descritti come lenti. La conoscenza sui prodotti sostitutivi è solo nella sua testa."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Microsoft Dynamics 365 Business Central",
+            "RDA"
+        ],
+        "communication": [
+            "Email",
+            "Extranet"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "mancante e da creare",
+        "storageMethods": [
+            "Business Central"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Beatrice ha imparato \"da sola\" processi chiave come la scelta di nuovi fornitori e la gestione di prodotti analoghi, e queste procedure non sono documentate.",
+            "L'autonomia di Beatrice nella scelta tra prodotti sostitutivi (in base a costo e budget) si basa su informazioni che \"lei ha solo nella sua testa\".",
+            "La perdita di Beatrice o la sua assenza prolungata comporterebbe una significativa interruzione delle operazioni di approvvigionamento, in particolare per la gestione delle anomalie, la qualifica di nuovi fornitori e la tempestiva individuazione di alternative, mettendo a rischio la continuità della produzione."
+        ]
+    },
+    "criticalities": [
+        "Lentezza nei Cicli Approvativi (RDA in Business Central e Extranet)",
+        "Mancanza di Documentazione delle Procedure chiave (scelta nuovi fornitori, gestione anomalie/prodotti sostitutivi)",
+        "Conoscenza Tacita sui Prodotti Sostitutivi (basata su costo e budget, non condivisa)",
+        "Mancanza di Strumento per lo Storico delle Mancanze negli ordini"
+    ],
+    "improvementProposals": [
+        {
+            "title": "Digitalizzazione e Ottimizzazione Cicli Approvativi",
+            "description": "Valutare l'implementazione di una soluzione di workflow management (es. integrata in Business Central, o una piattaforma dedicata come Power Automate, Monday.com, Jira Service Management) per digitalizzare e automatizzare i cicli approvativi. Questo ridurrebbe i tempi di approvazione, eliminerebbe le email e fornirebbe una tracciabilità chiara dello stato delle richieste."
+        },
+        {
+            "title": "Documentazione Standardizzata delle Procedure Chiave",
+            "description": "Collaborare con Beatrice per documentare dettagliatamente tutte le procedure chiave non ancora formalizzate, in particolare quelle relative alla scelta di nuovi fornitori e alla gestione dei prodotti sostitutivi. Utilizzare un sistema di gestione della conoscenza aziendale (es. Confluence, SharePoint) per centralizzare e rendere accessibile questa documentazione, garantendone l'aggiornamento periodico."
+        },
+        {
+            "title": "Implementazione di un Modulo per la Gestione delle Non Conformità/Mancanze",
+            "description": "Esplorare la possibilità di configurare o implementare un modulo all'interno di Business Central (o un sistema integrato) per registrare e tracciare sistematicamente le \"mancanze\" o le non conformità degli ordini. Questo permetterebbe di costruire uno storico dati utile per l'analisi delle performance dei fornitori e per decisioni future."
+        },
+        {
+            "title": "Creazione di un Database/Catalogo Prodotti Sostitutivi",
+            "description": "Sviluppare un database o un catalogo all'interno di Business Central o un sistema esterno (es. Excel avanzato condiviso, Power Apps) che contenga le informazioni sui prodotti sostitutivi, i fornitori alternativi, i costi e le condizioni, rendendo la conoscenza di Beatrice accessibile a tutto il team e facilitando la scelta autonoma e informata."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.4,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.6,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.5,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.3,
+        "livello_automazione": 0.4,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.4,
+        "frammentazione_integrazioni": 0.6
+    }
+}

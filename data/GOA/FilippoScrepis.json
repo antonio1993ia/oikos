@@ -1,0 +1,121 @@
+{
+    "id": "FS01",
+    "name": "Filippo Screpis",
+    "role": "Addetto tintometria",
+    "department": "Produzione",
+    "section": "Non specificata",
+    "coreActivities": [
+        "Memorizzazione e digitalizzazione di formule colore da formato cartaceo a software (CromaShop) e aggiornamento dati correlati in file Excel",
+        "Gestione e inserimento dati relativi ai coloranti ricevuti in un file Excel storico",
+        "Erogazione fisica delle formule colore tramite tintometro (inserimento contenitore, selezione coloranti, miscelazione)",
+        "Gestione delle non conformità, inclusa la consultazione con il responsabile e la ricerca di riferimenti (cartacei, schede tecniche, documenti locali)",
+        "Formazione esperienziale"
+    ],
+    "processes": [
+        {
+            "name": "Memorizzazione Formule",
+            "objective": "Digitalizzare e mantenere aggiornate le formule dei colori per l'utilizzo nel tintometro.",
+            "steps": [
+                "Ricezione Formula Cartacea: La formula colore viene ricevuta in formato cartaceo.",
+                "Digitalizzazione su CromaShop: L'addetto inserisce la formula nel software 'CromaShop'.",
+                "Aggiornamento File Excel (se modificata): Se la formula è una modifica di una esistente, l'addetto aggiorna la data all'interno di un file Excel specifico."
+            ],
+            "notes": "La fase di aggiornamento del file Excel avviene solo se la formula è una modifica di una esistente."
+        },
+        {
+            "name": "Gestione Dati Coloranti Ricevuti",
+            "objective": "Mantenere uno storico dei coloranti ricevuti.",
+            "steps": [
+                "Ricezione Coloranti: L'addetto riceve i coloranti.",
+                "Inserimento Dati nel File Excel Storico: L'addetto inserisce i dati relativi ai coloranti ricevuti in un file Excel che contiene lo storico."
+            ],
+            "notes": "Il processo mira a creare e mantenere uno storico dei coloranti."
+        },
+        {
+            "name": "Erogazione Tintometro",
+            "objective": "Preparare e erogare la formula colore desiderata.",
+            "steps": [
+                "Inserimento Contenitore: L'addetto inserisce il contenitore appropriato nel tintometro.",
+                "Selezione Coloranti: L'addetto seleziona i coloranti necessari per la formula.",
+                "Erogazione e Miscelazione: Il tintometro eroga la formula e l'addetto mescola il composto."
+            ],
+            "notes": "Il processo culmina con la produzione del colore finito e miscelato."
+        },
+        {
+            "name": "Gestione Non Conformità",
+            "objective": "Risolvere problemi o scostamenti dallo standard.",
+            "steps": [
+                "Rilevazione Non Conformità: Viene rilevato un problema o una non conformità.",
+                "Interruzione Lavoro: L'attività viene interrotta.",
+                "Confronto con Responsabile: L'addetto si confronta con il responsabile per discutere la non conformità.",
+                "Consultazione Riferimenti: L'addetto consulta riferimenti (documenti cartacei, schede tecniche nel gestionale, documenti salvati in cartelle locali) per trovare soluzioni a problemi 'fuori dallo schema standard'.",
+                "Risoluzione (Implicita): Viene implementata una soluzione."
+            ],
+            "notes": "Il processo di risoluzione delle non conformità è articolato e richiede la consultazione di diverse fonti e l'interazione con il responsabile."
+        }
+    ],
+    "tools": {
+        "software": [
+            "CromaShop",
+            "Programmi generici",
+            "Gestionale"
+        ],
+        "communication": []
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Le procedure sembrano essere parzialmente documentate attraverso diversi canali: formule iniziali sono cartacee, dati storici e aggiornamenti sono gestiti tramite file Excel, esistono schede tecniche nel gestionale, esistono documenti salvati in cartelle locali per la risoluzione di problemi non standard. La 'formazione esperienziale' suggerisce una componente di conoscenza tacita o trasmessa on-the-job.",
+        "storageMethods": [
+            "File Excel",
+            "Software CromaShop",
+            "Gestionale",
+            "Cartelle locali",
+            "Documenti cartacei"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Medio-Alto",
+        "reasons": [
+            "La menzione di 'formazione esperienziale' e la consultazione di 'riferimenti per risolvere problemi un po’ fuori dallo schema standard' suggeriscono che una parte significativa del know-how per la risoluzione di problemi complessi o non routinari risieda nell'esperienza diretta di Filippo e nella sua capacità di navigare tra diverse fonti di informazione non centralizzate (cartaceo, gestionale, locale).",
+            "La gestione dei file Excel per formule e storico coloranti, se non centralizzata e standardizzata, può portare a dipendenza dalla conoscenza di Filippo sulla loro struttura e logica interna.",
+            "La gestione delle 'non conformità' che richiede un confronto diretto con il responsabile e la consultazione di documenti sparsi ('cartaceo, schede tecniche nel gestionale, salvati i documenti nelle cartelle in locale') indica che il processo di problem-solving non è pienamente standardizzato o documentato in un unico repository facilmente accessibile. La perdita di Filippo potrebbe rallentare significativamente la risoluzione di problemi non standard."
+        ]
+    },
+    "criticalities": [
+        "Malfunzionamento dei programmi: Problemi generici con i software utilizzati.",
+        "Problemi al tintometro: Il tintometro presenta problemi che richiedono l'intervento dell'assistenza esterna (calibrazione, aggiornamento, altri problemi). Questo causa interruzioni operative.",
+        "Gestione frammentata delle non conformità: La necessità di 'fermarsi e confrontarsi con il responsabile' e di consultare riferimenti 'fuori dallo schema standard' (cartaceo, gestionale, locale) indica una mancanza di un processo strutturato e di una base di conoscenza centralizzata per la risoluzione dei problemi."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Centralizzazione e Digitalizzazione della Conoscenza per le Non Conformità",
+            "description": "Creare un sistema centralizzato (es. una wiki aziendale, un database di knowledge base) per documentare le soluzioni ai problemi 'fuori dallo schema standard'. Questo database dovrebbe includere le casistiche risolte, le procedure adottate, e i riferimenti pertinenti (schede tecniche, logiche di controllo)."
+        },
+        {
+            "title": "Valutazione e Ottimizzazione dei Software e del Tintometro",
+            "description": "Effettuare un'analisi approfondita dei malfunzionamenti dei programmi e del tintometro. Questo potrebbe includere: un audit tecnico dei software e dell'hardware; la raccolta strutturata dei feedback degli utenti sui problemi riscontrati; valutare l'opportunità di aggiornamenti, sostituzioni o l'implementazione di soluzioni di monitoraggio predittivo per il tintometro."
+        },
+        {
+            "title": "Standardizzazione e Automazione della Gestione Dati Excel",
+            "description": "Valutare la possibilità di integrare i dati attualmente gestiti in file Excel (aggiornamento formule, storico coloranti) direttamente nel software CromaShop o nel gestionale, o di sviluppare strumenti (es. macro, script) che automatizzino l'aggiornamento e la validazione di questi file, riducendo l'errore manuale e la dipendenza da un unico utente."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.4,
+        "livello_formalizzazione": 0.3,
+        "indice_insostituibilita": 0.7,
+        "tasso_cambiamento": 0.2,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.6,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.3,
+        "punti_singoli_fallimento": 0.7,
+        "segnale_rilavorazione": 0.6,
+        "tracciabilita_errori": 0.4,
+        "livello_automazione": 0.5,
+        "tempo_ripristino": 0.7,
+        "qualita_controlli": 0.4,
+        "frammentazione_integrazioni": 0.7
+    }
+}

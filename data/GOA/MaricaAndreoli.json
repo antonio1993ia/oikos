@@ -1,0 +1,127 @@
+{
+    "id": "MA01",
+    "name": "Marica Andreoli",
+    "role": "Ordini approvvigionamento (packaging)",
+    "department": "Non specificato",
+    "section": "Non specificato",
+    "coreActivities": [
+        "Gestione e piazzamento ordini di packaging, inclusa l'analisi storica degli ordini",
+        "Gestione ordini di materie terze",
+        "Valutazione dei fornitori esistenti",
+        "Ricerca e contatto di nuovi fornitori",
+        "Gestione dei pagamenti (insoluti e scadenze)"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Ordini Packaging",
+            "objective": "Assicurare la disponibilità del packaging necessario, tenendo conto dei lunghi tempi di consegna.",
+            "steps": [
+                "Pianificazione Ordine: Marica Andreoli consulta gli ordini dell'anno precedente per determinare le quantità e i tipi di packaging da ordinare.",
+                "Piazzamento Ordine: Invio dell'ordine al fornitore.",
+                "Gestione Etichette IML (Soluzione Artigianale): Coordinamento proattivo con il fornitore per verificare l'allineamento delle etichette IML.",
+                "Gestione Etichette IML (Soluzione Artigianale): Monitoraggio autonomo dello stato delle etichette per prevenire problemi e velocizzare la ricezione (riduzione tempi di 2/3 settimane)."
+            ],
+            "notes": "Input necessari: Comunicazioni con il fornitore, stato delle etichette. Output prodotto: Etichette IML ricevute in tempi ridotti."
+        },
+        {
+            "name": "Valutazione Fornitori",
+            "objective": "Valutare e classificare i fornitori in base a parametri definiti.",
+            "steps": [
+                "Acquisizione Elenco: Ottenere l'elenco dei fornitori.",
+                "Valutazione: Assegnare un \"voto\" ai fornitori basandosi su determinati parametri (non specificati)."
+            ],
+            "notes": "Input necessari: Elenco fornitori, parametri di valutazione. Output prodotto: Fornitori valutati/classificati."
+        },
+        {
+            "name": "Ricerca Nuovi Fornitori",
+            "objective": "Identificare e contattare potenziali nuovi fornitori.",
+            "steps": [
+                "Contatto Iniziale: Prendere contatto con i fornitori, partendo da mail di contatto.",
+                "Valutazione Preliminare: Valutare i fornitori contattati."
+            ],
+            "notes": "Input necessari: Mail di contatto. Output prodotto: Fornitori potenziali da approfondire."
+        },
+        {
+            "name": "Gestione Pagamenti (Insoluti)",
+            "objective": "Risolvere le segnalazioni di insoluti.",
+            "steps": [
+                "Ricezione Segnalazione: Arriva una mail per insoluti.",
+                "Verifica Pagamento: Controllare che il pagamento sia stato effettivamente effettuato.",
+                "Comunicazione a Tesoreria: Inviare una mail alla tesoreria con il riscontro."
+            ],
+            "notes": "Input necessari: Mail per insoluti, dati di pagamento. Output prodotto: Comunicazione a tesoreria."
+        },
+        {
+            "name": "Gestione Pagamenti (Scadenze)",
+            "objective": "Gestire e potenzialmente spostare le scadenze di pagamento con i fornitori.",
+            "steps": [
+                "Controllo Scadenze: Accedere a Business Central per controllare le scadenze.",
+                "Negoziazione con Fornitore: Chiamare il fornitore per chiedere di spostare la scadenza.",
+                "Comunicazione a Tesoreria: Se il fornitore conferma o non conferma lo spostamento, inviare una mail alla tesoreria con il riscontro."
+            ],
+            "notes": "Input necessari: Business Central (dati scadenze), comunicazione con fornitore. Output prodotto: Comunicazione a tesoreria."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Business Central"
+        ],
+        "communication": [
+            "Email",
+            "Telefono"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Mancante per procedure standard e autonome; in fase di costruzione (forse) per valutazione fornitori.",
+        "storageMethods": []
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Quasi totale mancanza di documentazione delle procedure, sia quelle standard che quelle \"artigianali\" sviluppate da Marica.",
+            "Il processo di gestione etichette IML, che riduce i tempi di 2/3 settimane, è una soluzione autonoma e non documentata. La sua perdita comporterebbe un significativo allungamento dei tempi di ricezione e potenziali problemi.",
+            "La gestione del \"conto lavoro\" è descritta come un \"accrocchio che se salta una cosa si va in malora ed è lento e fragile\", suggerendo una dipendenza critica dalla conoscenza tacita di Marica e un'alta vulnerabilità.",
+            "L'assenza di documentazione per gli ordini packaging, la valutazione fornitori e la ricerca nuovi fornitori indica che gran parte del know-how operativo e decisionale risiede esclusivamente nella sua esperienza.",
+            "La perdita di Marica Andreoli comporterebbe una grave interruzione delle operazioni di approvvigionamento, con un impatto significativo sulla supply chain e sulla produzione."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di documentazione: Assenza di procedure standard documentate e di quelle create autonomamente (es. etichette IML).",
+        "Fragilità del processo di \"conto lavoro\": Descritto come un \"accrocchio\" lento e fragile, con alto rischio di blocco se un passaggio non funziona.",
+        "Giri firma: Menzionato come una problematica, suggerendo inefficienze nel processo di approvazione.",
+        "Processo di valutazione fornitori: La documentazione è \"in fase di costruzione (forse)\", indicando incertezza e potenziale incompletezza."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Documentazione e Standardizzazione dei Processi",
+            "description": "Digitalizzare e documentare tutte le procedure chiave (Ordini Packaging, Gestione Etichette IML, Valutazione Fornitori, Ricerca Nuovi Fornitori, Gestione Pagamenti). Utilizzare una piattaforma centralizzata (es. Confluence, SharePoint) per renderle accessibili e aggiornabili. Formalizzare la soluzione \"artigianale\" per le etichette IML, trasformandola in una procedura standard e formare altri membri del team."
+        },
+        {
+            "title": "Riprogettazione del Processo di \"Conto Lavoro\"",
+            "description": "Analizzare in profondità il processo di \"conto lavoro\" per identificarne i punti deboli e le dipendenze critiche. Progettare un nuovo processo più robusto, efficiente e meno dipendente dalla conoscenza individuale, eventualmente integrando strumenti software o automazioni."
+        },
+        {
+            "title": "Ottimizzazione dei \"Giri Firma\"",
+            "description": "Implementare una soluzione di workflow digitale (es. un modulo su una piattaforma BPM/workflow automation) per la gestione delle approvazioni, eliminando la dipendenza da email e documenti cartacei, tracciando lo stato e riducendo i tempi."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.1,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.2,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.5,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.6,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.2,
+        "frammentazione_integrazioni": 0.5
+    }
+}

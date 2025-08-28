@@ -1,0 +1,158 @@
+{
+    "id": "MG01",
+    "name": "Monica Giusti",
+    "role": "Operatore Ufficio Ordini Italia",
+    "department": "Ufficio Ordini",
+    "section": "Ufficio Ordini Italia",
+    "coreActivities": [
+        "Inserimento anagrafica clienti",
+        "Gestione e inserimento ordini (da e-commerce e accettati)",
+        "Gestione della disponibilità di magazzino e comunicazione al cliente",
+        "Gestione delle urgenze e richieste speciali degli ordini",
+        "Coordinamento con Ufficio Spedizioni e Produzione per la gestione degli ordini"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Ordini Standard (da E-commerce e Accettati)",
+            "objective": "Inserire e processare gli ordini ricevuti, verificando la disponibilità e comunicando con il cliente.",
+            "steps": [
+                "Ricezione Ordine: Ordini arrivano da E-commerce (gestiti da procedure) o via Email (accettati).",
+                "Inserimento in Gestionale: Gli ordini vengono caricati nel sistema gestionale.",
+                "Controllo Disponibilità Magazzino: Viene verificata la disponibilità dei prodotti.",
+                "Comunicazione al Cliente (Mancanze): In caso di disponibilità mancante, viene effettuata comunicazione telefonica/email al cliente.",
+                "Valutazione Urgenza (Manuale): Basandosi sull'esperienza personale, si valuta l'urgenza dell'ordine per stabilire la tempestività di gestione.",
+                "Gestione Sconti/Servizi Extra/Urgenze (Email): Tramite email si gestiscono con il cliente sconti, servizi extra e urgenze particolari (l'urgenza viene assegnata in base all'esperienza).",
+                "Comunicazione a Spedizioni (Urgenze Critiche): Se ci sono urgenze critiche (es. problemi corrieri, richiesta tassativa), si informa via email il settore spedizioni con le info sull'ordine.",
+                "Coordinamento con Spedizioni: Si coordina con l'ufficio spedizioni per la gestione di ordini speciali con i corrieri (l'ufficio ordini non ha contatto diretto con i corrieri).",
+                "Comunicazione Problemi al Cliente: In caso di problemi con gli ordini, si comunica al cliente, mettendo in ordine di urgenza i problemi.",
+                "Aggiornamento Date Ordine: Una volta ottenuta risposta dal cliente, si cambiano le date sulle righe dei prodotti nell'ordine nel gestionale.",
+                "Creazione Bolla: La notte viene creata la bolla e il cliente viene avvisato su quanto è già partito."
+            ],
+            "notes": "Input necessari: Ordini da E-commerce, Email cliente, Lista mancanti giornalieri (cartacea) dalla produzione. Output prodotto: Ordine inserito nel gestionale, Comunicazioni al cliente, Comunicazioni a Ufficio Spedizioni, Bolla di spedizione."
+        },
+        {
+            "name": "Gestione Richieste Particolari (Colori/Tinte)",
+            "objective": "Gestire ordini con richieste specifiche di colori/tinte non standard, calcolando il prezzo.",
+            "steps": [
+                "Ricezione Ordine: Ordine con richiesta particolare di colori/tinte.",
+                "Contatto Produzione: Si parla con la produzione per ottenere le informazioni necessarie.",
+                "Ricezione Risposta Tintometro: Si attende la risposta dal settore del tintometro.",
+                "Calcolo Prezzo: Una volta ricevuta la risposta, si fanno i conti per generare il prezzo."
+            ],
+            "notes": "Input necessari: Ordine con richiesta colori/tinte, Risposta da Produzione/Tintometro. Output prodotto: Prezzo generato per l'ordine specifico. Procedura non documentata, si fa 'a mano tramite email'."
+        },
+        {
+            "name": "Gestione Richieste Materiale Pubblicitario",
+            "objective": "Valutare e processare le richieste di materiale pubblicitario allegato agli ordini.",
+            "steps": [
+                "Ricezione Richiesta: Il 70% degli ordini include una richiesta di materiale pubblicitario (es. cartella, maglietta).",
+                "Confronto con Agente: Per decidere se dare o meno il materiale, ci si confronta con l'agente.",
+                "Richiesta a Marketing: Se la richiesta è validata, si fa richiesta al marketing.",
+                "Controllo Marketing: Il marketing effettua controlli per decidere e dare risposte positive o negative."
+            ],
+            "notes": "Input necessari: Richiesta materiale pubblicitario nell'ordine, Feedback dell'agente. Output prodotto: Decisione (sì/no) sulla fornitura di materiale pubblicitario. Nessuna procedura aziendale su budget disponibile per cliente, si fa 'a sentimento'."
+        },
+        {
+            "name": "Gestione Richieste Bidoni Vuoti",
+            "objective": "Inoltrare richieste di bidoni vuoti alla produzione.",
+            "steps": [
+                "Ricezione Richiesta: Il cliente chiede bidoni vuoti.",
+                "Invio a Produzione: La richiesta viene mandata alla produzione per far seguire tutto il processo."
+            ],
+            "notes": "Input necessari: Richiesta cliente. Output prodotto: Richiesta inoltrata a Produzione. Nessuna procedura scritta."
+        },
+        {
+            "name": "Gestione Articoli Generici (non a magazzino)",
+            "objective": "Gestire la fornitura di articoli non presenti in magazzino ma disponibili in ufficio (es. vecchie brochure).",
+            "steps": [
+                "Richiede 3 o 4 passaggi extra che coinvolgono più gruppi."
+            ],
+            "notes": "Non richiede registrazione in magazzino. Procedura mancante, molta conoscenza condivisa a voce nell'ufficio spedizioni."
+        },
+        {
+            "name": "Gestione Segnalazioni (Accrediti e Sconti)",
+            "objective": "Aprire operazioni commerciali e archiviare le conversazioni relative.",
+            "steps": [
+                "Apertura Operazioni Commerciali: Si aprono operazioni commerciali per accrediti e sconti.",
+                "Tematizzazione e Archiviazione: Le conversazioni vengono tematizzate e archiviate su 'Gaia' (nuovo sistema)."
+            ],
+            "notes": "Input necessari: Segnalazioni su accrediti/sconti. Output prodotto: Operazione commerciale aperta, Conversazione archiviata."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Gestionale",
+            "Gaia"
+        ],
+        "communication": [
+            "Email",
+            "Telefono"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Le procedure sono 'completamente mancanti'. L'ufficio è organizzato e ha sviluppato metodi interni e molta conoscenza è condivisa a voce. La dipendente sta attivamente costruendo un file per documentare casistiche tipiche di email e relative procedure.",
+        "storageMethods": [
+            "Gestionale",
+            "Gaia",
+            "Cartacea",
+            "PC locale"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Medio-Alto",
+        "reasons": [
+            "La valutazione dell'urgenza degli ordini si basa sull'esperienza personale.",
+            "La gestione di sconti, servizi extra e urgenze particolari via email dipende dalla capacità di gestione individuale.",
+            "Il processo di gestione ordini con richieste particolari di colori/tinte non ha una procedura e si fa 'a mano tramite email'.",
+            "La decisione sul materiale pubblicitario si basa sul 'sentimento' in assenza di budget o procedure chiare.",
+            "La gestione dei bidoni vuoti non ha una procedura scritta.",
+            "La gestione degli articoli generici non in magazzino è una 'procedura mancante' con molta conoscenza condivisa a voce.",
+            "La perdita di personale chiave, sebbene non sia l'unica fonte di conoscenza, potrebbe rallentare significativamente l'onboarding di nuovi assunti e portare a errori o inefficienze finché la conoscenza tacita non viene ricostruita o formalizzata. Il fatto che la dipendente stia autonomamente creando un file di procedure è un segnale che il bisogno di documentazione è sentito e non pienamente soddisfatto a livello aziendale."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Procedure Scritte: Molti processi cruciali (gestione colori/tinte, bidoni vuoti, articoli generici, materiale pubblicitario) non hanno procedure documentate, affidandosi all'esperienza e alla conoscenza tacita.",
+        "Dipendenza da Conoscenza Tacita: La valutazione delle urgenze e la gestione di situazioni complesse si basano fortemente sull'esperienza personale e sul 'sentimento'.",
+        "Inefficienze da Comunicazione Email: L'uso estensivo delle email per coordinamento e richieste interne (es. con Produzione, Spedizioni, Marketing) può essere inefficiente e rallentare i processi.",
+        "Lentezza del Gestionale: La 'manualità di inserimento ordini a sistema [è] molto lunga e problematica', rallentando il lavoro e spingendo a usare 'altri metodi (ecommerce)' per compensare.",
+        "Processi con Molti Passaggi Manuali: La gestione di richieste particolari (es. colori/tinte, articoli generici) richiede numerosi passaggi manuali e interazioni tra diversi gruppi.",
+        "Mancanza di Criteri Oggettivi: La decisione sulla fornitura di materiale pubblicitario è 'a sentimento' per mancanza di indicazioni aziendali su budget o criteri."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Digitalizzazione e Standardizzazione delle Procedure",
+            "description": "Creare un repository centralizzato (es. Confluence, SharePoint) per documentare tutte le procedure operative standard (SOP) per i processi chiave (gestione ordini speciali, materiale pubblicitario, bidoni vuoti, articoli generici). Iniziare con la formalizzazione delle casistiche che la dipendente sta già documentando. Benefici: Riduzione del rischio di perdita di know-how, facilitazione dell'onboarding, maggiore coerenza e qualità del servizio."
+        },
+        {
+            "title": "Implementazione di un Workflow Digitale per Richieste Interne",
+            "description": "Utilizzare una piattaforma di workflow (es. Monday.com, Jira Service Management, o un modulo nel gestionale esistente se possibile) per gestire le richieste tra Ufficio Ordini, Produzione, Spedizioni e Marketing (es. richieste colori/tinte, materiale pubblicitario, bidoni vuoti). Questo eliminerebbe la dipendenza dalle email, traccerebbe lo stato delle richieste e fornirebbe dati per analisi. Benefici: Aumento dell'efficienza, riduzione dei tempi di risposta, maggiore trasparenza e tracciabilità delle richieste."
+        },
+        {
+            "title": "Ottimizzazione dell'Inserimento Ordini nel Gestionale",
+            "description": "Analizzare le cause della lentezza e problematicità nell'inserimento manuale degli ordini. Valutare l'implementazione di funzionalità di importazione massiva, automazione RPA (Robotic Process Automation) per l'inserimento di dati ripetitivi, o miglioramenti all'interfaccia utente del gestionale. Benefici: Aumento della produttività, riduzione degli errori, miglioramento della soddisfazione del dipendente."
+        },
+        {
+            "title": "Definizione Criteri e Budget per Materiale Pubblicitario",
+            "description": "Collaborare con Marketing e Vendite per definire criteri chiari e, se del caso, budget per l'assegnazione del materiale pubblicitario ai clienti. Questi criteri dovrebbero essere documentati e integrati nel processo di gestione ordini. Benefici: Decisioni più oggettive e rapide, maggiore controllo sui costi, coerenza nelle politiche aziendali."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 5,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.1,
+        "indice_insostituibilita": 0.8,
+        "tasso_cambiamento": 0.2,
+        "impatto_downstream": 0.9,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.2,
+        "impatto_cliente": 0.9,
+        "sensibilita_dati": 0.5,
+        "punti_singoli_fallimento": 0.7,
+        "segnale_rilavorazione": 0.6,
+        "tracciabilita_errori": 0.3,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.7,
+        "qualita_controlli": 0.3,
+        "frammentazione_integrazioni": 0.7
+    }
+}

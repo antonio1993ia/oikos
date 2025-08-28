@@ -1,0 +1,87 @@
+{
+    "id": "CT01",
+    "name": "Carmelo Tripepi",
+    "role": "Ordini e approvvigionamenti",
+    "department": "GOA",
+    "section": "Gestione Ordini e Approvvigionamenti",
+    "coreActivities": [
+        "Gestione delle Richieste di Acquisto (RDA) per non materie prime",
+        "Monitoraggio e gestione del flusso delle RDA, inclusa la lavorazione e l'approvazione",
+        "Gestione delle problematiche relative a fornitori, insoluti e scadenze"
+    ],
+    "processes": [
+        {
+            "name": "Gestione delle Richieste di Acquisto (RDA) per non materie prime",
+            "objective": "Acquisire beni e servizi non correlati alle materie prime, seguendo un flusso di richiesta, lavorazione e approvazione.",
+            "steps": [
+                "Ricezione RDA: La RDA viene generata su una piattaforma (non specificata).",
+                "Lavorazione e Approvazione RDA: Il dipendente segue il flusso della RDA, che include fasi di lavorazione e approvazione. Questa fase è descritta come 'molto macchinosa' a causa dell'interazione tra due piattaforme diverse (una per RDA e una per ordini).",
+                "Gestione Ordine: Una volta approvata, la RDA si trasforma in un ordine, gestito su una piattaforma separata.",
+                "Gestione Post-Ordine (Criticità): Il dipendente deve gestire eventuali problematiche con i fornitori (insoluti, scadenze), ma non ha procedure chiare per queste 'evenienze particolari'."
+            ],
+            "notes": "Il processo è macchinoso a causa dell'interazione tra due piattaforme diverse. Mancano procedure chiare per la gestione post-ordine e delle evenienze particolari con i fornitori."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Piattaforma 1 (per la gestione delle Richieste di Acquisto - RDA)",
+            "Piattaforma 2 (per la gestione degli Ordini)"
+        ],
+        "communication": []
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Mancante o insufficiente per la gestione delle evenienze particolari. Il dipendente non ha ricevuto documentazione specifica per la formazione iniziale, ma è stato formato 'a mano' (on-the-job). Sa che esistono documenti nel 'documentale' aziendale, ma non li ha ancora consultati o verificati.",
+        "storageMethods": [
+            "Piattaforme gestionali (per i dati di RDA e ordini)",
+            "Documentale aziendale (per documenti esistenti, non consultati)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Il dipendente è stato formato esclusivamente 'a mano', senza documentazione di supporto.",
+            "Dopo tre mesi, si sente ancora insicuro e deve chiedere costantemente per svolgere il lavoro, specialmente per le 'evenienze particolari' (es. gestione fornitori, insoluti, scadenze) che non sono documentate.",
+            "Gran parte del know-how operativo risiede nella conoscenza tacita dei colleghi o del dipendente stesso, non in procedure scritte.",
+            "La partenza di Carmelo Tripepi o dei colleghi che lo hanno formato creerebbe un vuoto di conoscenza significativo, rallentando o bloccando la gestione di situazioni non standard e aumentando il tempo di onboarding per futuri assunti."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Documentazione/Procedure: Assenza di documentazione chiara e completa per l'apprendimento del ruolo e per la gestione di situazioni non standard (es. fornitori, insoluti, scadenze).",
+        "Formazione Insufficiente: Formazione basata esclusivamente sull'affiancamento manuale, che non garantisce autonomia e copertura di tutti gli scenari.",
+        "Inefficienza Piattaforme: La gestione di RDA e ordini su due piattaforme diverse è 'molto macchinosa', indicando un'inefficienza nel flusso di lavoro che richiede passaggi manuali o complessi tra i sistemi.",
+        "Incertezza Operativa: Il dipendente si sente insicuro e deve chiedere frequentemente, il che è sintomo di processi non chiari o non documentati."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Sviluppo e Centralizzazione della Documentazione Operativa",
+            "description": "Creare e centralizzare procedure operative standard (SOP) per tutte le attività del ruolo, con particolare attenzione alla gestione delle 'evenienze particolari' (fornitori, insoluti, scadenze). Utilizzare una piattaforma di gestione documentale accessibile e ricercabile (es. Confluence, SharePoint)."
+        },
+        {
+            "title": "Valutazione e Ottimizzazione dell'Integrazione tra Piattaforme",
+            "description": "Analizzare il 'macchinoso' processo di interazione tra le due piattaforme (RDA e Ordini). Valutare l'implementazione di un'integrazione automatica (API) tra i due sistemi o l'adozione di un'unica suite gestionale (ERP) che copra entrambi i processi, per eliminare i passaggi manuali e ridurre gli errori."
+        },
+        {
+            "title": "Programma di Mentoring Strutturato e Check-in Regolari",
+            "description": "Oltre alla documentazione, implementare un programma di mentoring formale per i nuovi assunti, con check-in regolari (es. settimanali per il primo mese, mensili per i successivi) per affrontare dubbi e consolidare l'apprendimento."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.1,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.2,
+        "impatto_downstream": 0.7,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.6,
+        "sensibilita_dati": 0.3,
+        "punti_singoli_fallimento": 0.8,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.4,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.2,
+        "frammentazione_integrazioni": 0.8
+    }
+}

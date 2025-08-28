@@ -1,0 +1,157 @@
+{
+    "id": "BG01",
+    "name": "Bianca Galbucci",
+    "role": "Gestione ordini clienti",
+    "department": "Non specificato",
+    "section": "CMV",
+    "coreActivities": [
+        "Gestione degli ordini (da e-commerce ed email), inclusa la verifica dello stato di spedizione e ordine, e la gestione di prodotti mancanti o non disponibili (conversioni/resi)",
+        "Gestione delle non conformità, dalla ricezione tramite extranet alla chiusura",
+        "Gestione della fatturazione e delle note di credito/premi per i clienti",
+        "Gestione e aggiornamento dell'anagrafica clienti",
+        "Gestione dei listini prezzi di vendita personalizzati per i clienti"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Ordini (da E-commerce ed Email)",
+            "objective": "Elaborare gli ordini ricevuti e monitorarne lo stato",
+            "steps": [
+                "Ricezione Ordine: Tramite piattaforma e-commerce o email",
+                "Verifica e Inserimento: Utilizzo del programma e-commerce e di Business Central",
+                "Gestione Telefonate: Ricezione/effettuazione di chiamate per stato spedizione, stato ordine, prodotti mancanti/non disponibili",
+                "Gestione Prodotti: Conversione o gestione resi per prodotti non disponibili"
+            ],
+            "notes": "Bianca ha creato una procedura per i nuovi flussi di gestione ordini, ma non è scritta."
+        },
+        {
+            "name": "Gestione Non Conformità",
+            "objective": "Gestire e risolvere le problematiche segnalate dai clienti, spesso con emissione di note di credito",
+            "steps": [
+                "Segnalazione Cliente: Il cliente si lamenta e invia un'email all'ufficio spedizioni",
+                "Risposta Ufficio Spedizioni: L'ufficio spedizioni risponde al cliente",
+                "Trasmissione Interna: L'ufficio spedizioni invia la non conformità a Bianca tramite extranet",
+                "Presa in Carico e Controllo (Ruolo di Bianca): Bianca riceve la richiesta, controlla che i passaggi precedenti siano stati eseguiti e verifica la validità per l'emissione della nota di credito",
+                "Chiusura: Bianca prende in carico e chiude la non conformità"
+            ],
+            "notes": "Bianca svolge funzioni di Controllo di Gestione e Ufficio Amministrazione in questo processo. Non ha ricevuto documentazione o procedura per i passaggi e i controlli necessari per emettere note di credito."
+        },
+        {
+            "name": "Fatturazione",
+            "objective": "Emettere fatture",
+            "steps": [
+                "Diverse fasi operative da seguire su Business Central"
+            ],
+            "notes": "La procedura per la fatturazione è presente e viene eseguita su Business Central."
+        },
+        {
+            "name": "Gestione Premi e Note di Credito (Generali)",
+            "objective": "Comunicare con i clienti riguardo ai premi raggiunti e gestire le relative note di credito",
+            "steps": [
+                "Comunicazione con Clienti: Conversazioni con i clienti quando raggiungono i premi",
+                "Archiviazione: Le conversazioni vengono archiviate in GAIA"
+            ],
+            "notes": "La procedura per la gestione dei premi non è scritta. La procedura per la gestione dei crediti (generali) è scritta."
+        },
+        {
+            "name": "Gestione Anagrafica Clienti",
+            "objective": "Gestire e mantenere aggiornate le informazioni dei clienti",
+            "steps": [
+                "Inserimento e gestione dei dati dei clienti"
+            ],
+            "notes": "Manca la procedura su come gestire l'anagrafica del cliente e cosa inserire in base al tipo di cliente. Le schede clienti sono archiviate su GAIA. C'è un problema con l'inserimento manuale di dati incompleti/sbagliati da parte dei clienti."
+        },
+        {
+            "name": "Gestione Ordini Internazionali",
+            "objective": "Gestire ordini con specificità internazionali",
+            "steps": [
+                "Richiede documenti specifici e attenzioni particolari"
+            ],
+            "notes": "Le procedure per gli ordini internazionali non sono documentate."
+        },
+        {
+            "name": "Gestione Listini Prezzi Vendita Clienti",
+            "objective": "Creare e gestire listini prezzi personalizzati per i clienti",
+            "steps": [
+                "Ricezione Accordo: Ricezione via email del contratto firmato dal commerciale",
+                "Creazione Listino: Creazione del listino prezzi personalizzato",
+                "Inserimento a Sistema: Inserimento del listino nel sistema (che poi lo 'pesca')"
+            ],
+            "notes": "Mancanza di automazione; si suggerisce l'uso di Excel per aiutare."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Programma di e-commerce",
+            "Business Central",
+            "Extranet",
+            "GAIA",
+            "Excel"
+        ],
+        "communication": [
+            "Email",
+            "GAIA"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "La maggior parte delle procedure chiave non sono documentate o sono state create ma non scritte. Le procedure per la fatturazione e la gestione dei crediti (generali) sono documentate.",
+        "storageMethods": [
+            "Conversazioni con clienti (premi) archiviate in GAIA",
+            "Schede clienti archiviate su GAIA",
+            "Dati estratti da Business Central vengono lavorati manualmente (filtrati, controllati, modificati)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Gran parte delle procedure chiave (Gestione Ordini, Gestione Ordini Internazionali, Gestione Premi, Gestione Non Conformità per note di credito, Gestione Anagrafica Clienti) non sono documentate o sono state create da Bianca ma non formalizzate.",
+            "Bianca svolge un ruolo critico e non documentato nella validazione delle note di credito (agendo da Controllo di Gestione e Ufficio Amministrazione) senza una procedura formale.",
+            "La conoscenza di come gestire i listini prezzi personalizzati, le specificità degli ordini internazionali e i controlli sull'anagrafica clienti risiede principalmente nell'esperienza e nel know-how di Bianca.",
+            "La dipendenza dalla conoscenza tacita di Bianca per processi complessi e ad alto impatto finanziario (note di credito, listini prezzi) rappresenta un rischio significativo per la business continuity in caso di assenza o partenza della risorsa."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Documentazione Procedurale: Molte procedure cruciali non sono scritte (Gestione Ordini, Internazionali, Premi, Non Conformità, Anagrafica Clienti), creando dipendenza dalla conoscenza individuale.",
+        "Problemi di Integrazione e Dati: Extranet non rileva le anagrafiche nuove, richiedendo inserimento manuale; necessità di 'accorpare tutto su Business Central' suggerisce frammentazione dei dati/processi; dati anagrafici clienti inseriti manualmente dai clienti sono spesso incompleti e/o sbagliati.",
+        "Inefficienze Inter-Dipartimentali: Necessità di interazione costante con altri dipartimenti e attese di giorni per ottenere risposte, indicando una mancanza di strumenti o procedure per la condivisione rapida delle informazioni.",
+        "Lavoro Manuale Eccessivo: Lavorazione manuale di dati estratti da Business Central (filtrare, controllare, modificare); impossibilità di fare modifiche in massa su Business Central, costringendo a modifiche 'una alla volta'; calcoli manuali per i listini prezzi dei prodotti colorati; l'inserimento manuale degli ordini in Business Central è percepito come lento a causa di troppe procedure e fasi.",
+        "Mancanza di Strumenti per l'Automazione: Non ci sono strumenti per estrarre i dati necessari per fare calcoli e algoritmi automatizzati (es. per i listini prezzi colorati).",
+        "Processo di Non Conformità/Nota di Credito: Bianca svolge un ruolo critico senza procedure documentate, esponendo l'azienda a rischi e potenziali errori."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Digitalizzazione e Documentazione delle Procedure Chiave",
+            "description": "Formalizzare e documentare tutte le procedure attualmente tacite o non scritte (Gestione Ordini, Ordini Internazionali, Premi, Non Conformità/Note di Credito, Anagrafica Clienti). Utilizzare una piattaforma centralizzata (es. Confluence, SharePoint, o un manuale digitale accessibile) per la conservazione e l'aggiornamento. Benefici: Riduzione del rischio di conoscenza tacita, facilitazione dell'onboarding di nuovi dipendenti, standardizzazione dei processi."
+        },
+        {
+            "title": "Ottimizzazione del Processo Anagrafica Clienti e Integrazione Dati",
+            "description": "Implementare un sistema per la compilazione digitale delle schede clienti (es. form online con validazione dei campi obbligatori/formato) per ridurre errori e incompletezza dei dati inseriti dai clienti. Valutare l'integrazione tra Extranet e Business Central per l'aggiornamento automatico delle anagrafiche, eliminando l'inserimento manuale. Esplorare funzionalità di Business Central per la gestione dei 'cambi in massa' o valutare l'implementazione di script/tool esterni per automatizzare le modifiche massive. Benefici: Miglioramento della qualità dei dati, riduzione del tempo speso in correzioni manuali, maggiore efficienza operativa."
+        },
+        {
+            "title": "Automazione dei Calcoli e dei Listini Prezzi",
+            "description": "Sviluppare un sistema o un modulo all'interno di Business Central (o un'integrazione esterna) che automatizzi il calcolo dei listini prezzi personalizzati, inclusi i prodotti colorati. Questo potrebbe includere algoritmi predefiniti che prendono in input i dati base e generano il prezzo finale. Benefici: Eliminazione dei calcoli manuali, riduzione degli errori, accelerazione del processo di creazione dei listini, scalabilità."
+        },
+        {
+            "title": "Miglioramento della Comunicazione Inter-Dipartimentale",
+            "description": "Implementare una piattaforma di collaborazione e gestione dei workflow (es. Microsoft Teams con funzionalità di approvazione, Asana, Jira Service Management) per le richieste di informazioni e le approvazioni tra dipartimenti. Questo permetterebbe di tracciare le richieste e ridurre i tempi di risposta. Benefici: Maggiore trasparenza, riduzione dei colli di bottiglia, miglioramento della collaborazione."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.2,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.6,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.9,
+        "sensibilita_dati": 0.7,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.8,
+        "tracciabilita_errori": 0.3,
+        "livello_automazione": 0.2,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.3,
+        "frammentazione_integrazioni": 0.7
+    }
+}

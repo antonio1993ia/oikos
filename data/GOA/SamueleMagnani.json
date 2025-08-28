@@ -1,0 +1,114 @@
+{
+    "id": "SM01",
+    "name": "Samuele Magnani",
+    "role": "Controllo qualità / Responsabile collaudo su prodotti",
+    "department": "GOA",
+    "section": "Controllo Qualità",
+    "coreActivities": [
+        "Responsabilità del collaudo sui prodotti",
+        "Associare istruzioni di lavoro a formule inserite dalla pianificazione, aggiornandole e mettendole in controllo, inclusa l'aggiornamento degli strumenti da usare",
+        "Gestione delle non conformità: analisi, decisione su come affrontarle, relazione con il responsabile laboratorio (Francesca) per situazioni complesse, annotazione e registrazione delle situazioni gestite/risolte",
+        "Inserimento di informazioni nel sistema oltre alle istruzioni operative per scopi di prevenzione",
+        "Collaborazione per migliorare il sistema di circolazione delle informazioni (con Michele)"
+    ],
+    "processes": [
+        {
+            "name": "Aggiornamento Istruzioni di Lavoro e Strumenti",
+            "objective": "Assicurare che le istruzioni operative e gli strumenti utilizzati siano allineati e aggiornati rispetto alle formule e alla pianificazione.",
+            "steps": [
+                "La pianificazione inserisce nuove formule nel sistema",
+                "Samuele associa le istruzioni di lavoro a queste nuove formule",
+                "Le istruzioni e le formule devono essere aggiornate e messe in controllo; Samuele aggiorna anche gli strumenti da usare"
+            ],
+            "notes": "Questa attività è documentata ma non strutturata."
+        },
+        {
+            "name": "Gestione Non Conformità",
+            "objective": "Identificare, analizzare, affrontare e risolvere le situazioni in cui i prodotti o i processi non rispettano gli standard, registrando le soluzioni.",
+            "steps": [
+                "Rilevamento di una situazione di non conformità (lo standard non è rispettato)",
+                "Samuele analizza la situazione e decide come affrontarla",
+                "Per situazioni complesse, Samuele si relaziona con il responsabile laboratorio (Francesca)",
+                "Le situazioni gestite e risolte vengono annotate e registrate",
+                "Le soluzioni vengono inserite nell'extranet (con descrizione del problema e della soluzione)",
+                "La registrazione avviene anche in formato cartaceo"
+            ],
+            "notes": "Questa attività non è documentata ne strutturata."
+        },
+        {
+            "name": "Prevenzione tramite Inserimento Informazioni",
+            "objective": "Inserire informazioni aggiuntive nel sistema, oltre le istruzioni operative, per prevenire futuri problemi.",
+            "steps": [],
+            "notes": "Non sono state dettagliate le fasi sequenziali. Input necessari: Nuovi processi o casi specifici che generano informazioni. Output prodotto: Informazioni aggiuntive inserite nel sistema."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Sistema (generico, utilizzato per inserire informazioni e raccogliere dati)",
+            "Extranet (utilizzato per la documentazione delle non conformità e il manuale di comportamento)"
+        ],
+        "communication": [
+            "Incontri tra responsabili e operativi"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Il processo di 'Aggiornamento Istruzioni di Lavoro e Strumenti' è documentato ma non strutturato. Il processo di 'Gestione Non Conformità' non è documentato né strutturato. Esiste un 'Manuale di come comportarsi in caso di non conformità' sull'extranet, ma è non aggiornato. Le istruzioni operative per ogni prodotto esistono, con un template standard e aggiunte specifiche. Mancano 'istruzioni if/else' per la gestione delle non conformità.",
+        "storageMethods": [
+            "Extranet (per informazioni e soluzioni delle non conformità)",
+            "Registrazioni cartacee delle non conformità",
+            "Sistema (generico, per informazioni generali)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Il processo di gestione delle non conformità non è documentato né strutturato; le decisioni dipendono dalla conoscenza ed esperienza di Samuele.",
+            "Le modifiche a formule e ricette nel tempo non sono riflesse nelle distinte base del sistema; la conoscenza risiede nelle persone, rendendo i dati del sistema falsati.",
+            "Manca una cultura aziendale di caricare le informazioni nel sistema, portando alla perdita di conoscenza operativa e decisionale.",
+            "L'assenza di 'istruzioni if/else' per le non conformità indica che le azioni sono basate sull'esperienza individuale.",
+            "La perdita di Samuele o di altre figure chiave che detengono questa conoscenza tacita potrebbe portare a gravi interruzioni, errori di produzione e difficoltà nel mantenere gli standard."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di comunicazione tra i vari reparti.",
+        "Informazioni non inserite/perse nel sistema, causando perdite significative di prodotto.",
+        "Mancanza di aggiornamento in itinere delle modifiche ai processi.",
+        "Distinte base non aggiornate nel sistema, con le quantità corrette conosciute solo dalle persone.",
+        "Mancanza di cultura di caricamento informazioni nel sistema.",
+        "Documentazione insufficiente/non strutturata per i processi chiave e manuali non aggiornati.",
+        "Eccessiva dipendenza dalle procedure, con paura che le persone si nascondano dietro di esse per giustificare errori."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Digitalizzazione e Strutturazione della Gestione Non Conformità",
+            "description": "Sviluppare un workflow digitale per la gestione delle non conformità (es. su una piattaforma BPM/workflow management come Jira, Asana, o un modulo dedicato nel sistema gestionale esistente). Questo dovrebbe includere campi obbligatori per l'analisi, la decisione, l'interazione con il laboratorio, la soluzione e la registrazione. Integrare 'istruzioni if/else' o alberi decisionali digitali per guidare gli utenti nelle azioni da intraprendere."
+        },
+        {
+            "title": "Implementazione di un Sistema Centralizzato per l'Aggiornamento delle Distinte Base e Istruzioni Operative",
+            "description": "Creare un sistema (o potenziare quello esistente) che permetta un aggiornamento immediato e tracciato delle distinte base e delle istruzioni operative ogni volta che formule o ricette cambiano. Questo dovrebbe includere un processo di approvazione per le modifiche e l'obbligo di inserire le 'quantità corrette' direttamente nel sistema, rendendo la conoscenza esplicita e non dipendente dall'individuo."
+        },
+        {
+            "title": "Programma di Sensibilizzazione e Formazione sulla Cultura del Dato e della Comunicazione Inter-Reparto",
+            "description": "Avviare un programma di formazione e sensibilizzazione che enfatizzi l'importanza di inserire le informazioni nel sistema in modo tempestivo e accurato. Questo dovrebbe essere accompagnato da sessioni di team building e workshop inter-reparto focalizzati sulla risoluzione collaborativa dei problemi e sulla comunicazione proattiva, superando la logica 'ognuno per sé'."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.2,
+        "livello_formalizzazione": 0.1,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.7,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.3,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.6,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.8,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.2,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.2,
+        "frammentazione_integrazioni": 0.7
+    }
+}

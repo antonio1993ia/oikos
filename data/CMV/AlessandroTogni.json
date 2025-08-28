@@ -1,0 +1,114 @@
+{
+    "id": "AT01",
+    "name": "Alessandro Togni",
+    "role": "Gestione Materiale Marketing",
+    "department": "Marketing",
+    "section": "Italia e Marketing",
+    "coreActivities": [
+        "Gestione degli articoli marketing (inclusi allestimenti complessi con sotto-articoli)",
+        "Analisi del fabbisogno, generazione del budget e riorganizzazione della distribuzione dei materiali marketing nel tempo (annuale/biennale)",
+        "Gestione quotidiana delle richieste spot di materiali marketing",
+        "Creazione e ideazione di nuovi codici articolo",
+        "Uniformazione e modifica dei codici articolo esistenti, inclusa la generazione di linee guida"
+    ],
+    "processes": [
+        {
+            "name": "Gestione delle Richieste di Materiale Marketing (Processo Quotidiano)",
+            "objective": "Soddisfare le richieste spot di materiali marketing da parte di clienti/distributori, in accordo con budget e giacenze.",
+            "steps": [
+                "Ricezione Richiesta: La richiesta di materiali marketing arriva ad Alessandro tramite email da parte di commerciali, ufficio ordini, persone internazionali, agenti, area manager.",
+                "Verifica Budget: Alessandro verifica il budget disponibile per il cliente/distributore che ha effettuato la richiesta usando il \"File-c\" (analisi budget per prodotto e richiedente, sia per Italia che per estero).",
+                "Controllo Giacenze: Viene controllata la disponibilità dei prodotti richiesti in base alle giacenze di magazzino (primari e secondari) usando il \"File-a\" (file Excel con giacenze di magazzino, aggiornato manualmente con dati da Business Central).",
+                "Validazione e Aggiunta Prodotti: Alessandro effettua un controllo finale per validare la richiesta, decidendo se aggiungere prodotti che altrimenti rimarrebbero in magazzino o se inviare prodotti in base al budget, basandosi sui risultati delle verifiche di budget e giacenze.",
+                "Gestione Richieste \"Over Budget\": Se il richiedente ha superato il budget assegnato, Alessandro contatta l'area manager per una conferma sulla continuazione, il blocco o la revisione delle quantità.",
+                "Autorizzazione e Spedizione: Una volta ottenuta l'autorizzazione finale, viene inviata una email di conferma e viene emessa una fattura tramite Business Central."
+            ],
+            "notes": "Il processo si basa su file Excel personali per budget e giacenze, con aggiornamenti manuali."
+        },
+        {
+            "name": "Creazione e Ideazione Codice Articolo",
+            "objective": "Creare nuovi codici per gli articoli marketing e inserirli a sistema.",
+            "steps": [
+                "Ideazione Codice Articolo: Alessandro progetta e definisce il nuovo codice articolo.",
+                "Inserimento a Sistema: Il codice articolo ideato viene inserito nel sistema aziendale."
+            ],
+            "notes": "Non sono specificati gli input per l'ideazione del codice articolo."
+        },
+        {
+            "name": "Uniformazione dei Codici Articoli",
+            "objective": "Standardizzare e modificare i codici articolo esistenti, creando linee guida per la loro gestione.",
+            "steps": [
+                "Analisi Campionari: Analisi dei campionari esistenti per comprendere e definire una logica per i codici articolo.",
+                "Modifica Codici: Modifica dei codici articolo esistenti in base alla logica definita.",
+                "Generazione Linee Guida: Creazione di linee guida per la generazione e la denominazione dei campionari e dei codici articolo."
+            ],
+            "notes": "Le linee guida sono state create 'per buonsenso' a causa della loro mancanza."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Business Central",
+            "Microsoft Excel"
+        ],
+        "communication": [
+            "Email"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Le procedure principali non sono formalmente documentate se non attraverso l'esperienza e i file personali di Alessandro. Le linee guida per la creazione e nominazione di campionari e codici articoli sono state create reattivamente dal team.",
+        "storageMethods": [
+            "File Excel personali (\"File-a\", \"File-b\", \"File-c\") contenenti estratti da Business Central e dati aggiornati manualmente."
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Gran parte dell'operatività quotidiana e della gestione strategica dei materiali marketing si basa su conoscenze tacite e strumenti 'artigianali' sviluppati da Alessandro.",
+            "I tre file Excel cruciali (\"File-a\", \"File-b\", \"File-c\") sono stati creati e sono gestiti manualmente da Alessandro; la loro logica interna, le pivot e i criteri di aggiornamento sono probabilmente noti solo a lui.",
+            "Il processo decisionale di validazione delle richieste si basa sull'esperienza e conoscenza specifica di Alessandro.",
+            "Il processo di creazione e uniformazione dei codici articolo, inclusa la generazione delle linee guida, è stato sviluppato 'per buonsenso' da Alessandro e dal team, indicando che la logica sottostante potrebbe non essere completamente formalizzata o facilmente trasferibile.",
+            "La conoscenza delle problematiche di Business Central (es. alcune fatture se emesse per l’estero non vengono registrate in maniera corretta e il file b non lo legge) è critica e specifica.",
+            "La perdita di Alessandro comporterebbe una significativa interruzione delle operazioni di gestione dei materiali marketing."
+        ]
+    },
+    "criticalities": [
+        "Dipendenza da Processi Manuali: L'aggiornamento dei file Excel (\"File-a\") è manuale, basato su \"vista da b-center\", il che è inefficiente e soggetto a errori.",
+        "Integrazione Dati Incompleta/Errata: Le fatture emesse per l'estero su Business Central non vengono registrate correttamente o non sono lette dal \"File-b\", creando discrepanze e rendendo l'analisi dello storico incompleta.",
+        "Mancanza di Documentazione Ufficiale: L'assenza di linee guida e procedure ufficiali ha costretto il team a crearne di proprie \"per buonsenso\", indicando una lacuna nella gestione della conoscenza aziendale.",
+        "Rischio di Conoscenza Tacita: La forte dipendenza dai file Excel personali e dalla conoscenza specifica di Alessandro rappresenta un rischio significativo per la business continuity.",
+        "Comunicazione via Email: La ricezione e l'invio di richieste/autorizzazioni via email può portare a perdite di informazioni, difficoltà di tracciamento e rallentamenti nel processo."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Automatizzazione dell'Aggiornamento Dati e Consolidamento dei File Excel",
+            "description": "Sviluppare un sistema (es. script Python, tool ETL, o modulo aggiuntivo in Business Central) che automatizzi l'estrazione e l'aggiornamento dei dati di giacenza e storico ordini da Business Central in un database centralizzato (es. SQL Database o data warehouse). Questo eliminerebbe l'aggiornamento manuale del \"File-a\" e risolverebbe il problema delle fatture estere non lette dal \"File-b\", consolidando e rendendo affidabili le fonti dati."
+        },
+        {
+            "title": "Digitalizzazione e Workflow Management delle Richieste",
+            "description": "Implementare una piattaforma di workflow management (es. Microsoft Power Automate, Monday.com, Jira Service Management) per gestire l'intero processo di richiesta materiali marketing. Questo permetterebbe di centralizzare la ricezione delle richieste (eliminando le email), automatizzare le verifiche di budget e giacenze (interfacciandosi con il database centralizzato), definire workflow di approvazione chiari, tracciare lo stato di ogni richiesta in tempo reale e generare automaticamente le email di conferma e, se possibile, interagire direttamente con Business Central per l'emissione delle fatture."
+        },
+        {
+            "title": "Formalizzazione e Centralizzazione della Documentazione",
+            "description": "Creare un repository centralizzato (es. Confluence, SharePoint, Wiki aziendale) per documentare tutte le procedure operative standard (SOP) relative alla gestione dei materiali marketing, inclusi i processi di creazione e uniformazione dei codici articolo e le linee guida sviluppate da Alessandro. Questo ridurrebbe il rischio di conoscenza tacita e faciliterebbe l'onboarding di nuovi dipendenti."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.3,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.3,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.5,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.2,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.3,
+        "frammentazione_integrazioni": 0.8
+    }
+}

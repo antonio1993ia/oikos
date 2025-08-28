@@ -1,0 +1,130 @@
+{
+    "id": "KT01",
+    "name": "Katia Tozzi",
+    "role": "Assistente alla Direzione Marketing, Assistente Trade Marketing, Assistente Tailor-made, Responsabile Fiere ed Eventi",
+    "department": "Marketing",
+    "section": "Marketing / Trade Marketing",
+    "coreActivities": [
+        "Gestione richieste di biglietti da visita",
+        "Gestione richieste e coordinamento per la produzione di pannelli (per commerciali/clienti)",
+        "Organizzazione e coordinamento di eventi e fiere",
+        "Filtro e gestione delle richieste di marketing esterne"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Richieste Biglietti da Visita",
+            "objective": "Fornire biglietti da visita ai dipendenti che ne fanno richiesta.",
+            "steps": [
+                "Il dipendente effettua la richiesta tramite extranet.",
+                "La richiesta arriva all'ufficio HR (collo di bottiglia menzionato). HR smista la richiesta.",
+                "Catia riceve la richiesta, la gestisce e invia i biglietti da visita."
+            ],
+            "notes": "L'ufficio HR è un collo di bottiglia."
+        },
+        {
+            "name": "Gestione Richieste Pannelli",
+            "objective": "Produrre e inviare pannelli per i clienti su richiesta dei commerciali.",
+            "steps": [
+                "Il commerciale (Italia/Estero, tailor-made) invia la richiesta al Trade Marketing.",
+                "In base alla motivazione della richiesta, viene presa in carico da Catia o da Viki (che ha contatto diretto con le aziende). Richieste per clienti in corso sono gestite dai commerciali.",
+                "La richiesta viene approvata.",
+                "Catia inserisce la richiesta nel sistema.",
+                "La richiesta arriva ai tecnici che la valutano.",
+                "I tecnici mandano la richiesta all'ufficio ordini.",
+                "I pannelli arrivano ai tecnici e vengono successivamente inviati."
+            ],
+            "notes": "Manca una procedura di analisi della richiesta per la decisione di approvazione e manca la quantificazione dei costi/analisi budget."
+        },
+        {
+            "name": "Organizzazione Eventi e Fiere",
+            "objective": "Organizzare e gestire la partecipazione dell'azienda a eventi e fiere.",
+            "steps": [
+                "Catia riceve la richiesta di organizzazione di un evento.",
+                "Catia apre il progetto per l'evento e seleziona elementi e sottoelementi.",
+                "Questi elementi fanno partire le 'sigep' (probabilmente attivazioni automatiche o task) per tutti i gruppi che devono svolgere le attività.",
+                "Catia analizza gli elementi necessari e invia le informazioni a team dedicati.",
+                "Per eventi che si interfacciano con l'esterno, Catia gestisce direttamente tutte le attività (es. chiamare camere, prenotare, organizzare servizi, allestire).",
+                "Gestione dell'accoglienza (a volte con il supporto di Saporetti)."
+            ],
+            "notes": "Zero organizzazione, incapace di mettere i pezzi uno dopo l'altro, manca una procedura che permetta ad altri di inserirsi."
+        },
+        {
+            "name": "Gestione Richieste Marketing (Esterne)",
+            "objective": "Filtrare e reindirizzare le richieste di marketing provenienti dall'esterno al dipartimento competente.",
+            "steps": [
+                "Le richieste arrivano a Catia (via WhatsApp, via mail).",
+                "Catia richiama il richiedente per ottenere maggiori informazioni e completare la richiesta.",
+                "Catia invia la richiesta completa al Direttore Marketing e successivamente risponde al richiedente con la risposta del Direttore.",
+                "Catia agisce come filtro per capire la richiesta e reindirizzarla al dipartimento appropriato."
+            ],
+            "notes": "Catia agisce come un filtro per le richieste di marketing, richiamando i richiedenti per ottenere informazioni complete prima di inoltrare al Direttore Marketing."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Microsoft",
+            "Extranet"
+        ],
+        "communication": [
+            "Microsoft Teams",
+            "WhatsApp",
+            "Email"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "La documentazione delle procedure appare lacunosa o assente per diversi processi chiave (es. approvazione pannelli, gestione eventi esterni, richieste marketing).",
+        "storageMethods": []
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Catia è il punto focale e di filtro per diverse attività critiche (eventi esterni, richieste marketing, parte della gestione pannelli).",
+            "La mancanza di procedure documentate e la sua gestione 'artigianale' di alcuni processi (es. eventi esterni, filtro richieste marketing) significano che gran parte del know-how risiede unicamente nella sua esperienza e nelle sue interazioni dirette.",
+            "La sua assenza o uscita dall'azienda comporterebbe un blocco o una grave inefficienza in queste aree, rendendo difficile per altri subentrare senza un periodo prolungato di apprendimento e potenziali errori."
+        ]
+    },
+    "criticalities": [
+        "L'ufficio HR è un 'collo di bottiglia' nella gestione delle richieste di biglietti da visita.",
+        "Mancanza di una procedura chiara per l'analisi e l'approvazione delle richieste di pannelli.",
+        "Mancanza di un piano di controllo e quantificazione dei costi per il servizio pannelli.",
+        "Assenza di una procedura di analisi del budget per l'approvazione dei pannelli.",
+        "'Zero organizzazione' e difficoltà a gestire sequenzialmente le attività per eventi che si interfacciano con l'esterno.",
+        "Mancanza di una procedura che permetta ad altri membri del team o esterni di inserirsi e contribuire in modo strutturato nell'organizzazione eventi e fiere.",
+        "Le richieste marketing arrivano tramite canali non strutturati (WhatsApp, email), rendendo difficile la tracciabilità e la standardizzazione.",
+        "Mancanza di una procedura formale e di template per l'inserimento delle richieste marketing da parte degli utenti esterni/interni.",
+        "Dipendenza eccessiva da Catia come punto di snodo e filtro, con conseguente rischio di conoscenza tacita."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Standardizzazione Processo Richieste Marketing e Pannelli",
+            "description": "Implementare una piattaforma o un modulo specifico sull'Extranet (o un nuovo sistema di workflow management) dove gli utenti possano inserire le richieste di marketing e di pannelli utilizzando template predefiniti e campi obbligatori. Questo eliminerebbe l'uso di WhatsApp/email e garantirebbe richieste complete. La piattaforma dovrebbe includere un sistema di workflow per l'approvazione dei pannelli, con campi per la stima dei costi e l'analisi del budget."
+        },
+        {
+            "title": "Documentazione e Digitalizzazione Processi Chiave",
+            "description": "Documentare in modo dettagliato le procedure per la gestione degli eventi esterni e per la valutazione/approvazione dei pannelli. Queste procedure dovrebbero essere archiviate in una Knowledge Base aziendale (es. Confluence, SharePoint) e includere checklist, ruoli e responsabilità, e flussi decisionali. Per gli eventi, si potrebbe esplorare l'uso di un software di gestione eventi che permetta una pianificazione più strutturata e la delega di compiti."
+        },
+        {
+            "title": "Ottimizzazione Flusso Biglietti da Visita",
+            "description": "Valutare la possibilità di automatizzare il passaggio della richiesta da Extranet direttamente al reparto competente (o a Catia) senza il passaggio intermedio di HR, oppure implementare un sistema di gestione richieste più efficiente per HR."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.1,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.5,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.3,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.2,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.2,
+        "frammentazione_integrazioni": 0.6
+    }
+}

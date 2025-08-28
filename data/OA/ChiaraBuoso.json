@@ -1,0 +1,197 @@
+{
+    "id": "CB01",
+    "name": "Chiara Buoso",
+    "role": "Amministrazione del Personale",
+    "department": "Operations & Administration",
+    "section": "Amministrazione del Personale",
+    "coreActivities": [
+        "Gestione e verifica delle richieste di ferie, straordinari, permessi, banca ore e assenze per malattia.",
+        "Elaborazione, controllo e chiusura mensile delle paghe, incluse timbrature, note spese e trasferte.",
+        "Gestione dei fondi (pensione, TFR, sanitari, privati) per nuove assunzioni e cessazioni di dipendenti.",
+        "Amministrazione dei Fringe Benefits, in particolare la gestione delle auto aziendali (contratti, chilometraggio, fatture) e del welfare (Edenred).",
+        "Produzione di report e analisi KPI relativi a residui ferie/ore e costi del personale."
+    ],
+    "processes": [
+        {
+            "name": "Gestione Richieste di Ferie/Straordinari/Permessi/Banca Ore",
+            "objective": "Gestire e validare le richieste di assenza/presenza straordinaria dei dipendenti.",
+            "steps": [
+                "Il dipendente effettua la richiesta tramite il portale \"Startweb\".",
+                "Il responsabile approva la richiesta su \"Startweb\".",
+                "Chiara Buoso visualizza la richiesta approvata su \"Time&Work\".",
+                "Verifica che i residui (ferie, permessi, banca ore) siano positivi e non vadano in negativo. Per gli straordinari, verifica che il dipendente sia autorizzato a farli.",
+                "Se le verifiche sono positive, Chiara Buoso conferma l'operazione. Se ci sono problemi (es. residui insufficienti), invia un'email al responsabile per segnalare la criticità."
+            ],
+            "notes": "Le procedure non sono scritte né documentate; il lavoro è stato insegnato a voce."
+        },
+        {
+            "name": "Gestione Malattia",
+            "objective": "Registrare e gestire le assenze per malattia dei dipendenti.",
+            "steps": [
+                "Ricezione di un'email contenente il numero di certificato e i giorni di malattia.",
+                "Accesso al sito INPS per scaricare il certificato medico del dipendente.",
+                "Segnare la malattia sul gestionale \"Time&Work\".",
+                "Il certificato scaricato viene salvato nello spazio dedicato all'interno del server locale."
+            ],
+            "notes": "Le procedure non sono scritte né documentate; il lavoro è stato insegnato a voce."
+        },
+        {
+            "name": "Gestione Congedi (Parentale, Maternità, L.104, ecc.)",
+            "objective": "Gestire le richieste di congedo speciale dei dipendenti secondo le normative vigenti.",
+            "steps": [
+                "Il dipendente invia un'email con i documenti e la domanda presentata all'INPS.",
+                "Per congedi specifici (L.104, congedo straordinario, congedo facoltativo), si attende una PEC di conferma dall'ufficio legale, che a sua volta riceve l'email dall'INPS. Per il congedo parentale, questa attesa non è necessaria.",
+                "Chiara Buoso invia all'ufficio paghe (Assoservizi) l'email con la richiesta del dipendente e, se applicabile, la PEC di conferma dell'ufficio legale.",
+                "Si attiva la procedura per la sostituzione della figura assente."
+            ],
+            "notes": "Le procedure non sono scritte né documentate; il lavoro è stato insegnato a voce."
+        },
+        {
+            "name": "Gestione Paghe Mensile",
+            "objective": "Elaborare e controllare i dati necessari per la generazione dei cedolini paga mensili e autorizzare i pagamenti.",
+            "steps": [
+                "Controllo delle anomalie su \"Time&Work\" (timbrature sbagliate/senza giustificativi) giornaliero.",
+                "Se anomalia, contatta il dipendente via email per inserire giustificativo su \"Startweb\". Se è un errore, lo risolve direttamente.",
+                "Accede a \"TeamSystem-HR\" per estrarre scontrini inseriti dai commerciali in trasferta. Verifica che le spese siano state fatte senza carta aziendale per aumentare i buoni pasto. Estrae anche le giornate di trasferta superiori a 12 ore a fine mese.",
+                "Effettua la chiusura del mese precedente su \"Time&Work\" a inizio mese.",
+                "Invia all'ufficio paghe (Assoservizi): buoni pasto, cartellini (ore giornaliere), \"Modulo Paghe\" (foglio Excel con appunti per la referente), richieste extra (es. trattenute per acquisti/multe), giornate di trasferta e buoni estratti.",
+                "Invio dei flussi relativi al welfare (Edenred).",
+                "La referente dell'ufficio paghe verifica i dati e Chiara Buoso chiarisce eventuali dubbi.",
+                "Riceve i cedolini provvisori e li controlla uno a uno per errori o omissioni.",
+                "Se ci sono errori, li comunica via email all'ufficio paghe che provvede alle correzioni fino al 100%.",
+                "Una volta che i cedolini sono corretti al 100%, Chiara Buoso invia la somma totale alla tesoreria.",
+                "La tesoreria comunica da quale banca devono partire i pagamenti e il giorno.",
+                "Insieme alla conferma, invia anche le informazioni ricevute dalla tesoreria.",
+                "I cedolini e le stampe del mese vengono caricati su \"Zucchetti Paghe\".",
+                "Chiara Buoso scarica tutti i documenti da \"Zucchetti Paghe\" e li salva nel server locale."
+            ],
+            "notes": "Esiste una procedura \"macro\" scritta su Extranet, ma manca quella per la chiusura del mese su Time&Work e altri 4 gestionali, che Chiara Buoso si è scritta nei suoi appunti personali. Utilizzo di un foglio Excel personale (\"Modulo Paghe\") per annotare richieste extra e appunti per la referente dell'ufficio paghe."
+        },
+        {
+            "name": "Gestione Fondi (Pensione, TFR, Sanitari, Privati)",
+            "objective": "Gestire l'adesione e la cessazione dei dipendenti ai fondi aziendali e privati.",
+            "steps": [
+                "Il dipendente compila il modulo di adesione al fondo (Nuova Assunzione - Fondi Aziendali).",
+                "Chiara Buoso inserisce i dati a sistema (Nuova Assunzione - Fondi Aziendali).",
+                "Invia i dati all'ufficio paghe (Nuova Assunzione - Fondi Aziendali).",
+                "Chiara Buoso accede al portale e inserisce la cessazione (Cessazione Dipendente).",
+                "Comunica la cessazione all'ufficio paghe (Cessazione Dipendente).",
+                "L'ufficio paghe invia un report mensile (Fondi Privati/Fonchin - Gestione Mensile).",
+                "Chiara Buoso accede a ogni portale dei fondi (Fondi Privati/Fonchin - Gestione Mensile).",
+                "Crea la distinta del bonifico (Fondi Privati/Fonchin - Gestione Mensile).",
+                "Ottiene tutte le distinte e le invia alla tesoreria (Fondi Privati/Fonchin - Gestione Mensile).",
+                "La tesoreria esegue il pagamento (Fondi Privati/Fonchin - Gestione Mensile)."
+            ],
+            "notes": "Le procedure per la gestione dei fondi (sia aziendali che privati, per assunzione e cessazione) sono scritte e documentate."
+        },
+        {
+            "name": "Gestione Fringe Benefits (Auto Aziendali)",
+            "objective": "Amministrare i contratti delle auto aziendali e i relativi costi (carburante, telepass).",
+            "steps": [
+                "Gestione dei contratti per ogni auto e dei macro-contratti con le agenzie di noleggio.",
+                "Verifica che la soglia del contratto non venga superata.",
+                "Valutazione delle azioni da intraprendere quando un contratto auto cessa.",
+                "Quando viene data un'auto, si assegnano anche Telepass e carta carburante.",
+                "L'amministrazione invia le fatture Telepass e carta carburante a fine mese. Chiara Buoso controlla che le spese siano state fatte durante il periodo lavorativo e non in ferie."
+            ],
+            "notes": "La procedura è mancante, ad eccezione dell'iter iniziale per un nuovo dipendente (assegnazione auto, carta carburante, Telepass), che però necessita di aggiornamento per le auto ibride."
+        },
+        {
+            "name": "Gestione Fringe Benefits (Welfare - Edenred)",
+            "objective": "Monitorare l'utilizzo del welfare aziendale tramite Edenred per evitare tassazioni aggiuntive.",
+            "steps": [
+                "Controlla che i dipendenti non superino una soglia di spesa (x mila euro) per evitare la tassazione sul fringe benefit mensilmente."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Analisi KPI e Reportistica",
+            "objective": "Generare report sui residui e sui costi del personale per la direzione.",
+            "steps": [
+                "Estrae i residui di ferie/permessi/banca ore da \"Startweb\".",
+                "Inserisce i dati estratti in Excel e genera i report.",
+                "Riceve i consuntivi dall'ufficio paghe.",
+                "Estrae le informazioni dai consuntivi per generare report sui costi in base alle richieste del direttore."
+            ],
+            "notes": ""
+        }
+    ],
+    "tools": {
+        "software": [
+            "Startweb",
+            "Time&Work",
+            "Sito INPS",
+            "TeamSystem-HR",
+            "Zucchetti Paghe",
+            "Portali dei fondi",
+            "Edenred",
+            "Excel"
+        ],
+        "communication": [
+            "Email",
+            "PEC"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Le procedure per le richieste di ferie/straordinari/malattia/congedi non sono scritte né documentate; il lavoro è stato insegnato a voce. Per la gestione paghe, esiste una procedura \"macro\" scritta su Extranet, ma manca quella per la chiusura del mese su Time&Work e altri 4 gestionali, che Chiara Buoso si è scritta nei suoi appunti personali. Le procedure per la gestione dei fondi (sia aziendali che privati, per assunzione e cessazione) sono scritte e documentate. Per la gestione Fringe Benefits (auto aziendali), la procedura è mancante, ad eccezione dell'iter iniziale per un nuovo dipendente (assegnazione auto, carta carburante, Telepass), che però necessita di aggiornamento per le auto ibride.",
+        "storageMethods": [
+            "Server locale",
+            "Extranet",
+            "Appunti personali"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Gran parte delle attività si basano su conoscenze tacite e procedure non documentate.",
+            "Dipendenza da un foglio Excel personale (\"Modulo Paghe\") per la comunicazione con l'ufficio paghe.",
+            "Assenza di procedure scritte per processi critici come la chiusura mensile, le verifiche sui residui o il controllo delle fatture auto.",
+            "In caso di assenza prolungata o uscita di Chiara Buoso, l'azienda perderebbe un know-how fondamentale, con potenziale blocco o rallentamento significativo delle operazioni di amministrazione del personale e delle paghe."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Documentazione Standardizzata: Molte procedure chiave non sono documentate o sono documentate solo parzialmente/obsolete (es. richieste ferie/malattia, chiusura paghe, gestione auto aziendali).",
+        "Dipendenza da Conoscenza Tacita: Forte dipendenza dalla conoscenza e dagli appunti personali di Chiara Buoso per processi critici.",
+        "Processi Manuali e Controlli Ripetitivi: Alcuni controlli (es. residui ferie, verifica spese auto) sembrano essere manuali e potenzialmente ripetitivi.",
+        "Comunicazione via Email per Anomalie: La gestione delle anomalie di timbratura avviene tramite email ai dipendenti, il che può generare ritardi e dispersione delle informazioni.",
+        "Aggiornamento Procedure: La procedura documentata per l'iter di assegnazione auto a nuovi dipendenti è obsoleta e non considera le auto ibride.",
+        "Potenziale per Automazione: Molti passaggi che richiedono verifica e inserimento dati tra diversi sistemi potrebbero essere automatizzati."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Digitalizzazione e Documentazione Centralizzata delle Procedure",
+            "description": "Creare e documentare tutte le procedure operative standard (SOP) in un sistema centralizzato (es. Confluence, SharePoint, un wiki aziendale). Dare priorità alle procedure critiche attualmente non documentate (gestione richieste assenze, chiusura paghe, controllo fatture auto). Obiettivo: Ridurre il rischio di conoscenza tacita, facilitare l'onboarding di nuove risorse, garantire la business continuity e standardizzare le operazioni."
+        },
+        {
+            "title": "Automazione dei Controlli e delle Comunicazioni",
+            "description": "Valutare l'implementazione di funzionalità automatizzate nei gestionali esistenti o l'integrazione tra essi per: Automatizzare il controllo dei residui per richieste di ferie/permessi/straordinari, bloccando richieste non idonee a monte o generando notifiche automatiche al responsabile. Automatizzare le notifiche per le anomalie di timbratura, magari tramite un portale dipendenti con workflow di giustificazione integrato, riducendo l'uso delle email. Sviluppare script o integrazioni per il controllo automatico delle spese auto/Telepass in base al periodo lavorativo. Obiettivo: Ridurre il carico di lavoro manuale, minimizzare gli errori, velocizzare i processi e migliorare la tracciabilità."
+        },
+        {
+            "title": "Ottimizzazione del \"Modulo Paghe\" e Flusso Dati",
+            "description": "Analizzare il \"Modulo Paghe\" Excel di Chiara Buoso e integrarne le funzionalità direttamente in un sistema gestionale o in un workflow digitale. Questo potrebbe significare l'implementazione di campi personalizzati in Time&Work o TeamSystem-HR, o la creazione di un form digitale che generi un file strutturato per l'ufficio paghe. Obiettivo: Eliminare la dipendenza da file personali, standardizzare la raccolta e l'invio dei dati extra-standard all'ufficio paghe, ridurre errori di trascrizione e migliorare l'efficienza."
+        },
+        {
+            "title": "Revisione e Aggiornamento Procedure Esistenti",
+            "description": "Revisionare e aggiornare le procedure esistenti, come quella per l'assegnazione delle auto aziendali, per includere le nuove tipologie di veicoli (es. ibride) e le evoluzioni normative o aziendali. Obiettivo: Garantire che le procedure siano accurate, complete e allineate alle esigenze attuali."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 5,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.1,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.3,
+        "impatto_downstream": 0.9,
+        "maturita_strumenti": 0.6,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.8,
+        "sensibilita_dati": 0.9,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.3,
+        "livello_automazione": 0.2,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.6,
+        "frammentazione_integrazioni": 0.8
+    }
+}

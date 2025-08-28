@@ -1,0 +1,175 @@
+{
+    "id": "ET01",
+    "name": "Enrico Teodorani",
+    "role": "Formulazione colore R & S",
+    "department": "Ricerca e Sviluppo",
+    "section": "Area Colore",
+    "coreActivities": [
+        "Generazione di colori a campione su richiesta (da cliente, assistenza tecnica, extranet)",
+        "Controllo qualità e validazione di formule colore per produzione interna e materiale marketing (mazzette)",
+        "Sviluppo e validazione di color file per nuovi prodotti",
+        "Controllo qualità su campioni di produzione (colorati e basi)",
+        "Gestione e catalogazione dello stoccaggio dei rifiuti di produzione"
+    ],
+    "processes": [
+        {
+            "name": "Generazione Colori a Campione",
+            "objective": "Sviluppare una formula colore specifica basata su una richiesta (codice, RGB, immagine) e validarne la similarità.",
+            "steps": [
+                "Ricezione Richiesta (da cliente, assistenza tecnica via email, extranet)",
+                "Analisi Richiesta (estrazione RGB da codice con Google, da immagine con Paint)",
+                "Ricerca Colore Simile (da RGB nel database aziendale)",
+                "Validazione RAL (da RGB su sito esterno per certificato di similarità)",
+                "Sviluppo e Restituzione Formula"
+            ],
+            "notes": "Il processo implica l'uso di strumenti esterni e non integrati per l'estrazione e la validazione dei dati colore."
+        },
+        {
+            "name": "Controllo Qualità (Richiesta da Assistenza Tecnica)",
+            "objective": "Verificare e aggiustare formule colore su richiesta dell'assistenza tecnica.",
+            "steps": [
+                "Ricezione Richiesta (via email dall'assistenza tecnica)",
+                "Realizzazione e Prova Colore",
+                "Verifica Valore Prodotto",
+                "Decisione (approvazione o aggiustamento formula)",
+                "Restituzione Formula (via email)",
+                "Salvataggio Formula (in plico di fogli cartaceo)"
+            ],
+            "notes": "La formula corretta viene salvata in formato cartaceo, rendendo difficile la ricerca e la condivisione."
+        },
+        {
+            "name": "Controllo Qualità Produzione Materiale Marketing (Mazzette)",
+            "objective": "Validare nuove formule colore per le mazzette marketing.",
+            "steps": [
+                "Preparazione Campione (tintometro, stesura su carta)",
+                "Invio a Tipografia",
+                "Sviluppo Tipografia (restituzione campione sviluppato e standard)",
+                "Controllo Qualità (quantitativo con spettrofotometro, qualitativo visivo)",
+                "Decisione e Iterazione (approvazione con firma talloncino o richiesta correzione)",
+                "Memorizzazione Digitale (nel software R&S)",
+                "Messa sul Mercato",
+                "Tracciamento (fisico e digitale)"
+            ],
+            "notes": "Il processo prevede iterazioni manuali con la tipografia e un tracciamento sia fisico che digitale."
+        },
+        {
+            "name": "Sviluppo Nuovi Prodotti",
+            "objective": "Generare il 'color file' per un nuovo prodotto e validare la sua compatibilità con i colori esistenti.",
+            "steps": [
+                "Ricezione Prodotto (10 litri del nuovo prodotto)",
+                "Generazione Color File (tentativo di affinità con prodotti simili o generazione da zero)",
+                "Produzione Campioni (10 colori già presenti nella mazzetta)",
+                "Validazione Campioni (quantitativa con spettrofotometro, qualitativa visiva)",
+                "Decisione e Algoritmo (se positivo, avvio algoritmo software per generare mazzetta; se negativo, iterazione)"
+            ],
+            "notes": "Il processo cerca di riutilizzare color file esistenti per efficienza, ma può richiedere la generazione da zero."
+        },
+        {
+            "name": "Controllo Colorati e Basi della Produzione (Post-CQTP)",
+            "objective": "Validare campioni di produzione non approvati dal controllo qualità di laboratorio (CQTP).",
+            "steps": [
+                "Ricezione Campioni (solo dopo non validazione da CQTP)",
+                "Processo di Validazione (erogazione, stesura, controllo qualitativo e quantitativo)",
+                "Decisione e Iterazione (approvazione o comunicazione 'valori di colore' per correzione)"
+            ],
+            "notes": "Questo processo interviene solo dopo una non conformità rilevata dal CQTP."
+        },
+        {
+            "name": "Controllo Colorato della Produzione (Ordine Cliente)",
+            "objective": "Validare la formula per un ordine cliente di grandi dimensioni prima della produzione finale.",
+            "steps": [
+                "Produzione Campione (5 litri dalla produzione per ordine cliente)",
+                "Controllo Qualità (qualitativo e quantitativo)",
+                "Decisione e Iterazione (se OK, applicazione fattore moltiplicativo; se non OK, iterazione)",
+                "Restituzione Formula (alla produzione)",
+                "Produzione Finale (in botte)"
+            ],
+            "notes": "Il processo assicura la conformità del colore per ordini di grandi volumi prima della produzione su larga scala."
+        },
+        {
+            "name": "Stoccaggio Rifiuti",
+            "objective": "Catalogare e stoccare correttamente i rifiuti di produzione.",
+            "steps": [
+                "Catalogazione (distinzione tra rifiuti pericolosi e non pericolosi)",
+                "Stoccaggio (utilizzo di due cisterne con istruzioni di riempimento)",
+                "Documentazione (esistenza di documentazione per il processo)"
+            ],
+            "notes": "Questo è l'unico processo esplicitamente indicato come documentato, ma la conoscenza è anche condivisa oralmente."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Google",
+            "Paint",
+            "Sito web esterno (per conversione RGB-RAL)",
+            "Software R&S (generico per memorizzazione mazzette e algoritmo)"
+        ],
+        "communication": [
+            "Email",
+            "Extranet"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "La maggior parte delle procedure chiave è mancante, non aggiornata o di difficile reperimento. Solo lo stoccaggio rifiuti è documentato.",
+        "storageMethods": [
+            "Plico di fogli (cartaceo per formule corrette)",
+            "Software R&S (digitale per mazzette completate)",
+            "Server/PC locale (implicito per file di lavoro)",
+            "Conoscenza orale (tra Enrico e Stefano per stoccaggio rifiuti)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "La maggior parte dei processi critici e complessi non è documentata o la documentazione è obsoleta.",
+            "La conoscenza di validazioni, aggiustamenti formule e uso di strumenti risiede prevalentemente nell'esperienza di Enrico.",
+            "La perdita di questa competenza bloccherebbe la produzione di lotti colorati e la validazione di prodotti non conformi.",
+            "La conoscenza critica per lo stoccaggio rifiuti è condivisa oralmente, nonostante il processo sia documentato."
+        ]
+    },
+    "criticalities": [
+        "Mancanza o obsolescenza della documentazione per i processi chiave, rendendo il know-how dipendente da singole persone.",
+        "Processo di salvataggio formule cartaceo ('plico di fogli') che ostacola ricerca, condivisione e aggiornamento.",
+        "Mancanza di strumenti integrati per la 'Generazione Colori a Campione', che richiede l'uso frammentato di Google, Paint e un sito esterno.",
+        "Desiderio di automazione per l'estrazione di dati colore da immagini (immagine-spettrofotometro).",
+        "Dipendenza dalla trasmissione orale per conoscenze critiche.",
+        "Iterazioni manuali nei processi di controllo qualità (mazzette, produzione) che potrebbero essere ottimizzate."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Digitalizzazione e Centralizzazione delle Formule Colore",
+            "description": "Implementare un sistema centralizzato (es. SharePoint, database dedicato) per la gestione di tutte le formule colore, includendo codice, colore, correzioni, e distinguendo tra parte 'gold' e 'standard', con aggiornamenti giornalieri e accessibilità per tutti i clienti interni."
+        },
+        {
+            "title": "Sviluppo di un Modulo di Analisi Immagine Integrato",
+            "description": "Sviluppare o integrare un modulo software che permetta di caricare un'immagine e di estrarre automaticamente i valori RGB, convertendoli in un formato compatibile con l'input dello spettrofotometro o direttamente con il database colori aziendale, eliminando l'uso di Paint e siti esterni."
+        },
+        {
+            "title": "Documentazione Completa e Aggiornata dei Processi",
+            "description": "Avviare un progetto di documentazione per tutti i processi chiave gestiti da Enrico, utilizzando una piattaforma centralizzata (es. Confluence, Wiki aziendale su SharePoint) per descrivere dettagliatamente fasi, input, output, strumenti e punti decisionali, includendo anche la conoscenza 'orale' critica."
+        },
+        {
+            "title": "Ottimizzazione del Workflow di Controllo Qualità (Mazzette/Produzione)",
+            "description": "Valutare l'implementazione di un sistema di workflow digitale (es. software gestionale o piattaforma low-code/no-code) per tracciare le richieste di controllo qualità, le iterazioni con fornitori o reparti interni, e le approvazioni, includendo notifiche automatiche e gestione delle versioni delle formule."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.4,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.3,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.3,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.4,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.7,
+        "frammentazione_integrazioni": 0.8
+    }
+}

@@ -1,0 +1,220 @@
+{
+    "id": "AS01",
+    "name": "Andrea Saporetti",
+    "role": "Operatività",
+    "department": "Academy",
+    "section": "Academy",
+    "coreActivities": [
+        "Organizzazione e pianificazione di eventi formativi per la catena di vendita (venditori, clienti distributori, rivenditori, clienti del cliente).",
+        "Gestione della campagna di generazione partecipanti ai corsi (newsletter, social, funnel).",
+        "Coordinamento e gestione dei formatori (interni ed esterni).",
+        "Produzione e gestione di contenuti formativi (es. video applicativi).",
+        "Supporto alle attività staff dell'Academy non direttamente formative (produzione pannelli, allestimenti, campionari, assistenza cantiere)."
+    ],
+    "processes": [
+        {
+            "name": "Organizzazione e Pianificazione Corsi Formativi",
+            "objective": "Formare venditori e rivenditori per migliorare le vendite e comunicare la strategia aziendale/nuovi prodotti.",
+            "steps": [
+                "Ideazione: L'Academy riceve input dalla strategia aziendale (es. lancio nuovo prodotto da Marketing) o richieste 'dal basso' (agenti/area manager/commerciali per esigenze specifiche del cliente).",
+                "Valutazione e Modifica Piano: Processo per analizzare richieste dell'ultimo minuto, rivalutare priorità, decidere cosa aggiungere/rimuovere dal piano formativo pre-esistente, considerando budget e disponibilità formatori.",
+                "Pianificazione: Schedulazione delle richieste, integrazione nell'organizzazione generale, allocazione di budget di tempo e denaro.",
+                "Preparazione: Definizione della modalità di erogazione (webinar/presenza), preparazione materiali (slides, documenti via Wetransfer/email), abbigliamento, marketing, prenotazione spazi, preparazione visite aziendali.",
+                "Esecuzione: Erogazione del corso (vedi Processo 4).",
+                "Monitoraggio: (Non dettagliato nella trascrizione)."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Generazione dei Partecipanti - Campagna",
+            "objective": "Attrarre e iscrivere partecipanti ai corsi formativi.",
+            "steps": [
+                "Valutazione Corsi: Processo per identificare quali corsi meritano di essere pubblicizzati.",
+                "Generazione Campagna: Creazione di newsletter (tramite Mailchimp, gestito da Kreat) e potenziale utilizzo dei social media (Oikos Academy).",
+                "Lead Generation/Comunicazione: Campagne per creare leads + funnel (Kreat) o comunicazione diretta ai distributori."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Generazione e Gestione Contenuti Video",
+            "objective": "Creare e distribuire video applicativi e informativi sui prodotti.",
+            "steps": [
+                "Pianificazione: Organizzazione del piano video per i nuovi prodotti.",
+                "Generazione Video: Produzione dei video (es. su come applicare vernice, benefit del prodotto, valore prodotto, info tecniche/applicative).",
+                "Storage: Archiviazione dei video.",
+                "Trasmissione: Caricamento su canale YouTube (in modalità privata)."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Esecuzione dei Corsi Formativi",
+            "objective": "Eragore la formazione ai partecipanti.",
+            "steps": [
+                "Modalità Presenza (Italia/Estero): Sede: In azienda/showroom, punto vendita locale, altri luoghi (es. ordini architetti, fiera). Raccolta Dati: Raccolta documenti privacy per alimentazione database. Utilizzo di nuovo form Google Moduli (con QR code) da integrare su Gaia CMV / CRM interno (attualmente non automatizzato).",
+                "Modalità Webinar Live: Piattaforma: Microsoft Teams (sia per Italia che per International).",
+                "Post-Corso: Comunicazione Social: Per attività più qualificate (non per tutte, per non intasare il piano editoriale OIKOS; potenziale canale Academy dedicato). Follow-up: Invio di 'thank you DEM' con riferimenti al sito OIKOS (schede tecniche/info), raccolta questionario di valutazione (Google Moduli), suggerimento iscrizione newsletter."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Gestione dei Formatori",
+            "objective": "Assicurare la disponibilità e la preparazione dei formatori (agenti esterni e dipendenti).",
+            "steps": [
+                "Gestione Contratto/Assunzione: (Non dettagliato).",
+                "Formazione Formatori: (Non dettagliato).",
+                "Gestione Calendario: Mantenimento di un file Excel quadrimestrale con il calendario dei tecnici dell'Academy.",
+                "Reminder: Invio di reminder ai tecnici."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Gestione Magazzino Prodotti per Formazione",
+            "objective": "Assicurare la disponibilità dei prodotti necessari per le attività formative.",
+            "steps": [
+                "Gestione Manuale: Il magazzino tecnici era manuale e senza codici processo.",
+                "Codifica Prodotti: Dall'anno scorso hanno iniziato ad associare codici per l'individuazione con scanner.",
+                "Operazioni di Magazzino: Le operazioni non sono registrate a causa della mancanza di 'pistole' per la scannerizzazione."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Produzione Pannelli per Area Commerciale e Tailor Made",
+            "objective": "Fornire pannelli e campionature su misura.",
+            "steps": [
+                "Richiesta: Gestione tramite flusso Extranet dedicato.",
+                "Evasione: Ordine prodotti ed evasione automatizzata dal flusso.",
+                "Tempistiche: Evase su base quotidiana."
+            ],
+            "notes": "Ogni richiesta viene evasa senza una valutazione costo/opportunità."
+        },
+        {
+            "name": "Preparazione Allestimenti per Clientela",
+            "objective": "Preparare allestimenti personalizzati per i clienti.",
+            "steps": [
+                "Richiesta: Gestione tramite flusso Extranet (meno strutturato).",
+                "Valutazione: Valutazione da parte dell'Area Marketing (da verificare se solo formale o anche costo/opportunità) prima dell'inserimento della richiesta esecutiva.",
+                "Evasione: Ordine prodotti ed evasione non automatizzata dal flusso.",
+                "Tempistiche: Medio periodo."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Preparazione Strumenti di Marketing (Campionari Prodotti)",
+            "objective": "Produrre campionari prodotti.",
+            "steps": [
+                "Gestione Produzione: Personale interno Area Marketing (Togni) e Area GOA (Giunchi). Gran parte gestita esternamente (San Patrignano).",
+                "Supporto Esterno: I tecnici Academy assicurano formazione e assistenza alle maestranze esterne, oltre al controllo qualità in accettazione dei fogli semilavorati.",
+                "Produzione Interna: Produzione diretta solo di fogli non conformi o piccole quantità urgenti.",
+                "Evasione: Ordine prodotti ed evasione non automatizzata dal flusso.",
+                "Tempistiche: Medio periodo."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Assistenza Cantiere",
+            "objective": "Supportare applicatori/imprese nell'utilizzo ottimale dei prodotti con training on the job.",
+            "steps": [
+                "Pianificazione: Attività da pianificare nell'agenda dei tecnici.",
+                "Esecuzione: Supporto fornito dove è presente un tecnico Academy."
+            ],
+            "notes": "Non realizzabile per tempistiche e costi dove non è presente un tecnico aziendale dipendente (necessaria approvazione acquisto, tempi non compatibili)."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Excel",
+            "Word",
+            "PowerPoint",
+            "Canva",
+            "Extranet",
+            "Microsoft Teams",
+            "Mailchimp",
+            "Startweb",
+            "Cedolino",
+            "ClickUp",
+            "Google Moduli",
+            "Google Sheet",
+            "NotaSpese (TeamSystem)",
+            "Gaia CMV / CRM interno"
+        ],
+        "communication": [
+            "Email",
+            "Microsoft Teams",
+            "WhatsApp",
+            "Sito Oikos",
+            "App 1984",
+            "App 984",
+            "Canale YouTube"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Le procedure sono parzialmente documentate attraverso l'uso di Extranet per alcuni flussi. Il piano dei corsi e la gestione dei formatori utilizzano file Excel. La raccolta dati per le presenze è in transizione verso Google Moduli con integrazione futura in Gaia CMV/CRM, ma al momento è 'non automatizzata'. La documentazione specifica dei processi operativi non è esplicitamente menzionata come formalizzata o centralizzata.",
+        "storageMethods": [
+            "Files Excel (PC locale o server condiviso, non specificato)",
+            "Cartella Academy (probabilmente su server aziendale, non specificato)",
+            "Google Sheet (cloud)",
+            "Canale YouTube (cloud, privato)",
+            "Wetransfer/Email (transitorio per documenti)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Medio-Alto",
+        "reasons": [
+            "Molte attività operative, pur supportate da strumenti, potrebbero dipendere fortemente dalla conoscenza tacita di Andrea Saporetti e del suo team.",
+            "Il processo di valutazione e modifica del piano corsi sembra richiedere un'expertise specifica e decisioni basate sull'esperienza.",
+            "La gestione del magazzino tecnici, sebbene in fase di codifica, non ha ancora processi completamente registrati o automatizzati, rendendo la conoscenza delle operazioni quotidiane dipendente dal personale.",
+            "L'integrazione del nuovo form Google Moduli con Gaia CMV/CRM è ancora 'non automatizzata', indicando che il processo di raccolta e inserimento dati richiede ancora un intervento manuale e conoscenza specifica.",
+            "L'organizzazione dei corsi internazionali è delegata ai Regional Manager, ma l'Academy gestisce le richieste in azienda e i webinar di aggiornamento, implicando una conoscenza specifica delle esigenze e delle modalità di gestione per questi casi."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di automazione nella raccolta dati presenze: La raccolta documenti privacy e l'utilizzo del form Google Moduli non sono ancora integrati automaticamente con Gaia CMV / CRM interno, richiedendo passaggi manuali.",
+        "Mancanza di strumenti per la scannerizzazione del magazzino: Il magazzino tecnici ha iniziato a codificare i prodotti, ma l'assenza di scanner impedisce la registrazione automatizzata delle operazioni, mantenendo il processo manuale e soggetto a errori/inefficienze.",
+        "Limitazioni nella comunicazione social dell'Academy: Non è opportuno pubblicare ogni demo o attività formativa sul canale social principale di OIKOS per non intasare il piano editoriale; la creazione di un canale dedicato all'Academy è solo un'idea.",
+        "Criticità nell'assistenza cantiere: L'attività non è realizzabile per tempistiche e costi dove non è presente un tecnico aziendale dipendente, richiedendo approvazioni e con tempi non compatibili con le esigenze del cantiere.",
+        "Mancanza di valutazione costo/opportunità per produzione pannelli: Ogni richiesta di pannelli viene evasa automaticamente tramite Extranet senza una valutazione preventiva, potenzialmente portando a sprechi o inefficienze.",
+        "Video YouTube non tradotti/sottolineati: Sarebbe utile avere i video applicativi tradotti e sottotitolati per una maggiore fruibilità internazionale.",
+        "Processo di preparazione allestimenti meno strutturato: Sebbene tramite Extranet, è descritto come 'meno strutturato' rispetto ad altri flussi."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Automazione Integrazione Dati Presenze",
+            "description": "Sviluppare l'integrazione automatica tra Google Moduli (o una piattaforma equivalente) e Gaia CMV/CRM per la raccolta dei dati di presenza e privacy. Questo eliminerebbe i passaggi manuali, ridurrebbe gli errori e velocizzerebbe l'alimentazione del database."
+        },
+        {
+            "title": "Digitalizzazione Completa del Magazzino Tecnici",
+            "description": "Acquistare e implementare pistole scanner per il magazzino tecnici entro il 2025 (come richiesto). Questo permetterebbe la registrazione automatizzata delle operazioni di magazzino, migliorando la tracciabilità, l'inventario e l'efficienza complessiva."
+        },
+        {
+            "title": "Creazione Canale Social Dedicato all'Academy",
+            "description": "Valutare e implementare un canale social media specifico per le attività dell'Oikos Academy. Questo permetterebbe di pubblicizzare tutte le attività formative qualificate senza intasare il canale principale di OIKOS, migliorando la visibilità e l'engagement con il pubblico specifico."
+        },
+        {
+            "title": "Standardizzazione e Digitalizzazione del Processo di Modifica Piano Corsi",
+            "description": "Utilizzare ClickUp (già in uso per gestione processi) o un altro strumento di project/workflow management per formalizzare e tracciare il processo di analisi delle richieste dell'ultimo minuto, rivalutazione delle priorità e modifica del piano corsi, includendo la gestione del budget e delle disponibilità formatori. Questo ridurrebbe la dipendenza dalla conoscenza tacita e migliorerebbe la trasparenza."
+        },
+        {
+            "title": "Implementazione di Traduzioni/Sottotitoli per Video Formativi",
+            "description": "Integrare un processo per la traduzione e sottotitolazione dei video applicativi e formativi caricati su YouTube, per renderli accessibili a un pubblico internazionale e migliorare l'esperienza utente."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.4,
+        "livello_formalizzazione": 0.4,
+        "indice_insostituibilita": 0.7,
+        "tasso_cambiamento": 0.6,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.6,
+        "facilita_passaggio_consegne": 0.5,
+        "impatto_cliente": 0.8,
+        "sensibilita_dati": 0.6,
+        "punti_singoli_fallimento": 0.7,
+        "segnale_rilavorazione": 0.5,
+        "tracciabilita_errori": 0.6,
+        "livello_automazione": 0.4,
+        "tempo_ripristino": 0.6,
+        "qualita_controlli": 0.5,
+        "frammentazione_integrazioni": 0.7
+    }
+}

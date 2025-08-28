@@ -1,0 +1,341 @@
+[
+    {
+        "id": "SB01",
+        "file_path": "data/CMV/StefanoBoschi.json",
+        "name": "Stefano Boschi",
+        "role": "Responsabile del Customer Care",
+        "area": "CMV",
+        "sub_area": "Management e Coordinamento Strategico",
+        "keywords": [
+            "customer care",
+            "crm",
+            "coordinamento",
+            "dipartimenti",
+            "efficienza"
+        ]
+    },
+    {
+        "id": "SS01",
+        "file_path": "data/CMV/SebastianoScarcelli.json",
+        "name": "Sebastiano Scarcelli",
+        "role": "Responsabile Marketing Operativo",
+        "area": "CMV",
+        "sub_area": "Management e Coordinamento Strategico",
+        "keywords": [
+            "marketing operativo",
+            "commerciale",
+            "vendite",
+            "rda",
+            "richieste di acquisto",
+            "linee guida"
+        ]
+    },
+    {
+        "id": "AT01",
+        "file_path": "data/CMV/AlessandroTogni.json",
+        "name": "Alessandro Togni",
+        "role": "Gestione del Materiale Marketing",
+        "area": "CMV",
+        "sub_area": "Marketing Operativo, Digitale ed Eventi",
+        "keywords": [
+            "materiale marketing",
+            "articoli promozionali",
+            "fabbisogno",
+            "budget",
+            "codici articolo"
+        ]
+    },
+    {
+        "id": "AL01",
+        "file_path": "data/CMV/AntonioLeucci.json",
+        "name": "Antonio Leucci",
+        "role": "Trade Marketing",
+        "area": "CMV",
+        "sub_area": "Marketing Operativo, Digitale ed Eventi",
+        "keywords": [
+            "trade marketing",
+            "sell-out",
+            "punti vendita",
+            "brand",
+            "allestimenti",
+            "eventi"
+        ]
+    },
+    {
+        "id": "KT01",
+        "file_path": "data/CMV/KatiaTozzi.json",
+        "name": "Katia Tozzi",
+        "role": "Assistente Direzione Marketing e Responsabile Fiere",
+        "area": "CMV",
+        "sub_area": "Marketing Operativo, Digitale ed Eventi",
+        "keywords": [
+            "assistente marketing",
+            "fiere",
+            "eventi",
+            "pannelli",
+            "richieste marketing"
+        ]
+    },
+    {
+        "id": "EA01",
+        "file_path": "data/CMV/ElenaAndreoli.json",
+        "name": "Elena Andreoli",
+        "role": "Web Content Manager / Digital Specialist",
+        "area": "CMV",
+        "sub_area": "Marketing Operativo, Digitale ed Eventi",
+        "keywords": [
+            "web content",
+            "digital specialist",
+            "sito web",
+            "newsletter",
+            "seo"
+        ]
+    },
+    {
+        "id": "WM01",
+        "file_path": "data/CMV/WilliamManzelli.json",
+        "name": "William Manzelli",
+        "role": "Grafica",
+        "area": "CMV",
+        "sub_area": "Marketing Operativo, Digitale ed Eventi",
+        "keywords": [
+            "grafica",
+            "richieste grafiche",
+            "design",
+            "visual"
+        ]
+    },
+    {
+        "id": "LS01",
+        "file_path": "data/CMV/LucaSavoia.json",
+        "name": "Luca Savoia",
+        "role": "Backoffice Supporto Commerciale Italia",
+        "area": "CMV",
+        "sub_area": "Commerciale e Gestione Ordini",
+        "keywords": [
+            "backoffice",
+            "commerciale italia",
+            "accordi commerciali",
+            "recupero crediti",
+            "scadenziario"
+        ]
+    },
+    {
+        "id": "MG01",
+        "file_path": "data/CMV/MonicaGiusti.json",
+        "name": "Monica Giusti",
+        "role": "Operatore Ufficio Ordini Italia",
+        "area": "CMV",
+        "sub_area": "Commerciale e Gestione Ordini",
+        "keywords": [
+            "ordini italia",
+            "e-commerce",
+            "magazzino",
+            "urgenze"
+        ]
+    },
+    {
+        "id": "BG01",
+        "file_path": "data/CMV/BiancaGalbucci.json",
+        "name": "Bianca Galbucci",
+        "role": "Customer Service e Back Office Ordini",
+        "area": "CMV",
+        "sub_area": "Commerciale e Gestione Ordini",
+        "keywords": [
+            "gestione ordini",
+            "non conformità",
+            "fatturazione",
+            "anagrafica clienti"
+        ]
+    },
+    {
+        "id": "GC01",
+        "file_path": "data/CMV/GiadaCampisi.json",
+        "name": "Giada Campisi",
+        "role": "Assistente Commerciale Estero (extra UE)",
+        "area": "CMV",
+        "sub_area": "Commerciale e Gestione Ordini",
+        "keywords": [
+            "commerciale estero",
+            "ordini internazionali",
+            "extra ue",
+            "recupero crediti"
+        ]
+    },
+    {
+        "id": "SC01",
+        "file_path": "data/CMV/SoniaCruz.json",
+        "name": "Sonia Cruz",
+        "role": "Assistente Commerciale Estero (UE e Russia)",
+        "area": "CMV",
+        "sub_area": "Commerciale e Gestione Ordini",
+        "keywords": [
+            "commerciale estero",
+            "ordini ue",
+            "russia"
+        ]
+    },
+    {
+        "id": "OL01",
+        "file_path": "data/CMV/OlgaLatysh.json",
+        "name": "Olga Latysh",
+        "role": "Gestione Ordini e Assistenza Tecnica",
+        "area": "CMV",
+        "sub_area": "Commerciale e Gestione Ordini",
+        "keywords": [
+            "ordini ex-sovietica",
+            "assistenza tecnica",
+            "certificazioni"
+        ]
+    },
+    {
+        "id": "GO01",
+        "file_path": "data/CMV/GianmarcoOcchialini.json",
+        "name": "Gianmarco Occhialini",
+        "role": "Specialista Academy e Consulente Formatore",
+        "area": "CMV",
+        "sub_area": "Academy e Formazione Tecnica",
+        "keywords": [
+            "academy",
+            "formazione",
+            "analisi mercato",
+            "sviluppo venditori"
+        ]
+    },
+    {
+        "id": "AS01",
+        "file_path": "data/CMV/AndreaSaporetti.json",
+        "name": "Andrea Saporetti",
+        "role": "Operatività Academy",
+        "area": "CMV",
+        "sub_area": "Academy e Formazione Tecnica",
+        "keywords": [
+            "operatività academy",
+            "eventi formativi",
+            "campagne",
+            "coordinamento formatori"
+        ]
+    },
+    {
+        "id": "TB01",
+        "file_path": "data/CMV/ThomasBernart.json",
+        "name": "Thomas Bernart",
+        "role": "Tecnico Formatore",
+        "area": "CMV",
+        "sub_area": "Academy e Formazione Tecnica",
+        "keywords": [
+            "tecnico formatore",
+            "collaudo r&d",
+            "controllo qualità",
+            "pannellature"
+        ]
+    },
+    {
+        "id": "LM01",
+        "file_path": "data/CMV/LuigiMezzogori.json",
+        "name": "Luigi Mezzogori",
+        "role": "Consulente Tecnico di Prodotto",
+        "area": "CMV",
+        "sub_area": "Assistenza Tecnica e Supporto Specialistico",
+        "keywords": [
+            "assistenza tecnica",
+            "prodotto",
+            "schede tecniche",
+            "garanzie"
+        ]
+    },
+    {
+        "id": "OP01",
+        "file_path": "data/CMV/OmeroPizzinelli.json",
+        "name": "Omero Pizzinelli",
+        "role": "Tecnico Assistenza Macchinari",
+        "area": "CMV",
+        "sub_area": "Assistenza Tecnica e Supporto Specialistico",
+        "keywords": [
+            "assistenza macchinari",
+            "supporto telefonico",
+            "installazione software"
+        ]
+    },
+    {
+        "id": "FG01",
+        "file_path": "data/CMV/FedericaGrassi.json",
+        "name": "Federica Grassi",
+        "role": "Specialista e Referente CRM",
+        "area": "CMV",
+        "sub_area": "Assistenza Tecnica e Supporto Specialistico",
+        "keywords": [
+            "crm",
+            "specialista crm",
+            "implementazione",
+            "configurazione",
+            "formazione crm"
+        ]
+    },
+    {
+        "id": "BB01",
+        "file_path": "data/OA/BenedettaBucci.json",
+        "name": "Benedetta Bucci",
+        "role": "HR Specialist",
+        "area": "OA",
+        "sub_area": "Amministrazione del Personale",
+        "keywords": [
+            "hr",
+            "selezione",
+            "onboarding",
+            "offboarding",
+            "formazione",
+            "performance"
+        ]
+    },
+    {
+        "id": "CB01",
+        "file_path": "data/OA/ChiaraBuoso.json",
+        "name": "Chiara Buoso",
+        "role": "Amministrazione del Personale",
+        "area": "OA",
+        "sub_area": "Amministrazione del Personale",
+        "keywords": [
+            "amministrazione",
+            "personale",
+            "paghe",
+            "cedolini",
+            "ferie",
+            "straordinari",
+            "fondi"
+        ]
+    },
+    {
+        "id": "GL01",
+        "file_path": "data/OA/GabrieleLani.json",
+        "name": "Gabriele Lani",
+        "role": "Qualità Salute Sicurezza Ambiente (QHSE)",
+        "area": "OA",
+        "sub_area": "QHSE",
+        "keywords": [
+            "qhse",
+            "qualità",
+            "sicurezza",
+            "ambiente",
+            "audit",
+            "normative",
+            "certificazione"
+        ]
+    },
+    {
+        "id": "LG01",
+        "file_path": "data/OA/LucaGiorgini.json",
+        "name": "Luca Giorgini",
+        "role": "Direttore OA",
+        "area": "OA",
+        "sub_area": "Direzione OA",
+        "keywords": [
+            "direttore",
+            "qhse",
+            "sviluppo organizzativo",
+            "hr",
+            "kpi",
+            "riesame"
+        ]
+    }
+]

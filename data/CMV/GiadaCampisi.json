@@ -1,0 +1,117 @@
+{
+    "id": "GC01",
+    "name": "Giada Campisi",
+    "role": "Assistente commerciale, recupero crediti",
+    "department": "Commerciale",
+    "section": "Estero",
+    "coreActivities": [
+        "Gestione degli ordini internazionali extra UE",
+        "Supporto agli Area Manager",
+        "Controllo del fatturato rispetto al budget",
+        "Attività di Customer Care",
+        "Gestione generale degli ordini"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Ordini International Extra UE",
+            "objective": "Eseguire gli ordini commerciali destinati a paesi al di fuori dell'Unione Europea.",
+            "steps": [
+                "Preparazione Pro-Forma: Il team si è costruito delle 'cartelle pro-forma' che vengono completate.",
+                "Esecuzione Ordine: L'ordine viene eseguito basandosi sulla pro-forma."
+            ],
+            "notes": "Il team ha sviluppato delle proprie cartelle per strutturare e completare gli ordini internazionali extra UE, supplendo alla mancanza di una procedura documentata."
+        },
+        {
+            "name": "Controllo Fatturato Budget",
+            "objective": "Monitorare e rendicontare il fatturato in relazione al budget stabilito.",
+            "steps": [
+                "Estrazione Dati: Estrazione dei dati rilevanti da Power BI.",
+                "Elaborazione Dati: I dati estratti vengono inseriti e presumibilmente elaborati in un file Excel.",
+                "Invio: Il file Excel viene inviato."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Gestione Ordini in Business Central (con problematiche)",
+            "objective": "Gestire e finalizzare gli ordini all'interno del sistema Business Central, affrontando le specificità delle transazioni estere e delle modifiche commerciali.",
+            "steps": [
+                "Inserimento Ordine: L'ordine viene processato inizialmente in Business Central.",
+                "Gestione Eccezioni (Manuale): Le fatture estere sono gestite in modo diverso rispetto a quelle italiane, e Business Central non le supporta direttamente. Se un ordine è già passato in Business Central, non è possibile applicare extra sconti o aggiungere costi extra direttamente dal sistema."
+            ],
+            "notes": "Il dipendente esegue interventi manuali per superare le limitazioni di Business Central nella gestione di fatture estere, extra sconti e costi extra, permettendo la chiusura degli ordini nonostante le lacune del sistema."
+        },
+        {
+            "name": "Gestione Cambiamenti Ex Post Ordini (problematico)",
+            "objective": "Gestire le modifiche richieste su ordini già inseriti, in particolare quelli originati dall'e-commerce.",
+            "steps": [
+                "Cancellazione Ordine: L'ordine esistente deve essere cancellato dal sistema.",
+                "Rinvio e Modifica Condizioni: L'ordine deve essere 'rimandato' dalla piattaforma e-commerce, e le sue condizioni devono essere modificate.",
+                "Ritrasferimento su E-commerce: L'ordine con le nuove condizioni viene ritrasferito sulla piattaforma e-commerce."
+            ],
+            "notes": ""
+        }
+    ],
+    "tools": {
+        "software": [
+            "Power BI",
+            "Business Central",
+            "GAIA",
+            "Microsoft Excel",
+            "Piattaforma E-commerce"
+        ],
+        "communication": [
+            "Email"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Il flusso per gli 'Ordini international extra UE' è 'conosciuto da tutti' ma non esiste un documento formale che ne descriva le procedure. Si menziona la possibilità di un documento nel 'vecchio extranet', ma è considerato 'non aggiornato'.",
+        "storageMethods": [
+            "GAIA (documenti, email, contratti, minute, customer data)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Il processo critico di 'Ordini international extra UE' si basa su una conoscenza condivisa ma non documentata, rendendo la sua replicabilità e l'onboarding di nuovo personale potenzialmente problematici.",
+            "Le soluzioni 'artigianali' e le operazioni manuali per gestire le limitazioni di Business Central (fatture estere, sconti, costi extra) e la complessa gestione dei cambiamenti ex post degli ordini sono conoscenze specifiche e tacite del dipendente. La perdita di questa risorsa (Giada) comporterebbe un blocco significativo o una forte inefficienza in questi processi, specialmente per ordini complessi o di grandi dimensioni."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Documentazione Ufficiale: Il processo di 'Ordini international extra UE' è privo di una documentazione aggiornata e formale, aumentando la dipendenza dalla conoscenza tacita.",
+        "Limitazioni di Business Central: Il software gestionale non supporta adeguatamente le specificità delle fatture estere e impedisce l'applicazione di extra sconti o costi aggiuntivi una volta che l'ordine è già inserito, richiedendo interventi manuali e dispendiosi in termini di tempo.",
+        "Processo Inefficiente per Modifiche Ex Post: La gestione dei cambiamenti sugli ordini (in particolare quelli da e-commerce) è estremamente macchinosa e frustrante, richiedendo la cancellazione, la rielaborazione delle condizioni e il ritrasferimento dell'ordine, con un impatto significativo sulla produttività per ordini di grandi dimensioni."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Documentazione e Standardizzazione del Processo Ordini Internazionali.",
+            "description": "Formalizzare e documentare il processo di 'Ordini international extra UE', includendo l'utilizzo delle 'cartelle pro-forma' e dettagliando ogni fase. La documentazione dovrebbe essere centralizzata (es. su una piattaforma wiki aziendale) e regolarmente aggiornata."
+        },
+        {
+            "title": "Ottimizzazione e Personalizzazione di Business Central.",
+            "description": "Condurre un'analisi di fattibilità per personalizzare o integrare Business Central al fine di gestire automaticamente le fatture estere, gli extra sconti e i costi aggiuntivi. Questo potrebbe includere lo sviluppo di moduli ad hoc o l'implementazione di flussi di lavoro specifici per queste casistiche."
+        },
+        {
+            "title": "Riprogettazione del Flusso di Gestione Modifiche Ordini.",
+            "description": "Analizzare e riprogettare il processo di gestione dei cambiamenti ex post degli ordini, specialmente quelli provenienti dall'e-commerce, con l'obiettivo di eliminare la necessità di cancellare e ritrasferire l'ordine. Si dovrebbe esplorare la possibilità di implementare funzionalità di modifica diretta o un workflow di approvazione/modifica più snello e integrato tra i sistemi."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.7,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.5,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.8,
+        "tracciabilita_errori": 0.3,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.7,
+        "qualita_controlli": 0.4,
+        "frammentazione_integrazioni": 0.6
+    }
+}

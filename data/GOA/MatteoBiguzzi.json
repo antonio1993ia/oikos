@@ -1,0 +1,131 @@
+{
+    "id": "TB01",
+    "name": "Matteo Biguzzi",
+    "role": "Addetto alla pianificazione",
+    "department": "GOA",
+    "section": "GOA",
+    "coreActivities": [
+        "Mantenimento e aggiornamento di un file Excel proprietario per il tracciamento di andamenti, costi, gestioni e turni.",
+        "Estrazione manuale di dati dal gestionale e inserimento nel file Excel, più volte al giorno.",
+        "Pianificazione della produzione (inclusi processi specifici come Tintometro).",
+        "Gestione degli acquisti, inclusa la determinazione di quantitativi e logistica degli ordini.",
+        "Inserimento manuale di ordini nel gestionale.",
+        "Gestione previsionale."
+    ],
+    "processes": [
+        {
+            "name": "Gestione Dati e Pianificazione Generale",
+            "objective": "Consolidare dati da diverse fonti e supportare decisioni di pianificazione (produzione, costi, turni).",
+            "steps": [
+                "Estrazione Dati: Matteo estrae dati dal gestionale aziendale.",
+                "Inserimento Manuale: I dati estratti vengono inseriti manualmente da Matteo nel suo \"file Excel enorme\".",
+                "Elaborazione Dati: Nel file Excel, Matteo esegue calcoli e analisi per tracciare andamenti, costi, gestioni e turni, utilizzando logiche e funzioni da lui stesso create. Questa fase avviene più volte al giorno.",
+                "Supporto Decisionale: Le informazioni elaborate nell'Excel vengono usate per le attività di pianificazione (produzione, acquisti, previsionale)."
+            ],
+            "notes": "Il file Excel è centrale per l'elaborazione dei dati e la pianificazione, compensando le carenze del gestionale."
+        },
+        {
+            "name": "Gestione Ordini e Logistica",
+            "objective": "Determinare i quantitativi necessari e la logistica per gli ordini, e inserirli nel gestionale.",
+            "steps": [
+                "Estrazione Dati: Matteo estrae dati dal gestionale.",
+                "Elaborazione su Excel: I dati vengono inseriti nel file Excel per determinare i quantitativi e la logistica degli ordini. Questo include la gestione di prodotti che richiedono \"doppie passate\" e che il gestionale non gestisce direttamente.",
+                "Inserimento Ordini: Gli ordini determinati vengono inseriti manualmente da Matteo nel gestionale.",
+                "Gestione Eccezioni: Per \"Xxx ordini\", l'inserimento è sempre manuale a causa dell'inflessibilità del gestionale."
+            ],
+            "notes": "Il processo è fortemente dipendente dall'Excel per la gestione di logiche complesse non supportate dal gestionale."
+        },
+        {
+            "name": "Approvazione Documenti e Comunicazione Inter-Area",
+            "objective": "Ottenere approvazioni per documenti e comunicare informazioni tra le diverse aree.",
+            "steps": [
+                "Generazione Documento: Matteo genera documenti dal gestionale.",
+                "Stampa: Per la maggior parte delle aree (escluse miscelazione), i documenti vengono stampati.",
+                "Richiesta Firma: I documenti cartacei vengono fatti firmare.",
+                "Re-inserimento Manuale: Dopo la firma, i dati/documenti vengono reinseriti manualmente nel gestionale da Matteo, seguendo logiche da lui conosciute.",
+                "Comunicazione Digitale (Eccezione): Per l'area \"miscelazione\", il documento digitale arriva direttamente tramite un terminale. Per altre aree, i file sono inviati come Excel o stampati per mancanza di terminali."
+            ],
+            "notes": "Processo prevalentemente manuale e cartaceo, con eccezioni digitali limitate."
+        },
+        {
+            "name": "Gestione Tempistiche Promozioni/Approvvigionamenti",
+            "objective": "Definire i tempi minimi per l'annuncio e la gestione di promozioni e l'approvvigionamento di materiali.",
+            "steps": [
+                "Annuncio promozione grandi quantità: 2 mesi",
+                "Bisoni: 6-8 settimane",
+                "Materie prime: 2-3 settimane",
+                "Etichette: 3 settimane"
+            ],
+            "notes": "Questo processo definisce le tempistiche standard per diverse categorie di approvvigionamento e promozione."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Microsoft Excel",
+            "Gestionale Aziendale"
+        ],
+        "communication": [
+            "Documenti digitali (per miscelazione)",
+            "File Excel (inviati ad altre aree)",
+            "Documenti cartacei (per approvazioni e altre aree)"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "La maggior parte delle procedure e delle logiche operative cruciali non sono documentate e sono presenti solo nella conoscenza tacita di Matteo.",
+        "storageMethods": [
+            "Dati operativi e logiche di pianificazione sono archiviati principalmente nel \"file Excel enorme\" di Matteo.",
+            "I dati vengono estratti dal gestionale e reinseriti manualmente.",
+            "I documenti cartacei vengono stampati, firmati e poi i loro dati reinseriti manualmente nel gestionale."
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "L'azienda è estremamente dipendente da Matteo Biguzzi per la continuità delle operazioni di pianificazione e produzione.",
+            "Le logiche interne e le funzioni del \"file Excel enorme\" che permettono di gestire costi, gestioni, turni e prodotti con \"doppie passate\" non sono documentate.",
+            "La metodologia e la logica con cui Matteo trasforma i risultati del suo Excel e li inserisce manualmente nel gestionale non sono documentate.",
+            "Le logiche di esecuzione per il reinserimento manuale dei dati dai documenti cartacei nel gestionale non sono documentate.",
+            "La perdita di Matteo comporterebbe l'impossibilità di replicare processi chiave, con un impatto diretto e immediato sulla produzione e sulla capacità di gestire ordini e approvvigionamenti."
+        ]
+    },
+    "criticalities": [
+        "Gestionale Inadeguato: Il gestionale aziendale non offre le funzionalità necessarie per eseguire gli ordini e la pianificazione in modo efficiente, non è flessibile e non replica le funzioni di Excel.",
+        "Dipendenza Singola: Estrema dipendenza da una singola persona (Matteo) e dal suo know-how tacito.",
+        "Processi Manuali Intensi: Estrazione e inserimento manuale di dati, inserimento manuale di ordini, processo di approvazione basato su stampa cartacea e reinserimento manuale.",
+        "Mancanza di Automazione/Integrazione: Il file Excel non permette automazione e registrazione diretta con il gestionale; mancanza di terminali in diverse aree.",
+        "Inefficienza nella Gestione Prodotti Speciali: Il gestionale non gestisce prodotti con \"doppie passate\" se non con \"tripli passaggi\", rendendo necessario il workaround di Excel."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Analisi e Reingegnerizzazione del Gestionale/Integrazione Dati",
+            "description": "Effettuare un'analisi approfondita delle logiche e delle funzionalità implementate da Matteo nel suo file Excel. Valutare la possibilità di implementare queste logiche direttamente nel gestionale esistente o, se non fattibile, considerare l'integrazione di un modulo aggiuntivo o di una soluzione software più flessibile (es. un MES - Manufacturing Execution System) che possa automatizzare le attività di pianificazione, gestione ordini e tracciamento costi/turni. L'obiettivo è eliminare l'inserimento manuale e la dipendenza dall'Excel."
+        },
+        {
+            "title": "Digitalizzazione dei Processi di Approvazione e Comunicazione",
+            "description": "Implementare una piattaforma di workflow digitale (es. un sistema di gestione documentale con workflow, o un'estensione del gestionale) per la gestione delle approvazioni. Questo eliminerebbe la necessità di stampare, firmare e reinserire manualmente i documenti. Contestualmente, installare terminali o soluzioni digitali nelle aree attualmente sprovviste per consentire la comunicazione digitale dei documenti, eliminando l'invio di file Excel non integrati e le stampe."
+        },
+        {
+            "title": "Documentazione del Know-How Critico",
+            "description": "In parallelo alle proposte tecnologiche, avviare un progetto di documentazione del know-how di Matteo. Questo include la mappatura dettagliata delle logiche del suo file Excel, dei passaggi per la trasformazione dei dati e delle procedure manuali di integrazione. La documentazione dovrebbe essere archiviata in un sistema centralizzato (es. Confluence, SharePoint) e resa accessibile al team per facilitare la formazione e la business continuity."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 5,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.1,
+        "indice_insostituibilita": 1,
+        "tasso_cambiamento": 0.2,
+        "impatto_downstream": 1,
+        "maturita_strumenti": 0.2,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.8,
+        "sensibilita_dati": 0.5,
+        "punti_singoli_fallimento": 1,
+        "segnale_rilavorazione": 0.9,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.1,
+        "tempo_ripristino": 0.9,
+        "qualita_controlli": 0.2,
+        "frammentazione_integrazioni": 0.9
+    }
+}

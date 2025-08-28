@@ -1,0 +1,155 @@
+{
+    "id": "TB01",
+    "name": "Sebastiano Scarcelli",
+    "role": "Responsabile Marketing Operativo",
+    "department": "Marketing",
+    "section": "CMV",
+    "coreActivities": [
+        "Filtrare e analizzare le richieste tra Commerciale/Vendite e Marketing (KREAT)",
+        "Filtrare e analizzare le richieste tra Customer Care (Ordini, Assistenti Commerciali)",
+        "Analizzare e approvare l'80% delle Richieste di Acquisto (RDA)",
+        "Gestire e coordinare progetti (creazione, assegnazione compiti, tracking)",
+        "Sviluppare e strutturare linee guida strategiche di prodotto"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Progetti (su Extranet e ClickUp)",
+            "objective": "Gestire workflow e processi di progetto, garantendo la condivisione e l'accesso ai documenti.",
+            "steps": [
+                "Creazione Progetto Madre: Viene definito un 'Progetto Madre' (es. ECOMMERCE) con documenti condivisibili.",
+                "Creazione Progetti Specifici: Dalle sorgenti del Progetto Madre, si copiano e incollano elementi per creare progetti specifici (es. ECOMMERCE B2B, ECOMMERCE B2C).",
+                "Allegato Documenti: Le persone coinvolte nel progetto devono allegare documenti (PowerPoint, Word, Statistiche, Analisi di mercato) all'interno dell'Extranet.",
+                "Gestione Accessi: L'accesso ai documenti è garantito solo a chi è inserito nel progetto. Il possessore del progetto ha accesso esclusivo.",
+                "Creazione e Assegnazione Attività: Le attività e i compiti vengono creati e assegnati su Extranet.",
+                "Tracking Attività: Le attività e i compiti vengono ripetuti su ClickUp per mantenere il tracking."
+            ],
+            "notes": "I documenti rimangono nell'Extranet a meno che non vengano copiati personalmente."
+        },
+        {
+            "name": "Gestione Richieste (Filtro e Validazione)",
+            "objective": "Analizzare e validare le richieste provenienti da diverse aree prima che vengano elaborate.",
+            "steps": [
+                "Ricezione Richiesta: Il dipendente riceve richieste (principalmente via email, ma dovrebbero essere su SIGEP) da Commerciale/Vendite/Marketing (KREAT) e Customer Care (Ordini, Assistenti Commerciali).",
+                "Analisi Richiesta: Il dipendente analizza la richiesta, identificando cosa manca o cosa è incompleto.",
+                "Validazione: La richiesta viene validata solo se completa e corretta.",
+                "Inserimento su SIGEP (se non già fatto): Se la richiesta è arrivata via email, il dipendente deve inserirla manualmente su SIGEP per far partire la procedura."
+            ],
+            "notes": "Input necessari: Email di richiesta, richieste verbali. Output prodotto: Richiesta validata, procedura avviata su SIGEP."
+        },
+        {
+            "name": "Gestione Richieste di Acquisto (RDA)",
+            "objective": "Analizzare, approvare e codificare le richieste di acquisto.",
+            "steps": [
+                "Ricezione RDA: L'80% delle RDA passa attraverso il dipendente per essere analizzata.",
+                "Analisi e Approvazione: La RDA viene analizzata e approvata.",
+                "Generazione Codice: Dopo l'approvazione, il dipendente esegue operazioni per inserire un codice identificativo per la richiesta."
+            ],
+            "notes": "Input necessari: Richiesta di Acquisto. Output prodotto: RDA approvata e codificata."
+        },
+        {
+            "name": "Sviluppo Linee Guida Strategiche Prodotto",
+            "objective": "Creare un documento strutturato di linee guida strategiche per il prodotto.",
+            "steps": [
+                "Chiacchierata Preliminare: Discussione informale con il Direttore CMV sulle linee strategiche di prodotto.",
+                "Stesura Bozza: Scrittura di una prima versione più strutturata del documento.",
+                "Raccolta Feedback Interni: Invio di questionari interni per ottenere un primo feedback.",
+                "Chiarimenti Individuali: Colloqui con singole persone per chiarire bisogni o punti poco chiari.",
+                "Creazione Documento Definitivo: Basandosi sui feedback e i chiarimenti, viene creato il documento finale con le linee guida.",
+                "Presentazione in Riunione: Il documento è pronto per essere discusso e approvato in riunione."
+            ],
+            "notes": "Input necessari: Discussioni, feedback da questionari, chiarimenti individuali. Output prodotto: Documento strutturato di linee guida strategiche prodotto."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Extranet",
+            "ClickUp",
+            "Outlook",
+            "Dynamics CRM",
+            "SIGEP",
+            "Power BI",
+            "ChatGPT",
+            "Gemini",
+            "Excel",
+            "PowerPoint"
+        ],
+        "communication": [
+            "Outlook (Email)",
+            "Microsoft Teams"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Le procedure per la generazione del codice identificativo delle RDA mancano di documentazione e processi necessari. La struttura delle cartelle sul server locale (U:) è definita un 'bordello', con processi non corretti e non aggiornati. I documenti sono salvati nell'Extranet per progetto, ma l'accesso è limitato ai membri del progetto. Esiste una funzionalità Power BI per analizzare costi e spese, ma manca la struttura sottostante.",
+        "storageMethods": [
+            "Extranet (per documenti di progetto)",
+            "Server in locale (P: per passaggio documenti tra persone e file temporanei; U: per aree aziendali, ma con problemi di organizzazione e aggiornamento)",
+            "Cloud (Oikos per documenti di consultazione, 'abbastanza strutturati')",
+            "PC locale/Cartelle personali (per gestire fornitori a causa di carenze del CRM)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "La gestione dei fornitori è affidata a cartelle personali del dipendente a causa della mancanza di un modulo adeguato nel CRM. Questo rende la conoscenza della gestione fornitori altamente dipendente da questa persona.",
+            "Il processo di generazione del codice per le RDA manca di documentazione, suggerendo che la conoscenza per eseguire correttamente questo passaggio sia tacita e posseduta unicamente dal dipendente.",
+            "Il ruolo di 'filtro' implica una conoscenza approfondita delle esigenze e delle carenze delle richieste, basata sull'esperienza personale e non su regole esplicitamente documentate.",
+            "La gestione delle cartelle U: è caotica e non aggiornata, indicando una mancanza di processi standardizzati e documentati per l'archiviazione e l'accesso alle informazioni."
+        ]
+    },
+    "criticalities": [
+        "Struttura Cartelle Caotica: Le cartelle sul server locale (U:) sono 'un bordello', non aggiornate e con processi non corretti, rendendo difficile trovare informazioni e processi standard.",
+        "Mancanza di Documentazione Processi Chiave: Assenza di documentazione e processi chiari per la generazione del codice identificativo delle RDA.",
+        "Disconnessione Strumenti: Outlook non è connesso con il CRM (Dynamics), causando la necessità di gestire i fornitori tramite cartelle personali.",
+        "Carenze CRM: Il CRM Dynamics manca di un modulo adeguato per la gestione dei fornitori.",
+        "Duplicazione Inserimento Dati: Le richieste arrivano via email e devono essere reinserite manualmente su SIGEP, creando un doppio lavoro e un potenziale punto di errore.",
+        "Mancanza di Strumento di Analisi Mercato: Assenza di uno strumento dedicato per l'analisi di competitor e prodotti.",
+        "Mancanza di Struttura in Power BI: Nonostante l'esistenza di Power BI per l'analisi di costi e spese, manca una struttura dati sottostante che ne permetta un uso ottimale.",
+        "Mancanza di Controllo Centralizzato Attività: Non esiste un sistema che permetta al dipendente di vedere tutte le attività, scadenze e controllare le attività del team in modo centralizzato.",
+        "Processi di Progetto Rigidi/Non Ottimizzati: La struttura P: (spazi personali) e U: (struttura e processo) è stata abbandonata, ma c'è la necessità di un controllo automatico sulla creazione dei documenti per generare report ed email automatiche."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Centralizzazione e Automatizzazione Richieste",
+            "description": "Implementare l'obbligo di inserimento di tutte le richieste (inclusi gli ordini) direttamente su SIGEP o su una piattaforma di workflow integrata, eliminando la ricezione via email e il successivo inserimento manuale. Questo ridurrebbe il doppio lavoro e gli errori."
+        },
+        {
+            "title": "Digitalizzazione e Documentazione Processi Taciti",
+            "description": "Creare una knowledge base centralizzata (es. su Sharepoint o Confluence) per documentare tutti i processi chiave, in particolare quelli legati alla generazione dei codici RDA e alle logiche di 'filtro' delle richieste. Collaborare con il dipendente per estrarre e formalizzare questa conoscenza tacita."
+        },
+        {
+            "title": "Ottimizzazione Gestione Fornitori e Integrazione CRM",
+            "description": "Valutare l'implementazione di un modulo di gestione fornitori all'interno di Dynamics CRM o l'integrazione di una soluzione esterna con il CRM esistente. L'obiettivo è eliminare la necessità di cartelle personali e centralizzare tutte le informazioni sui fornitori."
+        },
+        {
+            "title": "Riorganizzazione e Standardizzazione Archiviazione Dati",
+            "description": "Definire una struttura standardizzata e logica per le cartelle sul server (U:) e sul Cloud, con politiche chiare di archiviazione, versioning e accesso. Valutare l'utilizzo di Sharepoint per i documenti di Oikos, sfruttando le sue capacità di indicizzazione e ricerca (e connessione con chatbot)."
+        },
+        {
+            "title": "Strumento di Project Management e Controllo Attività Integrato",
+            "description": "Implementare un unico strumento di Project Management che permetta di gestire la creazione di progetti, l'assegnazione di compiti, il tracking delle scadenze e il controllo delle attività del team, eliminando la duplicazione tra Extranet e ClickUp e fornendo una visione centralizzata."
+        },
+        {
+            "title": "Strumento Dedicato per Analisi di Mercato",
+            "description": "Valutare e implementare uno strumento specifico per l'analisi di mercato (competitor, prodotti, trend), che possa supportare il dipendente e il team marketing nelle loro analisi strategiche."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.6,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.5,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.3,
+        "frammentazione_integrazioni": 0.8
+    }
+}

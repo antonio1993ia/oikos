@@ -1,0 +1,108 @@
+{
+    "id": "MP01",
+    "name": "Maurizio Pagliarani",
+    "role": "Addetto Tintometri",
+    "department": "Produzione",
+    "section": "GOA (Gestione Ordini a Tintometro)",
+    "coreActivities": [
+        "Scrittura e aggiornamento delle formule per i tintometri",
+        "Gestione degli ordini per la colorazione, inclusa la preparazione delle etichette",
+        "Comunicazione delle formule aggiornate all'ufficio ordini",
+        "Archiviazione manuale delle informazioni relative alle formule"
+    ],
+    "processes": [
+        {
+            "name": "Aggiornamento e Comunicazione Formula",
+            "objective": "Aggiornare una formula esistente e renderla disponibile all'ufficio ordini.",
+            "steps": [
+                "Maurizio scrive o aggiorna la formula.",
+                "Invia un'email manuale all'ufficio ordini contenente tutti i dati della formula aggiornata.",
+                "Salva manualmente le informazioni della formula in due file specifici, situati in cartelle interne a cui solo lui ha accesso.",
+                "L'ufficio ordini recupera le informazioni da questi file."
+            ],
+            "notes": "Input necessari: Dati della formula aggiornata. Output prodotto: Email inviata, due file aggiornati."
+        },
+        {
+            "name": "Gestione Ordini a Tintometro (Attuale)",
+            "objective": "Processare gli ordini di colorazione e preparare il prodotto per la spedizione.",
+            "steps": [
+                "L'ordine arriva in formato cartaceo.",
+                "Maurizio gestisce l'ordine manualmente e inserisce i dati nel sistema (Business Central).",
+                "L'etichetta viene preparata manualmente."
+            ],
+            "notes": "Input necessari: Ordine cartaceo. Output prodotto: Dati ordine inseriti nel sistema, etichetta preparata."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Business Central",
+            "S400"
+        ],
+        "communication": [
+            "Email"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "La documentazione delle procedure e delle formule è assente o insufficiente. Le informazioni sulle formule sono salvate in file interni gestiti manualmente da Maurizio, e non sono documentate formalmente. Le procedure di gestione ordini sono tornate ad essere basate su processi cartacei e manuali, senza documentazione chiara. Maurizio stesso chiede documentazione e uno strumento centralizzato.",
+        "storageMethods": [
+            "File delle formule salvati in 'cartelle interne' (accesso limitato o controllo da parte di Maurizio)",
+            "Etichette degli ordini gestite in formato cartaceo"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Il processo di aggiornamento e comunicazione delle formule dipende fortemente da Maurizio: è l'unico che può modificare i file cruciali e la comunicazione avviene tramite email manuale. La conoscenza di dove e come sono strutturati questi file, e la logica dietro l'aggiornamento delle formule, risiede unicamente in lui.",
+            "La gestione manuale degli ordini e delle etichette, tornata al cartaceo, implica che molte 'best practice' o workaround per far funzionare il processo attuale siano tacite e non documentate.",
+            "La mancanza di documentazione formale e la dipendenza da processi manuali e file 'personali' creano un grave rischio di perdita di know-how critico e interruzione delle operazioni se Maurizio non fosse disponibile."
+        ]
+    },
+    "criticalities": [
+        "Processo di Aggiornamento Formule: Ripetitività e Inefficienza (invio manuale di email e salvataggio manuale in due file distinti ogni volta che una formula viene aggiornata).",
+        "Processo di Aggiornamento Formule: Rischio di Perdita Dati (le informazioni non sono salvate in un unico sistema centralizzato).",
+        "Processo di Aggiornamento Formule: Mancanza di Documentazione (assenza di documentazione formale delle procedure e delle formule).",
+        "Gestione Ordini a Tintometro (Post-Business Central): Peggioramento dell'Efficienza (il passaggio a Business Central ha causato un ritorno al cartaceo e alla gestione manuale degli ordini, con conseguente perdita di tempo).",
+        "Gestione Ordini a Tintometro (Post-Business Central): Aumento degli Errori (la preparazione manuale delle etichette porta a errori e scarsa leggibilità).",
+        "Gestione Ordini a Tintometro (Post-Business Central): Mancanza di Automazione (perdita delle funzionalità automatiche presenti con S400).",
+        "Gestione Magazzino/Ordini (Business Central): Ordini 'Morti' (impossibilità di reintegrare a magazzino i pallet di prodotti colorati se un ordine viene annullato, con conseguente spreco di merce).",
+        "Gestione Magazzino/Ordini (Business Central): Mancata Riconoscenza del 'Colorato' (il gestionale non vede il prodotto colorato come un singolo prodotto finito, ma come un insieme di componenti, impedendo una corretta gestione del ciclo di vita dell'ordine).",
+        "Formule Storiche: La digitalizzazione di migliaia di formule storiche (oltre 8-10 anni) non è considerata conveniente a causa del loro scarso utilizzo e dell'enorme volume di lavoro."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Piattaforma Unificata per Gestione Formule e Ordini",
+            "description": "Sviluppare o implementare un software/modulo che centralizzi la gestione delle formule e degli ordini. Questo sistema dovrebbe permettere l'inserimento unico dei valori delle formule, generare automaticamente le etichette, inviare notifiche all'ufficio ordini e integrarsi con la macchina tintometro per l'invio dei lavori. Dovrebbe inoltre gestire la relazione tra il nome/codice dell'ordine e le informazioni di mazzetta concorrente/cliente."
+        },
+        {
+            "title": "Ottimizzazione della Gestione del 'Colorato' in Business Central",
+            "description": "Analizzare e implementare una soluzione in Business Central che permetta di trattare il prodotto 'colorato' come un singolo SKU (Stock Keeping Unit) o 'gruppo di singoli come prodotto unico'. Questo consentirebbe la gestione completa del ciclo di vita del prodotto, inclusa la possibilità di reintegro a magazzino in caso di annullamento ordine."
+        },
+        {
+            "title": "Digitalizzazione Selettiva delle Formule",
+            "description": "Basandosi sull'input di Maurizio, definire una strategia di digitalizzazione delle formule che si concentri sulle formule nuove e quelle più recenti/utilizzate, piuttosto che tentare la digitalizzazione massiva di formule obsolete. Questo ridurrebbe il carico di lavoro iniziale e massimizzerebbe il ROI."
+        },
+        {
+            "title": "Implementazione di un Sistema di Scansione Codici a Barre",
+            "description": "Adottare l'idea di Yanis per un sistema basato su codice a barre. Sparando il codice a barre dell'ordine, si aprirebbe una finestra nel sistema gestionale dove inserire o visualizzare i campi rilevanti, automatizzando l'associazione dei dati all'ordine."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.1,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.8,
+        "impatto_downstream": 0.9,
+        "maturita_strumenti": 0.3,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.8,
+        "sensibilita_dati": 0.5,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.8,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.2,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.2,
+        "frammentazione_integrazioni": 0.7
+    }
+}

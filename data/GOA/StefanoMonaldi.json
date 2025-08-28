@@ -1,0 +1,132 @@
+{
+    "id": "SM01",
+    "name": "Stefano Monaldi",
+    "role": "Tecnico colori",
+    "department": "Gestione Operativa Aziendale",
+    "section": "GOA",
+    "coreActivities": [
+        "Gestione (creazione, lettura, aggiornamento, eliminazione) delle tinte",
+        "Formulazione di nuove tinte e aggiornamento di quelle esistenti tramite software",
+        "Inserimento e calibrazione di nuovi prodotti (basi e coloranti) nel sistema tintometrico",
+        "Assistenza clienti per problematiche di qualità, prezzo, colore o richieste di formulazioni ad hoc",
+        "Assistenza alla produzione tramite controlli colorimetrici per confermare la qualità delle basi tintometriche prodotte"
+    ],
+    "processes": [
+        {
+            "name": "Formulazione Tinte (Fase Finale)",
+            "objective": "Generare formulazioni specifiche per nuove cartelle colore o aggiornare quelle esistenti.",
+            "steps": [
+                "Richiesta Commerciale: Arriva una richiesta dal reparto Commerciale per l'inserimento di una nuova cartella colore o l'aggiornamento di una esistente.",
+                "Lancio Formulazione: Tramite il software CromaShop, si avvia il processo di formulazione.",
+                "Controlli: Vengono eseguiti controlli sulla formulazione generata.",
+                "Output: Il processo genera un foglio Excel con la formulazione."
+            ],
+            "notes": "Input necessari: Richiesta da Commerciale (specifiche cartella/tinta). Output prodotto: Foglio Excel con formulazione."
+        },
+        {
+            "name": "Inserimento Nuovi Prodotti in Sistema Tintometrico (Fase Iniziale)",
+            "objective": "Preparare e integrare nuove basi e coloranti nel sistema tintometrico per renderli disponibili per la formulazione.",
+            "steps": [
+                "Caratterizzazione Basi: Vengono caratterizzate le nuove basi.",
+                "Caratterizzazione Coloranti: Vengono caratterizzate i nuovi coloranti.",
+                "Calibrazione: Se si tratta di un prodotto completamente nuovo, viene eseguita una calibrazione.",
+                "Inserimento in Sistema: Il prodotto viene inserito nel sistema tintometrico.",
+                "Formulazione (CromaShop): Il software CromaShop genera la formulazione automatica per le tinte.",
+                "Controlli: Vengono eseguiti controlli sul prodotto inserito e sulla sua formulazione."
+            ],
+            "notes": "Gestione Modifiche: Se le modifiche sono parziali, si procede con un aggiornamento; se il cambio è sostanziale, il vecchio prodotto viene rimosso e ne viene creato uno nuovo da zero. Input necessari: Nuovo prodotto (base/colorante). Output prodotto: Prodotto calibrato e inserito nel sistema, formulazione automatica generata."
+        },
+        {
+            "name": "Gestione Richieste Assistenza Clienti",
+            "objective": "Rispondere e risolvere lamentele o richieste specifiche dei clienti relative a qualità, prezzo, colore o formulazioni ad hoc.",
+            "steps": [
+                "Ricezione Richiesta: Arriva una richiesta dal cliente (lamentela su scarsa qualità/prezzo elevato/colore non buono, o richiesta di tinta non presente/formulazione ad hoc).",
+                "Gestione Congiunta: La richiesta viene gestita congiuntamente dal Laboratorio e dal Reparto Tintometrico.",
+                "Ricerca Storico (Reparto Tintometrico): Il Reparto Tintometrico consulta la propria storicità per trovare soluzioni già create.",
+                "Traduzione Richiesta (Laboratorio): Il Reparto Laboratorio riceve la richiesta e la traduce in un'operazione specifica da eseguire (CRUD)."
+            ],
+            "notes": "Input necessari: Richiesta/lamentela del cliente. Output prodotto: Soluzione al problema del cliente (tinta corretta, nuova formulazione, spiegazione)."
+        },
+        {
+            "name": "Assistenza alla Produzione",
+            "objective": "Confermare la qualità delle basi tintometriche prodotte, specialmente in caso di modifiche.",
+            "steps": [
+                "Produzione Base Tintometrica: La produzione realizza una base tintometrica.",
+                "Controllo Qualità (se modifiche): Se ci sono modifiche rispetto allo standard, il Tecnico Colori esegue controlli colorimetrici.",
+                "Conferma Qualità: Viene confermata la qualità del prodotto."
+            ],
+            "notes": "Input necessari: Base tintometrica prodotta. Output prodotto: Conferma di qualità o indicazioni per correzioni."
+        }
+    ],
+    "tools": {
+        "software": [
+            "CromaShop",
+            "Microsoft Excel",
+            "DataColor"
+        ],
+        "communication": []
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Non esiste documentazione né procedure scritte per la gestione dei processi. La formazione del dipendente è avvenuta in maniera esperienziale.",
+        "storageMethods": [
+            "CromaShop",
+            "File Excel su unità di rete (U:)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Mancanza totale di documentazione e procedure scritte",
+            "Formazione basata esclusivamente sull'esperienza",
+            "Ruolo altamente dipendente dalla conoscenza tacita di Stefano Monaldi",
+            "Perdita significativa di know-how critico in caso di assenza del dipendente",
+            "Tempo considerevole per riprodurre competenze e formare un nuovo dipendente",
+            "Potenziali interruzioni operative, errori o diminuzione della qualità delle formulazioni"
+        ]
+    },
+    "criticalities": [
+        "Lentezza del software CromaShop e tendenza a bloccarsi, impedendo il lavoro in parallelo e richiedendo controlli da remoto.",
+        "Mancanza di alert automatici in CromaShop in caso di blocchi o problemi.",
+        "Distanza fisica tra Laboratorio e Tintometria che ostacola la comunicazione e la collaborazione.",
+        "Campionario fisico in tintometria non digitalizzato, rallentando l'accesso e la condivisione delle informazioni.",
+        "Disallineamento degli spettrofotometri tra i reparti, portando a letture potenzialmente incoerenti.",
+        "Mancanza di documentazione e procedure scritte (SOP), rendendo la conoscenza dipendente dalla singola persona e complessa la formazione di nuovi assunti."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Ottimizzazione e Monitoraggio di CromaShop",
+            "description": "Valutare un upgrade del software CromaShop o l'esplorazione di alternative più performanti (es. DataColor). Implementare un sistema di monitoraggio con alert automatici (es. via email o SMS) che segnalino blocchi o anomalie del software."
+        },
+        {
+            "title": "Digitalizzazione e Centralizzazione della Conoscenza",
+            "description": "Avviare un progetto di documentazione delle procedure operative standard (SOP) per tutte le attività svolte dal Tecnico Colori, utilizzando una piattaforma collaborativa (es. Confluence, SharePoint). Digitalizzare il campionario fisico e integrarlo nel sistema CromaShop o in un database centralizzato."
+        },
+        {
+            "title": "Miglioramento della Collaborazione Inter-Reparto",
+            "description": "Implementare una piattaforma di comunicazione e project management (es. Microsoft Teams, Asana, Trello) per facilitare la comunicazione e la gestione delle richieste tra Laboratorio e Tintometria. Organizzare sessioni di allineamento periodiche tra i reparti."
+        },
+        {
+            "title": "Standardizzazione Strumentazione",
+            "description": "Valutare l'acquisto o l'aggiornamento degli spettrofotometri per garantire l'utilizzo di strumenti omogenei o implementare un processo di calibrazione e allineamento incrociato per garantire la coerenza dei dati tra strumenti diversi."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0,
+        "livello_formalizzazione": 0,
+        "indice_insostituibilita": 1,
+        "tasso_cambiamento": 0.7,
+        "impatto_downstream": 0.9,
+        "maturita_strumenti": 0.2,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.8,
+        "sensibilita_dati": 0.5,
+        "punti_singoli_fallimento": 1,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.3,
+        "livello_automazione": 0.6,
+        "tempo_ripristino": 0.9,
+        "qualita_controlli": 0.4,
+        "frammentazione_integrazioni": 0.8
+    }
+}

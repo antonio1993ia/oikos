@@ -1,0 +1,131 @@
+{
+    "id": "TB01",
+    "name": "Thomas Bernart",
+    "role": "Tecnico Formatore",
+    "department": "Academy",
+    "section": "Reparto Tecnici Formatori",
+    "coreActivities": [
+        "Collaudo prodotti provenienti da R&D",
+        "Controllo qualità dei materiali di Produzione",
+        "Realizzazione di pannellature \"tailor-made\" per architetti e retailer",
+        "Erogazione di formazione (di gruppo e one-to-one) a clienti (banconisti, agenti) e interni",
+        "Produzione di campionature (fogli per brochure, master per appalto a terzi)",
+        "Supporto a Commerciale/Marketing, inclusa la realizzazione di video per YouTube"
+    ],
+    "processes": [
+        {
+            "name": "Collaudo Prodotti R&D e Controllo Qualità Produzione",
+            "objective": "Verificare la conformità e la qualità di nuovi prodotti o formule e materiali di produzione.",
+            "steps": [
+                "La produzione o il laboratorio richiedono a Thomas di eseguire una prova applicativa (controllo qualità) di una formula in aggiustamento",
+                "Thomas esegue la prova applicativa",
+                "Valutazione della formula/materiale"
+            ],
+            "notes": "Questo processo non è formalizzato."
+        },
+        {
+            "name": "Realizzazione Pannellature Tailor-Made",
+            "objective": "Creare pannellature personalizzate su richiesta di architetti e retailer.",
+            "steps": [
+                "La richiesta viene inserita tramite un \"flusso su extranet\"",
+                "Inserimento manuale di numerosi dati (30-40 minuti per richiesta)",
+                "Inserimento di una descrizione dettagliata di come è stato realizzato il pannello",
+                "Caricamento di foto dei passaggi di costruzione del pannello"
+            ],
+            "notes": "Input necessari: Dati della richiesta, descrizione della lavorazione, foto del processo. Output prodotto: Pannello realizzato e documentazione associata sull'extranet."
+        },
+        {
+            "name": "Gestione Appuntamenti e Trasferte",
+            "objective": "Organizzare appuntamenti con clienti e gestire le trasferte associate.",
+            "steps": [
+                "Comunicazione con agenti/venditori via WhatsApp per prendere appuntamenti",
+                "Inserimento manuale dell'appuntamento su \"Gaia\"",
+                "Richiesta di un'auto aziendale tramite l'extranet",
+                "Registrazione su \"Starweb\"",
+                "Registrazione su \"TeamSystem\""
+            ],
+            "notes": ""
+        }
+    ],
+    "tools": {
+        "software": [
+            "Outlook",
+            "Gaia",
+            "Extranet",
+            "Starweb",
+            "TeamSystem",
+            "Microsoft Teams (per calendario, poi esportato su Excel)",
+            "Excel (per calendario)"
+        ],
+        "communication": [
+            "Email (Outlook)",
+            "WhatsApp",
+            "Microsoft Teams"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Solo il 15% delle attività è documentato.",
+        "storageMethods": [
+            "Dati relativi alle pannellature e foto sono caricati su un \"portale\" (extranet)",
+            "Calendario Teams è stato \"portato su Excel\""
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Solo il 15% delle attività è documentato, indicando che la maggior parte del know-how risiede nella conoscenza tacita dei tecnici formatori come Thomas.",
+            "Il processo di \"prova applicativa\" per la produzione/laboratorio è \"non formalizzato\", suggerendo che la conoscenza di come eseguirlo e valutarlo sia interamente nelle mani di Thomas. La sua assenza potrebbe bloccare o ritardare l'aggiustamento delle formule.",
+            "Le \"attività spot\" sono prese in carico da una persona e non sono pianificate o documentate, aumentando il rischio di perdita di conoscenza specifica.",
+            "La formazione ai clienti si basa su interazioni dirette e ripetute (\"si scordano e poi gli riscrivono\"), denotando una mancanza di risorse di auto-apprendimento strutturate e centralizzate."
+        ]
+    },
+    "criticalities": [
+        "Disconnessione Comunicazione/Pianificazione: L'uso di WhatsApp per prendere appuntamenti che poi devono essere inseriti manualmente su \"Gaia\" crea una doppia immissione di dati e inefficienza.",
+        "Processo di Realizzazione Pannelli Lungo e Inefficiente: L'inserimento dei dati sull'extranet richiede 30-40 minuti per richiesta a causa della quantità di informazioni da inserire. Il processo di caricamento foto è macchinoso: i tecnici senza cellulare aziendale devono farsi inviare le foto via email al proprio indirizzo aziendale per poi caricarle sul portale. Questo è particolarmente oneroso per pannelli multipli.",
+        "Frammentazione Processi Amministrativi: Richieste di trasferta devono essere inserite 3-4 volte su sistemi diversi (extranet per auto, Starweb per straordinari, TeamSystem per note spese), causando ridondanza e perdita di tempo.",
+        "Difficoltà nell'Adozione di Strumenti Digitali: Alcuni tecnici non sono in grado di usare il calendario Teams, costringendo il team a usare Excel per la pianificazione, limitando la collaborazione e l'efficienza della piattaforma Teams.",
+        "Mancanza di Formalizzazione per Controlli Qualità: Le richieste di \"prova applicativa\" dalla produzione non sono formalizzate né documentate, impedendo una tracciabilità storica e una gestione strutturata.",
+        "Ripetitività della Formazione: La necessità di riformare i clienti dopo 2-3 mesi (70% standard, 30% particolari) indica una mancanza di risorse di riferimento che i clienti possano consultare autonomamente."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Integrazione WhatsApp/Sistema di Pianificazione",
+            "description": "Esplorare soluzioni per integrare WhatsApp (o un sistema di messaggistica aziendale con API) con \"Gaia\" o un sistema di gestione appuntamenti centralizzato, per automatizzare l'inserimento degli appuntamenti presi via chat."
+        },
+        {
+            "title": "Ottimizzazione Flusso Pannellature e Gestione Foto",
+            "description": "Rivedere l'Extranet: Semplificare il flusso di inserimento dati sull'extranet per le pannellature, riducendo il numero di campi o introducendo campi condizionali/precompilati. Soluzione Fotografica Integrata: Acquistare box fotografici zenitali con luce e macchine fotografiche connesse al PC per automatizzare il caricamento delle foto direttamente sul portale, eliminando passaggi intermedi manuali e l'uso di cellulari personali. Valutazione Storico Foto: Definire quali prodotti necessitano di avere le foto salvate nello storico, per ottimizzare l'archiviazione e ridurre il carico di lavoro."
+        },
+        {
+            "title": "Centralizzazione Processi Amministrativi",
+            "description": "Valutare una piattaforma di gestione workflow (es. un modulo in un ERP esistente o una soluzione dedicata come Monday.com/Jira Service Management) che possa centralizzare e automatizzare le richieste di trasferta, auto, straordinari e note spese, eliminando la necessità di inserimenti multipli su sistemi diversi."
+        },
+        {
+            "title": "Sviluppo Web Academy e Chatbot",
+            "description": "Web Academy: Strutturare una \"Web Academy\" con video tutorial dettagliati sulle applicazioni dei prodotti, complementari alla documentazione testuale, per ridurre la dipendenza dalla formazione diretta e fornire una risorsa on-demand per clienti e agenti. Chatbot: Implementare un chatbot per rispondere alle domande frequenti (70% standard) relative all'uso dei prodotti, riducendo il carico di lavoro dei tecnici formatori e fornendo supporto immediato."
+        },
+        {
+            "title": "Formalizzazione Processo di Controllo Qualità",
+            "description": "Formalizzare il processo di \"prova applicativa\" richiesta dalla produzione/laboratorio, definendo i passaggi, i responsabili, i moduli di richiesta e i criteri di valutazione. Questo processo dovrebbe essere documentato e integrato nello storico del prodotto."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.15,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.2,
+        "impatto_downstream": 0.7,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.8,
+        "sensibilita_dati": 0.3,
+        "punti_singoli_fallimento": 0.8,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.2,
+        "tempo_ripristino": 0.7,
+        "qualita_controlli": 0.2,
+        "frammentazione_integrazioni": 0.9
+    }
+}

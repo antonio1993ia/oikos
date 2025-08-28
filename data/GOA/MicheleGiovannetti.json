@@ -1,0 +1,162 @@
+{
+    "id": "MG01",
+    "name": "Michele Giovannetti",
+    "role": "Direttore GOA",
+    "department": "General Operations Area",
+    "section": "GOA",
+    "coreActivities": [
+        "Gestione e supervisione degli acquisti, con necessità di visibilità sui flussi di cassa aziendali.",
+        "Supporto alla pianificazione delle spese, in relazione agli approvvigionamenti e alla produzione.",
+        "Definizione delle decisioni di produzione (\"cosa produrre e quando ricevere materiali\").",
+        "Pianificazione finanziaria legata alle spese operative (manutenzione, smaltimento rifiuti), attualmente basata su \"istinto\".",
+        "Gestione e coordinamento delle aree operative (Approvvigionamenti, Produzione, Spedizioni, Laboratorio, Controllo Qualità, Manutenzione)."
+    ],
+    "processes": [
+        {
+            "name": "Pianificazione Spese e Finanziaria",
+            "objective": "Prevedere le spese future (es. per prodotti manutentivi, smaltimento rifiuti) e integrarle con i flussi di cassa per ottimizzare approvvigionamenti e produzione.",
+            "steps": [
+                "Input: Informazioni sulla previsione di vendita (da Area Commerciale), conoscenza storica, \"istinto\" di Michele.",
+                "Elaborazione: Michele prepara un Gantt per gestire le spese.",
+                "Decisione: Basata sulla sua esperienza e intuizione.",
+                "Output: Pianificazione finanziaria per le spese operative."
+            ],
+            "notes": "Michele non ha accesso diretto ai dati di flusso di cassa aziendali (desidera PowerBI)."
+        },
+        {
+            "name": "Previsione Vendita e Approvvigionamento Materie Prime",
+            "objective": "Stimare la domanda futura per guidare gli approvvigionamenti e la produzione.",
+            "steps": [
+                "Input: Documento di \"previsione vendita\" prodotto dall'Area Commerciale (basato su obiettivi) e \"forecast interno\" (più realistico ma sballato rispetto alla realtà).",
+                "Adattamento: Il team (o Michele) si adatta usando il forecast interno come base, adattandolo con la conoscenza storica (solo un operatore usa il programma, gli altri la conoscenza storica).",
+                "Problema: La domanda è molto variabile, e i fornitori sono un \"collo di bottiglia\". Mancano i tempi di consegna delle materie prime."
+            ],
+            "notes": "La domanda è molto variabile, e i fornitori sono un \"collo di bottiglia\". Mancano i tempi di consegna delle materie prime."
+        },
+        {
+            "name": "Creazione Ordini di Produzione",
+            "objective": "Generare un ordine formale per avviare la produzione di un lotto di prodotti.",
+            "steps": [
+                "Esecuzione: Matteo è l'unico dipendente in grado di creare un ordine di produzione.",
+                "Strumento: Business Central."
+            ],
+            "notes": "Lo strumento ha parecchi limiti."
+        },
+        {
+            "name": "Controllo Qualità e Validazione Prodotto",
+            "objective": "Verificare la conformità delle formule e la qualità del prodotto finito prima del via libera.",
+            "steps": [
+                "Input: Formule delle ricette (attualmente su cartaceo, non digitalizzate).",
+                "Collaborazione: Il Controllo Qualità collabora con il Laboratorio.",
+                "Richiesta: Il Controllo Qualità deve \"chiamare\" il Laboratorio per ottenere le ricette a causa della loro non codificazione, creando un collo di bottiglia.",
+                "Test: Il Controllo Qualità preleva un campione ed esegue un processo iterativo di test e validazione.",
+                "Registrazione: Una volta superato il check, i valori vengono inseriti nell'extranet.",
+                "Output: Via libera alla produzione/confezionamento."
+            ],
+            "notes": "Nessuno legge i dati inseriti nell'extranet."
+        },
+        {
+            "name": "Gestione Materie Prime (Ricevimento e Versamento)",
+            "objective": "Registrare l'utilizzo delle materie prime nel processo produttivo.",
+            "steps": [
+                "Input: Materia prima arriva e viene presa.",
+                "Utilizzo: L'operatore versa la materia prima.",
+                "Registrazione Manuale: L'operatore scrive il versamento su un foglio.",
+                "Registrazione Digitale: Matteo, a fine giornata, inserisce i versamenti nel sistema."
+            ],
+            "notes": "Il posizionamento delle materie prime non è mappato."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Business Central",
+            "Extranet",
+            "Applicativi di Laboratorio"
+        ],
+        "communication": [
+            "Comunicazione diretta",
+            "Extranet"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Le ricette/formule sono su cartaceo e non digitalizzate, creando un collo di bottiglia per il Controllo Qualità. La pianificazione finanziaria è basata sull'\"istinto\" di Michele, non su dati strutturati. I tempi di produzione medi sono \"conoscenza che sta in testa a una due tre persone e basta\". Il know-how tecnico sulla manutenzione (stato delle cose, priorità di intervento) è solo in possesso di Mattia e non condiviso.",
+        "storageMethods": [
+            "Extranet (dati di controllo qualità)",
+            "Fogli cartacei (versamenti materie prime, ricette)",
+            "Sistema (versamenti materie prime inseriti da Matteo)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Pianificazione Finanziaria/Spese: Il processo si basa sull'\"istinto\" di Michele. Se Michele non fosse disponibile, la pianificazione finanziaria e la gestione delle spese critiche (manutenzione, smaltimento) sarebbero compromesse, con impatti diretti sulla gestione di approvvigionamento e produzione.",
+            "Ordini di Produzione: Matteo è l'unico in grado di creare un ordine di produzione su Business Central. La sua assenza bloccherebbe la generazione degli ordini.",
+            "Ricette/Formule: Le ricette sono su cartaceo e la conoscenza è in mano a poche persone che hanno accesso agli strumenti digitali. La perdita di queste persone o l'impossibilità di accedere ai documenti cartacei bloccherebbe la produzione e il controllo qualità.",
+            "Manutenzione: Il know-how tecnico sullo stato delle macchine e le priorità di intervento è esclusivamente di Mattia. La sua assenza impedirebbe decisioni informate sugli investimenti e le riparazioni.",
+            "Tempi di Produzione: La conoscenza dei tempi medi di produzione è tacita e in possesso di pochi, rendendo difficile la pianificazione e l'ottimizzazione senza di loro."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Visibilità Dati: Michele non ha accesso ai flussi di cassa aziendali (desidera PowerBI).",
+        "Dipendenza da Singole Persone: La pianificazione finanziaria dipende dall'\"istinto\" di Michele; Matteo è l'unico che sa creare ordini di produzione su Business Central; la conoscenza delle ricette e dei tempi di produzione è in mano a poche persone; il know-how sulla manutenzione è solo di Mattia.",
+        "Processi Manuali e Inefficienti: Registrazione dei versamenti materie prime su fogli e poi inserimento manuale da Matteo a fine giornata; ricette su cartaceo, che creano un collo di bottiglia per il Controllo Qualità; processi di acquisto e ordini \"troppo lunghi e moltiplicati\".",
+        "Strumenti Inadeguati/Sottoutilizzati: Business Central ha \"parecchi limiti\" per la creazione degli ordini di produzione; l'extranet per il Controllo Qualità non viene letto, rendendo inutile l'inserimento dei dati; molti applicativi di laboratorio non sono usati per l'interazione con il resto dell'azienda; macchine con schede PLC molto vecchie.",
+        "Problemi di Previsione: Il previsionale interno è \"completamente sballato rispetto alla realtà\".",
+        "Gestione Prodotti: Oltre 360k prodotti, suggerendo la necessità di un'analisi di vendita per eliminare quelli non performanti.",
+        "Alfabetizzazione Digitale: Bassa (\"non tanta\") in generale, con resistenza all'uso degli strumenti informatici (es. Mattia manutentore).",
+        "Mancanza di Middle Management: Assenza di figure intermedie che possano guidare il cambiamento e distribuire le competenze, portando a una dipendenza eccessiva da pochi individui."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Implementazione di un sistema MES (Manufacturing Execution System)",
+            "description": "Adottare un MES per migliorare la gestione della lavorazione in produzione, superando la dipendenza dal Gantt manuale e automatizzando la raccolta dei tempi di produzione medi. Questo sistema dovrebbe centralizzare i dati operativi e fornire una visione in tempo reale."
+        },
+        {
+            "title": "Digitalizzazione e Centralizzazione delle Ricette e Formule",
+            "description": "Migrare tutte le ricette e formule dal formato cartaceo a un sistema digitale centralizzato (es. all'interno del MES o un sistema PDM/PLM). Questo eliminerebbe il collo di bottiglia per il Controllo Qualità e ridurrebbe il rischio di perdita di know-how."
+        },
+        {
+            "title": "Riprogettazione del Processo di Approvvigionamento con MRP",
+            "description": "Implementare un sistema MRP (Material Requirements Planning) che, data la quantità di prodotti da vendere, scomponga la domanda in ingredienti base, calcoli le quantità da acquistare e guidi l'operatore nell'esecuzione degli ordini. Questo dovrebbe includere la mappatura del posizionamento delle materie prime e l'integrazione dei tempi di consegna dei fornitori."
+        },
+        {
+            "title": "Miglioramento della Previsione di Vendita tramite Algoritmi",
+            "description": "Sviluppare o acquisire un algoritmo per la previsione di vendita che utilizzi dati storici e altre variabili pertinenti per generare forecast più accurati, riducendo la dipendenza da conoscenze individuali (\"Boschi o Matteo\")."
+        },
+        {
+            "title": "Implementazione di Strumenti di Raccolta Dati Automatizzata in Produzione",
+            "description": "Introdurre l'uso di \"pistole\" (scanner) o altri dispositivi per registrare automaticamente le informazioni nelle varie fasi del processo produttivo (es. versamenti materie prime), eliminando l'inserimento manuale su fogli e a fine giornata."
+        },
+        {
+            "title": "Dashboard KPI e Costi (PowerBI)",
+            "description": "Sviluppare dashboard in PowerBI per monitorare KPI e costi, inclusi i flussi di cassa, per fornire a Michele e al management una visione chiara dell'andamento aziendale e identificare aree di intervento."
+        },
+        {
+            "title": "Programma di Alfabetizzazione Digitale e Formazione",
+            "description": "Implementare un programma di formazione mirato all'alfabetizzazione digitale per tutto il personale, con particolare attenzione all'uso degli strumenti informatici e alla promozione di una cultura della responsabilità e della condivisione del know-how (es. per Mattia manutentore)."
+        },
+        {
+            "title": "Valutazione e Aggiornamento Infrastruttura IT",
+            "description": "Analizzare e valutare lo stato delle schede PLC connesse alle macchine e l'integrazione degli applicativi di laboratorio per garantire che l'infrastruttura tecnologica supporti i nuovi processi digitalizzati."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 5,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.7,
+        "impatto_downstream": 0.9,
+        "maturita_strumenti": 0.3,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.8,
+        "sensibilita_dati": 0.6,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.2,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.4,
+        "frammentazione_integrazioni": 0.7
+    }
+}

@@ -1,0 +1,120 @@
+{
+    "id": "LS01",
+    "name": "Luca Savoia",
+    "role": "Backoffice di Supporto Commerciale / Assistenza Commerciale Italia",
+    "department": "Ufficio Commerciale Italia",
+    "section": "Ordini e Customer Service (CMV)",
+    "coreActivities": [
+        "Fornire assistenza commerciale e supporto agli agenti/area manager della rete vendita (corrispondenza commerciale, informazioni, dati statistici, stato rapporti clienti).",
+        "Gestire gli accordi commerciali con i clienti (definizione budget, scontistica su prodotti specifici, gestione premi legati al raggiungimento del budget annuale).",
+        "Gestire il flusso di recupero crediti per clienti non paganti.",
+        "Aggiornare e inviare manualmente lo scadenziario clienti."
+    ],
+    "processes": [
+        {
+            "name": "Generazione e Gestione Accordi Commerciali",
+            "objective": "Stabilire e formalizzare gli accordi commerciali annuali con i clienti, inclusi budget, scontistiche e premi.",
+            "steps": [
+                "Oikos stabilisce a inizio anno gli accordi commerciali e i budget da realizzare per le varie aree, la cui somma definisce il fatturato target del cliente.",
+                "Il dipendente gestisce la scontistica per prodotti specifici e la gestione dei premi in vista del raggiungimento del budget annuo.",
+                "Utilizzo di una \"webapp\" con algoritmi che, inserendo i valori, genera l'accordo commerciale. Esiste un template testuale che richiede solo l'aggiornamento del nome del cliente.",
+                "L'agente può scaricare e stampare immediatamente la lettera dell'accordo generata.",
+                "L'accordo viene accettato e firmato dal cliente.",
+                "L'accordo firmato viene inserito nel gestionale Gaia CMV.",
+                "Chiunque abbia accesso a Gaia CMV può analizzare i documenti di contratto.",
+                "L'agente invia notifica di contratto firmato via email."
+            ],
+            "notes": "Si desidera che il sistema notifichi automaticamente gli attori interessati quando l'agente carica il contratto firmato su Gaia."
+        },
+        {
+            "name": "Gestione Recupero Crediti",
+            "objective": "Avviare e coordinare le azioni per il recupero di crediti da clienti non paganti.",
+            "steps": [
+                "Il cliente non paga.",
+                "Il dipendente fa partire il flusso di recupero crediti.",
+                "Gli agenti intervengono sul cliente.",
+                "Gli agenti notificano l'esito delle loro azioni via email e/o su Gaia."
+            ],
+            "notes": "Si desidera che Gaia permetta di effettuare la notifica in un unico passaggio."
+        },
+        {
+            "name": "Aggiornamento Scadenziario Clienti",
+            "objective": "Fornire uno scadenziario aggiornato dei clienti agli agenti/area manager.",
+            "steps": [
+                "Il dipendente scarica i dati da un file Excel.",
+                "Il dipendente aggiorna manualmente lo scadenziario.",
+                "Il dipendente invia lo scadenziario aggiornato."
+            ],
+            "notes": "Il processo è interamente manuale e gestito dal dipendente."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Gaia CMV",
+            "Webapp",
+            "Excel"
+        ],
+        "communication": [
+            "Email"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Le procedure generali non sono aggiornate e vanno aggiornate. La procedura di recupero crediti è presente e ben aggiornata.",
+        "storageMethods": [
+            "Gaia CMV per accordi commerciali",
+            "File Excel per scadenziario clienti"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Medio-Alto",
+        "reasons": [
+            "Il processo di aggiornamento dello scadenziario clienti è interamente manuale e gestito dal dipendente, creando una dipendenza dalla sua conoscenza individuale.",
+            "La gestione specifica di scontistiche e premi, e l'interazione con Oikos per la definizione dei budget, potrebbe contenere elementi di conoscenza tacita non esplicitamente documentati.",
+            "Le procedure generali non aggiornate indicano una dipendenza dalla conoscenza individuale per l'esecuzione di molte attività."
+        ]
+    },
+    "criticalities": [
+        "Le procedure generali non sono aggiornate, creando potenziale dipendenza dalla conoscenza individuale.",
+        "I processi di notifica (contratti firmati, recupero crediti) sono frammentati e avvengono via email, richiedendo passaggi manuali e non centralizzati in Gaia.",
+        "Il passaggio dal vecchio gestionale ha eliminato la possibilità per gli agenti di consultare autonomamente lo scadenziario, ora è un processo manuale e un collo di bottiglia.",
+        "Esistono casi in cui i dati vengono inseriti più volte in sistemi diversi o in fasi diverse dello stesso processo.",
+        "Gaia non permette ancora di fare tutte le operazioni in un unico punto, specialmente per le notifiche e l'aggiornamento dello scadenziario."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Digitalizzazione e Centralizzazione Notifiche in Gaia",
+            "description": "Implementare in Gaia CMV funzionalità che permettano agli agenti di caricare direttamente i contratti firmati e di notificare l'esito delle azioni di recupero crediti in un unico passaggio. Il sistema dovrebbe generare automaticamente notifiche agli attori interessati."
+        },
+        {
+            "title": "Automatizzazione e Integrazione Scadenziario Clienti",
+            "description": "Replicare la funzionalità del vecchio gestionale integrando lo scadenziario clienti direttamente in Gaia CMV o in una piattaforma accessibile agli agenti. L'aggiornamento dovrebbe essere automatico e in tempo reale (o quasi), eliminando l'intervento manuale del dipendente."
+        },
+        {
+            "title": "Completamento e Rollout del Sistema \"Single Point of Entry\"",
+            "description": "Dare l'OK dalla presidenza per l'esecuzione del sistema già costruito e collaudato che permette di inserire le informazioni una volta sola in Gaia per tutte le attività."
+        },
+        {
+            "title": "Aggiornamento e Centralizzazione Documentazione",
+            "description": "Avviare un progetto per l'aggiornamento di tutte le procedure aziendali, specialmente quelle generali, e centralizzarle in un unico repository per renderle facilmente accessibili e consultabili da tutti gli interessati."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.4,
+        "livello_formalizzazione": 0.6,
+        "indice_insostituibilita": 0.7,
+        "tasso_cambiamento": 0.6,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.6,
+        "facilita_passaggio_consegne": 0.3,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.5,
+        "punti_singoli_fallimento": 0.7,
+        "segnale_rilavorazione": 0.6,
+        "tracciabilita_errori": 0.5,
+        "livello_automazione": 0.4,
+        "tempo_ripristino": 0.6,
+        "qualita_controlli": 0.5,
+        "frammentazione_integrazioni": 0.7
+    }
+}

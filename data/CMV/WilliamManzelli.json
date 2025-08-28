@@ -1,0 +1,112 @@
+{
+    "id": "WM01",
+    "name": "William Manzelli",
+    "role": "Professionista della Grafica",
+    "department": "Area CMV",
+    "section": "Grafica",
+    "coreActivities": [
+        "Ricezione e gestione iniziale delle richieste grafiche (\"sigep\")",
+        "Analisi approfondita delle richieste, recupero informazioni mancanti e validazione",
+        "Caricamento e aggiornamento delle richieste nel sistema KREAT",
+        "Consegna dei lavori grafici tramite caricamento dei file in ClickUp",
+        "Gestione delle tempistiche e delle date di consegna"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Richieste Grafiche (dalla Ricezione alla Consegna)",
+            "objective": "Elaborare le richieste grafiche in modo efficiente, garantendo la completezza delle informazioni e il rispetto delle tempistiche, fino alla consegna del prodotto finale.",
+            "steps": [
+                "Ricezione Iniziale: La richiesta (\"sigep\") arriva filtrata da un responsabile.",
+                "Analisi e Recupero Informazioni: Il dipendente deve comprendere l'esigenza del richiedente e recuperare le informazioni mancanti. Questa fase include la valutazione della necessità di un confronto diretto.",
+                "Validazione della Richiesta: La richiesta viene validata in base ai requisiti necessari per ogni tipo di lavoro, permettendo anche la preventivazione dei tempi.",
+                "Caricamento in KREAT: La richiesta viene caricata nel sistema KREAT. Inizialmente in forma \"brutta\" per non perderla, poi vengono specificate tipologia di lavoro, destinatario e responsabile.",
+                "Aggiornamento Stato: Lo stato della richiesta viene aggiornato continuamente in KREAT.",
+                "Gestione Data di Consegna: La data richiesta dal cliente diventa la \"data desiderata\" a partire da un numero fisso di giorni lavorativi. La conferma della data finale avviene dopo l'analisi e validazione interna.",
+                "Consegna: I file di consegna finali vengono caricati in ClickUp.",
+                "Pianificazione e Organizzazione: Riunioni vengono programmate per analizzare le richieste in coda, decidere le priorità e organizzare il lavoro."
+            ],
+            "notes": "Il processo include la gestione delle tempistiche e la pianificazione del lavoro tramite riunioni."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Adobe",
+            "Microsoft Office (PowerPoint, Excel, Word)",
+            "Autocad",
+            "Lumion",
+            "KREAT",
+            "ClickUp"
+        ],
+        "communication": [
+            "Outlook",
+            "Riunioni"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Mancante per procedure chiave (caricamento file in ClickUp, linee guida analisi richieste, validazione richieste). Esistente ma non formalizzata/accessibile per la struttura dei requisiti di preventivazione.",
+        "storageMethods": [
+            "KREAT (per richieste)",
+            "ClickUp (per file di consegna)",
+            "CLOUD (per informazioni aggiuntive)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Molte procedure chiave (analisi richieste, validazione, consegna in ClickUp) non sono documentate, rendendo la conoscenza tacita e dipendente dall'esperienza individuale.",
+            "L'assenza di un metodo strutturato per l'onboarding significa che i nuovi assunti devono \"arrabattarsi in autonomia\".",
+            "La \"struttura dei requisiti\" per la preventivazione dei tempi non è chiaramente documentata o accessibile in modo formale.",
+            "La dipendenza da \"soluzioni artigianali\" evidenzia la mancanza di processi standardizzati e documentati."
+        ]
+    },
+    "criticalities": [
+        "Collo di bottiglia del responsabile per il filtraggio iniziale delle \"sigep\".",
+        "Mancanza di standardizzazione e controllo qualità sulle richieste in ingresso, che porta a \"domande inutili\" e necessità di recuperare informazioni.",
+        "Mancanza di documentazione per le procedure chiave (analisi, validazione, consegna).",
+        "Onboarding inefficiente per i nuovi dipendenti, costretti a imparare in autonomia.",
+        "Informazioni utili disperse o non facilmente accessibili sul \"CLOUD\".",
+        "Mancanza di un confronto strutturato e di un template per le richieste di chiarimento con il richiedente.",
+        "Gestione iniziale delle date di consegna che genera potenziali aspettative non allineate."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Implementazione di un Sistema di Gestione Richieste Strutturato",
+            "description": "Sviluppare e implementare un template obbligatorio per le richieste \"sigep\" (es. tramite un form digitale in ClickUp o un sistema dedicato) con campi predefiniti e validazioni. Integrare un controllo qualità iniziale sulla completezza delle informazioni."
+        },
+        {
+            "title": "Formalizzazione e Digitalizzazione della Documentazione Processi",
+            "description": "Documentare in modo esaustivo tutte le procedure operative standard (SOP) relative alla gestione delle richieste grafiche (analisi, validazione, caricamento KREAT, consegna ClickUp). Utilizzare una piattaforma centralizzata (es. Confluence, SharePoint) per l'archiviazione e la facile accessibilità. Includere la \"struttura dei requisiti\" esistente."
+        },
+        {
+            "title": "Ottimizzazione del Processo di Onboarding",
+            "description": "Creare un programma di onboarding strutturato che includa moduli di formazione sui processi documentati, l'uso degli strumenti (KREAT, ClickUp, Adobe, ecc.), e le linee guida aziendali. Assegnare un \"buddy\" o mentore per i primi mesi."
+        },
+        {
+            "title": "Standardizzazione del Confronto con il Richiedente",
+            "description": "Rendere obbligatoria una fase di analisi della richiesta che preveda la valutazione della necessità di un confronto. Fornire un template standardizzato per le email di richiesta confronto, includendo le domande chiave."
+        },
+        {
+            "title": "Revisione del Flusso di Approvazione/Filtraggio Iniziale",
+            "description": "Valutare alternative al filtraggio esclusivo da parte del responsabile per eliminare il collo di bottiglia. Potrebbe essere un sistema di auto-assegnazione, un pool di responsabili, o un sistema di workflow che gestisce le approvazioni."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.3,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.7,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.8,
+        "sensibilita_dati": 0.3,
+        "punti_singoli_fallimento": 0.8,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.4,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.2,
+        "frammentazione_integrazioni": 0.6
+    }
+}

@@ -1,0 +1,127 @@
+{
+    "id": "AL01",
+    "name": "Antonio Leucci",
+    "role": "Trade Marketing",
+    "department": "CMV",
+    "section": "Trade Marketing",
+    "coreActivities": [
+        "Collaborare con il team commerciale per aumentare il sell-in e il sell-out nelle rivendite B2B",
+        "Mantenere il posizionamento del brand Oikos nei punti vendita",
+        "Gestire il processo di segnalazione e risoluzione delle non conformità dei prodotti",
+        "Coordinare e implementare progetti di marketing (es. allestimenti, eventi) dalla strategia al post-evento",
+        "Generare report di distribuzione prodotti basati su analisi dati"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Segnalazione Prodotti Non Conforme",
+            "objective": "Gestire e risolvere le segnalazioni di prodotti non conformi da parte dei rivenditori.",
+            "steps": [
+                "Ricezione Segnalazione: Il rivenditore contatta via email, allegando immagini del prodotto non conforme.",
+                "Archiviazione Immagini: Le immagini ricevute vengono salvate in una cartella condivisa.",
+                "Notifica Responsabile: Viene inviata una email alla persona che dovrebbe prendere in carico la non conformità.",
+                "Gestione Responsabilità (Criticità): La persona notificata non ha le abilitazioni necessarie e deve comunicare al tecnico competente per assegnargli la responsabilità di gestione della non conformità."
+            ],
+            "notes": "Il processo è rallentato dalla mancanza di abilitazioni dirette per il responsabile, che deve inoltrare la richiesta a un tecnico."
+        },
+        {
+            "name": "Gestione Progetto di Marketing/Evento",
+            "objective": "Pianificare, eseguire e monitorare iniziative di marketing (es. allestimenti, eventi) per supportare la strategia commerciale.",
+            "steps": [
+                "Ricezione Progetto: Il progetto viene ricevuto dal Direttore CMV.",
+                "Definizione Strategia: Si prepara la strategia per l'implementazione del progetto.",
+                "Analisi Target: Si effettua un'analisi di mercato e dei rivenditori (utilizzando Excel) per individuare i destinatari dell'iniziativa.",
+                "Preparazione Materiale Presentazione: Viene preparata una presentazione in PowerPoint con i dettagli dell'iniziativa, inclusi materiali di follow-up (es. magliette, campioni).",
+                "Comunicazione e Collaborazione con Kreat: Si invia la richiesta a Kreat (tramite Extranet) per la creazione di locandine, grafiche, DEM, post; Kreat risponde con le bozze; Viene effettuata una valutazione dei lavori; In caso di rifiuto, si richiede la modifica; in caso di accettazione, Kreat si occupa della pubblicazione (via email e/o post sui social).",
+                "Preparazione Istruzioni/Linee Guida: Vengono preparate le linee guida e le istruzioni per l'evento/iniziativa.",
+                "Comunicazione Interna: Le istruzioni vengono inviate tramite Outlook e PowerPoint agli agenti (che presentano a parole) e ai tecnici (che preparano il layout dell'evento).",
+                "Post-Evento - Raccolta Feedback/Materiale: Gli agenti inviano le foto del post-evento al Trade Marketing (qualità delle foto spesso bassa); Le foto vengono inviate a Kreat per l'editing e la generazione di post (seguendo una struttura predefinita)."
+            ],
+            "notes": "La bassa qualità delle foto post-evento scattate dagli agenti compromette l'efficacia della comunicazione successiva."
+        },
+        {
+            "name": "Attività Legata a Distribuzione Prodotti",
+            "objective": "Generare report sulla distribuzione dei prodotti per informare le decisioni su 'a chi dare cosa'.",
+            "steps": [
+                "Richiesta Estrazione Dati: Viene richiesta a 'Poschi' l'estrazione di informazioni da BI (Business Intelligence).",
+                "Generazione Report: Sulla base dell'analisi dei dati estratti, viene generato il risultato finale/report.",
+                "Invio Report: Il report viene inviato ai destinatari per comunicare le decisioni di distribuzione."
+            ],
+            "notes": "Il processo di estrazione dati da BI è interamente dipendente da 'Poschi', che è l'unico a sapere 'dove andare a prendere i dati'."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Microsoft PowerPoint",
+            "Microsoft Excel",
+            "Microsoft Outlook",
+            "BI (Business Intelligence)"
+        ],
+        "communication": [
+            "Email (Outlook)",
+            "Extranet (per comunicare con Kreat)"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Mancante o difficile da reperire; le procedure non sono formalizzate o centralizzate.",
+        "storageMethods": [
+            "Desktop personale (PC locale)",
+            "Cartella in P: (server di rete condiviso)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Dipendenza da 'Poschi': Il processo di estrazione dati da BI per i report di distribuzione è interamente dipendente da 'Poschi', che è l'unico a sapere 'dove andare a prendere i dati'. La sua assenza o uscita dall'azienda bloccherebbe la generazione di questi report critici.",
+            "Conoscenza Precedente Non Documentata: L'affermazione 'bisogna entrare nella testa di chi c’era prima per capire cosa tirare fuori' indica una grave carenza di documentazione delle procedure e delle logiche operative pregresse, rendendo difficile l'onboarding e la piena operatività dei nuovi assunti.",
+            "Processi su Desktop Locale: Il fatto che 'tutti i processi avvengono sul suo desktop' implica che molte informazioni e logiche di lavoro potrebbero essere custodite solo localmente, aumentando il rischio di perdita di dati o di know-how in caso di problemi al PC o di assenza del dipendente."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Documentazione e Formalizzazione: Difficoltà a comprendere e replicare processi preesistenti ('bisogna entrare nella testa di chi c’era prima').",
+        "Problemi di Abilitazione/Workflow: Il processo di gestione delle non conformità è rallentato e reso inefficiente dalla mancanza di abilitazioni dirette per il responsabile, che deve inoltrare la richiesta a un tecnico.",
+        "Qualità del Materiale Esterno: La bassa qualità delle foto post-evento scattate dal freelancer ('fanno schifo le foto') compromette l'efficacia della comunicazione successiva.",
+        "Dipendenza da Singola Persona per Dati: La dipendenza esclusiva da 'Poschi' per l'estrazione dei dati da BI rappresenta un collo di bottiglia e un rischio operativo.",
+        "Archiviazione Decentralizzata/Locale: L'uso del desktop personale come ambiente principale di lavoro per i processi aumenta il rischio di perdita dati e rende difficile la collaborazione e la condivisione del know-how."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Digitalizzazione e Automazione Workflow Non Conformità",
+            "description": "Implementare una piattaforma di gestione workflow (es. Jira Service Management, Asana, o uno strumento interno) per la segnalazione e gestione delle non conformità. Definire ruoli e permessi chiari per consentire al responsabile di assegnare direttamente le attività e tracciare lo stato, eliminando passaggi manuali via email e dipendenze da abilitazioni esterne."
+        },
+        {
+            "title": "Centralizzazione e Documentazione del Know-how",
+            "description": "Creare un repository centralizzato (es. Confluence, SharePoint, o un wiki aziendale) per documentare tutte le procedure operative standard (SOP) del Trade Marketing. Iniziare con la documentazione dettagliata dei processi di estrazione dati da BI (con il supporto di 'Poschi') e del processo di gestione progetti/eventi. Implementare una politica di 'documentazione obbligatoria' per ogni nuovo progetto o processo."
+        },
+        {
+            "title": "Ottimizzazione Acquisizione Contenuti Post-Evento",
+            "description": "Rivedere il contratto o il fornitore per la fotografia post-evento, includendo requisiti di qualità chiari e KPI. Valutare l'opportunità di formare il personale interno (agenti/tecnici) con linee guida base per la fotografia, o fornire strumenti più adeguati per le foto 'al volo'."
+        },
+        {
+            "title": "Miglioramento Accesso e Governance Dati BI",
+            "description": "Valutare la possibilità di fornire accesso diretto e formazione al team di Trade Marketing per l'estrazione di report standard da BI, riducendo la dipendenza da 'Poschi' per richieste routinarie. In alternativa, sviluppare report automatici o dashboard interattive in BI che il team possa consultare autonomamente."
+        },
+        {
+            "title": "Standardizzazione Archiviazione Dati",
+            "description": "Implementare una politica chiara per l'archiviazione di tutti i file di lavoro su server condivisi (es. cartella P: o cloud aziendale come SharePoint/OneDrive for Business) e disincentivare l'uso del desktop locale per i file operativi."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.6,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.5,
+        "facilita_passaggio_consegne": 0.2,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.6,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.3,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.4,
+        "frammentazione_integrazioni": 0.7
+    }
+}

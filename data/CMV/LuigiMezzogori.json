@@ -1,0 +1,133 @@
+{
+    "id": "LM01",
+    "name": "Luigi Mezzogori",
+    "role": "Consulente Tecnico di Prodotto / Specialista Assistenza Clienti (Interni ed Esterni)",
+    "department": "Customer Management/Value",
+    "section": "CMV",
+    "coreActivities": [
+        "Fornire assistenza e consulenza tecnica a clienti interni ed esterni",
+        "Risolvere problemi e fornire consigli/informazioni su prodotti e schede tecniche",
+        "Gestire le richieste tramite vari canali (WhatsApp, email, Telegram, telefono), archiviarle in un DB e inoltrarle ai dipartimenti competenti (Produzione, R&D)",
+        "Ricercare e analizzare lo storico delle soluzioni e dei problemi risolti nel DB per fornire risposte basate sulla conoscenza pregressa",
+        "Gestire le procedure e fornire garanzie per i prodotti su cantieri, mantenendo uno storico nel DB"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Richieste di Assistenza/Consulenza",
+            "objective": "Fornire risposte e soluzioni a richieste di assistenza e consulenza tecnica da parte di clienti interni ed esterni",
+            "steps": [
+                "Ricezione Richiesta: La richiesta arriva tramite WhatsApp, email, Telegram o telefono",
+                "Archiviazione Iniziale: La richiesta viene archiviata in un database (DB)",
+                "Analisi e Consulenza: Luigi analizza la richiesta, fornendo consulenza esperta sul prodotto. Utilizza un DB storico di soluzioni per problemi già risolti",
+                "Inoltro (se necessario): La richiesta viene inoltrata ad altre direzioni (Produzione, R&D, ecc.) se richiede ulteriori approfondimenti o interventi",
+                "Registrazione Soluzione: La soluzione o l'informazione fornita viene probabilmente registrata nel DB per riferimento futuro"
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Gestione Schede Tecniche",
+            "objective": "Creazione, archiviazione e gestione delle schede tecniche dei prodotti",
+            "steps": [
+                "Creazione: Il Laboratorio crea il prodotto (idealmente fornendo subito dati per schede tecniche, rese, certificazioni)",
+                "Raccolta Dati (Criticità): Le informazioni (certificazioni, rese) non sono sempre disponibili o condivise in un sistema unico e condivisibile",
+                "Redazione Scheda Tecnica: Luigi ha documentato la procedura per la creazione delle schede tecniche",
+                "Archiviazione: Le schede tecniche vengono archiviate secondo una procedura esistente"
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Gestione Garanzie Prodotti su Cantieri",
+            "objective": "Gestire le richieste di garanzia per i prodotti installati in cantiere",
+            "steps": [
+                "Ricezione Richiesta: (Implicito) Ricezione della richiesta di garanzia",
+                "Verifica e Analisi: Utilizzo di un DB storico per le garanzie",
+                "Erogazione Garanzia: Applicazione delle procedure per dare le garanzie",
+                "Registrazione: Mantenimento dello storico nel DB"
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Aggiornamento Formule Prodotto",
+            "objective": "Aggiornare le formule dei prodotti nel gestionale aziendale",
+            "steps": [
+                "Notifica Modifica: La modifica della formula viene notificata via email",
+                "Aggiornamento Gestionale: La formula viene aggiornata sul gestionale"
+            ],
+            "notes": "Non esiste una procedura scritta per questo processo. Le formule sono scritte su fogli e non digitalizzate/archiviate."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Business Central",
+            "BI (Business Intelligence)",
+            "GAIA",
+            "Excel",
+            "PowerPoint (PPT)",
+            "Word",
+            "Extranet"
+        ],
+        "communication": [
+            "WhatsApp",
+            "Outlook (email)",
+            "Telegram",
+            "Microsoft Teams",
+            "Telefono"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Luigi ha costruito e documentato alcune procedure (es. creazione/archiviazione schede tecniche). Esiste un DB per soluzioni già applicate e uno per lo storico delle garanzie. La procedura per l'aggiornamento delle formule sul gestionale non è documentata. Le formule stesse sono su fogli fisici e non digitalizzate.",
+        "storageMethods": [
+            "Le richieste di assistenza vengono archiviate in un DB",
+            "Le schede tecniche vengono archiviate (modalità non specificata, ma esiste una procedura)",
+            "Lo storico delle garanzie è tenuto in un DB",
+            "Le 'formule' sono su fogli fisici"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Luigi è un 'esperto sul prodotto' e la sua consulenza è 'legata alla conoscenza' personale. Questo indica un forte know-how tacito",
+            "Il processo di aggiornamento delle formule è critico ('IMPORTANTE') e non ha una procedura scritta, né le formule sono digitalizzate. La gestione di questo processo dipende interamente dalla conoscenza e dalle comunicazioni via email (non strutturate) di Luigi o di chiunque gestisca l'aggiornamento",
+            "La mancanza di un flusso strutturato per le informazioni dal Laboratorio alla certificazione/scheda tecnica implica che Luigi potrebbe compensare lacune informative con la sua esperienza, rendendo il processo meno robusto in sua assenza"
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Flusso Strutturato (Laboratorio -> Schede Tecniche/Certificazioni): Non esiste un flusso a step validato per la creazione del prodotto, la certificazione e la determinazione delle rese. Questo porta a certificazioni fatte dopo la creazione del prodotto, rese non ancora determinate, mancanza di dati completi per le schede tecniche e pressione del marketing senza dati di produzione validati",
+        "Informazioni Non Condivise/Sistematizzate dal Laboratorio: Le informazioni dal Laboratorio non sono condivise universalmente e non sono inserite in un sistema condivisibile, causando lacune nelle certificazioni",
+        "Gestione Formule Prodotto Non Digitalizzata e Non Procedurizzata: Le formule sono scritte su fogli fisici. Il processo di modifica e aggiornamento delle formule sul gestionale avviene via email e non ha una procedura scritta. Questo è un punto 'IMPORTANTE' di criticità",
+        "Mancanza di Integrazione/Visualizzazione Immediata Dati Cliente: Non c'è un sistema che mostri immediatamente lo storico delle richieste e degli ordini del cliente al momento della chiamata"
+    ],
+    "improvementProposals": [
+        {
+            "title": "Digitalizzazione e Procedurizzazione Gestione Formule",
+            "description": "Digitalizzare tutte le formule esistenti e archiviarle in un sistema centralizzato (es. un modulo dedicato nel gestionale Business Central, un database accessibile, o un sistema di gestione documentale). Definire e documentare una procedura chiara e standardizzata per la modifica, l'approvazione e l'aggiornamento delle formule nel gestionale, eliminando la dipendenza dalle notifiche via email non tracciate."
+        },
+        {
+            "title": "Implementazione Workflow per Schede Tecniche/Certificazioni",
+            "description": "Creare un workflow digitale a step per la creazione di nuovi prodotti, l'ottenimento delle certificazioni e la definizione delle rese. Ogni step deve essere validato prima di procedere al successivo. Integrare il Laboratorio in questo workflow, garantendo che le informazioni siano inserite in un sistema condivisibile (es. un PLM - Product Lifecycle Management, o un modulo dedicato nel gestionale) e siano disponibili per la creazione delle schede tecniche e delle certificazioni."
+        },
+        {
+            "title": "Integrazione Dati Cliente per Assistenza",
+            "description": "Valutare l'integrazione del sistema di gestione chiamate/richieste (o del DB di assistenza) con il gestionale (Business Central) per visualizzare automaticamente lo storico delle richieste e degli ordini del cliente al momento della chiamata. Questo migliorerebbe l'efficienza e la qualità dell'assistenza."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.3,
+        "livello_formalizzazione": 0.4,
+        "indice_insostituibilita": 0.8,
+        "tasso_cambiamento": 0.6,
+        "impatto_downstream": 0.7,
+        "maturita_strumenti": 0.6,
+        "facilita_passaggio_consegne": 0.3,
+        "impatto_cliente": 0.8,
+        "sensibilita_dati": 0.5,
+        "punti_singoli_fallimento": 0.8,
+        "segnale_rilavorazione": 0.6,
+        "tracciabilita_errori": 0.4,
+        "livello_automazione": 0.4,
+        "tempo_ripristino": 0.7,
+        "qualita_controlli": 0.4,
+        "frammentazione_integrazioni": 0.7
+    }
+}

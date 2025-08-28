@@ -1,0 +1,132 @@
+{
+    "id": "LG01",
+    "name": "Luca Giorgini",
+    "role": "Direttore OA",
+    "department": "Organizzazione Aziendale",
+    "section": "Trasversale e di coordinamento su diverse aree (QHSE, Sviluppo Organizzativo, HR), riporta direttamente alla Presidenza per lo Sviluppo Organizzativo.",
+    "coreActivities": [
+        "Gestione QHSE (Qualità, Sicurezza, Ambiente): Coordinamento, definizione procedure normative, gestione rapporti con consulenti, registrazione e analisi KPI, esecuzione Audit, verifica implementazione sistemi di gestione, collaborazione per contrattualistica, gestione rifiuti, certificazione di prodotto.",
+        "Sviluppo Organizzativo e Miglioramento Processi: Creazione, analisi e monitoraggio per il miglioramento dei processi aziendali, attivazione su richiesta del Presidente o per nuovi progetti.",
+        "Gestione e Coordinamento Risorse Umane (HR): Definizione e analisi KPI HR, gestione documentazione disciplinare, indirizzo e coordinamento delle attività HR (reclutamento, onboarding, sviluppo, amministrazione, relazioni con il personale).",
+        "Rianalisi Annuale e Riesame: Analisi di KPI annuali per la generazione del documento di riesame aziendale.",
+        "Supporto Operativo: Fornisce supporto operativo a Gabriele (QHSE) in caso di carico di lavoro sbilanciato."
+    ],
+    "processes": [
+        {
+            "name": "Gestione QHSE (Qualità, Sicurezza, Ambiente)",
+            "objective": "Assicurare la conformità normativa (ISO 9001, ambientale, sicurezza sul lavoro) e il miglioramento continuo dei sistemi di gestione.",
+            "steps": [
+                "Pianificazione e Coordinamento: Incontri settimanali con Gabriele per listare attività del periodo successivo.",
+                "Monitoraggio: Gestione delle attività tramite dashboard di controllo.",
+                "Definizione Procedure: Luca definisce le procedure in accordo con le normative vigenti.",
+                "Gestione Consulenti: Luca gestisce i rapporti con i consulenti esterni per le tematiche QHSE.",
+                "Monitoraggio KPI: Registrazione e analisi dei KPI inerenti alla qualità.",
+                "Audit: Esecuzione di Audit interni.",
+                "Verifica Implementazione: Verifica che i sistemi di gestione siano ben implementati.",
+                "Consulenza Interna: Collaborazione con altri servizi per consulenze su contrattualistica relativa all'area QHSE.",
+                "Gestione Rifiuti: Attività specifiche legate alla gestione dei rifiuti.",
+                "Certificazione Prodotto: Attività relative alla certificazione dei prodotti."
+            ],
+            "notes": "Input necessari: Normative, dati da Gabriele, report dei consulenti, dati per KPI. Output prodotto: Procedure definite, dashboard aggiornate, report KPI, esiti Audit, documentazione per certificazioni."
+        },
+        {
+            "name": "Sviluppo Organizzativo e Miglioramento Processi",
+            "objective": "Identificare e risolvere problematiche organizzative, migliorare e riorganizzare i processi aziendali.",
+            "steps": [
+                "Attivazione: Il processo si attiva su richiesta del Presidente o per nuovi progetti che richiedono una rivisitazione dell'organizzazione.",
+                "Identificazione Problematica: Nasce una problematica o un'esigenza di miglioramento.",
+                "Estrazione e Analisi Dati: Vengono estratti ed analizzati i dati relativi al processo oggetto di studio.",
+                "Identificazione Colli di Bottiglia: Dall'analisi dei dati si identificano i punti critici e i colli di bottiglia.",
+                "Riorganizzazione Processi: In accordo con i direttori di area coinvolti, si rigenerano e riorganizzano i processi.",
+                "Preparazione Presentazione: Luca prepara una presentazione per esporre l'analisi estrapolata e i cambi proposti.",
+                "Approvazione: Se si riceve l'ok (presumibilmente dalla direzione/Presidente), si procede con l'esecuzione dei cambi.",
+                "Informazione del Personale: Le persone interessate vengono raccolte e informate sui cambiamenti.",
+                "Riscrizione Procedure: Le procedure vengono riscritte sulla base degli accordi sui nuovi processi.",
+                "Comunicazione Formale: Le parti interessate vengono informate formalmente tramite extranet ed e-mail."
+            ],
+            "notes": "Input necessari: Richieste del Presidente/nuovi progetti, dati di processo, feedback direttori di area. Output prodotto: Analisi dei dati, identificazione colli di bottiglia, proposte di riorganizzazione, presentazioni, nuove procedure scritte, comunicazioni formali."
+        },
+        {
+            "name": "Gestione KPI HR e Generazione Report",
+            "objective": "Monitorare e analizzare le performance del personale tramite KPI specifici (es. straordinari, trasferte, ferie) e generare report.",
+            "steps": [
+                "Ricezione Dati: Ricezione di file contenenti dati HR da consulenza esterna.",
+                "Elaborazione Manuale: I file vengono lavorati manualmente (presumibilmente pulizia, aggregazione, calcolo) utilizzando file Excel interni.",
+                "Inserimento nel Template: I dati elaborati vengono inseriti manualmente in un template di reportistica.",
+                "Generazione Report: Generazione dei report finali.",
+                "Analisi KPI: Analisi dei KPI HR (straordinari, trasferte, ferie)."
+            ],
+            "notes": "Input necessari: File da consulenza esterna. Output prodotto: File Excel lavorati manualmente, report KPI HR."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Business Central",
+            "Office (Excel, Word, PowerPoint)"
+        ],
+        "communication": [
+            "Extranet",
+            "E-mail"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Carenza di documentazione formalizzata e centralizzata per lo Sviluppo Organizzativo e la Gestione KPI HR. Per QHSE si definiscono procedure, ma non è specificato dove siano archiviate o quanto siano aggiornate.",
+        "storageMethods": [
+            "File Excel interni (per elaborazione KPI HR)",
+            "Comunicazione tramite extranet/e-mail per procedure riscritte"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Sviluppo Organizzativo: Il processo di miglioramento e riorganizzazione si basa fortemente su Luca. La metodologia di lavoro per la creazione di nuove procedure non è ancora documentata formalmente, rendendo la conoscenza tacita e non trasferibile.",
+            "Gestione KPI HR: L'elaborazione manuale dei dati da consulenza esterna a un template interno manca di documentazione procedurale. Questo significa che la logica e i passaggi specifici per questa elaborazione risiedono solo nella conoscenza di chi la esegue, rendendo il processo vulnerabile in caso di assenza o partenza.",
+            "Coordinamento QHSE: Sebbene ci sia un coordinamento con Gabriele, la definizione delle procedure e l'analisi dei KPI sembrano essere responsabilità primarie di Luca, con il rischio che parte del know-how più strategico e di dettaglio sia tacito."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Software HR Adeguato: Il software HR attuale non fornisce report automatici, obbligando a ricorrere a elaborazioni manuali con Excel.",
+        "Processi HR Manuali e Non Documentati: L'elaborazione dei KPI HR è manuale e manca di documentazione procedurale per i passaggi di elaborazione e inserimento dati.",
+        "Aspetti Organizzativi da Rimappare: Necessità di rivedere e definire meglio gli aspetti organizzativi aziendali.",
+        "Semplificazione dei Processi: Esigenza generale di semplificare i processi in azienda.",
+        "Definizione delle Responsabilità: Necessità di definire meglio le responsabilità all'interno dell'organizzazione.",
+        "Criticità Copilot: Il sistema 'Copilot' non sta dando i risultati attesi."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Digitalizzazione e Automazione Reportistica HR",
+            "description": "Valutare e implementare un software HR dedicato o un modulo aggiuntivo a Business Central che permetta la generazione automatica dei report e l'analisi dei KPI HR. In alternativa, sviluppare script o macro avanzate (con adeguata documentazione e manutenzione) per automatizzare l'elaborazione dei dati da consulenza esterna e l'inserimento nel template, riducendo la dipendenza da processi manuali e il rischio di errore."
+        },
+        {
+            "title": "Formalizzazione e Centralizzazione della Conoscenza Processuale",
+            "description": "Creare un repository centralizzato (es. Confluence, SharePoint, Intranet aziendale) per tutte le procedure aziendali. Luca dovrebbe formalizzare e documentare il suo 'metodo di lavoro' per lo sviluppo organizzativo e la riscrittura delle procedure, rendendolo accessibile e replicabile. Parallelamente, documentare in dettaglio i passaggi di elaborazione manuale dei KPI HR."
+        },
+        {
+            "title": "Progetto di Ridisegno Organizzativo e Semplificazione Processi",
+            "description": "Avviare un progetto formale di ridisegno organizzativo, partendo dalle criticità evidenziate (aspetti organizzativi da rimappare, semplificazione processi, definizione responsabilità). Utilizzare la metodologia di Luca per l'analisi e la riorganizzazione, coinvolgendo attivamente i direttori di area e formalizzando le nuove responsabilità e i flussi di lavoro."
+        },
+        {
+            "title": "Analisi e Ottimizzazione di 'Copilot'",
+            "description": "Effettuare un'analisi approfondita del motivo per cui 'Copilot' non sta fornendo i risultati attesi. Questo potrebbe richiedere una revisione delle configurazioni, della formazione degli utenti o una valutazione della sua idoneità rispetto agli obiettivi aziendali."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.7,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.3,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.6,
+        "sensibilita_dati": 0.7,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.8,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.2,
+        "tempo_ripristino": 0.7,
+        "qualita_controlli": 0.3,
+        "frammentazione_integrazioni": 0.6
+    }
+}

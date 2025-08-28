@@ -1,0 +1,215 @@
+{
+    "id": "SA01",
+    "name": "Sara Arfili",
+    "role": "Controllo in ingresso materie prime",
+    "department": "GOA",
+    "section": "Non specificato nella trascrizione.",
+    "coreActivities": [
+        "Ricerca e selezione di materie prime",
+        "Controllo in accettazione e collaudo delle materie prime",
+        "Gestione e monitoraggio degli strumenti di produzione e laboratorio (tarature, revisioni, scadenze)",
+        "Gestione delle Prove di Ricerca (PR) per nuovi/vecchi prodotti e segnalazioni clienti",
+        "Gestione e aggiornamento delle Schede di Sicurezza e delle Etichette dei prodotti"
+    ],
+    "processes": [
+        {
+            "name": "Ricerca di Materie Prime",
+            "objective": "Identificare e selezionare nuove materie prime o alternative.",
+            "steps": [
+                "Esecuzione di una procedura di ricerca sviluppata in totale autonomia dall'intervistata."
+            ],
+            "notes": "Il workflow non è generato né aggiornato. La conoscenza è condivisa tramite affiancamento (senior > nuovi arrivati)."
+        },
+        {
+            "name": "Gestione \"Piano dei Controlli in Accettazione\" (Completo)",
+            "objective": "Mantenere un registro aggiornato delle materie prime, dei dati e dei documenti che devono accompagnare il prodotto.",
+            "steps": [
+                "Aggiornamento manuale e regolare del file Excel \"Piano dei controlli in accettazione\" con i risultati dei controlli."
+            ],
+            "notes": "Il file è salvato nel documentale. L'aggiornamento avviene una volta l'anno. Mancano istruzioni e procedure su come aggiornare il file. Il Team R&S sa come muoversi in questo file, considerato la \"bibbia\" delle materie prime."
+        },
+        {
+            "name": "Creazione \"Piano dei Controlli in Accettazione Semplificato\"",
+            "objective": "Fornire ai magazzinieri un promemoria semplificato per i controlli in accettazione.",
+            "steps": [
+                "Generazione di una versione ridotta del \"Piano dei controlli in accettazione\" completo."
+            ],
+            "notes": "Non esiste documentazione con istruzioni scritte su come passare dal piano completo a quello semplificato."
+        },
+        {
+            "name": "Controllo in Accettazione delle Materie Prime (Collaudo)",
+            "objective": "Verificare la conformità delle materie prime in ingresso.",
+            "steps": [
+                "Registrazione delle materie prime portate dal magazziniere (con bolla, certificato analisi e documenti necessari) nell'extranet (sezioni: materie prime, collaudi titanio, collaudi coloranti, collaudi outsourcing).",
+                "Esecuzione del collaudo secondo una procedura scritta e aggiornata.",
+                "Inserimento dei risultati del collaudo nell'Extranet: Selezione della materia prima. Apertura della scheda di template (con valori preimpostati). Inserimento dei valori misurati. Allegato dei documenti. Caricamento della scheda.",
+                "Stampa e archiviazione del collaudo (Specifica per Titanio)."
+            ],
+            "notes": "Il macro-processo di salvataggio è coperto e documentato."
+        },
+        {
+            "name": "Creazione di Nuovo Prodotto e Scheda Template (per Collaudo)",
+            "objective": "Preparare le schede di template preimpostate per nuove materie prime o prodotti.",
+            "steps": [],
+            "notes": "Non c'è documentazione scritta su come creare la scheda e inserire i valori preimpostati."
+        },
+        {
+            "name": "Gestione degli Strumenti di Produzione (Revisioni/Tarature)",
+            "objective": "Assicurare la conformità degli strumenti di produzione agli obblighi di legge tramite revisioni e tarature.",
+            "steps": [
+                "Arrivo di email di warning di scadenza a più destinatari.",
+                "Invio di una mail al laboratorio di taratura con richiesta preventivo (specificando numero di bilance da tarare/bollare).",
+                "Ricevimento del preventivo.",
+                "Inserimento di una Richiesta di Acquisto (RDA) per approvazione.",
+                "Aggiornamento manuale della data di scadenza."
+            ],
+            "notes": "Esiste una procedura documentata nel documentale su come inserire nuovi strumenti (catalogazione, inserimento). Non ci sono istruzioni operative su come gestire le scadenze."
+        },
+        {
+            "name": "Gestione degli Strumenti di Laboratorio",
+            "objective": "Gestire la taratura e il controllo degli strumenti di laboratorio.",
+            "steps": [
+                "Ricevuta email di warning di scadenza (Strumenti di Prima Classe - esterni).",
+                "Invio richiesta preventivo e RDA tramite extranet (Strumenti di Prima Classe - esterni).",
+                "Ricezione PDF dall'azienda esterna dopo l'analisi (Strumenti di Prima Classe - esterni).",
+                "Archiviazione PDF nell'extranet (Strumenti di Prima Classe - esterni).",
+                "Aggiornamento manuale delle scadenze (Strumenti di Prima Classe - esterni).",
+                "Esecuzione dei controlli interni tramite extranet, seguendo istruzioni operative documentate (Strumenti di Seconda Classe - interni).",
+                "Salvataggio dei risultati in extranet come PDF (scannerizzazione di parte cartacea) (Strumenti di Seconda Classe - interni).",
+                "Archiviazione della parte cartacea in un \"docs\" insieme ad altri fogli (Strumenti di Seconda Classe - interni)."
+            ],
+            "notes": "Le bilance di laboratorio sono trattate come quelle di produzione. Esiste un DB su extranet."
+        },
+        {
+            "name": "Gestione Depuratore",
+            "objective": "Monitorare i parametri del depuratore e gestire i controlli esterni.",
+            "steps": [
+                "Manutentore porta campione di acqua.",
+                "Esecuzione dei controlli da parte di Sara, seguendo istruzioni operative.",
+                "Inserimento dei risultati dei controlli nell'Extranet.",
+                "Attivazione di procedure basate sui risultati.",
+                "Registrazione attivazione enti esterni (es. controllo Hera).",
+                "Inserimento dei documenti rilasciati da Hera nel documentale."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Gestione Schede Tecniche Materie Prime",
+            "objective": "Archiviare, consultare e aggiornare le schede tecniche delle materie prime.",
+            "steps": [
+                "Archiviazione delle schede tecniche nel documentale in extranet.",
+                "Consultazione (richiede download per analisi).",
+                "Assegnazione di un codice univoco. Se un prodotto cambia, si modifica la scheda esistente e si salva come nuova versione (es. v2)."
+            ],
+            "notes": "Manca documentazione su come inserire una nuova scheda, registrarla e catalogarla."
+        },
+        {
+            "name": "Prove di Ricerca (PR)",
+            "objective": "Testare nuove materie prime, ottenere nuove certificazioni o rispondere a segnalazioni clienti.",
+            "steps": [
+                "Arrivo del \"trigger\" (es. bisogno di testare, nuova certificazione, segnalazione cliente).",
+                "Inizio del lavoro manuale: esecuzione dei test e stampa dei fogli.",
+                "Inserimento dei fogli stampati in una cartellina fisica.",
+                "Archiviazione della cartellina in un armadio.",
+                "Aggiunta di una riga in un file Excel (salvato in locale) che indica la posizione fisica della cartellina nell'armadio."
+            ],
+            "notes": "Workflow per l'esecuzione fisica della PR presente nel documentale. Manca documentazione su come gestire l'archiviazione della PR (creare dossier, inserirlo nel \"docs\", salvarlo in Excel). Il file Excel è in locale, con copie, ma dovrebbe andare nel gestionale."
+        },
+        {
+            "name": "Gestione Segnalazioni Clienti (Non Conformità)",
+            "objective": "Verificare la conformità di prodotti segnalati dai clienti.",
+            "steps": [
+                "Ricezione della richiesta dall'assistenza tecnica.",
+                "Esecuzione del controllo per determinare la conformità/validità del prodotto.",
+                "Restituzione del risultato all'assistenza tecnica."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Gestione Schede di Sicurezza - Etichette",
+            "objective": "Mantenere aggiornate le schede di sicurezza e le etichette dei prodotti in base a normative o modifiche delle materie prime.",
+            "steps": [
+                "Ricezione di nuova scheda di sicurezza (per cambio normativa/pericolosità/materia prima).",
+                "Modifica/aggiunta della scheda di sicurezza nel gestionale.",
+                "Apertura del software Epiplus e inserimento dei cambiamenti relativi alla materia prima.",
+                "Epiplus calcola automaticamente la conformità dei prodotti.",
+                "Se non standard o rifiutati, si modifica la formula o si rifiuta la materia prima.",
+                "Se la formula è cambiata con nuove informazioni (materie nuove), si modifica l'etichetta."
+            ],
+            "notes": "Processo complesso e delicato, fatto da più persone. Non c'è documentazione o procedura. File Excel per schede di sicurezza non in extranet, aggiornato manualmente, senza storico."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Extranet",
+            "Epiplus",
+            "Microsoft Excel",
+            "Gestionale"
+        ],
+        "communication": [
+            "Email"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "La documentazione è frammentata e incompleta. Molti processi cruciali dipendono da conoscenza tacita o procedure autonome non formalizzate. Alcune procedure sono documentate (es. esecuzione collaudo, inserimento nuovi strumenti, controlli depuratore), ma mancano istruzioni operative per l'aggiornamento di file chiave, la creazione di schede template, la gestione delle scadenze e l'archiviazione di PR e schede di sicurezza/etichette.",
+        "storageMethods": [
+            "Extranet",
+            "Documentale Aziendale",
+            "PC Locale",
+            "Archiviazione Fisica (stampa collaudi titanio, cartelline fisiche per PR, parte cartacea controlli strumenti laboratorio)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Ricerca Materie Prime: L'intera procedura è stata costruita \"in totale autonomia\" da Sara, senza workflow generato o aggiornato. La conoscenza è tramandata solo tramite affiancamento.",
+            "Aggiornamento \"Piano dei Controlli in Accettazione\": Non ci sono istruzioni o procedure su come aggiornare questo file cruciale, definito la \"bibbia\" delle materie prime.",
+            "Creazione Schede Template e Nuovi Prodotti: La creazione a priori di schede di template per i collaudi, inclusi i valori preimpostati, non è documentata.",
+            "Gestione Scadenze Strumenti: Non c'è un'istruzione operativa chiara su come gestire l'intero processo di gestione delle scadenze degli strumenti, dalla richiesta preventivo all'aggiornamento.",
+            "Gestione Schede Tecniche: Manca documentazione su come inserire, registrare e catalogare nuove schede tecniche.",
+            "Archiviazione PR: La gestione dell'archiviazione delle Prove di Ricerca (creazione dossier, inserimento nel \"docs\", salvataggio in Excel) è priva di documentazione. Il file Excel, cruciale per la rintracciabilità, è in locale.",
+            "Gestione Schede di Sicurezza - Etichette: Questo è un \"processo complesso e delicato fatto da più persone\" ma \"non c’è documentazione, procedura\". La perdita di know-how in quest'area è esplicitamente indicata come \"problemi\" per l'azienda."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Documentazione e Standardizzazione per la ricerca materie prime, aggiornamento \"Piano dei controlli in accettazione\", creazione \"Piano dei controlli in accettazione semplificato\", creazione nuove schede template per collaudi, gestione scadenze strumenti, inserimento/catalogazione nuove schede tecniche, archiviazione PR, gestione Schede di Sicurezza/Etichette.",
+        "Dipendenza da Conoscenza Tacita per molti processi cruciali, con alto rischio di perdita di know-how.",
+        "Frammentazione e Archiviazione Fisica per collaudi titanio, PR e controlli strumenti di laboratorio (2a classe).",
+        "Gestione File Excel Locali per PR e schede di sicurezza/etichette, senza storico e non centralizzati.",
+        "Consultazione Dati: Le schede tecniche nel documentale devono essere scaricate per essere analizzate.",
+        "Mancanza di Storico: Il file Excel per le schede di sicurezza/etichette non ha storico dei cambiamenti."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Digitalizzazione e Standardizzazione dei Processi Critici Taciti",
+            "description": "Trasformare la conoscenza tacita in procedure documentate e digitalizzate per garantire la business continuity. Azioni: Intervistare Sara e altri membri del team per formalizzare la \"procedura autonoma di ricerca materie prime\" e la \"creazione schede template\" in un workflow documentato e condiviso. Creare istruzioni operative dettagliate per l'aggiornamento del \"Piano dei controlli in accettazione\" e per la generazione del \"Piano semplificato\". Sviluppare procedure scritte per l'inserimento, registrazione e catalogazione delle nuove schede tecniche. Prioritizzare la documentazione del processo di \"Gestione Schede di Sicurezza - Etichette\", creando un manuale operativo."
+        },
+        {
+            "title": "Centralizzazione e Digitalizzazione dell'Archiviazione",
+            "description": "Eliminare l'archiviazione fisica e i file locali, rendendo tutti i dati e documenti facilmente accessibili e interrogabili. Azioni: Implementare un sistema di archiviazione digitale per i collaudi titanio. Migrare il file Excel delle PR e quello delle schede di sicurezza/etichette dall'archiviazione locale a un sistema gestionale o all'Extranet, garantendo versioning e storico. Valutare l'implementazione di un sistema di gestione documentale (DMS) più avanzato. Digitalizzare completamente il processo di archiviazione delle PR."
+        },
+        {
+            "title": "Ottimizzazione del Workflow di Gestione Scadenze Strumenti",
+            "description": "Automatizzare e standardizzare il processo di gestione delle scadenze per ridurre il carico manuale e il rischio di dimenticanze. Azioni: Esplorare l'integrazione tra il sistema di warning via email e l'Extranet per automatizzare la generazione delle richieste di preventivo o delle RDA. Implementare un campo di \"data di prossima scadenza\" nell'Extranet che si aggiorni automaticamente una volta completata la taratura/revisione e archiviati i risultati."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.6,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.6,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.8,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.4,
+        "frammentazione_integrazioni": 0.7
+    }
+}

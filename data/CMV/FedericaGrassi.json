@@ -1,0 +1,117 @@
+{
+    "id": "FG01",
+    "name": "Federica Grassi",
+    "role": "Specialista/Referente CRM",
+    "department": "Commerciale & Marketing",
+    "section": "CMV (Customer Relationship Management)",
+    "coreActivities": [
+        "Gestione e implementazione del nuovo sistema CRM",
+        "Interfaccia con il fornitore del CRM per configurazioni e risoluzione problematiche",
+        "Formazione e supporto agli utenti interni per l'utilizzo del CRM",
+        "Gestione dei dati all'interno del CRM (importazione, inserimento anagrafiche)",
+        "Supporto alla creazione di campagne e attività di marketing tramite CRM"
+    ],
+    "processes": [
+        {
+            "name": "Implementazione e Configurazione CRM",
+            "objective": "Rendere operativo il nuovo CRM e adattarlo alle esigenze aziendali, garantendo il corretto funzionamento e l'allineamento con le logiche di business.",
+            "steps": [
+                "Interfaccia con Fornitore: Gestione del rapporto con il sistemista dello strumento CRM per la configurazione di utenti e logiche di funzionamento del sistema.",
+                "Inserimento Funzionalità Base: Avvio delle operazioni di inserimento delle funzionalità base del CRM.",
+                "Definizione Metriche e Analisi: Creazione autonoma delle metriche e delle modalità di analisi per la tracciatura dei dati, in assenza di direttive o procedure predefinite.",
+                "Importazione Dati: Trasferimento dei dati dal vecchio sistema al nuovo CRM."
+            ],
+            "notes": "Le metriche e le modalità di analisi sono state definite autonomamente da Federica in assenza di direttive o procedure predefinite."
+        },
+        {
+            "name": "Gestione e Supporto Utenti CRM",
+            "objective": "Assicurare l'efficace utilizzo del CRM da parte degli utenti interni e risolvere le problematiche riscontrate.",
+            "steps": [
+                "Formazione Utenti: Erogazione di formazione alle persone per l'utilizzo del CRM.",
+                "Supporto e Risoluzione Richieste: Funge da tramite tra fornitori e utilizzatori per rispondere alle richieste e problematiche.",
+                "Assegnazione Licenze: Gestione dell'assegnazione delle licenze a nuovi utenti (procedura documentata da manuale)."
+            ],
+            "notes": "La procedura per l'assegnazione delle licenze è documentata da un manuale."
+        },
+        {
+            "name": "Gestione Dati e Contenuti CRM",
+            "objective": "Mantenere aggiornate le informazioni e i contenuti all'interno del CRM.",
+            "steps": [
+                "Inserimento Anagrafiche: Inserimento manuale di anagrafiche nel CRM, spesso in supporto ad altri colleghi con poco tempo.",
+                "Creazione Campagne: Creazione di campagne direttamente all'interno del CRM.",
+                "Supporto Newsletter: Creazione di elenchi marketing per newsletter in supporto a Elena (procedura e formazione già completate)."
+            ],
+            "notes": "La procedura per la creazione di elenchi marketing per newsletter è documentata e la formazione è stata già completata per Elena. Manca una procedura chiara per l'inserimento delle anagrafiche."
+        }
+    ],
+    "tools": {
+        "software": [
+            "CRM (nuovo sistema)",
+            "Vecchio sistema (per importazione dati)"
+        ],
+        "communication": [
+            "Email",
+            "Telefono",
+            "Tool di ticketing (implicito)"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Alcune procedure sono documentate (es. assegnazione licenze, creazione newsletter) con formazione già erogata. Manca una procedura chiara per l'inserimento delle anagrafiche. Le metriche e le modalità di analisi del CRM sono state definite autonomamente da Federica e non sono basate su direttive o procedure documentate dall'alto.",
+        "storageMethods": [
+            "CRM (per i dati)",
+            "Non specificato (per manuali e documenti di lavoro)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Federica detiene una conoscenza critica e non documentata relativa all'implementazione e alla configurazione del CRM, in particolare per quanto riguarda le metriche e le modalità di analisi che ha definito autonomamente.",
+            "Mancanza di una procedura per l'inserimento delle anagrafiche.",
+            "Federica riceve molte richieste gestibili da manuale, indicando che gran parte del know-how operativo risiede in lei.",
+            "La sua assenza o partenza comporterebbe una significativa perdita di competenza sul funzionamento interno e l'ottimizzazione del CRM, rallentando o bloccando l'utilizzo efficace del sistema e la reportistica associata."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di procedure chiare e standardizzate per l'inserimento delle anagrafiche nel CRM.",
+        "Le metriche e le modalità di analisi del CRM sono state definite da Federica senza direttive o procedure dall'alto, creando un potenziale rischio di disallineamento strategico o di perdita di conoscenza tacita.",
+        "Dipendenza eccessiva dalla conoscenza individuale di Federica per la gestione del CRM e il supporto agli utenti, che riceve molte richieste gestibili autonomamente dagli utenti se le procedure fossero più chiare o accessibili.",
+        "Carico di lavoro per l'inserimento dati: Federica si trova a inserire anagrafiche per conto di altri, suggerendo un collo di bottiglia o una mancanza di tempo/formazione da parte degli altri utenti."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Documentazione e Standardizzazione del Processo Anagrafiche",
+            "description": "Sviluppare e documentare una procedura chiara e standardizzata per l'inserimento delle anagrafiche nel CRM, rendendola accessibile a tutti gli utenti coinvolti. Prevedere sessioni di formazione mirate."
+        },
+        {
+            "title": "Formalizzazione delle Metriche CRM",
+            "description": "Collaborare con Federica per formalizzare le metriche e le modalità di analisi del CRM che ha autonomamente sviluppato. Questo dovrebbe includere la documentazione, l'approvazione da parte della direzione e l'integrazione in un manuale operativo del CRM."
+        },
+        {
+            "title": "Creazione di una Knowledge Base CRM",
+            "description": "Implementare una knowledge base o una sezione FAQ centralizzata (es. su un wiki aziendale o direttamente nel CRM) che contenga risposte alle domande frequenti e procedure semplici, riducendo le richieste dirette a Federica."
+        },
+        {
+            "title": "Revisione dei Ruoli e Responsabilità per Inserimento Dati",
+            "description": "Valutare se l'inserimento delle anagrafiche da parte di Federica sia un'attività temporanea o strutturale. Se strutturale, definire chiaramente chi è responsabile dell'inserimento e assicurare che abbiano il tempo e la formazione necessari."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.3,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.7,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.6,
+        "facilita_passaggio_consegne": 0.2,
+        "impatto_cliente": 0.8,
+        "sensibilita_dati": 0.7,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.6,
+        "tracciabilita_errori": 0.4,
+        "livello_automazione": 0.4,
+        "tempo_ripristino": 0.7,
+        "qualita_controlli": 0.3,
+        "frammentazione_integrazioni": 0.5
+    }
+}

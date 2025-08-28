@@ -1,0 +1,129 @@
+{
+    "id": "AP01",
+    "name": "Alex Pollini",
+    "role": "Assistente formulazione e rapporto con produzione",
+    "department": "Area GOA",
+    "section": "Laboratorio/R&D e interfaccia con Produzione",
+    "coreActivities": [
+        "Messa in atto e validazione di nuove formule in laboratorio",
+        "Gestione e monitoraggio delle prove industriali delle formule",
+        "Gestione del processo di omologazione e certificazione delle formule",
+        "Supporto al formulatore e alla produzione per questioni relative alle formule",
+        "Ricerca e gestione delle formule tramite Business Central"
+    ],
+    "processes": [
+        {
+            "name": "Validazione Formula (Prove di Laboratorio)",
+            "objective": "Validare una formula proposta dal formulatore attraverso test di laboratorio.",
+            "steps": [
+                "Richiesta del Formulatore: Il formulatore invia una richiesta di validazione formula.",
+                "Esecuzione Prove di Laboratorio: Alex esegue le prove necessarie, genera la 'PR', effettua tutti i test e apporta le modifiche richieste.",
+                "Registrazione Dati: Alex inserisce i risultati della PR in un 'file template' presente su Extranet.",
+                "Restituzione e Valutazione: Alex restituisce il file con i risultati e le conclusioni al formulatore. La valutazione finale viene fatta congiuntamente al formulatore.",
+                "Decisione e Proseguimento: Se OK, si procede con le prove industriali. Se Negativo, si riesamina il problema e si riprova."
+            ],
+            "notes": "La 'PR' è probabilmente 'Prova di Ricerca' o 'Proposta di Ricerca'."
+        },
+        {
+            "name": "Prove Industriali e Omologazione Formula",
+            "objective": "Testare la formula su scala industriale e procedere alla sua omologazione e certificazione.",
+            "steps": [
+                "Richiesta Prove Industriali: Se la formula è validata in laboratorio, Alex invia richieste (tramite email) per effettuare tre prove industriali. Le dimensioni delle 'botti' sono ordinate in base al senso di sicurezza della formula.",
+                "Esecuzione Prove Industriali: La produzione esegue le prove industriali.",
+                "Caricamento Risultati: La produzione carica i risultati delle prove su Extranet.",
+                "Controllo Risultati: Alex controlla i risultati caricati su Extranet.",
+                "Decisione e Proseguimento: Se Positivo, si avvia un 'giro firme' tramite Extranet, si stampa il foglio, lo si allega alla formula e lo si inserisce nel 'dossier della PR'. Alex avvisa a voce il formulatore/la formulatrice per l'omologazione della materia prima/formula e accede a Business Central per dare il valore di certificazione alla formula. Se Negativo, si riesamina il problema e si riprova."
+            ],
+            "notes": "Il giro firme include l'inserimento delle persone che devono firmare, note, la formula vecchia e la formula nuova."
+        },
+        {
+            "name": "Gestione Rapporto con Produzione",
+            "objective": "Gestire le interazioni e le problematiche tra laboratorio e produzione.",
+            "steps": [],
+            "notes": "Implica un ruolo di mediazione e supporto."
+        },
+        {
+            "name": "Supporto Formule (in assenza di Samuele o per nuove risorse)",
+            "objective": "Fornire supporto e guida sulle formule in situazioni specifiche (assenza di colleghi esperti o formazione di nuove risorse).",
+            "steps": [],
+            "notes": "Implica condivisione di conoscenza e risoluzione problemi."
+        },
+        {
+            "name": "Gestione Formule in Business Central",
+            "objective": "Ricercare e certificare le formule nel sistema gestionale.",
+            "steps": [
+                "Utilizzo di Business Central per ricerca e certificazione delle formule."
+            ],
+            "notes": "Questa attività avviene a fine processo di validazione e completamento del giro firme."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Business Central (BC)",
+            "Extranet",
+            "File template (su Extranet)",
+            "Dossier della PR",
+            "Foglio del giro firme",
+            "File Excel personale"
+        ],
+        "communication": [
+            "Email",
+            "Comunicazione a voce"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Critico. Manca la formula all'interno della documentazione su Extranet, creando dipendenza da una persona (Biguzzi). La procedura di formazione è stata verbale, e manca una documentazione scritta su come eseguire i processi. In laboratorio le persone sono considerate 'intercambiabili', ma le criticità indicano lacune specifiche.",
+        "storageMethods": [
+            "Extranet",
+            "Dossier della PR (archivio fisico)",
+            "PC locale (per il file Excel personale)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Medio-Alto",
+        "reasons": [
+            "Dipendenza da Singole Risorse: Dipendenza da 'Biguzzi per capire cosa succede' riguardo le modifiche alle formule, a causa della mancanza di digitalizzazione della formula stessa nel sistema.",
+            "Mancanza di Documentazione Procedurale: L'assenza di documentazione scritta delle procedure (formazione verbale) rende il know-how vulnerabile. Se Alex o altri membri chiave del team lasciassero, la riproduzione esatta dei processi e la comprensione delle logiche sottostanti sarebbero compromesse, rallentando o bloccando le attività di validazione e omologazione.",
+            "Strumenti 'Artigianali' Critici: L'uso di un Excel personale per un controllo critico (sommatoria materie prime in BC) introduce un punto di fallimento legato alla persona e al suo strumento non centralizzato. La logica di questo controllo non è documentata o integrata nel sistema aziendale."
+        ]
+    },
+    "criticalities": [
+        "La formula non è inclusa nella documentazione su Extranet, rendendo difficile capire le modifiche e creando dipendenza da persone specifiche (es. Biguzzi).",
+        "Mancanza di una versione digitalizzata e completa della formula nel sistema.",
+        "Business Central non mostra la sommatoria delle materie prime, costringendo Alex a usare un foglio Excel esterno per un controllo critico.",
+        "La formazione è stata verbale, e non esistono procedure scritte su come eseguire i processi, il che può portare a incoerenze e difficoltà nella formazione di nuove risorse."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Digitalizzazione e Integrazione Completa della Formula",
+            "description": "Implementare un sistema (all'interno di Extranet o integrato con Business Central) che permetta di inserire, visualizzare e tracciare le modifiche complete della formula direttamente nella documentazione associata alla PR. Questo eliminerebbe la dipendenza da conoscenze tacite e migliorerebbe la trasparenza."
+        },
+        {
+            "title": "Miglioramento Funzionale di Business Central o Sviluppo di un Tool Integrato",
+            "description": "Valutare un'integrazione o un'estensione di Business Central per includere la funzionalità di calcolo e visualizzazione automatica della sommatoria delle materie prime. In alternativa, sviluppare un piccolo tool o script che si integri con BC per automatizzare questo controllo, eliminando la necessità del file Excel personale e centralizzando la logica."
+        },
+        {
+            "title": "Formalizzazione e Documentazione delle Procedure Operative Standard (SOP)",
+            "description": "Avviare un progetto per documentare tutte le procedure operative standard (SOP) relative alla validazione, prova industriale e omologazione delle formule. Questo dovrebbe includere diagrammi di flusso, descrizioni dettagliate delle fasi, input/output, e responsabilità. La documentazione dovrebbe essere centralizzata e facilmente accessibile (es. su Extranet o una piattaforma di gestione della conoscenza)."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.3,
+        "indice_insostituibilita": 0.8,
+        "tasso_cambiamento": 0.3,
+        "impatto_downstream": 0.9,
+        "maturita_strumenti": 0.5,
+        "facilita_passaggio_consegne": 0.2,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.6,
+        "punti_singoli_fallimento": 0.8,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.4,
+        "livello_automazione": 0.4,
+        "tempo_ripristino": 0.7,
+        "qualita_controlli": 0.5,
+        "frammentazione_integrazioni": 0.7
+    }
+}

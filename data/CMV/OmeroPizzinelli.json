@@ -1,0 +1,122 @@
+{
+    "id": "OM01",
+    "name": "Omero Pizzinelli",
+    "role": "Tecnico di Assistenza e Consulente per Macchinari",
+    "department": "Area CMV",
+    "section": "Area CMV",
+    "coreActivities": [
+        "Fornire assistenza telefonica e consulenza tecnica ai clienti per macchinari di produzione colori",
+        "Gestire richieste di supporto tecnico che non generano costi diretti per l'azienda",
+        "Coordinare l'intervento di tecnici esterni per problematiche non risolvibili da remoto, inclusa la gestione dei report post-intervento",
+        "Supportare altri reparti aziendali e manutentori interni per questioni relative ai macchinari",
+        "Occuparsi dell'installazione di nuovi software presso i clienti, anche da remoto"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Richieste di Assistenza Tecnica Clienti",
+            "objective": "Risolvere problematiche tecniche dei clienti relative ai macchinari, o avviare l'intervento sul campo se necessario.",
+            "steps": [
+                "Ricezione Richiesta: Il cliente invia una richiesta tramite email (all'indirizzo ufficiale di assistenza tecnica), chiamata telefonica o WhatsApp.",
+                "Analisi e Gestione Remota: Omero analizza la richiesta e tenta di risolverla da remoto, fornendo consulenza o supporto diretto.",
+                "Verifica Risoluzione: Caso A (Risoluzione Remota): Se il cliente risolve il problema, la pratica viene chiusa. Caso B (Non Risoluzione / Necessità Intervento): Se il problema non è risolvibile da remoto, Omero genera una segnalazione per avviare la creazione di un preventivo e l'invio di un tecnico sul posto.",
+                "Intervento Tecnico (se necessario): Un tecnico esterno si reca dal cliente, esegue l'intervento e genera un report.",
+                "Acquisizione Dati Post-Intervento: Il report del tecnico viene caricato nell'Extranet aziendale. Omero recupera le informazioni dal report e le inserisce nel database interno."
+            ],
+            "notes": "Il processo include la gestione di richieste che possono portare a interventi sul campo e la successiva acquisizione dei dati post-intervento."
+        },
+        {
+            "name": "Gestione Richieste di Consulenza (senza costo)",
+            "objective": "Fornire supporto e consulenza ai clienti per problematiche che non generano costi diretti per l'azienda.",
+            "steps": [
+                "Ricezione Richiesta: Il cliente invia una richiesta (email, chiamata, WhatsApp).",
+                "Analisi e Gestione: Omero analizza e gestisce la richiesta, agendo come consulente.",
+                "Risoluzione: Il cliente riceve la consulenza e la pratica si conclude."
+            ],
+            "notes": "Questo processo si concentra su consulenze che non implicano costi diretti per l'azienda."
+        },
+        {
+            "name": "Installazione Software Remota",
+            "objective": "Installare nuovi software sui macchinari presso i clienti.",
+            "steps": [
+                "Connessione Remota: Omero si connette al PC del cliente utilizzando Teamviewer.",
+                "Installazione: Omero esegue l'installazione del software.",
+                "Supporto al Cliente: Omero assiste il cliente, che spesso non è in grado di avviare autonomamente Teamviewer."
+            ],
+            "notes": "Il processo include il supporto attivo al cliente per l'avvio della connessione remota."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Teamviewer"
+        ],
+        "communication": [
+            "Email (assistenza tecnica ufficiale)",
+            "Telefono",
+            "WhatsApp"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "La documentazione delle procedure è completamente mancante per la maggior parte delle attività di Omero. Esiste una procedura per la generazione dei preventivi che Omero applica e ritiene ben fatta, ma non sa dove sia documentata. Non esiste una procedura scritta per l'inserimento dei dati nei DB (solo note con chi ha fatto la nota, data e nota dell'inserimento).",
+        "storageMethods": [
+            "EXTRANET (DB storico richieste clienti e macchine)",
+            "DB delle chiamate di assistenza (per problemi più seri)",
+            "DB dei tintometri (storico problemi e soluzioni per ogni cliente)",
+            "PDF della macchina",
+            "Informazioni fornite dai fornitori delle macchine"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Omero agisce come un 'consulente' e un punto di riferimento per molteplici attività non documentate ('non ci sono ticket e procedure'). La sua conoscenza è prevalentemente tacita e non formalizzata.",
+            "La gestione delle richieste di consulenza, il supporto ad altri reparti e ai manutentori interni, e i 'progetti a spot' dipendono fortemente dalla sua esperienza e know-how personale.",
+            "L'assenza di procedure scritte per l'inserimento dati nei DB e per la gestione delle richieste di assistenza rende il processo dipendente dalla sua memoria e prassi.",
+            "La difficoltà nel reperire informazioni sui macchinari (PDF sparsi, fornitori) è gestita da Omero in modo 'artigianale', suggerendo che la sua capacità di 'arrangiarsi' è una competenza critica non trasferibile.",
+            "La perdita di Omero comporterebbe una significativa interruzione delle operazioni di assistenza tecnica, consulenza e supporto interno, richiedendo un lungo periodo di formazione per un sostituto e mettendo a rischio la continuità del servizio clienti."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Documentazione: L'assenza quasi totale di procedure scritte e documentazione è la criticità maggiore, creando un alto rischio di conoscenza tacita.",
+        "Frammentazione delle Informazioni: Le informazioni sui macchinari sono sparse in PDF e devono essere recuperate dai fornitori, rendendo il processo di ricerca inefficiente e dipendente dalla capacità di Omero di 'arrangiarsi'.",
+        "Assenza di un Sistema di Ticketing: La mancanza di un sistema di ticketing o di gestione delle richieste strutturato porta a una gestione informale e potenzialmente meno tracciabile delle interazioni con i clienti e gli altri reparti.",
+        "Dipendenza da Conoscenza Individuale: La gestione di consulenze, supporto ad altri reparti e progetti a spot è interamente basata sull'esperienza e le competenze di Omero, senza un processo standardizzato.",
+        "Difficoltà del Cliente con Teamviewer: I clienti non sanno installare/usare Teamviewer, il che richiede un intervento manuale aggiuntivo da parte di Omero e rallenta il processo."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Implementazione di un Sistema di Ticketing/CRM per l'Assistenza Tecnica",
+            "description": "Adottare una piattaforma dedicata (es. Jira Service Management, Zendesk, Salesforce Service Cloud) per la gestione centralizzata di tutte le richieste di assistenza e consulenza. Questo permetterebbe di tracciare ogni interazione, assegnare priorità, monitorare lo stato delle richieste e generare report, riducendo la dipendenza da email/WhatsApp informali."
+        },
+        {
+            "title": "Creazione di una Knowledge Base Centralizzata e Documentazione Procedure",
+            "description": "Sviluppare una knowledge base interna (es. Confluence, SharePoint) dove documentare tutte le procedure operative standard (SOP) per le attività di Omero (gestione richieste, inserimento dati, installazione software, ecc.). Parallelamente, creare un database strutturato per le informazioni sui macchinari (specifiche tecniche, manuali, storico interventi, ecc.) che sia facilmente consultabile e aggiornabile."
+        },
+        {
+            "title": "Ottimizzazione del Processo di Installazione Software Remota",
+            "description": "Valutare l'implementazione di soluzioni di accesso remoto più user-friendly o la creazione di guide passo-passo (anche video tutorial) per i clienti su come avviare Teamviewer o un'alternativa. In alternativa, esplorare strumenti di distribuzione software remota che riducano l'interazione manuale del cliente."
+        },
+        {
+            "title": "Standardizzazione dell'Inserimento Dati nei DB",
+            "description": "Definire e documentare procedure chiare e standardizzate per l'inserimento dei dati in tutti i DB esistenti (Extranet, DB chiamate, DB tintometri), includendo campi obbligatori e linee guida per le note. Questo migliorerebbe la qualità e l'omogeneità dei dati, facilitando future analisi e report."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.1,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.4,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.6,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.9,
+        "sensibilita_dati": 0.5,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.3,
+        "frammentazione_integrazioni": 0.7
+    }
+}

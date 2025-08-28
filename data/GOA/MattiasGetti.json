@@ -1,0 +1,112 @@
+{
+    "id": "MG01",
+    "name": "Mattias Getti",
+    "role": "Capoturno Gestione della produzione",
+    "department": "Gestione della Produzione",
+    "section": "Operazioni",
+    "coreActivities": [
+        "Gestione e processamento di tutte le Richieste di Acquisto (RDA) aziendali.",
+        "Costruzione e gestione dei turni orari del personale.",
+        "Organizzazione e distribuzione del carico di lavoro e delle risorse (es. botti, macchinari) tra il personale.",
+        "Supervisione e registrazione dei lavori di miscelazione (inizio/fine lavoro, gestione formule)."
+    ],
+    "processes": [
+        {
+            "name": "Gestione delle Richieste di Acquisto (RDA)",
+            "objective": "Gestire e approvare le richieste di acquisto necessarie per le operazioni aziendali.",
+            "steps": [
+                "Apprendimento del processo 'a voce' da un collega (Tamburini).",
+                "Esecuzione della gestione delle RDA."
+            ],
+            "notes": "Mancanza di un sistema per la giustificazione delle spese associate alle RDA, causando problemi (es. con Ronchi). Necessità di mettere a sistema il requisito di giustificazione."
+        },
+        {
+            "name": "Gestione Turni Orari e Distribuzione del Lavoro",
+            "objective": "Pianificare i turni del personale e distribuire il lavoro (quantità e assegnazione macchinari/risorse) in base alle esigenze produttive.",
+            "steps": [
+                "Raccolta Dati: Mattias e Matteo ricevono/consultano un report giornaliero di 'evasi'.",
+                "Pianificazione Quantitativo Lavoro: Mattias e Matteo si coordinano per definire il quantitativo di lavoro da gestire.",
+                "Organizzazione Turni e Distribuzione Risorse: Si organizzano per la gestione dei turni e la distribuzione delle botti.",
+                "Comunicazione Interna: Utilizzano un gruppo WhatsApp per scambiarsi informazioni lavorative relative alla pianificazione.",
+                "Pubblicazione Pianificazione: La pianificazione settimanale dei turni (con assegnazione persone/macchinari) viene stampata e pubblicata nel gruppo WhatsApp."
+            ],
+            "notes": "La costruzione dei turni avviene tramite un file Excel 'di costruzione propria'. I cambi sono manuali e le procedure per operare e fare modifiche ai turni non sono documentate."
+        },
+        {
+            "name": "Lavoro del Miscelatore",
+            "objective": "Eseguire operazioni di miscelazione secondo formule specifiche e registrarne l'esecuzione.",
+            "steps": [
+                "Ricezione Formula: La formula di miscelazione arriva al PC.",
+                "Gestione Varianti: Se ci sono varianti alla formula, queste sono già incorporate nella formula ricevuta.",
+                "Registrazione: Viene segnato l'inizio e la fine del lavoro di miscelazione."
+            ],
+            "notes": "Nessuna nota aggiuntiva."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Excel",
+            "Extranet"
+        ],
+        "communication": [
+            "WhatsApp"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Assente",
+        "storageMethods": [
+            "File Excel 'di costruzione propria' (per turni)",
+            "Formule di miscelazione (al PC)",
+            "Pianificazione settimanale stampata e pubblicata su WhatsApp"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "La maggior parte dei processi critici gestiti da Mattias (RDA, gestione turni, distribuzione lavoro) si basa su conoscenza tacita e procedure non documentate.",
+            "Il processo di gestione RDA è stato appreso 'a voce' e non ha un sistema di giustificazione formalizzato.",
+            "La gestione dei turni e la distribuzione del lavoro sono basate su un file Excel 'di costruzione propria' e su un coordinamento manuale tra Mattias e Matteo, con comunicazioni via WhatsApp. Le procedure per operare e fare modifiche ai turni non sono documentate, e i cambi sono manuali.",
+            "La perdita di Mattias o di Matteo comporterebbe una significativa interruzione delle operazioni di pianificazione della produzione e gestione del personale, richiedendo un lungo periodo di affiancamento per trasferire il know-how."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di documentazione: Assenza totale di procedure scritte per tutti i processi chiave, rendendo il know-how dipendente dalle singole persone.",
+        "Processo RDA non sistematico: Il processo di gestione RDA manca di un sistema per la giustificazione delle spese, generando problemi e inefficienze.",
+        "Gestione turni manuale: La costruzione e le modifiche dei turni sono interamente manuali e non supportate da procedure documentate, aumentando il rischio di errori e la dipendenza da strumenti artigianali.",
+        "Problemi macchinari: I macchinari esistenti hanno problemi e i nuovi macchinari necessitano di organizzazione e assemblaggio, indicando possibili colli di bottiglia o inefficienze produttive.",
+        "Dipendenza da strumenti informali: L'uso di WhatsApp per comunicazioni cruciali e la pubblicazione di pianificazioni, sebbene efficace per la rapidità, potrebbe non essere tracciabile o conforme alle politiche aziendali a lungo termine."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Formalizzazione e Digitalizzazione del Processo RDA",
+            "description": "Implementare un sistema digitale per la gestione delle RDA che includa campi obbligatori per la giustificazione della spesa e un workflow di approvazione. Questo potrebbe essere integrato in un ERP esistente o tramite una piattaforma di workflow dedicata."
+        },
+        {
+            "title": "Standardizzazione e Automatizzazione della Gestione Turni",
+            "description": "1. Documentare: Creare procedure operative standard (SOP) per la gestione dei turni e la distribuzione del lavoro, includendo le logiche attuali di Mattias e Matteo. 2. Centralizzare: Sviluppare o acquisire un software di gestione turni (es. Workforce Management System) che possa integrare i dati di 'evasi' e automatizzare la creazione e le modifiche dei turni, riducendo la dipendenza da Excel e dal lavoro manuale. 3. Comunicazione Integrata: Integrare la pubblicazione dei turni direttamente nel software, eliminando la dipendenza da WhatsApp per la distribuzione ufficiale."
+        },
+        {
+            "title": "Valutazione e Ottimizzazione del Parco Macchinari",
+            "description": "Avviare un'analisi approfondita dei problemi dei macchinari esistenti e pianificare l'installazione e l'organizzazione efficiente dei nuovi macchinari. Questo potrebbe includere manutenzione preventiva, formazione del personale e riorganizzazione del layout produttivo."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0,
+        "livello_formalizzazione": 0,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.5,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.3,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.4,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.2,
+        "tempo_ripristino": 0.9,
+        "qualita_controlli": 0.2,
+        "frammentazione_integrazioni": 0.6
+    }
+}

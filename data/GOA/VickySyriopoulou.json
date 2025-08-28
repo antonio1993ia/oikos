@@ -1,0 +1,180 @@
+{
+    "id": "VS01",
+    "name": "Vicky Syriopoulou",
+    "role": "Responsabile area Ricerca e Sviluppo, Color Designer",
+    "department": "Ricerca e Sviluppo (R&S)",
+    "section": "Laboratorio R&S, Dipartimento Color Designer",
+    "coreActivities": [
+        "Previsione e Strategia R&S: Analisi delle esigenze di mercato (tramite fornitori, fiere, commerciali) per definire direttive strategiche e trasformarle in idee esecutive per nuovi prodotti.",
+        "Gestione Laboratorio R&S: Coordinamento e supervisione delle attività del laboratorio, inclusa la gestione settimanale con il responsabile.",
+        "Gestione Qualità e Conformità: Gestione delle segnalazioni clienti/non conformità e revisione delle formule prodotti in base a normative (es. Comunità Europea).",
+        "Sviluppo Nuovi Prodotti (Finiture): Lavoro con i tecnici per la definizione delle finiture per nuovi prodotti.",
+        "Sviluppo Colore (Color Designer): Scelta cromatica per nuove collezioni/prodotti, ampliamento collezioni, definizione di setta cromatica e finiture per allestimenti."
+    ],
+    "processes": [
+        {
+            "name": "Definizione Direttive Strategiche R&S / Sviluppo Nuovi Prodotti",
+            "objective": "Generare idee e direttive esecutive per la realizzazione di nuovi prodotti basandosi sulle esigenze di mercato e anticipando le tendenze.",
+            "steps": [
+                "Raccolta Informazioni: Vicky (e Francesca) contattano i commerciali per raccogliere informazioni di mercato e le integrano con quelle estratte dalle fiere.",
+                "Generazione Idee: Vicky genera le idee di esecuzione per i nuovi prodotti. Francesca svolge un'attività simile su scala ridotta.",
+                "Approvazione: Le direttive/proposte vengono presentate al Direttore Commerciale (tramite riunioni o proposte dal dipartimento) che prende la decisione finale."
+            ],
+            "notes": "Input Necessari: Informazioni dai commerciali (spesso mancanti), informazioni dalle fiere, esigenze fornite dai fornitori. Output Prodotto: Idee e direttive per nuovi prodotti."
+        },
+        {
+            "name": "Gestione Settimanale Laboratorio R&S",
+            "objective": "Organizzare e monitorare le attività del laboratorio R&S.",
+            "steps": [
+                "Incontro Settimanale: Vicky si incontra con il responsabile del laboratorio.",
+                "Resoconto Settimana Precedente: Discussione del resoconto delle attività svolte nella settimana precedente.",
+                "Pianificazione Settimana Successiva: Organizzazione e assegnazione delle attività per la settimana successiva."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Gestione Segnalazioni Clienti / Non Conformità",
+            "objective": "Analizzare e risolvere segnalazioni relative a problemi di prodotto o cattiva esecuzione.",
+            "steps": [
+                "Ricezione Segnalazione: Vicky riceve la segnalazione.",
+                "Analisi Problema: Vicky analizza se il problema è legato al prodotto e/o a una cattiva esecuzione.",
+                "Gestione Problema: Vicky gestisce il problema.",
+                "Risoluzione: Il problema viene risolto."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Lancio Nuovi Prodotti (Finiture)",
+            "objective": "Definire le finiture per i nuovi prodotti da lanciare.",
+            "steps": [
+                "Lancio Nuovo Prodotto: Viene avviato il processo di lancio di un nuovo prodotto.",
+                "Studio Nuovo Prodotto: Studio approfondito del nuovo prodotto.",
+                "Contatto con Tecnici: Vicky contatta i tecnici.",
+                "Definizione Nuove Texture: Definizione delle nuove texture/finiture."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Revisione Formule (Conformità Normativa)",
+            "objective": "Aggiornare e modificare le formule dei prodotti in base alle normative (es. Comunità Europea).",
+            "steps": [
+                "Analisi Documenti: Analisi dei documenti relativi ai cambi normativi (es. materie prime, percentuali).",
+                "Estrazione Requisiti: Estrazione dei requisiti specifici dai documenti.",
+                "Preparazione Modifica Formule: Preparazione delle modifiche alle formule esistenti.",
+                "Test e Validazione: Esecuzione di test e validazione delle formule modificate.",
+                "Modifica: Implementazione delle modifiche."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Gestione Antibatterica in Produzione",
+            "objective": "Gestire e monitorare l'aspetto antibatterico nella produzione.",
+            "steps": [
+                "Creazione Procedura: È stata creata una procedura specifica per la gestione antibatterica.",
+                "Passaggio a Produzione: La procedura è stata trasmessa al reparto produzione.",
+                "Monitoraggio: Un responsabile dedicato monitora l'applicazione della procedura. Vicky interviene come responsabile per supervisionare."
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Sviluppo Colori (Color Designer)",
+            "objective": "Creare e definire nuove colorazioni e finiture per collezioni e allestimenti.",
+            "steps": [
+                "Coordinamento con Colorimetria R&S: Vicky si coordina con il reparto colorimetria di R&S per analisi.",
+                "Generazione Nuovi Colori: Generazione dei nuovi colori (con l'aiuto di due persone per l'esecuzione).",
+                "Scelta Finiture: Scelta delle finiture da aggiungere a un prodotto.",
+                "Ampliamento Collezioni: Adattamento e ampliamento delle collezioni al mercato.",
+                "Setta Cromatica Allestimenti: Ricezione richiesta di allestimento, contatto con responsabile area commerciale del mercato di riferimento, definizione di setta cromatica e finiture."
+            ],
+            "notes": "Input Necessari: Richieste di allestimento, informazioni sul mercato (spesso mancanti). Output Prodotto: Nuovi colori, finiture, collezioni ampliate, setta cromatica per allestimenti."
+        },
+        {
+            "name": "Gestione Formule Colore (Colorimetria)",
+            "objective": "Creare, salvare e aggiornare formule colore per prodotti e personalizzazioni.",
+            "steps": [
+                "Creazione Formule: Creazione di nuove tinte/formule colore.",
+                "Salvataggio Formule: Le nuove tinte sono salvate in un file Excel (personale). Le formule personalizzate sono scritte a penna su fogli.",
+                "Inserimento/Aggiornamento Sistema Tintometrico: Inserimento e aggiornamento delle formule nel sistema tintometrico.",
+                "Analisi tra Gruppi: Momenti di analisi tra i gruppi (non documentati)."
+            ],
+            "notes": "Input Necessari: Richieste di nuove tinte/personalizzazioni. Output Prodotto: Formule colore, tinte aggiornate nel sistema."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Extranet",
+            "Business Central",
+            "Cromashop"
+        ],
+        "communication": [
+            "Riunioni (con Direttore Commerciale, responsabile laboratorio)",
+            "Contatti diretti (con commerciali, tecnici, fornitori)"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Le procedure generali (es. gestione antibatterica, formazione nuovi arrivati) esistono, sono seguite e gestite a livello burocratico (soggetti a TUV). Sono documentate su Extranet e Business Central. Mancanza totale di una procedura per l'estrazione di dati di mercato o per la richiesta di report ad altri dipartimenti (es. reparto commerciale). Le formule colore (tinte nuove) sono salvate in un file Excel personale, mentre le formule personalizzate sono scritte a penna su fogli. I momenti di analisi tra i gruppi di colorimetria non sono documentati (\"restano in aria\").",
+        "storageMethods": [
+            "Server aziendale/Piattaforme gestionali (Extranet, Business Central)",
+            "PC locale/Personale (file Excel per tinte nuove)",
+            "Cartaceo (fogli scritti a penna per formule personalizzate)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Vicky Syriopoulou: La sua esperienza di 33 anni e il suo ruolo di \"visione dall'alto\" la rendono un punto di riferimento critico per le direttive strategiche di R&S. La sua capacità di \"capire le esigenze del mercato e trasformarle in strategie esecutive\" è una conoscenza tacita fondamentale. La mancanza di report strutturati dal commerciale la costringe a un lavoro manuale di raccolta e interpretazione che è altamente personalizzato.",
+            "Francesca: Anche se su scala minore, la sua autonomia e il modo \"nel suo piccolo\" di operare indicano una conoscenza non formalizzata.",
+            "Colorimetria: La gestione delle formule colore si basa su \"ricerca di persone che sanno cosa andare a toccare\" e su file Excel personali/fogli scritti a penna. Questo indica una forte dipendenza dal know-how individuale e un alto rischio di perdita di informazioni critiche se le persone chiave lasciassero l'azienda. La mancanza di dati estratti da Cromashop per decisioni informate aggrava il problema."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Dati di Mercato Strutturati: Problema primario è la mancanza di report dal reparto commerciale sull'andamento del mercato e sui prodotti venduti, essenziali per le direttive R&S e Color Designer.",
+        "Dipendenza da Contatti Manuali: La raccolta di informazioni di mercato si basa su chiamate dirette ai commerciali, con conseguente dispersione e difficoltà di consolidamento.",
+        "Processo Decisionale non Data-Driven: Le decisioni strategiche non sono basate su dati strutturati, ma sull'esperienza e l'interpretazione personale (es. Vicky).",
+        "Mancanza di Procedure per Richiesta Dati: Non esiste una procedura per richiedere ad altri dipartimenti (es. commerciale) la creazione di documenti e report necessari.",
+        "Informazioni di Mercato Assenti per Allestimenti: Non si ricevono informazioni sul mercato quando viene richiesta la preparazione di un allestimento, rendendo difficile l'ottimizzazione della setta cromatica.",
+        "Gestione Formule Colore Inefficiente: Le formule non sono trovabili in maniera digitale centralizzata (file Excel personali, fogli a penna); mancano completamente procedure documentate per la colorimetria; mancano i dati estratti da Cromashop per decisioni informate; forte dipendenza dal know-how individuale per la ricerca delle formule.",
+        "Analisi Inter-Gruppo Non Documentata: I momenti di analisi tra i gruppi di colorimetria non sono scritti e non generano conoscenza condivisibile."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Implementazione di un Sistema di Business Intelligence (BI) per Dati di Mercato",
+            "description": "Utilizzare la BI per centralizzare e rendere accessibili i dati di mercato (andamento, vendite prodotti, feedback clienti). Questo permetterebbe decisioni \"data-driven\" per la R&S e il Color Designer. Benefici: Riduzione della dipendenza da contatti manuali, miglioramento della qualità delle decisioni, anticipazione delle tendenze di mercato."
+        },
+        {
+            "title": "Formalizzazione del Processo di Raccolta Informazioni di Mercato",
+            "description": "Creare una procedura chiara e obbligatoria che richieda ai commerciali di inserire note e informazioni extra (problemi, situazioni di mercato) in un sistema centralizzato (es. CRM, piattaforma BI). Benefici: Standardizzazione della raccolta dati, riduzione del carico di lavoro manuale per R&S, disponibilità di informazioni cruciali per tutti i dipartimenti interessati."
+        },
+        {
+            "title": "Digitalizzazione e Centralizzazione delle Formule Colore",
+            "description": "Sviluppare un database centralizzato per tutte le formule colore (nuove tinte e personalizzate), integrato con il sistema tintometrico (Cromashop) e accessibile digitalmente. Digitalizzare le formule esistenti scritte a penna. Benefici: Eliminazione della dipendenza da file personali e cartaceo, facilità di ricerca e recupero delle formule, riduzione del rischio di perdita di know-how."
+        },
+        {
+            "title": "Documentazione delle Procedure di Colorimetria e Analisi",
+            "description": "Formalizzare e documentare tutte le procedure relative alla colorimetria (creazione, salvataggio, aggiornamento formule) e i momenti di analisi tra i gruppi. Utilizzare una piattaforma di gestione della conoscenza (es. Confluence, SharePoint). Benefici: Standardizzazione dei processi, facilitazione dell'onboarding di nuovi dipendenti, creazione di una base di conoscenza aziendale, riduzione del rischio di conoscenza tacita."
+        },
+        {
+            "title": "Sfruttamento dei Dati di Cromashop",
+            "description": "Implementare un processo per l'estrazione e l'analisi sistematica dei dati da Cromashop, rendendoli disponibili per decisioni informate. Benefici: Ottimizzazione dei processi di colorimetria, identificazione di pattern e tendenze, supporto decisionale basato su dati reali."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 5,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.1,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.7,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.8,
+        "sensibilita_dati": 0.6,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.2,
+        "frammentazione_integrazioni": 0.8
+    }
+}

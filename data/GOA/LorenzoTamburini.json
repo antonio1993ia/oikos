@@ -1,0 +1,143 @@
+{
+    "id": "LT01",
+    "name": "Lorenzo Tamburini",
+    "role": "Responsabile Produzione e Logistica",
+    "department": "Produzione e Logistica",
+    "section": "Produzione e Logistica",
+    "coreActivities": [
+        "Gestione della produzione e della logistica (turni di lavoro, personale, permessi, ferie)",
+        "Organizzazione del lavoro basata su ordini e prodotti mancanti, accoppiando pianificazione del lavoro e dei turni",
+        "Gestione delle spedizioni, inclusa l'analisi dello stato dei prodotti e l'organizzazione logistica",
+        "Gestione delle non conformità (segnalazioni clienti/dipendenti, valutazione rimborsi/resi, gestione richieste di risarcimento ai trasportatori)",
+        "Gestione dei problemi relativi a spedizioni non inviate (controllo giacenze, ri-invio, difesa da clienti 'furbetti')",
+        "Gestione dei documenti doganali per la preferenzialità dei prodotti",
+        "Contatto con i fornitori per la gestione dei pagamenti"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Turni di Lavoro e Personale",
+            "objective": "Organizzare il lavoro del personale di produzione e logistica in base alle esigenze operative.",
+            "steps": [
+                "Analisi Ordini e Prodotti Mancanti: Si analizzano gli ordini in arrivo e i prodotti mancanti per determinare il fabbisogno di lavoro.",
+                "Organizzazione del Lavoro: Si distribuisce il lavoro per le 'botti' (presumibilmente aree o fasi di produzione).",
+                "Pianificazione Turni: La pianificazione del lavoro viene accoppiata alla pianificazione dei turni del personale.",
+                "Gestione Variazioni: Si adattano e modificano i lavori e i turni sulla base di urgenze/richieste (permessi, cambi orari, ferie)."
+            ],
+            "notes": "La gestione dei turni e l'approccio al lavoro non hanno procedure documentate. La gestione delle urgenze e la reattività non sono documentate."
+        },
+        {
+            "name": "Gestione Spedizioni (Logistica)",
+            "objective": "Organizzare le spedizioni dei prodotti per il giorno/settimana.",
+            "steps": [
+                "Accesso Extranet: Il responsabile accede a un sistema 'extranet'.",
+                "Analisi Stato Prodotti: Si analizza lo stato dei prodotti in fase di collaudo e miscelazione tramite extranet.",
+                "Stima Tempi Effettivi: Basandosi sull'esperienza personale ('usa la testa'), il responsabile stima i tempi effettivi (es. un'ora, un'ora e mezza) per l'arrivo dei prodotti nel settore logistica.",
+                "Organizzazione Spedizioni: Si organizza la spedizione dei prodotti in base alle stime."
+            ],
+            "notes": "La gestione delle spedizioni (in particolare la stima dei tempi effettivi) non è documentata."
+        },
+        {
+            "name": "Gestione Non Conformità (Logistica)",
+            "objective": "Valutare e risolvere le non conformità relative a spedizioni (segnalazioni clienti/dipendenti).",
+            "steps": [
+                "Ricezione Richiesta: Arriva una richiesta di non conformità da un cliente.",
+                "Caricamento su Extranet: L'ufficio logistico carica la richiesta su extranet.",
+                "Valutazione Non Conformità: Il responsabile valuta se approvare o meno una nota di accredito o se restituire il reso in tempo reale. Questa fase si basa su un 'ragionamento' non documentato.",
+                "Definizione Rimborso/Restituzione: Una volta definita la soluzione (rimborso o restituzione).",
+                "Richiesta Rimborso Trasportatore: Viene attivata la fase di richiesta di rimborso al trasportatore che ha arrecato il danno."
+            ],
+            "notes": "La procedura per la valutazione delle non conformità e il ragionamento sottostante non è documentata. La procedura per operare con il trasportatore per richiedere il risarcimento non è documentata. Il passaggio di consegne per imparare la procedura di non conformità è avvenuto a voce, senza supporto documentale. Non esiste documentazione su come analizzare un danno per determinarne la consistenza nelle non conformità."
+        },
+        {
+            "name": "Gestione Problemi Spedizioni Non Inviate",
+            "objective": "Verificare e risolvere errori di spedizione in cui un ordine è caricato virtualmente ma non fisicamente evaso.",
+            "steps": [
+                "Ricezione Email Cliente: Il cliente invia un'email segnalando un ordine con DDT ma non ricevuto.",
+                "Controllo Giacenze: Si controllano le giacenze in magazzino per verificare se l'ordine è stato attivato o meno.",
+                "Re-invio / Difesa: Se l'ordine non è stato evaso, si procede a prelevare e re-inviare il prodotto. Se il cliente ha agito in malafede, la procedura di controllo permette di difendersi."
+            ],
+            "notes": "Il processo di verifica delle giacenze in magazzino per ordini non evasi non solo risolve il problema ma serve anche a 'difendersi' da clienti che tentano di frodare."
+        },
+        {
+            "name": "Creazione Documenti Doganali per Preferenzialità",
+            "objective": "Generare documenti per ottenere un valore che indichi la preferenzialità del prodotto per il passaggio in dogana.",
+            "steps": [
+                "Estrazione Distinte Base: Si estraggono le distinte base da 'Business Central'.",
+                "Inserimento in Excel: Le distinte base vengono inserite in un file Excel personalizzato.",
+                "Estrazione Info e Calcolo: Il processo in Excel estrae informazioni e genera calcoli per ottenere il valore di preferenzialità.",
+                "Generazione Documento: Si ottiene il valore per il passaggio in dogana."
+            ],
+            "notes": "Il processo per i documenti doganali è stato 'costruito da soli' e non è documentato. Questo processo è una soluzione interna per un'esigenza specifica."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Extranet",
+            "Business Central",
+            "File Excel personalizzato"
+        ],
+        "communication": [
+            "Email"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "La documentazione delle procedure è quasi completamente assente o non facilmente reperibile.",
+        "storageMethods": [
+            "Extranet",
+            "Business Central",
+            "File Excel locali o condivisi"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "La maggior parte dei processi chiave si basa sulla conoscenza tacita, esperienza personale e 'buon cuore' delle persone, piuttosto che su procedure documentate e trasferibili.",
+            "La gestione dei turni e l'adattamento alle urgenze sono basati su un 'sistema di lavoro' non documentato e sulla sua conoscenza.",
+            "La stima dei tempi effettivi per la logistica ('usa la sua testa') è una conoscenza critica che risiede unicamente in lui.",
+            "La valutazione delle non conformità e il ragionamento per decidere rimborsi/resi non è documentata, rendendo impossibile per altri operare in autonomia.",
+            "Il processo per i documenti doganali è stato sviluppato da lui e un'altra persona, ed è noto solo a loro, con il rischio che non possa essere replicato se mancassero.",
+            "La mancanza di documentazione per la gestione dei trasportatori per i risarcimenti è un altro punto critico.",
+            "La perdita di Lorenzo Tamburini comporterebbe un blocco o una grave inefficienza in tutte queste aree, con impatti diretti sulla produzione, logistica, gestione clienti e conformità doganale."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Documentazione Standardizzata: Quasi tutte le attività cruciali (gestione turni, gestione urgenze, stima tempi logistica, valutazione non conformità, gestione risarcimenti trasportatori, processo doganale) non sono documentate.",
+        "Dipendenza da Conoscenza Tacita: Forte dipendenza dalla conoscenza e dall'esperienza individuale di Lorenzo Tamburini, creando un alto rischio di business continuity.",
+        "Processi Manuali e Non Scalabili: Il processo per i documenti doganali, sebbene efficace, è 'one shot' e dipende da due persone, non essendo automatizzato o scalabile per risultati stabili nel tempo.",
+        "Comunicazione Verbale per Formazione: Il passaggio di consegne per imparare la procedura di non conformità è avvenuto a voce, senza supporto documentale.",
+        "Assenza di Standard per Valutazione Danni: Non esiste documentazione su come analizzare un danno per determinarne la consistenza nelle non conformità."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Documentazione e Standardizzazione dei Processi Chiave",
+            "description": "Ridurre la dipendenza dalla conoscenza tacita e migliorare la trasferibilità del know-how. Creare documentazione dettagliata per: la gestione dei turni e la pianificazione del lavoro (includendo criteri per urgenze e adattamenti); la stima dei tempi effettivi per la logistica (criteri, fattori di influenza); la valutazione delle non conformità (criteri di analisi, soglie di danno, procedure decisionali per note di accredito/resi); la gestione dei risarcimenti con i trasportatori (riferimenti contrattuali, passaggi operativi); il processo di creazione dei documenti doganali (dettagli dell'Excel, passaggi, logica). Utilizzare un sistema centralizzato di gestione della conoscenza (es. Confluence, SharePoint) per archiviare e rendere accessibili queste procedure."
+        },
+        {
+            "title": "Automazione del Processo Documenti Doganali",
+            "description": "Trasformare un processo 'artigianale' in una soluzione automatica e stabile, non dipendente da singole persone. Analizzare il file Excel e la logica sottostante per sviluppare uno script o un modulo software che si integri direttamente con Business Central per estrarre le distinte base, eseguire i calcoli e generare i valori di preferenzialità in automatico. Questo potrebbe essere un progetto di sviluppo interno o l'acquisto di un modulo specifico."
+        },
+        {
+            "title": "Implementazione di un Sistema di Workflow per Non Conformità",
+            "description": "Digitalizzare e tracciare il processo di gestione delle non conformità, dalla segnalazione alla risoluzione. Valutare e implementare una piattaforma di workflow (es. Jira Service Management, ServiceNow, un modulo di un ERP esistente) che permetta di: registrare le segnalazioni dei clienti/dipendenti; assegnare le attività di valutazione; tracciare le decisioni (nota di credito, reso, rifiuto); automatizzare le notifiche e le richieste di rimborso ai trasportatori; creare un database di casistiche per la formazione e la consultazione."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 5,
+        "copertura_documentazione": 0.05,
+        "livello_formalizzazione": 0.1,
+        "indice_insostituibilita": 0.95,
+        "tasso_cambiamento": 0.7,
+        "impatto_downstream": 0.9,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.05,
+        "impatto_cliente": 0.9,
+        "sensibilita_dati": 0.6,
+        "punti_singoli_fallimento": 0.95,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.2,
+        "tempo_ripristino": 0.9,
+        "qualita_controlli": 0.2,
+        "frammentazione_integrazioni": 0.6
+    }
+}

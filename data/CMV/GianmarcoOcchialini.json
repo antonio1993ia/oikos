@@ -1,0 +1,112 @@
+{
+    "id": "GO01",
+    "name": "Gianmarco Occhialini",
+    "role": "Specialista Accademy / Consulente Formatore",
+    "department": "Accademy",
+    "section": "CMV",
+    "coreActivities": [
+        "Gestione Progetti di Formazione/Consulenza",
+        "Ricerca e Analisi Dati per seminari e formazione",
+        "Analisi di Mercato",
+        "Formazione e Sviluppo Venditori",
+        "Ricerca Fornitori",
+        "Archiviazione Documentale"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Progetto di Formazione/Consulenza",
+            "objective": "Trasformare una richiesta di progetto in una strategia esecutiva di formazione o consulenza.",
+            "steps": [
+                "Fase A: Ricezione Progetto",
+                "Fase B: Analisi Progetto",
+                "Fase C: Richiesta Informazioni",
+                "Fase D: Generazione Strategia",
+                "Fase E: Invio Strategia",
+                "Fase F: Ricezione Feedback",
+                "Fase G: Trasformazione in Esecuzione"
+            ],
+            "notes": "La fase di trasformazione in esecuzione si basa sull'esperienza e competenza di Gianmarco e non è ben schedulabile."
+        },
+        {
+            "name": "Preparazione Seminari/Formazione (Ricerca Dati)",
+            "objective": "Raccogliere dati specifici per la preparazione di eventi formativi.",
+            "steps": [
+                "Fase A: Identificazione Necessità (località del seminario)",
+                "Fase B: Ricerca Dati (per area geografica)"
+            ],
+            "notes": "Non specificato se i dati provengono da fonti interne o esterne, o gli strumenti utilizzati."
+        },
+        {
+            "name": "Formazione Venditori in Consulenti Specialisti",
+            "objective": "Elevare le competenze dei venditori trasformandoli in 'consulenti specialisti' per migliorare la vendita attraverso la risoluzione di problemi.",
+            "steps": [
+                "Fase A: Analisi Iniziale (delle competenze attuali dei venditori)",
+                "Fase B: Erogazione Formazione",
+                "Fase C: Sviluppo Competenze"
+            ],
+            "notes": "Non specificato come vengono creati o dove sono archiviati i contenuti formativi."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Microsoft Excel",
+            "Microsoft PowerPoint",
+            "Gaia",
+            "Startweb (HR)",
+            "Teamsystem (Note spese)"
+        ],
+        "communication": [
+            "Email",
+            "Strumenti di collaborazione (presunto)"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Esiste una struttura di sottocartelle proprietaria per l'archiviazione, ma le procedure dei processi non sono formalmente documentate e si basano sulla conoscenza tacita.",
+        "storageMethods": [
+            "Struttura di sottocartelle proprietaria (su server condiviso o piattaforma di gestione documentale presunta)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Il processo di trasformazione dalla strategia all'esecuzione si basa unicamente sull'esperienza e competenza di Gianmarco.",
+            "La ricerca fornitori si basa sull'esperienza e competenza di Gianmarco.",
+            "La sua assenza comporterebbe una significativa perdita di capacità operativa e un rallentamento o blocco delle attività critiche.",
+            "La capacità di essere 'Specialista per gli esterni' e di trasformare i venditori in consulenti si basa fortemente sulla sua esperienza personale."
+        ]
+    },
+    "criticalities": [
+        "Dipendenza dalla conoscenza tacita per la fase di trasformazione dalla strategia all'esecuzione e per la ricerca fornitori.",
+        "Mancanza di standardizzazione e documentazione formale per i processi critici.",
+        "Potenziale inefficienza nell'utilizzo degli strumenti (alta percentuale di tempo su Excel e PowerPoint)."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Formalizzazione e Digitalizzazione dei Processi Critici",
+            "description": "Collaborare con Gianmarco per documentare e formalizzare lo 'scheletro di processo' per la trasformazione dalla strategia all'esecuzione e per la ricerca fornitori, includendo checklist, flow-chart o guide operative. Valutare l'implementazione di un tool di Project Management o Workflow Automation (es. Asana, Monday.com, Jira) per tracciare le fasi dei progetti, assegnare responsabilità e monitorare lo stato di avanzamento."
+        },
+        {
+            "title": "Valutazione di Strumenti per l'Analisi Dati e la Gestione Contenuti",
+            "description": "Esplorare l'adozione di strumenti più avanzati per l'analisi dei dati geografici e di mercato (es. strumenti di Business Intelligence o piattaforme GIS) per ridurre il tempo manuale speso in Excel. Valutare una piattaforma centralizzata per la gestione dei contenuti formativi e delle conoscenze (es. Confluence, SharePoint) per rendere la documentazione più accessibile e aggiornabile."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.2,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.6,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.5,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.4,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.5,
+        "tracciabilita_errori": 0.3,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.4,
+        "frammentazione_integrazioni": 0.6
+    }
+}

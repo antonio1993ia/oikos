@@ -1,0 +1,136 @@
+{
+    "id": "TB01",
+    "name": "Stefano Boschi",
+    "role": "Responsabile del Customer Care",
+    "department": "Customer Care",
+    "section": "Area CMV",
+    "coreActivities": [
+        "Gestione e risoluzione di situazioni non preventivate e problematiche complesse dei clienti",
+        "Coordinamento della comunicazione tra clienti e dipartimenti interni (funzione di \"ponte\" e \"centralino\")",
+        "Gestione della comunicazione con i clienti per aspetti finanziari (gestione crediti)",
+        "Gestione degli ordini (Italia e Internazionale)",
+        "Introduzione, configurazione e messa a regime del CRM aziendale, inclusa la formazione e l'adozione da parte dei team"
+    ],
+    "processes": [
+        {
+            "name": "Gestione della Richiesta Cliente (Customer Care)",
+            "objective": "Risolvere problemi e fornire risposte ai clienti in modo efficiente.",
+            "steps": [
+                "Ricezione Richiesta: Il Customer Care riceve la richiesta dal cliente (tramite centralino o altre vie).",
+                "Analisi e Traduzione: La richiesta del cliente viene analizzata e \"tradotta\" per essere comprensibile ai dipartimenti interni.",
+                "Interrogazione Interna: Il Customer Care si interfaccia con i dipartimenti interni competenti per ottenere la soluzione al problema.",
+                "Ricezione Risposta Interna: Il Customer Care riceve la soluzione o le informazioni dai dipartimenti interni.",
+                "Traduzione e Comunicazione al Cliente: La risposta viene \"tradotta\" in un linguaggio comprensibile al cliente e comunicata."
+            ],
+            "notes": "La procedura standard per la \"risposta al cliente\" non è documentata. L'obiettivo è che la sua documentazione avvenga tramite la messa in atto del CRM."
+        },
+        {
+            "name": "Gestione Crediti e Comunicazione Finanziaria",
+            "objective": "Gestire la comunicazione con i clienti per quanto riguarda gli aspetti finanziari e i crediti.",
+            "steps": [
+                "Comunicazione con i clienti per aspetti finanziari e crediti."
+            ],
+            "notes": "Le fasi sequenziali non sono dettagliate nella trascrizione, si deduce solo l'attività di comunicazione."
+        },
+        {
+            "name": "Prevenzione Problemi Futuri e Miglioramento Performance",
+            "objective": "Identificare le richieste ricorrenti dei clienti per agire in prevenzione e migliorare i prodotti/servizi.",
+            "steps": [
+                "Raccolta Richieste Ricorrenti: Il Customer Care identifica e raccoglie le richieste più frequenti dai clienti.",
+                "Condivisione Interna: Le richieste ricorrenti vengono condivise con i settori di competenza (es. Produzione, Sviluppo Prodotto).",
+                "Analisi e Azione Preventiva: I settori competenti analizzano i dati per implementare azioni preventive o miglioramenti."
+            ],
+            "notes": "Questa pratica è una best practice per ottenere insight e agire in prevenzione, anche se non ancora formalizzata come procedura."
+        },
+        {
+            "name": "Introduzione e Messa a Regime del CRM",
+            "objective": "Centralizzare la comunicazione con i clienti, migliorare la gestione delle informazioni e l'efficienza operativa.",
+            "steps": [
+                "Configurazione Iniziale: Impostazione delle funzioni base del CRM.",
+                "Popolamento Dati: Assegnazione e condivisione di anagrafiche e contatti con la rete commerciale.",
+                "Formazione e Adozione Agenti: Gli agenti vengono formati all'uso del CRM per registrare visite e informazioni principali.",
+                "Integrazione: Connessione del CRM con Business Central.",
+                "Espansione Utilizzo: Coinvolgimento di altri team per ricevere richieste dal mondo esterno (non solo agenti) tramite CRM anziché email.",
+                "Sviluppi Futuri: Estensione dell'uso del CRM per flussi interni e integrazione con l'e-commerce."
+            ],
+            "notes": "Il CRM è in fase di implementazione/messa a regime e mira a centralizzare le informazioni sui clienti e le comunicazioni."
+        }
+    ],
+    "tools": {
+        "software": [
+            "CRM",
+            "Microsoft Dynamics",
+            "Microsoft Business Central"
+        ],
+        "communication": [
+            "Email",
+            "Diverse piattaforme (clienti/fornitori)",
+            "Centralino telefonico"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "La procedura standard per la \"risposta al cliente\" non è documentata. L'obiettivo è che la sua documentazione avvenga tramite la messa in atto del CRM. Non è specificato lo stato di documentazione per altri processi (es. gestione crediti, gestione ordini). Viene suggerito di mettere a procedura l'organizzazione di risposta coordinata e la raccolta dati per la prevenzione.",
+        "storageMethods": [
+            "Non esplicitamente menzionato, ma l'introduzione del CRM mira a centralizzare le informazioni sui clienti e le comunicazioni."
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Il processo core di \"risposta al cliente\" e la \"traduzione/intermediazione\" tra cliente e interno non sono documentati.",
+            "Stefano stesso svolge un ruolo chiave di \"ponte\" e \"coordinamento\" tra i vari gruppi aziendali per \"ammazzare i tempi di risposta\".",
+            "La conoscenza di come coordinare efficacemente questi processi e le relazioni interne per ottenere risposte rapide sembra risiedere in gran parte nell'esperienza e nel know-how tacito di Stefano e del suo team.",
+            "La mancanza di un DB di soluzioni già date aumenta ulteriormente la dipendenza dalla conoscenza individuale.",
+            "La perdita di questa competenza non documentata potrebbe rallentare drasticamente i tempi di risposta al cliente e compromettere la qualità del servizio."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Documentazione Procedure: La procedura di risposta al cliente non è documentata, generando dipendenza dalla conoscenza tacita.",
+        "Dispersione delle Informazioni: Clienti e fornitori comunicano tramite \"diverse piattaforme\", rendendo difficile estrarre, organizzare e catalogare le informazioni (problema che il CRM mira a risolvere).",
+        "Mancanza di un Database di Soluzioni: Non esiste un DB interrogabile di soluzioni già date, il che rallenta la risposta a problemi standard.",
+        "Comunicazione frammentata: Le richieste dal mondo esterno (agenti, clienti) arrivano ancora via email, anziché essere centralizzate in un sistema unico.",
+        "Adozione del CRM: L'introduzione e la messa a regime del CRM sono un focus, indicando che non è ancora pienamente operativo o adottato da tutti i team.",
+        "Problemi con Fornitore: Menzionato genericamente, ma indica una criticità non specificata."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Formalizzazione del Flusso di Risposta Cliente tramite CRM",
+            "description": "Utilizzare il CRM come strumento primario per documentare e gestire il flusso di risposta al cliente. Questo include la tracciatura delle richieste, l'assegnazione interna, la raccolta delle risposte e la comunicazione finale al cliente, sostituendo le comunicazioni via email."
+        },
+        {
+            "title": "Sviluppo di un Database di Soluzioni (Knowledge Base)",
+            "description": "Creare e popolare un database interrogabile (integrato nel CRM o stand-alone) contenente soluzioni a problemi comuni e risposte a domande frequenti. Questo permetterebbe al Customer Care di fornire risposte più velocemente e in modo consistente."
+        },
+        {
+            "title": "Centralizzazione e Organizzazione delle Comunicazioni Esterne",
+            "description": "Implementare un sistema (potenzialmente tramite il CRM) che vada a estrarre, organizzare e catalogare le informazioni provenienti da diverse piattaforme di comunicazione (email, chat, ecc.), assegnando numeri aziendali specifici per una migliore tracciabilità. L'obiettivo è che tutte le richieste esterne (non solo dagli agenti) confluiscano nel CRM."
+        },
+        {
+            "title": "Standardizzazione della Raccolta Dati per la Prevenzione",
+            "description": "Mettere a procedura la raccolta sistematica delle richieste più ricorrenti dei clienti. Questo processo dovrebbe includere l'analisi di questi dati per estrarre insight e guidare azioni preventive e miglioramenti di prodotto/servizio."
+        },
+        {
+            "title": "Estensione dell'Uso del CRM per Flussi Interni e E-commerce",
+            "description": "Una volta consolidato l'uso del CRM per le comunicazioni esterne, estenderne l'applicazione per gestire flussi di lavoro interni e integrarlo con la piattaforma e-commerce per una visione unificata del cliente e delle sue interazioni."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 5,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.1,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.8,
+        "impatto_downstream": 0.9,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 1.0,
+        "sensibilita_dati": 0.7,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.8,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.2,
+        "frammentazione_integrazioni": 0.8
+    }
+}

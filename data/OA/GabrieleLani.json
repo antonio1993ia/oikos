@@ -1,0 +1,157 @@
+{
+    "id": "GL01",
+    "name": "Gabriele Lani",
+    "role": "Qualità Salute Sicurezza Ambiente (QHSE)",
+    "department": "Non specificato esplicitamente, ma si deduce l'area 'Qualità, Salute, Sicurezza e Ambiente'.",
+    "section": "Qualità, Salute, Sicurezza e Ambiente",
+    "coreActivities": [
+        "Gestione e monitoraggio delle scadenze relative alle formazioni esterne sulla sicurezza.",
+        "Estrazione, riorganizzazione e backup di informazioni e procedure dall'Extranet aziendale.",
+        "Definizione, comparazione con normative e formalizzazione di procedure interne.",
+        "Gestione dei rapporti con i consulenti esterni per la sicurezza (es. organizzazione riunioni, sopralluoghi, valutazione rischi, corsi di formazione).",
+        "Registrazione, analisi e monitoraggio mensile dei KPI inerenti alla qualità, inclusi l'utilizzo del database e lo stato dei documenti.",
+        "Esecuzione, archiviazione e programmazione di Audit interni.",
+        "Verifica dell'implementazione dei sistemi di gestione.",
+        "Gestione dei rifiuti (contatti con smaltitori).",
+        "Collaborazione con altri servizi per consulenze su contrattualistica relativa all'area QHSE.",
+        "Gestione della certificazione di prodotto."
+    ],
+    "processes": [
+        {
+            "name": "Gestione Scadenze Formazioni Esterne Sicurezza",
+            "objective": "Mantenere aggiornato il controllo delle scadenze delle lezioni di sicurezza e garantirne l'esecuzione.",
+            "steps": [
+                "Aggiornamento manuale di uno scadenziario."
+            ],
+            "notes": "Input necessari: Informazioni sulle lezioni di sicurezza e le relative scadenze. Output prodotto: Scadenziario aggiornato (file Excel personale)."
+        },
+        {
+            "name": "Trasferimento e Riorganizzazione Informazioni da Extranet",
+            "objective": "Estrarre, riorganizzare e creare un backup di documenti, procedure e operazioni dall'Extranet per facilitarne il recupero e garantirne la conservazione.",
+            "steps": [
+                "Apprendimento dell'utilizzo dell'Extranet per l'estrazione dati.",
+                "Riorganizzazione delle informazioni estratte.",
+                "Indicizzazione dei file riorganizzati."
+            ],
+            "notes": "Input necessari: Accesso e conoscenza dell'Extranet, Informazioni estratte dall'Extranet, File riorganizzati. Output prodotto: Informazioni estratte, Backup riorganizzato, fedele all'organizzazione Extranet ma più facilmente accessibile, File Excel locale personale per un recupero più veloce."
+        },
+        {
+            "name": "Definizione e Formalizzazione Procedure in Accordo con Normative",
+            "objective": "Garantire che le procedure aziendali siano conformi alle normative vigenti e siano attuate.",
+            "steps": [
+                "Comparazione delle procedure esistenti con le normative.",
+                "Generazione di un documento di controllo e attuazione.",
+                "Esecuzione autonoma o richiesta di supporto.",
+                "Formalizzazione delle risposte e delle azioni."
+            ],
+            "notes": "Input necessari: Procedure aziendali, normative di riferimento, Analisi delle discrepanze, Documento di controllo, Risposte ottenute da terzi (se non fatto in autonomia). Output prodotto: Analisi delle discrepanze, Documento che indica cosa controllare e attuare, Azioni implementate o richieste di supporto, Procedure formalizzate."
+        },
+        {
+            "name": "Gestione Rapporti con Consulenti su Sicurezza",
+            "objective": "Coordinare le attività con i consulenti esterni per la sicurezza aziendale.",
+            "steps": [
+                "Organizzazione di riunioni periodiche annuali.",
+                "Coordinamento sopralluoghi in azienda.",
+                "Collaborazione per la valutazione dei rischi.",
+                "Organizzazione corsi di formazione."
+            ],
+            "notes": "Input necessari: Richieste aziendali, disponibilità consulenti. Output prodotto: Attività di sicurezza coordinate e realizzate. Questo processo è stato imparato per trasmissione orale, senza documentazione."
+        },
+        {
+            "name": "Registrazione e Analisi KPI Qualità",
+            "objective": "Monitorare l'andamento dei KPI di qualità nel tempo e identificare aree di miglioramento.",
+            "steps": [
+                "Controllo mensile sull'utilizzo del database, documenti scaduti e aggiornamenti necessari.",
+                "Analisi dei dati sulla base dei KPI definiti.",
+                "Salvataggio dei dati per lo storico.",
+                "Aggiornamento di una dashboard di monitoraggio."
+            ],
+            "notes": "Input necessari: Dati da database e documenti, Dati grezzi, Dati analizzati, Dati storicizzati. Output prodotto: Dati grezzi per l'analisi, Dati analizzati, Dati storicizzati, Dashboard di monitoraggio (file Excel personale). Esiste una procedura/documentazione riguardo a questo processo."
+        },
+        {
+            "name": "Esecuzione Audit Interni",
+            "objective": "Verificare la conformità e l'efficacia dei sistemi di gestione interni.",
+            "steps": [
+                "Programmazione degli audit basandosi su una procedura presente.",
+                "Esecuzione degli audit secondo criteri stabiliti.",
+                "Archiviazione dei risultati degli audit."
+            ],
+            "notes": "Input necessari: Procedura di audit interni. Output prodotto: Report di audit archiviati. Gabriele ha creato un file Excel personale per facilitare l'interrogazione e il controllo dei dati degli audit, ma non esiste documentazione su come interrogare questo file."
+        },
+        {
+            "name": "Gestione Rifiuti",
+            "objective": "Coordinare lo smaltimento dei rifiuti aziendali.",
+            "steps": [
+                "Presa contatti con gli smaltitori."
+            ],
+            "notes": "Input necessari: Richieste di smaltimento. Output prodotto: Contatti stabiliti. Questo processo è stato insegnato per voce, non c'è documentazione o procedura."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Extranet",
+            "File Excel personali"
+        ],
+        "communication": [
+            "Email",
+            "Telefono"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "La situazione è mista. Esiste documentazione per il processo di analisi KPI e per gli audit interni. Molti processi chiave si basano su conoscenza tacita e trasmissione orale. Gabriele ha creato diversi file Excel personali per supportare le sue attività, ma la logica di questi file non è documentata per altri utenti.",
+        "storageMethods": [
+            "File Excel salvati localmente",
+            "Informazioni estratte e riorganizzate dall'Extranet",
+            "Procedure di audit archiviate"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "La maggior parte delle attività critiche svolte da Gabriele, in particolare quelle apprese 'per trasmissione orale' o gestite tramite 'file Excel personali non documentati', rappresentano un rischio significativo per la business continuity.",
+            "Il processo di gestione delle scadenze formazioni e la gestione dei rapporti con i consulenti di sicurezza dipendono fortemente dalla conoscenza specifica di Gabriele, acquisita senza documentazione formale.",
+            "L'indicizzazione dei file dall'Extranet e la dashboard dei KPI si basano su file Excel personali la cui logica non è documentata, rendendo difficile per un altro dipendente replicare o subentrare in queste attività senza un lungo periodo di affiancamento.",
+            "La gestione dei rifiuti è completamente basata su conoscenza orale.",
+            "In caso di assenza prolungata o uscita di Gabriele dall'azienda, l'azienda rischierebbe di perdere il controllo su scadenze cruciali, la continuità dei rapporti con i consulenti, la capacità di analizzare i KPI di qualità con la stessa efficacia e la gestione dei rifiuti, con potenziali impatti sulla conformità normativa e sulla sicurezza."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di Documentazione Standard: Molti processi cruciali non sono supportati da procedure documentate, affidandosi unicamente alla conoscenza tacita di Gabriele.",
+        "Dipendenza da File Personali: L'uso estensivo di file Excel personali crea un punto di dipendenza e non garantisce la continuità o la scalabilità dei processi.",
+        "Apprendimento per Trasmissione Orale: La modalità di apprendimento 'per voce' o 'chiedendo ai già presenti' indica una mancanza di risorse formative strutturate e documentate.",
+        "Riorganizzazione Manuale Extranet: La necessità di 'riassemblare' e 'riorganizzare' le informazioni dall'Extranet suggerisce che la struttura originale dell'Extranet potrebbe non essere ottimale o che mancano funzionalità di ricerca avanzate."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Supporto alla Documentazione e Centralizzazione del Know-how",
+            "description": "Fornire a Gabriele gli strumenti e il tempo necessari per formalizzare e centralizzare le procedure che sta già iniziando a documentare. Questo include la creazione di un repository centrale (es. Confluence, SharePoint, sistema di gestione documentale) per tutte le procedure QHSE."
+        },
+        {
+            "title": "Standardizzazione e Automazione dei File Excel Personali",
+            "description": "Analizzare i file Excel 'artigianali' creati da Gabriele (scadenziario, indicizzazione Extranet, dashboard KPI, audit) per standardizzarne la struttura e, dove possibile, automatizzare i processi sottostanti o integrarli con sistemi aziendali."
+        },
+        {
+            "title": "Ottimizzazione dell'Extranet e Formazione Utenti",
+            "description": "Collaborare con il team IT o di gestione documentale per valutare l'usabilità e la struttura dell'Extranet. L'obiettivo è ridurre la necessità di riorganizzazione manuale delle informazioni e migliorare la funzionalità di ricerca."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.2,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.4,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.3,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.6,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.5,
+        "tracciabilita_errori": 0.3,
+        "livello_automazione": 0.2,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.6,
+        "frammentazione_integrazioni": 0.7
+    }
+}

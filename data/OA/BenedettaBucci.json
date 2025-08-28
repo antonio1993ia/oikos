@@ -1,0 +1,171 @@
+{
+    "id": "BB01",
+    "name": "Benedetta Bucci",
+    "role": "HR Specialist",
+    "department": "Operations & Administration",
+    "section": "OA",
+    "coreActivities": [
+        "Ricerca & Selezione del personale",
+        "Gestione del processo di Onboarding dei nuovi assunti",
+        "Gestione del processo di Offboarding dei dipendenti in uscita",
+        "Valutazione annuale delle performance dei dipendenti",
+        "Organizzazione e gestione della Formazione (esterna e interna)"
+    ],
+    "processes": [
+        {
+            "name": "Ricerca & Selezione",
+            "objective": "Identificare, selezionare e assumere il candidato più idoneo per una posizione vacante.",
+            "steps": [
+                "Ricezione Esigenza",
+                "Approvazione",
+                "Definizione Job Description",
+                "Pubblicazione Annunci",
+                "Valutazione Candidature",
+                "Validazione Candidature",
+                "Contatto per Colloqui",
+                "Scheda Informativa Candidati",
+                "Archiviazione Dati Candidati",
+                "Colloqui",
+                "Scheda Post-Colloquio",
+                "Selezione",
+                "Proposta Assuntiva",
+                "Gestione Esito Proposta",
+                "Comunicazioni Interne",
+                "Invio Dati a Consulenza"
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Onboarding",
+            "objective": "Accompagnare il nuovo dipendente nell'inserimento in azienda, fornendo le informazioni e gli strumenti necessari.",
+            "steps": [
+                "Generazione Onboarding",
+                "Accompagnamento Primo Giorno",
+                "Onboarding Tecnico",
+                "Comunicazione su Extranet"
+            ],
+            "notes": "La procedura di accompagnamento è stata creata in autonomia da Benedetta; l'azienda non se n’è occupata minimamente. Manca una cultura di onboarding e una direttiva aziendale per l'onboarding tecnico."
+        },
+        {
+            "name": "Offboarding",
+            "objective": "Gestire l'uscita del dipendente dall'azienda in modo strutturato e completo.",
+            "steps": [
+                "Ricezione Dimissioni",
+                "Riconsegna Dispositivi",
+                "Comunicazione Consulenza HR"
+            ],
+            "notes": "Mancanza di procedura strutturata per questa fase, oltre i punti sopra menzionati."
+        },
+        {
+            "name": "Valutazione Dipendenti",
+            "objective": "Valutare annualmente le performance dei dipendenti per decisioni strategiche di crescita.",
+            "steps": [
+                "Richiesta Valutazione",
+                "Invio Moduli",
+                "Compilazione Moduli",
+                "Restituzione Moduli",
+                "Analisi Strategica",
+                "Comunicazione Esito"
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Formazione (Corsi Esterni)",
+            "objective": "Organizzare e gestire corsi di formazione esterni per i dipendenti.",
+            "steps": [
+                "Raccolta Richieste",
+                "Registrazione Richieste",
+                "Coordinamento con Consulenti",
+                "Presentazione Piano",
+                "Approvazione Piano",
+                "Organizzazione Piano Approvato",
+                "Ricerca e Erogazione",
+                "Feedback Corso",
+                "Registrazione Feedback",
+                "Attivazione Pagamento"
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Formazione (Interni)",
+            "objective": "Organizzare e gestire l'addestramento e i corsi di formazione interni.",
+            "steps": [
+                "Raccolta Richieste",
+                "Validazione Proposta",
+                "Fase Operativa Organizzativa",
+                "Feedback Corso",
+                "Registrazione Feedback"
+            ],
+            "notes": "Le procedure per la formazione interna rientrano in quelle dell'esterna con meno moduli da eseguire."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Piattaforma per pubblicazione annunci (Lebo)",
+            "Microsoft Forms"
+        ],
+        "communication": [
+            "Email",
+            "Extranet"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "La procedura di Ricerca & Selezione c'è ed è stata riscritta. Tutti gli steps della Valutazione Dipendenti sono sotto procedura e documentati in files salvati nel server locale. La procedura di Formazione c'è ma potrebbe avere alcune migliorie per dettagli più precisi. La procedura di Onboarding di accompagnamento è stata creata in autonomia da Benedetta; l'azienda non se n’è occupata minimamente. Manca una cultura di onboarding e una direttiva aziendale per l'onboarding tecnico. Manca completamente una procedura strutturata per l'Offboarding.",
+        "storageMethods": [
+            "Server locale"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Il rischio è elevato, in particolare per i processi di Onboarding e Offboarding.",
+            "Per l'Onboarding, Benedetta ha dovuto creare autonomamente una procedura per il primo giorno e l'onboarding tecnico, a causa di un buco culturale aziendale e una mancanza di direttive.",
+            "Per l'Offboarding, la procedura è quasi inesistente.",
+            "Se Benedetta dovesse lasciare l'azienda, la gestione dell'inserimento dei nuovi dipendenti e dell'uscita di quelli attuali diventerebbe estremamente problematica e inefficiente, causando perdite di tempo enormi e la potenziale perdita di informazioni e progetti in sospeso.",
+            "Sebbene altre procedure siano documentate, la dipendenza da soluzioni artigianali e la mancanza di una cultura di documentazione aziendale per processi critici evidenziano una vulnerabilità."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di cultura e procedure di Onboarding: L'azienda manca di una cultura e di direttive strutturate per l'accompagnamento dei nuovi dipendenti, sia per l'inserimento generale che per l'onboarding tecnico. Questo comporta perdite di tempo enormi.",
+        "Mancanza di procedura di Offboarding: Non esiste una procedura completa per la gestione delle dimissioni/licenziamenti, a parte la riconsegna dei dispositivi e la comunicazione all'agenzia. Mancano passaggi chiave come il passaggio di consegne, questionari di uscita e la gestione dei progetti in sospeso.",
+        "Richieste formative via email: Attualmente le richieste formative arrivano via email, il che può generare disordine e difficoltà di tracciamento (anche se è prevista l'introduzione di un modulo).",
+        "Migliorie nella procedura di formazione: Sebbene la procedura sia presente, potrebbe essere migliorata con dettagli più precisi."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Sviluppo di un Programma di Onboarding Aziendale Strutturato",
+            "description": "Implementare le proposte di Yanis (video di academy) e Benedetta (kit di sopravvivenza con procedure e documenti) in un programma di onboarding ufficiale e documentato. Questo dovrebbe includere un percorso chiaro per i primi giorni/settimane, con check-in periodici e la definizione di responsabili per l'onboarding tecnico e culturale."
+        },
+        {
+            "title": "Creazione Urgente di una Procedura di Offboarding Completa",
+            "description": "Definire e documentare passaggi specifici per la gestione delle dimissioni/licenziamenti, includendo: Un processo formale per il passaggio di consegne delle attività e delle conoscenze. Un questionario di uscita per raccogliere feedback e identificare aree di miglioramento. Un protocollo per la terminazione dei progetti in sospeso e l'estrazione delle informazioni critiche."
+        },
+        {
+            "title": "Digitalizzazione e Centralizzazione delle Richieste Formative",
+            "description": "Accelerare l'implementazione del modulo per le richieste formative, magari tramite una piattaforma interna o un sistema di workflow, per eliminare l'uso delle email e centralizzare la raccolta dati."
+        },
+        {
+            "title": "Implementazione di un Sistema di Valutazione Post-Formazione",
+            "description": "Sviluppare e rendere operativo il form per valutare l'andamento dei dipendenti un mese dopo la formazione, per misurare l'efficacia dei corsi e l'applicazione delle competenze acquisite."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.4,
+        "livello_formalizzazione": 0.4,
+        "indice_insostituibilita": 0.8,
+        "tasso_cambiamento": 0.2,
+        "impatto_downstream": 0.7,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.2,
+        "impatto_cliente": 0.6,
+        "sensibilita_dati": 0.7,
+        "punti_singoli_fallimento": 0.8,
+        "segnale_rilavorazione": 0.6,
+        "tracciabilita_errori": 0.5,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.7,
+        "qualita_controlli": 0.4,
+        "frammentazione_integrazioni": 0.5
+    }
+}

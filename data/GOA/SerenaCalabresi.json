@@ -1,0 +1,118 @@
+{
+    "id": "SC01",
+    "name": "Serena Calabresi",
+    "role": "Adempimenti Normativi",
+    "department": "Non specificato",
+    "section": "Non specificata",
+    "coreActivities": [
+        "Gestione, elaborazione e caricamento delle schede di sicurezza (interne e dei fornitori) su una piattaforma extranet.",
+        "Aggiornamento di dati in file Excel per la generazione di etichette e comunicazione del lavoro svolto via email.",
+        "Preparazione e invio di schede relative alle composizioni chimiche (Chemical Composition) su richiesta.",
+        "Esecuzione di prove di laboratorio e comunicazione dei relativi risultati."
+    ],
+    "processes": [
+        {
+            "name": "Gestione Schede di Sicurezza (Prodotti Interni e Fornitori)",
+            "objective": "Assicurare la conformità normativa e la disponibilità delle schede di sicurezza, oltre a supportare la generazione delle etichette prodotto.",
+            "steps": [
+                "Elaborazione e Generazione Scheda: Utilizzo di Epyplus per elaborare, formulare e generare la distinta base della scheda di sicurezza.",
+                "Salvataggio Scheda: La scheda generata viene salvata in un file (non specificato il formato o la posizione iniziale, ma poi si menziona una 'cartella con le schede di sicurezza interna').",
+                "Caricamento su Extranet: La scheda di sicurezza viene caricata su una piattaforma extranet.",
+                "Aggiornamento Dati Etichette: Viene modificata una riga in un file Excel contenente i dati necessari per generare le etichette.",
+                "Comunicazione: Il lavoro svolto (presumibilmente l'aggiornamento per le etichette o la disponibilità della scheda) viene comunicato via email."
+            ],
+            "notes": "Input necessari: Dati per l'elaborazione su Epyplus, scheda generata. Output prodotto: Scheda di sicurezza generata, file salvato, extranet aggiornata, riga Excel modificata, email di comunicazione."
+        },
+        {
+            "name": "Gestione Richieste Chemical Composition",
+            "objective": "Fornire le schede di composizione chimica su richiesta (presumibilmente all'assistenza o altri reparti).",
+            "steps": [
+                "Ricezione Richiesta: Arriva una richiesta per la composizione chimica (da parte dell'assistenza).",
+                "Estrazione Dati: Viene presa una tabella da un foglio (non specificato se Excel o altro).",
+                "Formattazione Dati: I dati estratti vengono scritti/copiati dentro un template di Word.",
+                "Archiviazione Locale: Il file Word viene caricato/salvato in una cartella locale (unità U:).",
+                "Invio: Le schede vengono inviate al richiedente."
+            ],
+            "notes": "Input necessari: Richiesta da assistenza, tabella dati. Output prodotto: Scheda di composizione chimica in formato Word, file salvato in locale, scheda inviata."
+        },
+        {
+            "name": "Attività di Laboratorio",
+            "objective": "Eseguire prove di laboratorio e comunicare i risultati.",
+            "steps": [
+                "Ricezione Richiesta: Viene ricevuta una richiesta per l'esecuzione di prove.",
+                "Esecuzione Prove: Le prove vengono eseguite.",
+                "Comunicazione Risultati: I risultati delle prove vengono comunicati."
+            ],
+            "notes": "Input necessari: Richiesta di prove. Output prodotto: Risultati delle prove."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Epyplus",
+            "Microsoft Excel",
+            "Microsoft Word"
+        ],
+        "communication": [
+            "Extranet",
+            "Email"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Assente. Le procedure non sono documentate. L'operatività è stata acquisita tramite formazione diretta.",
+        "storageMethods": [
+            "Cartella per schede di sicurezza interne (poi sparita).",
+            "File Excel per i dati delle etichette.",
+            "Cartella locale (unità U:) per schede di Chemical Composition.",
+            "Storico delle Chemical Composition ricreato localmente con struttura a cartelle."
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "La maggior parte delle procedure e dei processi non è documentata.",
+            "L'operatività è stata acquisita tramite formazione diretta, suggerendo una forte dipendenza dalla conoscenza tacita della persona.",
+            "La perdita di Serena Calabresi comporterebbe una grave interruzione delle attività di adempimento normativo, in particolare per la gestione delle schede di sicurezza (obbligo legale decennale), la preparazione delle Chemical Composition e le attività di laboratorio, poiché il know-how risiede prevalentemente nella sua esperienza e non in procedure scritte o sistemi centralizzati."
+        ]
+    },
+    "criticalities": [
+        "Perdita di Dati Critici: Una cartella contenente schede di sicurezza interna è sparita, causando la perdita di dati essenziali, grave data la necessità legale di conservare uno storico decennale.",
+        "Mancanza di Sistemi di Archiviazione Sicuri: Non esiste un sistema sicuro e centralizzato per l'archiviazione del materiale normativo critico, esponendo l'azienda a rischi di perdita dati e non conformità.",
+        "Assenza di Alert per Perdita Dati: La sparizione della cartella non ha attivato nessun alert o notifica, indicando una mancanza di monitoraggio e controllo sui dati cruciali.",
+        "Mancanza di Storico e Tracciabilità: Non esiste uno storico delle etichette, rendendo difficile il recupero dei dati. Anche per le Chemical Composition lo storico è mancante.",
+        "Procedure Non Documentate: Tutte le attività principali sono basate su conoscenza tacita e non su procedure scritte, aumentando il rischio di dipendenza da singole persone e difficoltà nella formazione di nuovi dipendenti.",
+        "Dipendenza da File Locali/Non Centralizzati: L'uso di file Excel e cartelle locali (U:) per dati critici (etichette, Chemical Composition) rende i processi vulnerabili a perdite, errori e difficoltà di accesso/condivisione."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Implementazione di un Sistema di Gestione Documentale (DMS) o PDM/PLM",
+            "description": "Adottare una soluzione software centralizzata e sicura (es. un DMS o un modulo specifico all'interno di un PDM/PLM) per l'archiviazione e la gestione di tutte le schede di sicurezza e Chemical Composition. Questo sistema dovrebbe garantire versioning, tracciabilità, backup automatici, permessi di accesso granulari e, idealmente, funzionalità di alert in caso di modifiche o eliminazioni non autorizzate. Obiettivo: Eliminare il rischio di perdita dati, garantire la conformità normativa (storico decennale), centralizzare la conoscenza e migliorare la sicurezza delle informazioni."
+        },
+        {
+            "title": "Digitalizzazione e Automazione dei Processi di Generazione Etichette e Chemical Composition",
+            "description": "Integrare il software Epyplus con il nuovo DMS/PDM per automatizzare il flusso di generazione e archiviazione delle schede. Per le etichette, valutare l'integrazione tra il DMS e un sistema di gestione etichette che elimini la dipendenza dal file Excel manuale e crei automaticamente uno storico tracciabile. Per le Chemical Composition, il DMS dovrebbe gestire i template Word e automatizzare l'estrazione dati e l'invio, riducendo le operazioni manuali di copia-incolla e garantendo uno storico completo. Obiettivo: Ridurre gli errori manuali, migliorare l'efficienza, creare uno storico automatico e affidabile, e liberare tempo per attività a maggior valore aggiunto."
+        },
+        {
+            "title": "Documentazione Standardizzata delle Procedure Operative (SOP)",
+            "description": "Avviare un progetto di documentazione di tutte le procedure operative standard (SOP) per l'area Adempimenti Normativi, coinvolgendo Serena Calabresi come key user. Le SOP dovrebbero essere archiviate nel nuovo DMS o in una piattaforma di knowledge management (es. Confluence) e regolarmente aggiornate. Obiettivo: Ridurre il rischio di conoscenza tacita, facilitare l'onboarding di nuovi dipendenti, garantire la coerenza operativa e migliorare la business continuity."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0,
+        "livello_formalizzazione": 0.1,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.3,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.9,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.6,
+        "tracciabilita_errori": 0.1,
+        "livello_automazione": 0.2,
+        "tempo_ripristino": 0.9,
+        "qualita_controlli": 0.1,
+        "frammentazione_integrazioni": 0.7
+    }
+}

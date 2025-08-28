@@ -1,0 +1,146 @@
+{
+    "id": "FP01",
+    "name": "Francesca Perazzolo",
+    "role": "Responsabile Laboratorio",
+    "department": "Laboratorio",
+    "section": "Laboratorio",
+    "coreActivities": [
+        "Gestione e studio delle richieste di nuovi prodotti dalla direzione",
+        "Inserimento e gestione di nuove linee prodotto",
+        "Sviluppo e gestione di progetti",
+        "Archiviazione digitale di formule e risultati delle prove",
+        "Finalizzazione dei prodotti, inclusa la gestione del processo di girofirme e archiviazione",
+        "Esecuzione di prove e test sui prodotti (intermedie e di validazione)",
+        "Gestione delle campionature"
+    ],
+    "processes": [
+        {
+            "name": "Studio di Prodotti (su richiesta della direzione)",
+            "objective": "Eseguire lo studio e la preparazione iniziale per un prodotto richiesto dalla direzione.",
+            "steps": [
+                "Ricezione Richiesta tramite extranet, completa di tutte le informazioni necessarie.",
+                "Estrazione e Inserimento Dati (Excel): Francesca estrae la richiesta, scrive le informazioni e aggiunge una nuova riga in un file Excel. Questa riga include un ID univoco, nome dell'attività, progressivo, note e stato dell'attività per il controllo.",
+                "Compilazione Documentazione (PDF): Prende un template PDF, lo riempie con i dati estratti e vi inserisce le caratteristiche dell'ordine ricevuto."
+            ],
+            "notes": "Il processo è ben strutturato e organizzato personalmente da Francesca."
+        },
+        {
+            "name": "Inserimento Nuova Linea Prodotto",
+            "objective": "Gestire l'introduzione di una nuova linea di prodotti.",
+            "steps": [],
+            "notes": "La procedura è in fase di scrittura ('wip') e salvata in file nelle cartelle sul server U:."
+        },
+        {
+            "name": "Sviluppo di un Progetto",
+            "objective": "Sviluppare un nuovo progetto.",
+            "steps": [],
+            "notes": "La procedura è in fase di scrittura ('wip') e salvata in file nelle cartelle sul server U:."
+        },
+        {
+            "name": "Archiviazione Digitale",
+            "objective": "Archiviare digitalmente formule e risultati delle prove.",
+            "steps": [
+                "Vengono creati file su server locale (U:) contenenti formule e prove che sono state fatte."
+            ],
+            "notes": "La procedura è in fase di scrittura ('wip')."
+        },
+        {
+            "name": "Fase di Finalizzazione (Girofirme e Archiviazione)",
+            "objective": "Completare la validazione di un prodotto, ottenere le firme necessarie e archiviare la documentazione.",
+            "steps": [
+                "Raggiungimento Finalizzazione: Il prodotto ha raggiunto la fase finale (test, validazione).",
+                "Avvio Processo Girofirme: Si avvia il processo finale di girofirme con la documentazione associata.",
+                "Esecuzione su Extranet: Il processo di girofirme viene eseguito tramite extranet.",
+                "Archiviazione Cartacea: Il documento cartaceo viene archiviato."
+            ],
+            "notes": "Processo standardizzato per la chiusura del ciclo di vita del prodotto."
+        },
+        {
+            "name": "Prova dei Prodotti",
+            "objective": "Eseguire test sui prodotti in diverse fasi dello sviluppo.",
+            "steps": [
+                "Prove Intermedie: Eseguite in autonomia da Francesca o da persone con esperienza per evitare attese dai tecnici.",
+                "Validazione: Richiede la presenza del tecnico, in quanto più urgente. L'ideale sarebbe avere un tecnico dedicato in laboratorio."
+            ],
+            "notes": "Le prove intermedie sono gestite internamente per efficienza, mentre la validazione dipende dalla disponibilità dei tecnici."
+        },
+        {
+            "name": "Gestione Campionature",
+            "objective": "Registrare e gestire le campionature di prodotti.",
+            "steps": [
+                "Creazione Distinta Base: Le campionature vengono create con una distinta base standard.",
+                "Problematicità Caricamento: Se non viene creata una distinta base con versione diversa per la campionatura, il materiale viene caricato come definitivo.",
+                "Notifica Manuale: In caso di errore nel caricamento, vengono inviate manualmente notifiche per non utilizzare quel pezzo in produzione in quanto non corretto."
+            ],
+            "notes": "Il processo presenta criticità legate alla gestione delle distinte base e alla comunicazione manuale."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Extranet",
+            "Business Central",
+            "Microsoft Excel"
+        ],
+        "communication": [
+            "Comunicazione manuale/verbale"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Alcune procedure sono in fase di scrittura ('wip') e salvate sul server U:. Francesca ha costruito un sistema di lavoro molto organizzato che integra fisico e digitale. Esistono procedure e un documento che mappa i lavori verso i files contenenti i workflows, ma non è chiaro quanto siano utilizzate o conosciute da altri.",
+        "storageMethods": [
+            "Server locale (U:)",
+            "Extranet",
+            "Archiviazione cartacea"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Francesca ha 'costruito tutto il sistema per lavorare ed ha una procedura già costruita ed estremamente organizzata', indicando che gran parte del know-how operativo e dell'organizzazione del laboratorio risiede nella sua conoscenza tacita.",
+            "L'affermazione 'nella quotidianità si va più veloce ad imparare facendo' suggerisce che la dipendenza dall'esperienza diretta di Francesca è elevata.",
+            "La perdita di questa competenza potrebbe bloccare o rallentare significativamente processi chiave come lo studio di nuovi prodotti, la gestione delle campionature e la risoluzione di problemi legati a Business Central, che richiedono un'interazione manuale e una comprensione approfondita delle logiche sottostanti."
+        ]
+    },
+    "criticalities": [
+        "Business Central - Macchinosità: L'aggiornamento delle distinte base non è automatico quando la descrizione di un articolo cambia, richiedendo aggiornamenti manuali e causando la ricezione di 'prodotti sconosciuti' in produzione. Era impossibile creare diverse versioni della stessa formula per gestire materie prime alternative con comportamenti (e quantità) diversi.",
+        "Gestione Campionature: Le campionature vengono caricate come definitive se non si crea una distinta base specifica per la versione 'campione', richiedendo notifiche manuali alla produzione per evitare l'utilizzo di pezzi non corretti.",
+        "Collaborazione con Commerciali: Mancanza di confronto diretto e regolare con il settore commerciale per informazioni su tendenze di mercato, richieste clienti, problematiche riscontrate sui prodotti e analisi della concorrenza. Le informazioni arrivano in modo indiretto, rallentando la reattività e la capacità di prevenire reclami."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Automatizzazione e Digitalizzazione Processi Base",
+            "description": "Digitalizzare e automatizzare le fasi iniziali del processo 'Studio di Prodotti' e la gestione delle campionature. Implementare un sistema di workflow management (es. su Extranet o una piattaforma dedicata) per ricevere richieste con campi strutturati, generare automaticamente ID univoci, aggiornare lo stato dell'attività, generare automaticamente il PDF compilato e gestire le distinte base delle campionature in modo che siano automaticamente distinte dai prodotti definitivi."
+        },
+        {
+            "title": "Ottimizzazione Business Central e Integrazioni",
+            "description": "Valutare con il team IT la possibilità di implementare personalizzazioni o integrazioni in Business Central per automatizzare l'aggiornamento delle distinte base quando le descrizioni degli articoli cambiano e gestire in modo più flessibile le formule con materie prime alternative."
+        },
+        {
+            "title": "Miglioramento della Collaborazione Interfunzionale",
+            "description": "Istituire un canale di comunicazione strutturato e regolare tra il Laboratorio e il team Commerciale (es. riunioni settimanali/quindicinali dedicate, piattaforma di condivisione informazioni) per fornire al Laboratorio informazioni dirette e tempestive sulle tendenze di mercato, feedback dei clienti, problematiche sui prodotti e analisi della concorrenza."
+        },
+        {
+            "title": "Documentazione e Trasferimento di Know-how",
+            "description": "Completare la documentazione delle procedure 'wip' sul server U: e avviare un programma di documentazione del know-how tacito di Francesca, coinvolgendola attivamente. Questo potrebbe includere la creazione di manuali operativi dettagliati, video tutorial o sessioni di formazione interna."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.2,
+        "livello_formalizzazione": 0.3,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.6,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.4,
+        "facilita_passaggio_consegne": 0.2,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.5,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.4,
+        "livello_automazione": 0.3,
+        "tempo_ripristino": 0.7,
+        "qualita_controlli": 0.4,
+        "frammentazione_integrazioni": 0.6
+    }
+}

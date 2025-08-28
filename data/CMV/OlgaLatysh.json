@@ -1,0 +1,150 @@
+{
+    "id": "OL01",
+    "name": "Olga Latysh",
+    "role": "Assistente Tecnico, Gestore Ordini, Customer Care, Responsabile Certificazioni/Traduzioni, Supporto Amministrativo",
+    "department": "CMV",
+    "section": "Area CMV",
+    "coreActivities": [
+        "Gestione e risposta a segnalazioni di assistenza tecnica (prodotti e macchinari) da Italia ed Estero",
+        "Gestione del processo di evasione ordini (logistica-cliente) per ordini e-commerce e ordini esteri (area sovietica)",
+        "Calcolo stime costi/materiali per bancali e gestione certificazioni (es. certificati di origine estera)",
+        "Attività di Customer Care pre e post-vendita",
+        "Traduzioni e accompagnamento clienti"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Assistenza Tecnica",
+            "objective": "Fornire supporto tecnico a clienti italiani ed esteri per prodotti e macchinari.",
+            "steps": [
+                "Ricezione Richiesta: Input: Email (da 4 indirizzi diversi), Telefono (tramite centralino Linkus)",
+                "Registrazione Richiesta: Registrazione della segnalazione in un DB (obsoleto)",
+                "Analisi e Risposta: Analisi della richiesta e formulazione della risposta/soluzione",
+                "Invio Risposta: Invio della risposta al cliente",
+                "Archiviazione Risposta: Output: Tutte le risposte inviate ai clienti vengono salvate in \"Gaia\""
+            ],
+            "notes": "Le procedure di assistenza tecnica sono parzialmente supportate da un DB obsoleto. Le richieste arrivano da 4 indirizzi email diversi."
+        },
+        {
+            "name": "Gestione Ordini (E-commerce e Esteri)",
+            "objective": "Gestire il flusso degli ordini dal ricevimento all'archiviazione post-evasione.",
+            "steps": [
+                "Ricezione Ordine: Input: Ordini da E-commerce (automaticamente), Ordini Esteri (specificamente per l'area sovietica, gestiti direttamente da Olga)",
+                "Inserimento/Elaborazione Gestionale: Gli ordini e-commerce passano al \"gestionale\" (ERP). Olga interviene nella \"gestione di ordine logistica-cliente\"",
+                "Avvio Evasione: Il processo di evasione parte dal gestionale",
+                "Archiviazione Ordine: Output: Ad ordine evaso, viene archiviato nelle cartelle relative sul server locale aziendale"
+            ],
+            "notes": "La gestione degli ordini esteri per l'area sovietica è gestita direttamente da Olga."
+        },
+        {
+            "name": "Calcolo Stime Costi/Materiali Bancali",
+            "objective": "Determinare i costi e i materiali necessari per i bancali, inclusi i pesi lordi.",
+            "steps": [
+                "Raccolta Dati: Input: Dati necessari per il calcolo",
+                "Elaborazione Calcolo: Utilizzo di un file Excel personalizzato (\"costruito da loro\", \"in gruppo da 20 anni\")",
+                "Output Stima: Output: Stima dei costi e dei materiali necessari"
+            ],
+            "notes": "Il processo si basa su un file Excel \"artigianale\" e non è inserito nei processi aziendali né disponibile a livello di gruppo."
+        },
+        {
+            "name": "Gestione Certificazioni (Origine Estera)",
+            "objective": "Preparare e gestire i certificati di origine per l'estero.",
+            "steps": [
+                "Raccolta Dati: Input: Dati necessari per la certificazione",
+                "Generazione Certificato: Utilizzo di modelli personali creati in file Excel",
+                "Output Certificato: Output: Certificati di origine estera"
+            ],
+            "notes": "Le certificazioni si basano su modelli Excel creati personalmente da Olga."
+        },
+        {
+            "name": "Comunicazioni Amministrative Clienti",
+            "objective": "Avvisare i clienti per questioni amministrative.",
+            "steps": [
+                "Identificazione Necessità: Identificazione della necessità di avvisare il cliente",
+                "Invio Comunicazione: Utilizzo di Outlook per inviare email"
+            ],
+            "notes": "Potrebbe partire da B365 ma non lo fa, preferendo Outlook."
+        }
+    ],
+    "tools": {
+        "software": [
+            "BC365 (Business Central 365)",
+            "DB segnalazioni (obsoleto)",
+            "Ecommerce",
+            "Gestionale (ERP aziendale)",
+            "Extranet",
+            "Word",
+            "Excel",
+            "Outlook",
+            "Gaia"
+        ],
+        "communication": [
+            "Email (Outlook)",
+            "Telefono (Linkus - centralino)",
+            "WhatsApp",
+            "Telegram"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Le procedure di assistenza tecnica sono parzialmente supportate da un DB obsoleto. Il processo di calcolo stime bancali si basa su un file Excel \"artigianale\" e non è inserito nei processi aziendali né disponibile a livello di gruppo. Le certificazioni si basano su modelli Excel creati personalmente da Olga. Non esistono procedure documentate per la gestione dei problemi con le dogane. Olga \"sa dove sta la roba dentro il documentale\", suggerendo una conoscenza tacita dell'archivio aziendale.",
+        "storageMethods": [
+            "Risposte ai clienti salvate in \"Gaia\"",
+            "Ordini evasi archiviati in cartelle relative sul server locale aziendale",
+            "File Excel personalizzati (stime, certificazioni) sono probabilmente archiviati localmente o in cartelle di gruppo non centralizzate/ufficiali"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Navigazione Documentale: La sua capacità di \"sapere dove sta la roba dentro il documentale\" è una conoscenza tacita fondamentale per l'accesso rapido alle informazioni storiche.",
+            "Calcolo Stime Bancali: Il file Excel personalizzato per le stime costi/materiali è una soluzione critica che funziona da 20 anni ma non è integrata o condivisa ufficialmente. La sua logica e il suo utilizzo sono probabilmente noti solo al suo gruppo ristretto.",
+            "Modelli Certificazioni: I modelli Excel per i certificati di origine sono \"creati personalmente\", indicando una dipendenza dalla sua conoscenza specifica.",
+            "Processi Doganali: L'assenza di procedure documentate per le dogane implica che la gestione di queste problematiche dipenda interamente dall'esperienza e dal giudizio di Olga (e potenzialmente di altri membri del team).",
+            "Gestione Ordini Esteri (Area Sovietica): Sebbene gli ordini e-commerce siano automatizzati, la gestione specifica degli ordini per l'area sovietica potrebbe contenere sfumature e eccezioni note solo a lei.",
+            "Utilizzo Strumenti: La sua abitudine di non avviare comunicazioni da B365 ma da Outlook potrebbe indicare una preferenza personale che, se non compresa, potrebbe rallentare altri utenti."
+        ]
+    },
+    "criticalities": [
+        "Frammentazione Comunicazioni Assistenza: Ricezione richieste di assistenza da 4 indirizzi email diversi.",
+        "Strumenti Obsoleti: Il DB per la gestione delle segnalazioni di assistenza tecnica è \"vecchio\" e \"obsoleto\".",
+        "Problemi Centralino: Il centralino telefonico Linkus \"non funziona bene\".",
+        "Mancanza di Integrazione/Standardizzazione: Il file Excel per le stime bancali non è inserito nei processi aziendali e non è disponibile a livello aziendale. Mancanza di procedure documentate per la gestione dei problemi con le dogane. Modelli di certificazione basati su file Excel personali, non standardizzati.",
+        "Inefficienza nell'Uso di Strumenti: Olga usa Outlook per avvisare i clienti, pur sapendo che potrebbe partire da B365, indicando una potenziale inefficienza o mancanza di adozione piena dello strumento aziendale."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Centralizzazione e Modernizzazione Assistenza Tecnica",
+            "description": "Implementare un sistema di ticketing/CRM moderno (es. Zendesk, Salesforce Service Cloud) che consolidi le richieste da email, telefono e altri canali in un'unica interfaccia. Migrare i dati dal DB obsoleto al nuovo sistema. Intervenire sulla funzionalità del centralino Linkus o valutarne la sostituzione/integrazione con il nuovo sistema."
+        },
+        {
+            "title": "Digitalizzazione e Standardizzazione Calcoli/Certificazioni",
+            "description": "Analizzare il file Excel \"artigianale\" per le stime bancali, estrarne la logica e sviluppare una soluzione integrata nel gestionale (ERP) o in un tool dedicato, rendendola accessibile e standardizzata per tutto il team/azienda. Standardizzare e digitalizzare i modelli per i certificati di origine, magari all'interno del gestionale o di un sistema di gestione documentale (DMS)."
+        },
+        {
+            "title": "Documentazione Processi Critici",
+            "description": "Avviare un progetto di documentazione delle procedure per la gestione delle dogane, coinvolgendo Olga e altri esperti, per formalizzare il know-how tacito. Documentare l'utilizzo e la logica del file Excel per le stime bancali prima della sua migrazione."
+        },
+        {
+            "title": "Ottimizzazione Flussi di Comunicazione",
+            "description": "Formazione e incentivazione all'uso di BC365 per le comunicazioni amministrative, per sfruttare appieno le funzionalità del sistema e migliorare la tracciabilità."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.2,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.3,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.3,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.9,
+        "sensibilita_dati": 0.6,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.4,
+        "tracciabilita_errori": 0.3,
+        "livello_automazione": 0.4,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.3,
+        "frammentazione_integrazioni": 0.7
+    }
+}

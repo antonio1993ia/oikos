@@ -1,0 +1,98 @@
+{
+    "id": "SC01",
+    "name": "Sonia Cruz",
+    "role": "Assistente commerciale estero",
+    "department": "Commerciale",
+    "section": "Area CMV",
+    "coreActivities": [
+        "Gestione Ordini Internazionale (UE + Russia)",
+        "Assistenza Commerciale",
+        "Gestione Richieste Exibition-Showroom"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Ordini Internazionale (UE+Russia)",
+            "objective": "Gestire e processare gli ordini provenienti dai mercati internazionali (UE e Russia).",
+            "steps": [],
+            "notes": "Le procedure sono documentate e gestite da Gabriele. Informazioni insufficienti nella trascrizione per dettagliare le fasi."
+        },
+        {
+            "name": "Gestione Richieste Exibition-Showroom",
+            "objective": "Processare le richieste interne per l'allestimento di spazi espositivi e showroom.",
+            "steps": [
+                "Ricezione Richiesta dal commerciale (include report con 'cosa vuole fare il cliente e l'area dove farlo')",
+                "Acquisizione Richiesta da parte di Sonia",
+                "Compilazione Modulo specifico da parte di Sonia",
+                "Caricamento del modulo compilato e della richiesta originale tramite 'Sigep'"
+            ],
+            "notes": "Il processo descritto 'non è più aggiornato'."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Business Central",
+            "GAIA",
+            "Sigep"
+        ],
+        "communication": [
+            "Extranet",
+            "WECHAT",
+            "Telegram",
+            "Excel",
+            "WhatsApp",
+            "PowerPoint",
+            "Word"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Le procedure generali 'ci sono e sono salvate sul documentale'. Per la gestione ordini internazionali, la documentazione esiste ed è gestita da Gabriele.",
+        "storageMethods": [
+            "Documentale aziendale"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Medio-Alto",
+        "reasons": [
+            "Il processo di gestione richieste showroom è obsoleto e necessita di un aggiornamento urgente del modulo e del flusso.",
+            "L'attuale conoscenza di come gestire queste richieste è legata a un processo non più funzionale.",
+            "La dipendenza da un modulo non più adeguato ai cambiamenti nella linea di produzione di Oikos crea un punto di fallimento critico.",
+            "La necessità di un 'flusso che controlli che l’input che deve essere fatto e validato prima di poter anche solo fare la sigep' suggerisce una mancanza di standardizzazione e validazione nel processo attuale, rendendolo vulnerabile a errori o inefficienze.",
+            "Per la 'Gestione Ordini Internazionale', la dipendenza da 'Gabriele' per la gestione delle procedure, sebbene documentate, potrebbe indicare un rischio se la conoscenza pratica fosse prevalentemente tacita."
+        ]
+    },
+    "criticalities": [
+        "Il processo di gestione delle richieste per Exibition-Showroom 'non è più aggiornato'.",
+        "Il modulo utilizzato per le richieste showroom è obsoleto e non si adatta ai recenti cambiamenti nella linea di produzione di Oikos, rendendo le richieste non 'come Cristo comanda'.",
+        "Mancanza di un flusso che 'controlli che l’input che deve essere fatto e validato prima di poter anche solo fare la sigep per fare la richiesta', indicando un rischio di dati non validi o incompleti.",
+        "Urgenza di aggiornare il modulo e il flusso di richiesta showroom."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Riprogettazione e Digitalizzazione del Processo Showroom",
+            "description": "Riprogettare l'intero flusso di gestione delle richieste Exibition-Showroom. Questo include l'aggiornamento e la standardizzazione del modulo di richiesta in linea con le nuove linee di produzione di Oikos. L'obiettivo è creare un processo efficiente, validato e aggiornato che garantisca la correttezza delle richieste fin dall'input."
+        },
+        {
+            "title": "Implementazione di un Workflow di Validazione",
+            "description": "Introdurre un sistema (potenzialmente integrato con Sigep o una piattaforma di workflow dedicata) che preveda una fase di validazione obbligatoria dell'input prima che la richiesta possa essere finalizzata. Questo potrebbe includere controlli automatici sui dati inseriti e/o approvazioni manuali da parte di figure designate. L'obiettivo è ridurre errori, garantire la conformità delle richieste e migliorare l'efficienza complessiva del processo."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.5,
+        "livello_formalizzazione": 0.4,
+        "indice_insostituibilita": 0.6,
+        "tasso_cambiamento": 0.8,
+        "impatto_downstream": 0.7,
+        "maturita_strumenti": 0.6,
+        "facilita_passaggio_consegne": 0.5,
+        "impatto_cliente": 0.7,
+        "sensibilita_dati": 0.3,
+        "punti_singoli_fallimento": 0.7,
+        "segnale_rilavorazione": 0.8,
+        "tracciabilita_errori": 0.7,
+        "livello_automazione": 0.4,
+        "tempo_ripristino": 0.7,
+        "qualita_controlli": 0.2,
+        "frammentazione_integrazioni": 0.5
+    }
+}

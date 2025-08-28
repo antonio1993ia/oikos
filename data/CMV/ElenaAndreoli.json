@@ -1,0 +1,133 @@
+{
+    "id": "EA01",
+    "name": "Elena Andreoli",
+    "role": "Web Content Manager / Digital Specialist",
+    "department": "Marketing / CED",
+    "section": "Non esplicitamente definita",
+    "coreActivities": [
+        "Gestione e aggiornamento del Sito Main (inserimento/aggiornamento prodotti, documenti scaricabili, cartelle colori, gallery, news, pagine statiche, mazzette)",
+        "Gestione delle campagne di comunicazione digitale (Newsletter, Blogging, promozioni via WhatsApp tramite Pinguin)",
+        "Gestione dell'area formazione (Accademy: inserimento corsi, gestione iscrizioni, invio email pre/post corso)",
+        "Gestione tecnica e strategica del sito (SEO, Analitica, Autenticazione/Ruoli, Chatbot, Certificati SSL/Antispam, Domini, Backup)",
+        "Gestione dei contenuti multimediali (Archivio foto in Cunapp, utilizzo foto)"
+    ],
+    "processes": [
+        {
+            "name": "Gestione Newsletter",
+            "objective": "Creare e inviare newsletter informative/promozionali agli utenti.",
+            "steps": [
+                "Richiesta di creazione newsletter arriva dal reparto Marketing",
+                "Viene sviluppata la parte grafica e contenutistica",
+                "La newsletter viene schedulizzata per l'invio",
+                "Vengono preparate le liste di invio",
+                "La newsletter viene inviata (tramite Mailchimp)"
+            ],
+            "notes": ""
+        },
+        {
+            "name": "Gestione Archivio Foto (Cunapp)",
+            "objective": "Archiviare e rendere disponibili le foto di reference per l'utilizzo sul sito e nei post.",
+            "steps": [
+                "Foto inviata (originariamente tramite un flusso, ora via email)",
+                "Giro di approvazioni",
+                "Caricamento della foto nella cartella di rete \"Cunapp\"",
+                "Utilizzo della foto in post o sul sito"
+            ],
+            "notes": "Il flusso originale di ricezione/approvazione delle foto non è più seguito, e Elena riceve le foto direttamente via email."
+        },
+        {
+            "name": "Rinnovo Certificati SSL e Domini",
+            "objective": "Mantenere attivi e sicuri i domini e i siti web aziendali.",
+            "steps": [
+                "Consultazione di un foglio Excel per verificare le scadenze dei rinnovi (domini, siti, SSL)",
+                "Procedura per il rinnovo tramite la piattaforma \"Register\" (per i domini) e gestione dei certificati SSL",
+                "Applicazione dei rinnovi (es. installazione nuovi certificati SSL)"
+            ],
+            "notes": "Il processo di gestione dei certificati SSL è già documentato."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Mailchimp",
+            "Dynamics",
+            "Photoshop",
+            "Clickup",
+            "Extranet",
+            "RDA",
+            "Pinguin",
+            "Register",
+            "CMS aziendale"
+        ],
+        "communication": [
+            "Email",
+            "Microsoft Teams",
+            "WhatsApp (tramite Pinguin)"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "La documentazione è frammentata. Elena ha una \"cartella propria nel locale con tutte le procedure\". Il processo di rinnovo degli SSL è \"già documentato\". Per la maggior parte delle attività web, \"non ci sono flussi, procedure\" e le attività sono \"ideate e create in autonomia\".",
+        "storageMethods": [
+            "Server locale (srv-qncuq)",
+            "Cloud (oikos-group)",
+            "PC locale (di Elena)",
+            "Cartella di rete \"Cunapp\"",
+            "CMS aziendale"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Tutto quello che è stato sviluppato, sta venendo sviluppato e sarà sviluppato lato web era conosciuto solo da Elena, Yanis e Claudio.",
+            "Il sito vive in anarchia da tre anni.",
+            "Non ci sono flussi, procedure per molte attività cruciali (inserimento elementi, tracking, SEO, newsletter).",
+            "La perdita di Elena (o di Yanis/Claudio) comporterebbe una grave interruzione delle operazioni web.",
+            "Gran parte del know-how risiede nella testa di queste persone e non in procedure documentate o sistemi automatizzati.",
+            "La dipendenza da soluzioni \"artigianali\" e la mancanza di backup completi aggravano il rischio."
+        ]
+    },
+    "criticalities": [
+        "Mancanza di procedure e flussi ufficiali per la gestione del sito e delle attività web.",
+        "Dipendenza da conoscenza tacita concentrata su poche persone (Elena, Yanis, Claudio).",
+        "Flusso di gestione delle foto di reference interrotto, con ricezione via email.",
+        "Backup mancante, nonostante Elena sia \"già organizzata\" (soluzione temporanea o non ufficiale).",
+        "Gestione disordinata dei domini (domini non attivi comprati solo per \"non lasciare che altri li usino\").",
+        "Frammentazione della documentazione (procedure salvate in locale sul PC di Elena)."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Documentazione e Centralizzazione dei Processi",
+            "description": "Creare e documentare formalmente tutte le procedure operative standard (SOP) per la gestione del sito (inserimento/aggiornamento contenuti, SEO, newsletter, gestione corsi, ecc.). Utilizzare una piattaforma centralizzata (es. Confluence, SharePoint, o un sistema di gestione della conoscenza) per rendere queste SOP accessibili a tutto il team. Questo ridurrebbe la dipendenza dalla conoscenza tacita e faciliterebbe l'onboarding di nuovi membri."
+        },
+        {
+            "title": "Digitalizzazione Workflow e Approvazioni",
+            "description": "Implementare un sistema di workflow management (es. ClickUp, Asana, Jira o un sistema BPM dedicato) per digitalizzare e tracciare processi come l'approvazione delle foto, le richieste di aggiornamento del sito da parte del marketing, e la gestione dei corsi Accademy. Questo eliminerebbe le comunicazioni via email per le approvazioni e fornirebbe una tracciabilità completa."
+        },
+        {
+            "title": "Implementazione di una Strategia di Backup Robusta",
+            "description": "Definire e implementare una strategia di backup automatizzata e centralizzata per tutti i dati del sito (database, file sorgente, immagini, documenti) su un servizio cloud affidabile (es. AWS S3, Google Cloud Storage) con politiche di retention chiare. Questo garantirebbe la business continuity in caso di perdita di dati o di personale chiave."
+        },
+        {
+            "title": "Standardizzazione e Automazione della Gestione Domini/Certificati",
+            "description": "Valutare l'adozione di un sistema di gestione dei domini e certificati SSL che offra funzionalità di monitoraggio automatico delle scadenze e, se possibile, di rinnovo semi-automatico. Integrare questo sistema con alert automatici per ridurre la dipendenza dal foglio Excel manuale e prevenire interruzioni del servizio."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4,
+        "copertura_documentazione": 0.1,
+        "livello_formalizzazione": 0.1,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.7,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.6,
+        "facilita_passaggio_consegne": 0.1,
+        "impatto_cliente": 0.8,
+        "sensibilita_dati": 0.6,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.7,
+        "tracciabilita_errori": 0.2,
+        "livello_automazione": 0.4,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.3,
+        "frammentazione_integrazioni": 0.7
+    }
+}

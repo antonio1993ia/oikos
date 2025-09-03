@@ -1,9 +1,9 @@
 {
     "id": "TB01",
     "name": "Matteo Biguzzi",
-    "role": "Addetto alla pianificazione",
-    "department": "GOA",
-    "section": "GOA",
+    "role": "Production Planner",
+    "department": "Pianificazione",
+    "section": "Pianificazione della Produzione",
     "coreActivities": [
         "Mantenimento e aggiornamento di un file Excel proprietario per il tracciamento di andamenti, costi, gestioni e turni.",
         "Estrazione manuale di dati dal gestionale e inserimento nel file Excel, più volte al giorno.",

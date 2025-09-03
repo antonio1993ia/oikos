@@ -1,9 +1,9 @@
 {
     "id": "FS01",
     "name": "Filippo Screpis",
-    "role": "Addetto tintometria",
+    "role": "Operatore Tintometro",
     "department": "Produzione",
-    "section": "Non specificata",
+    "section": "Tintometria",
     "coreActivities": [
         "Memorizzazione e digitalizzazione di formule colore da formato cartaceo a software (CromaShop) e aggiornamento dati correlati in file Excel",
         "Gestione e inserimento dati relativi ai coloranti ricevuti in un file Excel storico",

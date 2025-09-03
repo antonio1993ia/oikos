@@ -1,9 +1,9 @@
 {
     "id": "SG01",
     "name": "Stefano Giunchi",
-    "role": "Gestione Magazzino",
+    "role": "Analista Gestione Scorte",
     "department": "Logistica",
-    "section": "Operativa/Logistica",
+    "section": "Controllo Inventario",
     "coreActivities": [
         "Gestione operativa su Business Central",
         "Analisi delle giacenze e delle scorte di magazzino",

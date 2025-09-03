@@ -264,119 +264,120 @@
         chatWindow.scrollTop = chatWindow.scrollHeight;
         }
         function replaceLoadingWith(text) {
-        if (!loadingEl) { addMessageToChat(text, 'ai'); return; }
-        loadingEl.textContent = text;
-        loadingEl.id = '';
-        loadingEl = null;
-        }
-
-        async function handleChatSubmit(e){
-        e.preventDefault();
-        if (sending) return;
-
-        const userMessage = chatInput.value.trim();
-        if (!userMessage || !window.APP_DATA.index) return;
-
-        sending = true;
-        addMessageToChat(userMessage, 'user');
-        updateChatHistory({ role: 'user', content: userMessage });
-        chatInput.value = '';
-
-        showLoading();
-
-        try {
-            // STEP 1: piano di recupero
-            const planResponse = await callLambda({
-            step: 1,
-            query: userMessage,
-            history: window.APP_DATA.chatHistory,
-            index_data: window.APP_DATA.index
-            });
-            const retrievalPlan = planResponse?.retrieval_plan;
-            if (!retrievalPlan) throw new Error("retrieval_plan mancante");
-
-            // STEP 2: costruisci contesto e risposta finale
-            const needsFullData = Object.values(retrievalPlan).some(v => {
-            if (v == null) return false;
-            if (Array.isArray(v)) return v.length > 0 && v[0] !== 'all';
-            return String(v) !== 'all';
-            });
-
-            let contextData = [];
-            if (needsFullData) {
-            const filtered = filterIndex(retrievalPlan, window.APP_DATA.index);
-            contextData = filtered.map(emp => window.APP_DATA.employeeFiles[emp.id]).filter(Boolean);
-            if (contextData.length > 50) contextData = contextData.slice(0, 50);
-            } else {
-            contextData = window.APP_DATA.index;
+            if (!loadingEl) { addMessageToChat(text, 'ai'); return; }
+            loadingEl.textContent = text;
+            loadingEl.id = '';
+            loadingEl = null;
             }
 
-            const answerResponse = await callLambda({
-            step: 2,
-            query: userMessage,
-            history: window.APP_DATA.chatHistory,
-            context_data: contextData
-            });
+        async function handleChatSubmit(e){
+            e.preventDefault();
+            if (sending) return;
 
-            const finalText = answerResponse?.response ?? "Nessuna risposta.";
-            replaceLoadingWith(finalText);
-            updateChatHistory({ role: 'assistant', content: finalText });
+            const userMessage = chatInput.value.trim();
+            if (!userMessage || !window.APP_DATA.index) return;
 
-        } catch (error) {
-            replaceLoadingWith(`Errore: ${error.message}`);
-            updateChatHistory({ role: 'assistant', content: `Errore: ${error.message}` });
-        } finally {
-            sending = false;
-            chatWindow.scrollTop = chatWindow.scrollHeight;
-        }
+            sending = true;
+            addMessageToChat(userMessage, 'user');
+            updateChatHistory({ role: 'user', content: userMessage });
+            chatInput.value = '';
+
+            showLoading();
+
+            try {
+                // STEP 1: piano di recupero
+                const planResponse = await callLambda({
+                    step: 1,
+                    query: userMessage,
+                    history: window.APP_DATA.chatHistory,
+                    index_data: window.APP_DATA.index
+                });
+            
+                const retrievalPlan = planResponse?.retrieval_plan;
+                if (!retrievalPlan) throw new Error("retrieval_plan mancante");
+
+                // STEP 2: costruisci contesto e risposta finale
+                const needsFullData = Object.values(retrievalPlan).some(v => {
+                    if (v == null) return false;
+                    if (Array.isArray(v)) return v.length > 0 && v[0] !== 'all';
+                    return String(v) !== 'all';
+                });
+
+                let contextData = [];
+                if (needsFullData) {
+                const filtered = filterIndex(retrievalPlan, window.APP_DATA.index);
+                contextData = filtered.map(emp => window.APP_DATA.employeeFiles[emp.id]).filter(Boolean);
+                if (contextData.length > 50) contextData = contextData.slice(0, 50);
+                } else {
+                contextData = window.APP_DATA.index;
+                }
+
+                const answerResponse = await callLambda({
+                    step: 2,
+                    query: userMessage,
+                    history: window.APP_DATA.chatHistory,
+                    context_data: contextData
+                });
+
+                const finalText = answerResponse?.response ?? "Nessuna risposta.";
+                replaceLoadingWith(finalText);
+                updateChatHistory({ role: 'assistant', content: finalText });
+
+            } catch (error) {
+                replaceLoadingWith(`Errore: ${error.message}`);
+                updateChatHistory({ role: 'assistant', content: `Errore: ${error.message}` });
+            } finally {
+                sending = false;
+                chatWindow.scrollTop = chatWindow.scrollHeight;
+            }
         }
 
         function filterIndex(plan, index){
-        const norm = v => (v == null ? null : Array.isArray(v) ? v : String(v));
-        const area = norm(plan.area), sub = norm(plan.sub_area), emp = norm(plan.employee);
+            const norm = v => (v == null ? null : Array.isArray(v) ? v : String(v));
+            const area = norm(plan.area), sub = norm(plan.sub_area), emp = norm(plan.employee);
 
-        let out = index;
-        if (area && !(Array.isArray(area) && area[0] === "all") && area !== "all") {
-            const allow = Array.isArray(area) ? area : [area];
-            out = out.filter(e => allow.includes(e.area));
-        }
-        if (sub && !(Array.isArray(sub) && sub[0] === "all") && sub !== "all") {
-            const allow = Array.isArray(sub) ? sub : [sub];
-            out = out.filter(e => allow.includes(e.sub_area));
-        }
-        if (emp && !(Array.isArray(emp) && emp[0] === "all") && emp !== "all") {
-            const allow = Array.isArray(emp) ? emp : [emp];
-            out = out.filter(e => allow.includes(e.id));
-        }
-        return out;
+            let out = index;
+            if (area && !(Array.isArray(area) && area[0] === "all") && area !== "all") {
+                const allow = Array.isArray(area) ? area : [area];
+                out = out.filter(e => allow.includes(e.area));
+            }
+            if (sub && !(Array.isArray(sub) && sub[0] === "all") && sub !== "all") {
+                const allow = Array.isArray(sub) ? sub : [sub];
+                out = out.filter(e => allow.includes(e.sub_area));
+            }
+            if (emp && !(Array.isArray(emp) && emp[0] === "all") && emp !== "all") {
+                const allow = Array.isArray(emp) ? emp : [emp];
+                out = out.filter(e => allow.includes(e.id));
+            }
+            return out;
         }
 
         async function callLambda(payload) {
-        const t0 = performance.now();
-        console.log("[callLambda] step:", payload.step, "size(bytes):", bytesOf(payload));
-        const res = await fetch(LAMBDA_ENDPOINT_URL, {
-            method: "POST",
-            headers: { "content-type": "application/json; charset=utf-8" },
-            body: JSON.stringify(payload)
-        });
-        const t1 = performance.now();
-        console.log("[callLambda] HTTP", res.status, res.statusText, "in", (t1 - t0).toFixed(1), "ms");
-        const text = await res.text();
-        if (!res.ok) throw new Error(`HTTP ${res.status}: ${text}`);
-        return JSON.parse(text);
+            const t0 = performance.now();
+            console.log("[callLambda] step:", payload.step, "size(bytes):", bytesOf(payload));
+            const res = await fetch(LAMBDA_ENDPOINT_URL, {
+                method: "POST",
+                headers: { "content-type": "application/json; charset=utf-8" },
+                body: JSON.stringify(payload)
+            });
+            const t1 = performance.now();
+            console.log("[callLambda] HTTP", res.status, res.statusText, "in", (t1 - t0).toFixed(1), "ms");
+            const text = await res.text();
+            if (!res.ok) throw new Error(`HTTP ${res.status}: ${text}`);
+            return JSON.parse(text);
         }
 
         function updateChatHistory(newMessage) {
-        window.APP_DATA.chatHistory.push(newMessage);
-        if (window.APP_DATA.chatHistory.length > 20) window.APP_DATA.chatHistory.shift();
+            window.APP_DATA.chatHistory.push(newMessage);
+            if (window.APP_DATA.chatHistory.length > 20) window.APP_DATA.chatHistory.shift();
         }
 
         function addMessageToChat(message, sender) {
-        const el = document.createElement('div');
-        el.className = `p-3 rounded-lg max-w-xs break-words ${sender === 'user' ? 'chat-bubble-user self-end' : 'chat-bubble-ai self-start'}`;
-        el.textContent = message;
-        chatWindow.appendChild(el);
-        chatWindow.scrollTop = chatWindow.scrollHeight;
+            const el = document.createElement('div');
+            el.className = `p-3 rounded-lg max-w-xs break-words ${sender === 'user' ? 'chat-bubble-user self-end' : 'chat-bubble-ai self-start'}`;
+            el.textContent = message;
+            chatWindow.appendChild(el);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
         }
     </script>
 </body>

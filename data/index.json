@@ -103,7 +103,8 @@
             "richieste grafiche",
             "design",
             "visual"
-        ]
+        ],
+        "urgency": 52
     },
     {
         "id": "LS01",
@@ -143,7 +144,7 @@
         "sub_area": "Commerciale e Gestione Ordini",
         "keywords": [
             "gestione ordini",
-            "non conformità",
+            "non conformit\u00e0",
             "fatturazione",
             "anagrafica clienti"
         ]
@@ -206,11 +207,11 @@
         "id": "AS01",
         "file_path": "data/CMV/AndreaSaporetti.json",
         "name": "Andrea Saporetti",
-        "role": "Operatività Academy",
+        "role": "Operativit\u00e0 Academy",
         "area": "CMV",
         "sub_area": "Academy e Formazione Tecnica",
         "keywords": [
-            "operatività academy",
+            "operativit\u00e0 academy",
             "eventi formativi",
             "campagne",
             "coordinamento formatori"
@@ -226,7 +227,7 @@
         "keywords": [
             "tecnico formatore",
             "collaudo r&d",
-            "controllo qualità",
+            "controllo qualit\u00e0",
             "pannellature"
         ]
     },
@@ -309,7 +310,7 @@
         "id": "GL01",
         "file_path": "data/OA/GabrieleLani.json",
         "name": "Gabriele Lani",
-        "role": "Qualità Salute Sicurezza Ambiente (QHSE)",
+        "role": "Qualit\u00e0 Salute Sicurezza Ambiente (QHSE)",
         "area": "OA",
         "sub_area": "QHSE",
         "keywords": [

@@ -1,9 +1,9 @@
 {
     "id": "SM01",
     "name": "Stefano Monaldi",
-    "role": "Tecnico colori",
-    "department": "Gestione Operativa Aziendale",
-    "section": "GOA",
+    "role": "Tecnico Colorista",
+    "department": "Assistenza Tecnica",
+    "section": "Colorimetria",
     "coreActivities": [
         "Gestione (creazione, lettura, aggiornamento, eliminazione) delle tinte",
         "Formulazione di nuove tinte e aggiornamento di quelle esistenti tramite software",

@@ -1,9 +1,9 @@
 {
     "id": "GL01",
     "name": "Gabriele Lani",
-    "role": "Qualità Salute Sicurezza Ambiente (QHSE)",
-    "department": "Non specificato esplicitamente, ma si deduce l'area 'Qualità, Salute, Sicurezza e Ambiente'.",
-    "section": "Qualità, Salute, Sicurezza e Ambiente",
+    "role": "Specialista QHSE",
+    "department": "QHSE",
+    "section": "Sistemi di Gestione",
     "coreActivities": [
         "Gestione e monitoraggio delle scadenze relative alle formazioni esterne sulla sicurezza.",
         "Estrazione, riorganizzazione e backup di informazioni e procedure dall'Extranet aziendale.",

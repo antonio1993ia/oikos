@@ -1,9 +1,9 @@
 {
     "id": "SC01",
     "name": "Serena Calabresi",
-    "role": "Adempimenti Normativi",
-    "department": "Non specificato",
-    "section": "Non specificata",
+    "role": "Specialista Affari Regolatori",    
+    "department": "Qualità e Normative",
+    "section": "Documentazione di Prodotto",
     "coreActivities": [
         "Gestione, elaborazione e caricamento delle schede di sicurezza (interne e dei fornitori) su una piattaforma extranet.",
         "Aggiornamento di dati in file Excel per la generazione di etichette e comunicazione del lavoro svolto via email.",

@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Michele Giovannetti",
+        "area": "GOA",
+        "sub_area": "Direzione GOA",
+        "description": "Dirige le operazioni di acquisti, produzione, logistica e laboratorio, gestendo la pianificazione finanziaria e strategica dell'area."
+    },
+    {
+        "name": "Vicky Syriopoulou",
+        "area": "GOA",
+        "sub_area": "Direzione R&S",
+        "description": "Definisce le strategie di Ricerca e Sviluppo e supervisiona il design di nuove collezioni colore, analizzando le tendenze di mercato."
+    },
+    {
+        "name": "Matteo Biguzzi",
+        "area": "GOA",
+        "sub_area": "Pianificazione",
+        "description": "Pianifica la produzione e gli acquisti, gestendo dati e turni tramite un sistema Excel avanzato per sopperire alle mancanze del gestionale."
+    },
+    {
+        "name": "Lorenzo Tamburini",
+        "area": "GOA",
+        "sub_area": "Produzione e Logistica",
+        "description": "È responsabile della produzione e della logistica, organizzando turni, spedizioni e gestendo le non conformità e i documenti doganali."
+    },
+    {
+        "name": "Mattias Getti",
+        "area": "GOA",
+        "sub_area": "Produzione e Logistica",
+        "description": "Come capoturno, gestisce le RDA, organizza il carico di lavoro e supervisiona le operazioni di miscelazione, coordinando il team tramite report e strumenti informali."
+    },
+    {
+        "name": "Stefano Giunchi",
+        "area": "GOA",
+        "sub_area": "Produzione e Logistica",
+        "description": "Gestisce il magazzino, analizzando giacenze e consumi per supportare gli acquisti e mantenendo l'allineamento tra inventario fisico e digitale."
+    },
+    {
+        "name": "Francesca Perazzolo",
+        "area": "GOA",
+        "sub_area": "Laboratorio e R&D",
+        "description": "È la responsabile del laboratorio, dove gestisce lo sviluppo di nuovi prodotti, l'archiviazione delle formule e il processo di validazione e girofirme."
+    },
+    {
+        "name": "Alex Pollini",
+        "area": "GOA",
+        "sub_area": "Laboratorio e R&D",
+        "description": "Assiste nella formulazione e nel rapporto con la produzione, validando nuove formule in laboratorio e gestendo le prove industriali e le certificazioni."
+    },
+    {
+        "name": "Enrico Teodorani",
+        "area": "GOA",
+        "sub_area": "R&S Colore",
+        "description": "Si occupa della formulazione e del controllo qualità dei colori, sviluppando campioni, validando le tinte per la produzione e gestendo lo sviluppo di nuovi color file."
+    },
+    {
+        "name": "Stefano Monaldi",
+        "area": "GOA",
+        "sub_area": "R&S Colore",
+        "description": "Come tecnico colori, gestisce la formulazione e l'inserimento di nuove tinte nel sistema tintometrico, assistendo clienti e produzione per questioni colorimetriche."
+    },
+    {
+        "name": "Filippo Screpis",
+        "area": "GOA",
+        "sub_area": "Tintometria",
+        "description": "Digitalizza e gestisce le formule colore sul software CromaShop, eroga le tinte con il tintometro e gestisce le non conformità operative."
+    },
+    {
+        "name": "Maurizio Pagliarani",
+        "area": "GOA",
+        "sub_area": "Tintometria",
+        "description": "Gestisce gli ordini al tintometro e l'aggiornamento delle formule, comunicandole all'ufficio ordini e archiviandole manualmente."
+    },
+    {
+        "name": "Beatrice Paganelli",
+        "area": "GOA",
+        "sub_area": "Approvvigionamenti",
+        "description": "Gestisce gli acquisti di materie prime, analizzando il fabbisogno, seguendo gli ordini e qualificando nuovi fornitori."
+    },
+    {
+        "name": "Carmelo Tripepi",
+        "area": "GOA",
+        "sub_area": "Approvvigionamenti",
+        "description": "Gestisce le Richieste di Acquisto (RDA) per beni e servizi non produttivi, seguendo il flusso approvativo tra diverse piattaforme."
+    },
+    {
+        "name": "Marica Andreoli",
+        "area": "GOA",
+        "sub_area": "Approvvigionamenti",
+        "description": "Si occupa degli ordini di approvvigionamento per il packaging e materie terze, gestendo i fornitori e i relativi pagamenti."
+    },
+    {
+        "name": "Samuele Magnani",
+        "area": "GOA",
+        "sub_area": "Controllo Qualità",
+        "description": "È responsabile del collaudo sui prodotti, associando istruzioni di lavoro alle formule e gestendo le non conformità in produzione."
+    },
+    {
+        "name": "Sara Arfili",
+        "area": "GOA",
+        "sub_area": "Controllo Qualità",
+        "description": "Esegue il controllo in ingresso delle materie prime, gestisce gli strumenti di laboratorio e aggiorna schede di sicurezza ed etichette."
+    },
+    {
+        "name": "Serena Calabresi",
+        "area": "GOA",
+        "sub_area": "R&S Normative",
+        "description": "Gestisce gli adempimenti normativi, elaborando e caricando le schede di sicurezza e preparando la documentazione sulle composizioni chimiche."
+    }
+]

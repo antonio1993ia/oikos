@@ -1,9 +1,9 @@
 {
     "id": "MG01",
     "name": "Mattias Getti",
-    "role": "Capoturno Gestione della produzione",
-    "department": "Gestione della Produzione",
-    "section": "Operazioni",
+    "role": "Capoturno di Produzione",
+    "department": "Produzione",
+    "section": "Operazioni di Reparto",
     "coreActivities": [
         "Gestione e processamento di tutte le Richieste di Acquisto (RDA) aziendali.",
         "Costruzione e gestione dei turni orari del personale.",

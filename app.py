@@ -33,23 +33,66 @@ def urgency_1_to_100(factors: Dict[str, Any]) -> int:
     avg = average_risk(factors)
     return round(avg * 99 + 1)
 
-# Path to the directory containing JSON files
-json_dir = r"C:\Users\Antonio\Desktop\Freelancing\Oikos\dashboard\data\CMV"
+def transform_employee_json(data: dict) -> dict:
+    """
+    Trasforma un record JSON dettagliato di un dipendente in un formato di riepilogo.
 
-# Recursively walk through the directory and process each JSON file
-for root, dirs, files in os.walk(json_dir):
-    for file in files:
-        if file.endswith('.json'):
-            file_path = os.path.join(root, file)
-            with open(file_path, 'r', encoding='utf-8') as f:
-                try:
-                    data = json.load(f)
-                    # print(f"Loaded {file}:", data["riskFactors"])
-                    riskFactors = data["riskFactors"]
-                    print(file)
-                    print("total:", total_score(riskFactors))
-                    print("avg:", average_risk(riskFactors))
-                    print("urgency_1_100:", urgency_1_to_100(riskFactors))
+    Args:
+        data: Il dizionario JSON di input.
+
+    Returns:
+        Il dizionario JSON trasformato.
+    """
+    # --- Mappature dirette e derivate ---
+    name = data.get("name", "")
+    area = data.get("department", "").replace("Area ", "")
+    file_name = name.replace(" ", "")
+
+    return {
+        "id": data.get("id"),
+        "file_path": f"data/{area}/{file_name}.json",
+        "name": name,
+        "role": data.get("role"),
+        "area": area,
+        "sub_area": data.get("section"),
+        "urgency": urgency_1_to_100(data.get("riskFactors", {})),
+    }
+
+
+
+# Path to the directory containing JSON files
+# json_dir = r"C:\Users\Antonio\Desktop\Freelancing\Oikos\dashboard\data\GOA"
+# new = []
+
+# indexpath = r"C:\Users\Antonio\Desktop\Freelancing\Oikos\oikos_github\data\index.json"
+# with open(indexpath, "r") as f:
+#     index_data = json.load(f)  # data is a list of dicts
+
+# # Recursively walk through the directory and process each JSON file
+
+# for root, dirs, files in os.walk(json_dir):
+#     for file in files:
+#         if file.endswith('.json'):
+#             file_path = os.path.join(root, file)
+#             with open(file_path, 'r', encoding='utf-8') as f:
+#                 try:
+#                     tmp_data = json.load(f)
+#                     riskFactors = tmp_data["riskFactors"]
                     
-                except Exception as e:
-                    print(f"Error loading {file_path}: {e}")
+#                     nome = tmp_data.get("name", "N/A")
+                    
+#                     update_json_index(nome, urgency_1_to_100(riskFactors), index_data)
+#                     for item in index_data:
+#                         if item.get("name") == nome:
+#                             item["urgency"] = urgency_1_to_100(riskFactors)
+#                             new.append(item)
+#                             print(f"{len(new)}")
+#                             break
+#                 except Exception as e:
+#                     print(f"Error loading {file_path}: {e}")
+# with open(r"C:\Users\Antonio\Desktop\Freelancing\Oikos\oikos_github\data\index_new.json", 'w', encoding='utf-8') as index_file:
+#     json.dump(new, index_file, indent=4)
+    
+# # save back to file
+# with open("data.json", "w") as f:
+#     json.dump(data, f, indent=4)

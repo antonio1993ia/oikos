@@ -1,9 +1,9 @@
 {
     "id": "CT01",
     "name": "Carmelo Tripepi",
-    "role": "Ordini e approvvigionamenti",
-    "department": "GOA",
-    "section": "Gestione Ordini e Approvvigionamenti",
+    "role": "Addetto Ufficio Acquisti",
+    "department": "Acquisti",
+    "section": "Approvvigionamenti Indiretti",
     "coreActivities": [
         "Gestione delle Richieste di Acquisto (RDA) per non materie prime",
         "Monitoraggio e gestione del flusso delle RDA, inclusa la lavorazione e l'approvazione",

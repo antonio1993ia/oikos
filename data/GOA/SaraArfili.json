@@ -1,9 +1,9 @@
 {
     "id": "SA01",
     "name": "Sara Arfili",
-    "role": "Controllo in ingresso materie prime",
-    "department": "GOA",
-    "section": "Non specificato nella trascrizione.",
+    "role": "Specialista Controllo Qualità Materie Prime",
+    "department": "Controllo Qualità",
+    "section": "Accettazione Materie Prime",
     "coreActivities": [
         "Ricerca e selezione di materie prime",
         "Controllo in accettazione e collaudo delle materie prime",

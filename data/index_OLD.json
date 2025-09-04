@@ -18,9 +18,9 @@
         "id": "SS01",
         "file_path": "data/CMV/SebastianoScarcelli.json",
         "name": "Sebastiano Scarcelli",
+        "role": "Responsabile Marketing Operativo",
         "area": "CMV",
         "sub_area": "Management e Coordinamento Strategico",
-        "role": "Responsabile Marketing Operativo",
         "keywords": [
             "marketing operativo",
             "commerciale",
@@ -144,7 +144,7 @@
         "sub_area": "Commerciale e Gestione Ordini",
         "keywords": [
             "gestione ordini",
-            "non conformità",
+            "non conformit\u00e0",
             "fatturazione",
             "anagrafica clienti"
         ]
@@ -207,11 +207,11 @@
         "id": "AS01",
         "file_path": "data/CMV/AndreaSaporetti.json",
         "name": "Andrea Saporetti",
-        "role": "Operatività Academy",
+        "role": "Operativit\u00e0 Academy",
         "area": "CMV",
         "sub_area": "Academy e Formazione Tecnica",
         "keywords": [
-            "operatività academy",
+            "operativit\u00e0 academy",
             "eventi formativi",
             "campagne",
             "coordinamento formatori"
@@ -227,7 +227,7 @@
         "keywords": [
             "tecnico formatore",
             "collaudo r&d",
-            "controllo qualità",
+            "controllo qualit\u00e0",
             "pannellature"
         ]
     },
@@ -274,299 +274,6 @@
         ]
     },
     {
-        "id": "AP01",
-        "file_path": "data/GOA/AlexPollini.json",
-        "name": "Alex Pollini",
-        "area": "GOA",
-        "sub_area": "Laboratorio e R&D",
-        "role": "Assistente formulazione e rapporto con produzione",
-        "keywords": [
-            "Laboratorio",
-            "R&S",
-            "Formulazione",
-            "Validazione formule",
-            "Prove industriali",
-            "Certificazioni"
-        ],
-        "urgency": 55
-    },
-    {
-        "id": "BP01",
-        "file_path": "data/GOA/BeatricePaganelli.json",
-        "name": "Beatrice Paganelli",
-        "area": "GOA",
-        "sub_area": "Approvvigionamenti",
-        "role": "Ufficio Approvvigionamenti",
-        "keywords": [
-            "Approvvigionamenti",
-            "Acquisti",
-            "Materie prime",
-            "Analisi fabbisogno",
-            "Qualifica fornitori"
-        ],
-        "urgency": 54
-    },
-    {
-        "id": "CT01",
-        "file_path": "data/GOA/CarmeloTripepi.json",
-        "name": "Carmelo Tripepi",
-        "area": "GOA",
-        "sub_area": "Approvvigionamenti",
-        "role": "Ordini e approvvigionamenti",
-        "keywords": [
-            "Approvvigionamenti",
-            "Acquisti indiretti",
-            "RDA",
-            "Flusso approvativo",
-            "Beni e servizi"
-        ],
-        "urgency": 48
-    },
-    {
-        "id": "ET01",
-        "file_path": "data/GOA/EnricoTeodorani.json",
-        "name": "Enrico Teodorani",
-        "area": "GOA",
-        "sub_area": "R&S Colore",
-        "role": "Formulazione colore R & S",
-        "keywords": [
-            "R&S Colore",
-            "Formulazione colore",
-            "Controllo qualità",
-            "Sviluppo campioni",
-            "Validazione tinte"
-        ],
-        "urgency": 54
-    },
-    {
-        "id": "FS01",
-        "file_path": "data/GOA/FilippoScrepis.json",
-        "name": "Filippo Screpis",
-        "area": "GOA",
-        "sub_area": "Tintometria",
-        "role": "Addetto tintometria",
-        "keywords": [
-            "Tintometria",
-            "Formule colore",
-            "CromaShop",
-            "Operatore tintometro",
-            "Non conformità"
-        ],
-        "urgency": 54
-    },
-    {
-        "id": "FP01",
-        "file_path": "data/GOA/FrancescaPerazzolo.json",
-        "name": "Francesca Perazzolo",
-        "area": "GOA",
-        "sub_area": "Laboratorio e R&D",
-        "role": "Responsabile Laboratorio",
-        "keywords": [
-            "Responsabile laboratorio",
-            "R&S",
-            "Sviluppo prodotti",
-            "Gestione formule",
-            "Validazione"
-        ],
-        "urgency": 55
-    },
-    {
-        "id": "LT01",
-        "file_path": "data/GOA/LorenzoTamburini.json",
-        "name": "Lorenzo Tamburini",
-        "area": "GOA",
-        "sub_area": "Produzione e Logistica",
-        "role": "Responsabile Produzione e Logistica",
-        "keywords": [
-            "Responsabile produzione",
-            "Responsabile logistica",
-            "Spedizioni",
-            "Non conformità",
-            "Documenti doganali"
-        ],
-        "urgency": 56
-    },
-    {
-        "id": "MA01",
-        "file_path": "data/GOA/MaricaAndreoli.json",
-        "name": "Marica Andreoli",
-        "area": "GOA",
-        "sub_area": "Approvvigionamenti",
-        "role": "Ordini approvvigionamento (packaging)",
-        "keywords": [
-            "Approvvigionamenti",
-            "Acquisti",
-            "Packaging",
-            "Materie terze",
-            "Gestione fornitori"
-        ],
-        "urgency": 48
-    },
-    {
-        "id": "TB01",
-        "file_path": "data/GOA/MatteoBiguzzi.json",
-        "name": "Matteo Biguzzi",
-        "area": "GOA",
-        "sub_area": "Pianificazione",
-        "role": "Addetto alla pianificazione",
-        "keywords": [
-            "Pianificazione",
-            "Produzione",
-            "Acquisti",
-            "Analisi dati",
-            "Gestione turni",
-            "Excel"
-        ],
-        "urgency": 55
-    },
-    {
-        "id": "MG01",
-        "file_path": "data/GOA/MattiasGetti.json",
-        "name": "Mattias Getti",
-        "area": "GOA",
-        "sub_area": "Produzione e Logistica",
-        "role": "Capoturno Gestione della produzione",
-        "keywords": [
-            "Capoturno",
-            "Produzione",
-            "Gestione RDA",
-            "Organizzazione lavoro",
-            "Supervisione",
-            "Miscelazione"
-        ],
-        "urgency": 48
-    },
-    {
-        "id": "MP01",
-        "file_path": "data/GOA/MaurizioPagliarani.json",
-        "name": "Maurizio Pagliarani",
-        "area": "GOA",
-        "sub_area": "Tintometria",
-        "role": "Addetto Tintometri",
-        "keywords": [
-            "Tintometria",
-            "Gestione ordini",
-            "Aggiornamento formule",
-            "Archiviazione manuale"
-        ],
-        "urgency": 54
-    },
-    {
-        "id": "MG01",
-        "file_path": "data/GOA/MicheleGiovannetti.json",
-        "name": "Michele Giovannetti",
-        "area": "GOA",
-        "sub_area": "Direzione GOA",
-        "role": "Direttore GOA",
-        "keywords": [
-            "Direzione",
-            "Management",
-            "Acquisti",
-            "Produzione",
-            "Logistica",
-            "Pianificazione strategica"
-        ],
-        "urgency": 56
-    },
-    {
-        "id": "SM01",
-        "file_path": "data/GOA/SamueleMagnani.json",
-        "name": "Samuele Magnani",
-        "area": "GOA",
-        "sub_area": "Controllo Qualità",
-        "role": "Controllo qualità / Responsabile collaudo su prodotti",
-        "keywords": [
-            "Controllo qualità",
-            "Collaudo prodotti",
-            "Responsabile CQ",
-            "Istruzioni di lavoro",
-            "Non conformità"
-        ],
-        "urgency": 53
-    },
-    {
-        "id": "SA01",
-        "file_path": "data/GOA/SaraArfili.json",
-        "name": "Sara Arfili",
-        "area": "GOA",
-        "sub_area": "Controllo Qualità",
-        "role": "Controllo in ingresso materie prime",
-        "keywords": [
-            "Controllo qualità",
-            "Materie prime",
-            "Controllo in ingresso",
-            "Schede di sicurezza",
-            "Etichette"
-        ],
-        "urgency": 57
-    },
-    {
-        "id": "SC01",
-        "file_path": "data/GOA/SerenaCalabresi.json",
-        "name": "Serena Calabresi",
-        "area": "GOA",
-        "sub_area": "R&S Normative",
-        "role": "Adempimenti Normativi",
-        "keywords": [
-            "Normative",
-            "R&S",
-            "Adempimenti normativi",
-            "Schede di sicurezza",
-            "Composizioni chimiche"
-        ],
-        "urgency": 50
-    },
-    {
-        "id": "SG01",
-        "file_path": "data/GOA/StefanoGiunchi.json",
-        "name": "Stefano Giunchi",
-        "area": "GOA",
-        "sub_area": "Produzione e Logistica",
-        "role": "Gestione Magazzino",
-        "keywords": [
-            "Gestione magazzino",
-            "Logistica",
-            "Analisi giacenze",
-            "Controllo inventario",
-            "Supporto acquisti"
-        ],
-        "urgency": 58
-    },
-    {
-        "id": "SM01",
-        "file_path": "data/GOA/StefanoMonaldi.json",
-        "name": "Stefano Monaldi",
-        "area": "GOA",
-        "sub_area": "R&S Colore",
-        "role": "Tecnico colori",
-        "keywords": [
-            "Tecnico colori",
-            "R&S Colore",
-            "Formulazione tinte",
-            "Tintometria",
-            "Assistenza clienti",
-            "Colorimetria"
-        ],
-        "urgency": 57
-    },
-    {
-        "id": "VS01",
-        "file_path": "data/GOA/VickySyriopoulou.json",
-        "name": "Vicky Syriopoulou",
-        "area": "GOA",
-        "sub_area": "Direzione R&S",
-        "role": "Responsabile area Ricerca e Sviluppo, Color Designer",
-        "keywords": [
-            "Direzione R&S",
-            "Strategia",
-            "Ricerca e Sviluppo",
-            "Color Design",
-            "Tendenze di mercato",
-            "Innovazione"
-        ],
-        "urgency": 56
-    },
-    {
         "id": "BB01",
         "file_path": "data/OA/BenedettaBucci.json",
         "name": "Benedetta Bucci",
@@ -603,7 +310,7 @@
         "id": "GL01",
         "file_path": "data/OA/GabrieleLani.json",
         "name": "Gabriele Lani",
-        "role": "Qualità Salute Sicurezza Ambiente (QHSE)",
+        "role": "Qualit\u00e0 Salute Sicurezza Ambiente (QHSE)",
         "area": "OA",
         "sub_area": "QHSE",
         "keywords": [

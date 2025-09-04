@@ -1,0 +1,68 @@
+[
+    {
+        "id": "BB01",
+        "file_path": "data/OA/BenedettaBucci.json",
+        "name": "Benedetta Bucci",
+        "role": "HR Specialist",
+        "area": "OA",
+        "sub_area": "Amministrazione del Personale",
+        "keywords": [
+            "hr",
+            "selezione",
+            "onboarding",
+            "offboarding",
+            "formazione",
+            "performance"
+        ]
+    },
+    {
+        "id": "CB01",
+        "file_path": "data/OA/ChiaraBuoso.json",
+        "name": "Chiara Buoso",
+        "role": "Amministrazione del Personale",
+        "area": "OA",
+        "sub_area": "Amministrazione del Personale",
+        "keywords": [
+            "amministrazione",
+            "personale",
+            "paghe",
+            "cedolini",
+            "ferie",
+            "straordinari",
+            "fondi"
+        ]
+    },
+    {
+        "id": "GL01",
+        "file_path": "data/OA/GabrieleLani.json",
+        "name": "Gabriele Lani",
+        "role": "Qualit\u00e0 Salute Sicurezza Ambiente (QHSE)",
+        "area": "OA",
+        "sub_area": "QHSE",
+        "keywords": [
+            "qhse",
+            "qualità",
+            "sicurezza",
+            "ambiente",
+            "audit",
+            "normative",
+            "certificazione"
+        ]
+    },
+    {
+        "id": "LG01",
+        "file_path": "data/OA/LucaGiorgini.json",
+        "name": "Luca Giorgini",
+        "role": "Direttore OA",
+        "area": "OA",
+        "sub_area": "Direzione OA",
+        "keywords": [
+            "direttore",
+            "qhse",
+            "sviluppo organizzativo",
+            "hr",
+            "kpi",
+            "riesame"
+        ]
+    }
+]

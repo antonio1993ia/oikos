@@ -15,6 +15,24 @@ def load_json_file(file_path: str) -> dict:
     """
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)
+
+def find_index_record(name: str, index_data: list) -> dict:
+    """
+    Trova un record nell'indice dati basato sul nome.
+
+    Args:
+        name: Il nome del dipendente da cercare.
+        index_data: La lista di dizionari dell'indice dati.
+
+    Returns:
+        Il dizionario del record trovato o None se non trovato.
+    """
+    for item in index_data:
+        if item.get("name") == name:
+            return item
+    print(f"Record not found for name: {name}")
+    return None
+
 def transform_employee_json(data: dict, idx_data: dict) -> dict:
     """
     Trasforma un record JSON dettagliato di un dipendente in un formato di riepilogo.
@@ -28,22 +46,22 @@ def transform_employee_json(data: dict, idx_data: dict) -> dict:
     """
     # --- Mappature dirette e derivate ---
     name = data.get("name", "")
-    area = data.get("department", "").replace("Area ", "")
+    area = idx_data.get("area", "")
     file_name = name.replace(" ", "")
     
-    for item in idx_data:
-        if item.get("name") == name:
-            idx_data = item
-            break
+    # for item in idx_data:
+    #     if item.get("name") == name:
+    #         idx_data = item
+    #         break
 
     return {
         "id": data.get("id"),
         "file_path": f"data/{area}/{file_name}.json",
         "name": name,
-        "role": data.get("role"),
         "area": area,
         "sub_area": idx_data.get("sub_area"),
-        "keywords": idx_data.get("description", []),
+        "role": data.get("role"),
+        "keywords": idx_data.get("keywords", []),
         "urgency": urgency_1_to_100(data.get("riskFactors", {})),
     }
 
@@ -56,7 +74,10 @@ for root, dirs, files in os.walk(json_dir):
             file_path = os.path.join(root, file)
             file_data = load_json_file(file_path)
             print(file_path)
-            tmp_data = transform_employee_json(file_data, index_data)
+            tmp_idx = find_index_record(file_data["name"], index_data)
+            print(type(tmp_idx))
+            
+            tmp_data = transform_employee_json(file_data, tmp_idx)
             new_data.append(tmp_data)
 
 with open(r"C:\Users\Antonio\Desktop\Freelancing\Oikos\oikos_github\data\index_goa_tot.json", 'w', encoding='utf-8') as f:

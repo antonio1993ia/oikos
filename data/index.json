@@ -631,5 +631,87 @@
             "kpi",
             "riesame"
         ]
+    },
+    {   
+        "id": "MGMT SUMMARY",
+        "name": "Management e Coordinamento Strategico",
+        "area": "CMV",
+        "sub_area": "Management e Coordinamento Strategico",
+        "file_path": "data/CMV/_management_summary.json",
+        "type": "summary"
+    },
+    {
+        "id": "MKT SUMMARY",
+        "name": "Marketing Operativo, Digitale ed Eventi",
+        "area": "CMV",
+        "sub_area": "Marketing Operativo, Digitale ed Eventi",  
+        "file_path": "data/CMV/_marketingoperativo_summary.json",
+        "type": "summary"
+    },
+    {
+        "id": "COM SUMMARY",
+        "name": "Commerciale e Gestione Ordini",
+        "area": "CMV",
+        "sub_area": "Commerciale e Gestione Ordini",  
+        "file_path": "data/CMV/_commerciale_summary.json",
+        "type": "summary"
+
+    },
+    {
+        "id": "ACD SUMMARY",
+        "name": "Academy e Formazione Tecnica",
+        "area": "CMV",
+        "sub_area": "Academy e Formazione Tecnica",  
+        "file_path": "data/CMV/_accademy_summary.json",
+        "type": "summary"
+    },
+    {
+        "id": "ASS SUMMARY",
+        "name": "Assistenza Tecnica e Supporto Specialistico",
+        "area": "CMV",
+        "sub_area": "Assistenza Tecnica e Supporto Specialistico",  
+        "file_path": "data/CMV/_assistenzatecnica_summary.json",
+        "type": "summary"
+    },
+    {
+        "id": "PROD&LOG SUMMARY",
+        "name": "Produzione e Logistica",
+        "area": "GOA",
+        "sub_area": "Produzione e Logistica",  
+        "file_path": "data/GOA/_produzionelogistica_summary.json",
+        "type": "summary"
+    },
+    {
+        "id": "R&D SUMMARY",
+        "name": "Laboratorio e R&D",
+        "area": "GOA",
+        "sub_area": "Laboratorio e R&D",  
+        "file_path": "data/GOA/_r&d_summary.json",
+        "type": "summary"
+    },
+    {
+        "id": "R&S COL",
+        "name": "R&S Colore",
+        "area": "GOA",
+        "sub_area": "R&S Colore",  
+        "file_path": "data/GOA/_r&scolore_summary.json",
+        "type": "summary"
+    },
+    {
+        "id": "TINT SUMMARY",
+        "name": "Tintometria",
+        "area": "GOA",
+        "sub_area": "Tintometria",  
+        "file_path": "data/GOA/_tintometria_summary.json",
+        "type": "summary"
+    },
+    {
+        "id": "APPR SUMMARY",
+        "name": "Approvigionamenti",
+        "area": "GOA",
+        "sub_area": "Approvigionamenti",  
+        "file_path": "data/GOA/_approvigionamenti_summary.json",
+        "type": "summary"
     }
+    
 ]

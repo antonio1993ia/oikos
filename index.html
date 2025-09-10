@@ -70,18 +70,14 @@
     </header>
 
     <div class="flex flex-1 overflow-hidden">
-        <!-- Sidebar di Navigazione -->
         <aside id="sidebar" class="w-1/4 xl:w-1/5 p-4 overflow-y-auto card">
             <h2 class="text-lg font-semibold mb-4 text-accent">Navigazione Aree</h2>
             <div id="navigation-tree"></div>
         </aside>
 
-        <!-- Contenuto Principale -->
         <main id="main-content" class="flex-1 p-6 overflow-y-auto">
-            <!-- Il contenuto verrà renderizzato qui da JS -->
-        </main>
+            </main>
 
-        <!-- Pannello Chat AI -->
         <aside class="w-1/3 xl:w-1/4 p-4 flex flex-col card overflow-hidden">
             <h2 class="text-lg font-semibold mb-4 text-accent flex items-center">
                 <i data-lucide="sparkles" class="mr-2"></i>
@@ -90,7 +86,7 @@
             <div id="chat-window" class="flex-1 overflow-y-auto mb-4 pr-2 space-y-4"></div>
             <div class="mt-auto">
                 <form id="chat-form" class="flex gap-2">
-                    <input type="text" id="chat-input" placeholder="Chiedi qualcosa sui dati..." class="flex-1 p-2 rounded-md bg-secondary border border-slate-600 text-slate-900 focus:outline-none focus:ring-2 focus:ring-accent">
+                    <input type="text" id="chat-input" placeholder="Chiedi qualcosa sui dati..." class="flex-1 p-2 rounded-md bg-secondary border border-slate-600 focus:outline-none focus:ring-2 focus:ring-accent">
                     <button type="submit" class="btn-primary p-2 rounded-md flex items-center justify-center">
                         <i data-lucide="send"></i>
                     </button>
@@ -136,18 +132,18 @@
                 const indexData = await indexResponse.json();
                 window.APP_DATA.index = indexData;
 
-                const employeePromises = indexData.map(emp =>
-                    fetch(`./${emp.file_path}`)
+                const dataPromises = indexData.map(item =>
+                    fetch(`./${item.file_path}`)
                         .then(res => {
-                            if (!res.ok) return Promise.reject(`File non trovato: ${emp.file_path}`);
-                            return res.json().catch(() => Promise.reject(`Errore JSON in: ${emp.file_path}`));
+                            if (!res.ok) return Promise.reject(`File non trovato: ${item.file_path}`);
+                            return res.json().catch(() => Promise.reject(`Errore JSON in: ${item.file_path}`));
                         })
-                        .then(data => ({ id: emp.id, data }))
+                        .then(data => ({ id: item.id, data }))
                 );
                 
-                const employeeResults = await Promise.allSettled(employeePromises);
+                const dataResults = await Promise.allSettled(dataPromises);
                 
-                employeeResults.forEach(result => {
+                dataResults.forEach(result => {
                     if (result.status === 'fulfilled') {
                         window.APP_DATA.employeeFiles[result.value.id] = result.value.data;
                     } else {
@@ -164,13 +160,13 @@
             }
         }
 
-        // --- FUNZIONI DI RENDERING (INVARIATE) ---
+        // --- FUNZIONI DI RENDERING ---
         function renderNavigation(indexData) {
             const tree = {};
-            indexData.forEach(emp => {
-                if (!tree[emp.area]) tree[emp.area] = {};
-                if (!tree[emp.area][emp.sub_area]) tree[emp.area][emp.sub_area] = [];
-                tree[emp.area][emp.sub_area].push(emp);
+            indexData.forEach(item => {
+                if (!tree[item.area]) tree[item.area] = {};
+                if (!tree[item.area][item.sub_area]) tree[item.area][item.sub_area] = [];
+                tree[item.area][item.sub_area].push(item);
             });
 
             const navContainer = document.getElementById('navigation-tree');
@@ -185,12 +181,17 @@
                     const subAreaDetails = document.createElement('details');
                     subAreaDetails.className = 'mt-1';
                     subAreaDetails.innerHTML = `<summary class="font-semibold cursor-pointer flex items-center justify-between sidebar-item p-2 rounded-md" data-type="sub_area" data-id="${subArea}" data-area="${area}"><span class="flex items-center"><i data-lucide="users-2" class="w-4 h-4 mr-2"></i>${subArea}</span><i data-lucide="chevron-right" class="w-4 h-4 arrow"></i></summary>`;
-                    const employeesContainer = document.createElement('ul');
-                    employeesContainer.className = 'ml-4 pt-1 border-l border-secondary';
-                    tree[area][subArea].forEach(emp => {
-                        employeesContainer.innerHTML += `<li class="text-sm cursor-pointer mt-1 flex items-center sidebar-item p-2 rounded-md" data-type="employee" data-id="${emp.id}"><i data-lucide="user" class="w-4 h-4 mr-2"></i>${emp.name}</li>`;
+                    const itemsContainer = document.createElement('ul');
+                    itemsContainer.className = 'ml-4 pt-1 border-l border-secondary';
+                    tree[area][subArea].forEach(item => {
+                         // MODIFICA QUI: Gestisce sia 'employee' che 'summary'
+                        if (item.type === 'summary') {
+                            itemsContainer.innerHTML += `<li class="text-sm font-bold cursor-pointer mt-1 flex items-center sidebar-item p-2 rounded-md" data-type="summary" data-id="${item.id}"><i data-lucide="layout-list" class="w-4 h-4 mr-2 text-accent"></i>${item.name}</li>`;
+                        } else {
+                            itemsContainer.innerHTML += `<li class="text-sm cursor-pointer mt-1 flex items-center sidebar-item p-2 rounded-md" data-type="employee" data-id="${item.id}"><i data-lucide="user" class="w-4 h-4 mr-2"></i>${item.name}</li>`;
+                        }
                     });
-                    subAreaDetails.appendChild(employeesContainer);
+                    subAreaDetails.appendChild(itemsContainer);
                     subAreaContainer.appendChild(subAreaDetails);
                 }
                 areaDetails.appendChild(subAreaContainer);
@@ -198,10 +199,47 @@
             }
             lucide.createIcons();
         }
+        
         function renderWelcomeMessage() {
             document.getElementById('main-content').innerHTML = `<div class="h-full flex flex-col items-center justify-center text-center"><i data-lucide="bar-chart-big" class="w-24 h-24 text-accent/50 mb-4"></i><h2 class="text-3xl font-bold text-white">Benvenuto nel Dashboard</h2><p class="text-lg text-text-secondary mt-2">Seleziona un elemento dalla navigazione a sinistra per iniziare l'analisi.</p></div>`;
             lucide.createIcons();
         }
+
+        // NUOVA FUNZIONE: per renderizzare il riepilogo del sottogruppo
+        function renderSubgroupSummaryView(data) {
+            const mainContent = document.getElementById('main-content');
+            
+            const createCard = (title, icon, content) => `
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-accent mb-4 flex items-center">
+                        <i data-lucide="${icon}" class="w-5 h-5 mr-2"></i>${title}
+                    </h3>
+                    ${content}
+                </div>`;
+
+            const listContent = (items) => `<ul class="list-disc list-inside space-y-2 text-text-primary">${items.map(item => `<li>${item}</li>`).join('')}</ul>`;
+            
+            const objectContent = (obj) => `<div class="space-y-3 text-text-primary">${Object.entries(obj).map(([key, value]) => `<div class="border-l-4 border-secondary pl-4"><strong class="capitalize text-text-secondary">${key.replace(/_/g, ' ')}:</strong><br>${value}</div>`).join('')}</div>`;
+
+            mainContent.innerHTML = `
+                <div class="space-y-6">
+                    <div class="card p-6 rounded-lg">
+                        <h2 class="text-3xl font-bold text-white">${data.sottogruppo}</h2>
+                        <p class="mt-2 text-text-secondary">${data.stato_operativo_generale}</p>
+                    </div>
+                    ${createCard('Rischi Principali', 'shield-alert', objectContent(data.rischi_principali))}
+                    ${createCard('Processi Chiave', 'network', objectContent(data.processi_chiave))}
+                    ${createCard('Criticità Operative', 'alert-triangle', listContent(data.criticita_operative))}
+                    ${createCard('Punti di Forza Emergenti', 'trending-up', listContent(data.punti_di_forza_emergenti))}
+                    ${createCard('Stack Tecnologico', 'cpu', `<p class="mb-2 text-text-primary">${data.stack_tecnologico.descrizione}</p><div class="flex flex-wrap gap-2">${data.stack_tecnologico.strumenti_principali.map(tool => `<span class="bg-secondary text-xs font-semibold px-2.5 py-0.5 rounded">${tool}</span>`).join('')}</div>`)}
+                    ${createCard('Gestione Conoscenza', 'book-open', objectContent(data.gestione_conoscenza))}
+                    ${createCard('Opportunità di Miglioramento', 'lightbulb', objectContent(data.opportunita_di_miglioramento))}
+                </div>
+            `;
+            lucide.createIcons();
+            mainContent.scrollTop = 0;
+        }
+
         function renderEmployeeView(employeeData) {
             const score = calculateUrgencyScore(employeeData.riskFactors);
             const scoreColor = score > 75 ? 'text-red-400' : score > 50 ? 'text-yellow-400' : 'text-green-400';
@@ -210,12 +248,14 @@
             lucide.createIcons();
             mainContent.scrollTop = 0;
         }
+        
         function renderSummaryView(type, id) {
-            const employees = type === 'area' ? window.APP_DATA.index.filter(e => e.area === id) : window.APP_DATA.index.filter(e => e.sub_area === id);
+            const employees = type === 'area' ? window.APP_DATA.index.filter(e => e.area === id && e.type !== 'summary') : window.APP_DATA.index.filter(e => e.sub_area === id && e.type !== 'summary');
             const title = type === 'area' ? `Riepilogo Area: ${id} (${employees.length} persone)` : `Riepilogo Sottoarea: ${id} (${employees.length} persone)`;
             const avgScore = employees.length > 0 ? employees.reduce((acc, emp) => { const empData = window.APP_DATA.employeeFiles[emp.id]; return acc + (empData ? calculateUrgencyScore(empData.riskFactors) : 0); }, 0) / employees.length : 0;
-            document.getElementById('main-content').innerHTML = `<div class="card p-6 rounded-lg"><h2 class="text-3xl font-bold text-white">${title}</h2><p class="text-lg text-text-secondary mt-2">Punteggio medio di urgenza: <span class="font-bold text-accent">${avgScore.toFixed(0)}</span></p><div class="mt-4"><h3 class="font-semibold text-accent">Personale nel gruppo:</h3><ul class="list-disc list-inside mt-2 space-y-1">${employees.map(e => `<li>${e.name} (${e.role})</li>`).join('')}</ul></div></div>`;
+            document.getElementById('main-content').innerHTML = `<div class="card p-6 rounded-lg"><h2 class="text-3xl font-bold text-white">${title}</h2><p class="text-lg text-text-secondary mt-2">Punteggio medio di urgenza: <span class="font-bold text-accent">${avgScore.toFixed(0)}</span></p><div class="mt-4"><h3 class="font-semibold text-accent">Personale nel gruppo:</h3><ul class="list-disc list-inside mt-2 space-y-1">${employees.map(e => `<li>${e.name} (${e.role || ''})</li>`).join('')}</ul></div></div>`;
         }
+
         function calculateUrgencyScore(factors) {
             if (!factors) return 0;
             const normalizedScores = { importanza_processo: (factors.importanza_processo - 1) / 4, copertura_documentazione: factors.copertura_documentazione, livello_formalizzazione: factors.livello_formalizzazione, indice_insostituibilita: factors.indice_insostituibilita, tasso_cambiamento: factors.tasso_cambiamento, impatto_downstream: factors.impatto_downstream, maturita_strumenti: factors.maturita_strumenti, facilita_passaggio_consegne: factors.facilita_passaggio_consegne, impatto_cliente: factors.impatto_cliente, sensibilita_dati: factors.sensibilita_dati, punti_singoli_fallimento: factors.punti_singoli_fallimento, segnale_rilavorazione: factors.segnale_rilavorazione, tracciabilita_errori: factors.tracciabilita_errori, livello_automazione: factors.livello_automazione, tempo_ripristino: factors.tempo_ripristino, qualita_controlli: factors.qualita_controlli, frammentazione_integrazioni: factors.frammentazione_integrazioni };
@@ -223,106 +263,83 @@
             const averageRisk = totalScore / Object.keys(normalizedScores).length;
             return Math.round((averageRisk * 99) + 1);
         }
+
+        // --- GESTIONE EVENTI ---
         document.getElementById('navigation-tree').addEventListener('click', (e) => {
             const target = e.target.closest('[data-type]');
             if (!target) return;
-            if (target.dataset.type === 'employee') { e.stopPropagation(); }
+            if (target.dataset.type === 'employee' || target.dataset.type === 'summary') { e.stopPropagation(); }
             document.querySelectorAll('.sidebar-item.active').forEach(el => el.classList.remove('active'));
             target.classList.add('active');
+            
             const { type, id } = target.dataset;
+
+            // MODIFICA QUI: Aggiunto il caso per 'summary'
             if (type === 'employee') {
                 const employeeData = window.APP_DATA.employeeFiles[id];
                 if (employeeData) renderEmployeeView(employeeData);
+            } else if (type === 'summary') {
+                const summaryData = window.APP_DATA.employeeFiles[id];
+                if (summaryData) renderSubgroupSummaryView(summaryData);
             } else if (type === 'area' || type === 'sub_area') {
                 renderSummaryView(type, id);
             }
         });
 
-        // --- NUOVA LOGICA CHAT AI ---
-
+        // --- LOGICA CHAT AI (INVARIATA) ---
         const chatForm = document.getElementById('chat-form');
         const chatInput = document.getElementById('chat-input');
         const chatWindow = document.getElementById('chat-window');
-
         let sending = false;
         let loadingEl = null;
-
         function bytesOf(o){ try{ return new Blob([JSON.stringify(o)]).size }catch{ return 0 } }
-
         chatForm.addEventListener('submit', handleChatSubmit);
-
         function showLoading() {
-        if (loadingEl) return;
-        loadingEl = document.createElement('div');
-        loadingEl.id = 'loading-bubble';
-        loadingEl.className = 'p-3 rounded-lg max-w-xs break-words chat-bubble-ai self-start';
-        loadingEl.innerHTML = `<div class="flex items-center">
-            <div class="animate-spin rounded-full h-4 w-4 border-b-2 border-accent mr-2"></div>
-            <span>Sto elaborando…</span>
-        </div>`;
-        chatWindow.appendChild(loadingEl);
-        chatWindow.scrollTop = chatWindow.scrollHeight;
+            if (loadingEl) return;
+            loadingEl = document.createElement('div');
+            loadingEl.id = 'loading-bubble';
+            loadingEl.className = 'p-3 rounded-lg max-w-xs break-words chat-bubble-ai self-start';
+            loadingEl.innerHTML = `<div class="flex items-center"><div class="animate-spin rounded-full h-4 w-4 border-b-2 border-accent mr-2"></div><span>Sto elaborando…</span></div>`;
+            chatWindow.appendChild(loadingEl);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
         }
         function replaceLoadingWith(text) {
             if (!loadingEl) { addMessageToChat(text, 'ai'); return; }
             loadingEl.textContent = text;
             loadingEl.id = '';
             loadingEl = null;
-            }
-
+        }
         async function handleChatSubmit(e){
             e.preventDefault();
             if (sending) return;
-
             const userMessage = chatInput.value.trim();
             if (!userMessage || !window.APP_DATA.index) return;
-
             sending = true;
             addMessageToChat(userMessage, 'user');
             updateChatHistory({ role: 'user', content: userMessage });
             chatInput.value = '';
-
             showLoading();
-
             try {
-                // STEP 1: piano di recupero
-                const planResponse = await callLambda({
-                    step: 1,
-                    query: userMessage,
-                    history: window.APP_DATA.chatHistory,
-                    index_data: window.APP_DATA.index
-                });
-            
+                const planResponse = await callLambda({ step: 1, query: userMessage, history: window.APP_DATA.chatHistory, index_data: window.APP_DATA.index });
                 const retrievalPlan = planResponse?.retrieval_plan;
                 if (!retrievalPlan) throw new Error("retrieval_plan mancante");
-
-                // STEP 2: costruisci contesto e risposta finale
                 const needsFullData = Object.values(retrievalPlan).some(v => {
                     if (v == null) return false;
                     if (Array.isArray(v)) return v.length > 0 && v[0] !== 'all';
                     return String(v) !== 'all';
                 });
-
                 let contextData = [];
                 if (needsFullData) {
-                const filtered = filterIndex(retrievalPlan, window.APP_DATA.index);
-                contextData = filtered.map(emp => window.APP_DATA.employeeFiles[emp.id]).filter(Boolean);
-                if (contextData.length > 50) contextData = contextData.slice(0, 50);
+                    const filtered = filterIndex(retrievalPlan, window.APP_DATA.index);
+                    contextData = filtered.map(emp => window.APP_DATA.employeeFiles[emp.id]).filter(Boolean);
+                    if (contextData.length > 50) contextData = contextData.slice(0, 50);
                 } else {
-                contextData = window.APP_DATA.index;
+                    contextData = window.APP_DATA.index;
                 }
-
-                const answerResponse = await callLambda({
-                    step: 2,
-                    query: userMessage,
-                    history: window.APP_DATA.chatHistory,
-                    context_data: contextData
-                });
-
+                const answerResponse = await callLambda({ step: 2, query: userMessage, history: window.APP_DATA.chatHistory, context_data: contextData });
                 const finalText = answerResponse?.response ?? "Nessuna risposta.";
                 replaceLoadingWith(finalText);
                 updateChatHistory({ role: 'assistant', content: finalText });
-
             } catch (error) {
                 replaceLoadingWith(`Errore: ${error.message}`);
                 updateChatHistory({ role: 'assistant', content: `Errore: ${error.message}` });
@@ -331,11 +348,9 @@
                 chatWindow.scrollTop = chatWindow.scrollHeight;
             }
         }
-
         function filterIndex(plan, index){
             const norm = v => (v == null ? null : Array.isArray(v) ? v : String(v));
             const area = norm(plan.area), sub = norm(plan.sub_area), emp = norm(plan.employee);
-
             let out = index;
             if (area && !(Array.isArray(area) && area[0] === "all") && area !== "all") {
                 const allow = Array.isArray(area) ? area : [area];
@@ -351,7 +366,6 @@
             }
             return out;
         }
-
         async function callLambda(payload) {
             const t0 = performance.now();
             console.log("[callLambda] step:", payload.step, "size(bytes):", bytesOf(payload));
@@ -366,12 +380,10 @@
             if (!res.ok) throw new Error(`HTTP ${res.status}: ${text}`);
             return JSON.parse(text);
         }
-
         function updateChatHistory(newMessage) {
             window.APP_DATA.chatHistory.push(newMessage);
             if (window.APP_DATA.chatHistory.length > 20) window.APP_DATA.chatHistory.shift();
         }
-
         function addMessageToChat(message, sender) {
             const el = document.createElement('div');
             el.className = `p-3 rounded-lg max-w-xs break-words ${sender === 'user' ? 'chat-bubble-user self-end' : 'chat-bubble-ai self-start'}`;

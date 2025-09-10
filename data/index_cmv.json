@@ -1,5 +1,13 @@
 [
     {
+        "id": "CMV_MANAGEMENT_SUMMARY",
+        "name": "Riepilogo Management",
+        "area": "CMV",
+        "sub_area": " Management e Coordinamento Strategico",
+        "file_path": "data/CMV/_management_summary.json",
+        "type": "summary"
+    },
+    {
         "id": "SB01",
         "file_path": "data/CMV/StefanoBoschi.json",
         "name": "Stefano Boschi",

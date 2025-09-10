@@ -1,0 +1,51 @@
+{
+    "sottogruppo": "Academy e Formazione Tecnica",
+    "stato_operativo_generale": "Il gruppo agisce come il braccio formativo e tecnico-applicativo dell'azienda, traducendo la strategia di prodotto in competenze per la rete vendita. L'efficacia del team si fonda sull'alta specializzazione e sulla proattività dei suoi membri, che operano però con un'elevata autonomia e attraverso processi scarsamente documentati. L'operatività è caratterizzata da soluzioni 'artigianali' e una forte dipendenza dalla conoscenza tacita individuale, rendendo i processi poco scalabili e ad alto rischio per la continuità operativa.",
+    "processi_chiave": {
+        "progettazione_ed_erogazione_formazione": "Ciclo completo della formazione: dall'analisi strategica delle esigenze e ideazione dei contenuti, alla pianificazione operativa (calendari, budget, formatori) e all'erogazione finale a clienti e rete vendita (in presenza e webinar).",
+        "supporto_tecnico_a_prodotto_e_produzione": "Collaudo e test applicativi su nuovi prodotti R&D, controllo qualità su materiali di produzione e assistenza tecnica specializzata in cantiere per risolvere problematiche complesse.",
+        "produzione_materiali_tecnici_e_marketing": "Realizzazione di campionature, pannellature 'tailor-made' per progetti specifici, allestimenti e contenuti multimediali (es. video applicativi) a supporto delle attività commerciali e formative.",
+        "gestione_operativa_e_amministrativa_academy": "Coordinamento dei formatori, gestione delle campagne di reclutamento partecipanti, organizzazione logistica degli eventi e gestione delle attività amministrative e di magazzino funzionali all'Academy."
+    },
+    "stack_tecnologico": {
+        "descrizione": "L'ecosistema tecnologico è estremamente frammentato. Si affiancano strumenti di produttività standard (Suite Office, con un uso intensivo di Excel) a piattaforme aziendali (Extranet, Gaia) e soluzioni cloud (Google Moduli, YouTube). L'assenza di integrazione tra i sistemi (es. WhatsApp per appuntamenti da inserire manualmente in Gaia) genera ridondanza e inefficienza.",
+        "strumenti_principali": [
+            "Excel",
+            "PowerPoint",
+            "Extranet",
+            "Microsoft Teams",
+            "ClickUp",
+            "Google Moduli / Sheet",
+            "WhatsApp",
+            "Mailchimp",
+            "GAIA"
+        ]
+    },
+    "gestione_conoscenza": {
+        "stato_documentazione": "Critico. La documentazione è estremamente bassa (stimata al 15% per le attività tecniche) e non centralizzata. Le procedure operative risiedono nella conoscenza tacita dei singoli specialisti o in archivi personali (strutture di cartelle proprietarie, file Excel), rendendo il know-how difficilmente trasferibile e l'onboarding non strutturato.",
+        "archiviazione_dati": "I dati sono dispersi su molteplici piattaforme non comunicanti: server locali (Cartella Academy), cloud privati (YouTube), PC personali e strumenti cloud esterni (Google Suite), senza una politica di archiviazione o backup unificata."
+    },
+    "rischi_principali": {
+        "business_continuity": "Alto. La dipendenza dall'esperienza individuale per processi chiave (trasformazione strategia-esecuzione, test R&D, organizzazione eventi) è totale. La perdita di una figura chiave comporterebbe l'immediata interruzione di tali attività, non essendo i processi documentati né standardizzati.",
+        "scalabilita_dei_servizi": "Basso. L'attuale modello operativo, basato su interventi manuali, conoscenza personale e processi non automatizzati, non è in grado di sostenere una crescita del volume di richieste senza un proporzionale e insostenibile aumento del personale.",
+        "efficienza_e_standardizzazione": "Critico. La frammentazione degli strumenti e la mancanza di procedure formalizzate causano duplicazione del lavoro (inserimento dati su più sistemi), inefficienze (processo di richiesta pannelli) e mancanza di coerenza operativa."
+    },
+    "criticita_operative": [
+        "Mancanza quasi totale di documentazione per i processi operativi (test, valutazione corsi, gestione eventi).",
+        "Processi amministrativi frammentati che richiedono inserimenti multipli sugli stessi dati (es. gestione trasferte).",
+        "Assenza di automazione in processi critici come la raccolta dati dei partecipanti e la gestione del magazzino.",
+        "Processi manuali lunghi e inefficienti (es. inserimento dati per pannellature).",
+        "Mancanza di una valutazione strutturata costo/opportunità per le attività di supporto (es. produzione pannelli).",
+        "Difficoltà nell'adozione di strumenti digitali collaborativi da parte di tutto il team (es. Calendario Teams)."
+    ],
+    "punti_di_forza_emergenti": [
+        "Elevata capacità di auto-organizzazione e sviluppo di soluzioni 'artigianali' efficaci per colmare le lacune dei sistemi (es. Google Moduli con QR Code, calendari su Excel per accessibilità).",
+        "Approccio consulenziale strategico alla formazione, mirato a elevare le competenze della rete vendita oltre la semplice conoscenza del prodotto.",
+        "Forte proattività nella standardizzazione dal basso, con iniziative per codificare il magazzino e documentare le procedure."
+    ],
+    "opportunita_di_miglioramento": {
+        "automazione_e_integrazione_dei_flussi": "Sviluppare l'integrazione tra gli strumenti di raccolta dati (es. Google Moduli) e il CRM aziendale (Gaia) e digitalizzare completamente il magazzino con l'introduzione di scanner.",
+        "centralizzazione_della_conoscenza_e_dei_processi": "Formalizzare e documentare tutte le procedure operative in una knowledge base centralizzata (es. Wiki, SharePoint) e utilizzare un unico strumento di project management per standardizzare la pianificazione e il monitoraggio.",
+        "sviluppo_di_risorse_formative_on_demand": "Creare una 'Web Academy' con video e tutorial per ridurre la necessità di formazione ripetitiva e implementare un chatbot per rispondere alle domande più frequenti, liberando tempo ai tecnici formatori."
+    }
+}

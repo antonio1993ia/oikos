@@ -1,0 +1,48 @@
+{
+    "sottogruppo": "Tintometria",
+    "stato_operativo_generale": "Il reparto Tintometria è un fulcro operativo critico che si trova in uno stato di regressione funzionale. L'adozione di nuovi sistemi gestionali (Business Central) ha causato l'abbandono di processi automatizzati e il ritorno a procedure manuali, cartacee e inefficienti. L'operatività si regge su workaround individuali e una conoscenza tacita frammentata, con un'elevata esposizione a errori, sprechi e rischi per la continuità del servizio.",
+    "processi_chiave": {
+        "gestione_delle_formule_colore": "Ciclo di vita della formula gestito manualmente: dalla digitalizzazione di input cartacei in CromaShop, all'aggiornamento e alla comunicazione all'ufficio ordini tramite email e salvataggi manuali in file personali non centralizzati.",
+        "gestione_ordini_a_tintometro": "Processo manuale e cartaceo per la gestione degli ordini di colorazione, che include l'inserimento manuale dei dati in Business Central e la preparazione a mano delle etichette, con conseguente lentezza ed errori.",
+        "erogazione_fisica_del_prodotto": "Operazioni manuali di preparazione, selezione coloranti ed erogazione tramite il tintometro, soggette a interruzioni a causa di problemi tecnici dello strumento.",
+        "gestione_non_conformita_e_problemi": "Processo di problem-solving non strutturato che richiede l'interruzione del lavoro, il confronto diretto con un responsabile e la ricerca di soluzioni in fonti di conoscenza disparate e non centralizzate (cartaceo, gestionale, file locali)."
+    },
+    "stack_tecnologico": {
+        "descrizione": "L'ecosistema tecnologico è la causa principale delle inefficienze. Business Central presenta lacune critiche nella gestione dei prodotti colorati, costringendo a workaround. CromaShop è un silo per la digitalizzazione delle formule, ma la gestione quotidiana si affida a strumenti rudimentali come file Excel, email e soprattutto carta e penna, rappresentando un passo indietro rispetto a sistemi precedenti (S400).",
+        "strumenti_principali": [
+            "Business Central",
+            "CromaShop",
+            "Excel",
+            "Email",
+            "Documentazione Cartacea"
+        ]
+    },
+    "gestione_conoscenza": {
+        "stato_documentazione": "Critico e in regressione. Non solo le procedure non sono documentate, ma il passaggio a nuovi sistemi ha invalidato le prassi precedenti senza sostituirle con nuove guide formalizzate. Le informazioni vitali (formule) sono archiviate in file personali con accesso limitato, e il personale stesso richiede esplicitamente la creazione di documentazione.",
+        "archiviazione_dati": "Le informazioni sono estremamente frammentate: formule su CromaShop, aggiornamenti in file Excel personali, ordini su carta e dati parziali su Business Central. Manca completamente una fonte unica di verità, rendendo la tracciabilità e la condivisione della conoscenza quasi impossibili."
+    },
+    "rischi_principali": {
+        "efficienza_operativa_e_rischio_errore": "Altissimo. Il ritorno a processi manuali e cartacei ha drasticamente ridotto l'efficienza, aumentato i tempi di lavorazione e introdotto un'elevata probabilità di errori di trascrizione e di etichettatura.",
+        "business_continuity": "Alto. I processi e la localizzazione dei dati critici dipendono interamente dalla conoscenza tacita di poche persone. L'assenza di una figura chiave bloccherebbe il flusso di aggiornamento delle formule e la gestione degli ordini.",
+        "spreco_di_risorse_e_materiali": "Elevato. Le limitazioni di Business Central, che non gestisce correttamente il reintegro a magazzino di ordini colorati annullati, causano uno spreco diretto e non recuperabile di prodotto finito ('ordini a marcire')."
+    },
+    "criticita_operative": [
+        "Regressione a processi cartacei e manuali a causa delle inefficienze del nuovo gestionale.",
+        "Business Central non gestisce il ciclo di vita del prodotto colorato, impedendo il reintegro a magazzino e causando sprechi.",
+        "Le informazioni sulle formule non sono centralizzate ma salvate in file personali, creando un collo di bottiglia.",
+        "Mancanza totale di documentazione per le procedure operative.",
+        "Il tintometro e i software presentano malfunzionamenti che causano interruzioni del servizio.",
+        "La preparazione manuale delle etichette è lenta e fonte di errori."
+    ],
+    "punti_di_forza_emergenti": [
+        "Resilienza operativa del personale, che riesce a mantenere il servizio funzionante nonostante sistemi inadeguati e processi involuti.",
+        "Creazione di sistemi di archiviazione personali per sopperire alla mancanza di un database centralizzato per le formule.",
+        "Approccio strutturato, seppur manuale e inefficiente, alla gestione delle non conformità, che prevede il coinvolgimento di un responsabile."
+    ],
+    "opportunita_di_miglioramento": {
+        "implementazione_piattaforma_unificata_formule_ordini": "Creare un sistema centralizzato che gestisca l'intero ciclo di vita della formula e dell'ordine tinto, automatizzando la comunicazione, la generazione delle etichette e l'invio al tintometro.",
+        "ottimizzazione_logica_di_business_central": "Riconfigurare il gestionale per trattare il 'prodotto colorato' come un articolo finito unico, permettendone la corretta gestione a magazzino, inclusi i resi e gli annullamenti.",
+        "centralizzazione_e_digitalizzazione_della_conoscenza": "Documentare tutte le procedure e migrare le informazioni critiche dai file personali a una knowledge base o a un sistema gestionale accessibile e standardizzato.",
+        "automazione_del_data_entry_con_barcode": "Implementare un sistema di scansione di codici a barre per associare rapidamente gli ordini ai dati nel sistema, eliminando l'inserimento manuale e riducendo gli errori."
+    }
+}

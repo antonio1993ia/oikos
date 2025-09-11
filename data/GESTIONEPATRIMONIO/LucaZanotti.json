@@ -1,0 +1,141 @@
+{
+    "id": "LZ01",
+    "name": "Luca Zanotti",
+    "role": "Gestione del patrimonio e facilitatore organo di vigilanza presidenza",
+    "department": "GESTIONEPATRIMONIO",
+    "section": "Patrimonio e Compliance",
+    "coreActivities": [
+        "Gestione completa della contrattualistica (generazione, monitoraggio scadenze, chiusura).",
+        "Gestione degli immobili per conto di Oikos Invest (controllo stato, richiesta preventivi, attivazione RDA).",
+        "Gestione delle Richieste di Acquisto (RDA) per Oikos Invest (attivazione procedure, validazione pagamenti).",
+        "Gestione e monitoraggio del Modello Organizzativo 231.",
+        "Attività di Facility Manager (relazione con stakeholder, facilitazione passaggio di consegne di conoscenza)."
+    ],
+    "processes": [
+        {
+            "name": "Gestione Contrattualistica",
+            "objective": "Gestire il ciclo di vita dei contratti (generazione, monitoraggio, chiusura) e le relazioni con i referenti contrattuali.",
+            "steps": [
+                "Generazione o acquisizione di contratti (es. affitto passivi per Oikos SPA).",
+                "Monitoraggio delle scadenze e interfaccia con i referenti contrattuali.",
+                "Spostamento e archiviazione dei contratti da cartella condivisa a Extranet per la condivisione.",
+                "Gestione della chiusura del contratto a scadenza."
+            ],
+            "notes": "L'iniziativa di spostare i contratti su Extranet è stata autonoma di Luca."
+        },
+        {
+            "name": "Gestione Richieste di Acquisto (RDA) per Oikos Invest",
+            "objective": "Avviare e validare pagamenti per lavori e servizi relativi agli immobili in gestione.",
+            "steps": [
+                "Identificazione della necessità in modo proattivo (controllo in loco) o reattivo (richiesta dal Presidente, ricezione fatture).",
+                "Richiesta di preventivi ai fornitori.",
+                "Avvio della procedura di RDA basata su quella di Oikos SPA.",
+                "Validazione del pagamento per autorizzare l'inizio dei lavori.",
+                "Gestione di un doppio giro di approvazione: uno per l'RDA e uno per il contratto associato."
+            ],
+            "notes": "La procedura è un adattamento semplificato di quella di Oikos SPA."
+        },
+        {
+            "name": "Gestione Progetti Importanti",
+            "objective": "Realizzare progetti complessi identificando fornitori, lavoratori e mettendo in piedi la struttura di lavoro necessaria.",
+            "steps": [
+                "Attivazione del processo in base alla richiesta di un progetto.",
+                "Identificazione delle risorse necessarie (fornitori, lavoratori, 'players').",
+                "Strutturazione del piano di lavoro (legale, operativo, fondi).",
+                "Coordinamento con il Direttore Operation o altri responsabili per l'esecuzione."
+            ],
+            "notes": null
+        },
+        {
+            "name": "Gestione Modello Organizzativo 231",
+            "objective": "Mantenere il modello organizzativo 231 per prevenire reati aziendali, tramite monitoraggio e auditing.",
+            "steps": [
+                "Completamento della prima stesura di revisione del modello esistente.",
+                "Monitoraggio per futuri audit (fasi di implementazione, selezione organo di vigilanza e formazione sono mancanti)."
+            ],
+            "notes": "La conoscenza su come procedere non è basata su procedure formalizzate."
+        },
+        {
+            "name": "Attività di Facility Manager",
+            "objective": "Gestire le relazioni con gli stakeholder per varie attività e facilitare il passaggio di consegne di conoscenza.",
+            "steps": [
+                "Interazione con gli stakeholder per gestire le loro necessità.",
+                "Attività proattiva di scrittura e documentazione della conoscenza tacita per facilitare futuri passaggi di consegne."
+            ],
+            "notes": "Questa attività è in corso e mira a formalizzare il know-how attualmente non documentato."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Extranet",
+            "Gestionale per RDA (non specificato)"
+        ],
+        "communication": [
+            "Email"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "In transizione. La documentazione è parziale; alcuni processi si basano su procedure esistenti (RDA) ma vengono adattati informalmente. Conoscenze critiche (Facility, 231) sono attualmente tacite, ma c'è un'iniziativa proattiva da parte del dipendente per documentarle e renderle condivisibili.",
+        "storageMethods": [
+            "Cartella condivisa (in dismissione)",
+            "Extranet (in adozione)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Medio-Alto",
+        "reasons": [
+            "L'adattamento e la semplificazione delle procedure (es. RDA per Oikos Invest) si basano sull'esperienza personale e non sono formalizzati, rendendo la conoscenza tacita.",
+            "La conoscenza su come implementare e gestire il Modello 231 e le attività di facility management è attualmente detenuta dal singolo e in fase di documentazione, non ancora patrimonio aziendale.",
+            "La gestione di scenari reattivi (es. fatture pagate direttamente dal Presidente) dipende dalla capacità di problem-solving individuale."
+        ]
+    },
+    "criticalities": [
+        "Il processo di RDA è sproporzionato e inefficiente per spese di minimo importo.",
+        "Presenza di un doppio e ridondante giro di autorizzazione per RDA e contratti associati.",
+        "Mancanza di un budget di progetto definito che costringe a ripetere il processo di RDA per ogni fattura standard.",
+        "Il Modello Organizzativo 231 è incompleto e mancano le fasi cruciali di implementazione e formazione.",
+        "Molta conoscenza critica per le attività di facility management e gestione 231 è ancora tacita e non documentata.",
+        "La struttura organizzativa (dipendenti SPA che lavorano per Invest) crea potenziale complessità procedurale."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Implementazione Soglia di Spesa per RDA",
+            "description": "Definire una soglia di spesa al di sotto della quale non sia richiesto l'intero ciclo di RDA, ma un processo semplificato, per ridurre il carico amministrativo per piccole spese."
+        },
+        {
+            "title": "Streamlining Processo di Approvazione RDA/Contratto",
+            "description": "Integrare il processo di approvazione dell'RDA con quello del contratto, in modo che un'unica approvazione sia sufficiente per far partire il processo."
+        },
+        {
+            "title": "Definizione di Budget Progetto e Autorità di Spesa",
+            "description": "Per i progetti a contratto firmato, definire un budget complessivo e delegare l'autorità di spesa al responsabile di progetto per le fatture standard, eliminando RDA ripetitive."
+        },
+        {
+            "title": "Completamento e Formalizzazione Modello 231",
+            "description": "Creare un piano d'azione per completare l'implementazione del Modello 231, includendo la selezione dell'organo di vigilanza, la digitalizzazione su Extranet e la formazione ai dipendenti."
+        },
+        {
+            "title": "Programma di Formalizzazione della Conoscenza",
+            "description": "Supportare e accelerare l'iniziativa di documentazione delle conoscenze tacite, implementando un sistema di gestione della conoscenza (es. Wiki) per archiviare le procedure."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 3,
+        "copertura_documentazione": 0.6,
+        "livello_formalizzazione": 0.7,
+        "indice_insostituibilita": 1.0,
+        "tasso_cambiamento": 0.6,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.7,
+        "facilita_passaggio_consegne": 0.8,
+        "impatto_cliente": 0.4,
+        "sensibilita_dati": 0.8,
+        "punti_singoli_fallimento": 0.9,
+        "segnale_rilavorazione": 0.8,
+        "tracciabilita_errori": 0.6,
+        "livello_automazione": 0.8,
+        "tempo_ripristino": 0.8,
+        "qualita_controlli": 0.5,
+        "frammentazione_integrazioni": 0.6
+    }
+}

@@ -632,6 +632,56 @@
             "riesame"
         ]
     },
+    {
+        "id": "MR01",
+        "file_path": "data/LEGALE/MatteoRicci.json",
+        "name": "Matteo Ricci",
+        "role": "Responsabile ufficio legale",
+        "area": "LEGALE",
+        "sub_area": "Ufficio Legale",
+        "keywords": [
+            "contrattualistica",
+            "compliance",
+            "gdpr",
+            "contenzioso",
+            "libri sociali",
+            "consulenza legale"
+        ]
+    },
+    {
+        "id": "LZ01",
+        "file_path": "data/GESTIONEPATRIMONIO/LucaZanotti.json",
+        "name": "Luca Zanotti",
+        "role": "Gestione del patrimonio e facilitatore organo di vigilanza",
+        "area": "GESTIONEPATRIMONIO",
+        "sub_area": "Patrimonio e Compliance",
+        "keywords": [
+            "contrattualistica",
+            "patrimonio",
+            "immobili",
+            "rda",
+            "compliance",
+            "231",
+            "facility manager"
+        ]
+    },
+    {
+        "id": "SC02",
+        "file_path": "data/LEGALE/SilviaCaricato.json",
+        "name": "Silvia Caricato",
+        "role": "Assistente ufficio legale",
+        "area": "LEGALE",
+        "sub_area": "Ufficio Legale",
+        "keywords": [
+            "protocollo",
+            "pec",
+            "recupero crediti",
+            "solleciti",
+            "contratti",
+            "documentale",
+            "axeia"
+        ]
+    },
     {   
         "id": "MGMT SUMMARY",
         "name": "Management e Coordinamento Strategico",
@@ -707,10 +757,34 @@
     },
     {
         "id": "APPR SUMMARY",
-        "name": "Approvigionamenti",
+        "name": "Approvvigionamenti",
         "area": "GOA",
-        "sub_area": "Approvigionamenti",  
-        "file_path": "data/GOA/_approvigionamenti_summary.json",
+        "sub_area": "Approvvigionamenti",  
+        "file_path": "data/GOA/_approvvigionamenti_summary.json",
+        "type": "summary"
+    },
+    {
+        "id": "QUALITY SUMMARY",
+        "name": "Controllo Qualità",
+        "area": "GOA",
+        "sub_area": "Controllo Qualità",  
+        "file_path": "data/GOA/_controlloqualità_summary.json",
+        "type": "summary"
+    },
+    {
+        "id": "AMM PERSONALE SUMMARY",
+        "name": "Amministrazione del Personale",
+        "area": "OA",
+        "sub_area": "Amministrazione del Personale",  
+        "file_path": "data/OA/_amministrazionepersonale_summary.json",
+        "type": "summary"
+    },
+    {
+        "id": "UFF LEGALE SUMMARY",
+        "name": "Ufficio Legale",
+        "area": "LEGALE",
+        "sub_area": "Ufficio Legale",  
+        "file_path": "data/LEGALE/_ufficiolegale_summary.json",
         "type": "summary"
     }
     

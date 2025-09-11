@@ -1,0 +1,143 @@
+{
+    "id": "MR01",
+    "name": "Matteo Ricci",
+    "role": "Responsabile ufficio legale",
+    "department": "Ufficio Legale",
+    "section": "Affari Generali e Compliance",
+    "coreActivities": [
+        "Gestione completa della contrattualistica aziendale (creazione, modifica, validazione, gestione firme e archiviazione).",
+        "Gestione e monitoraggio della compliance GDPR (mappatura, policy, nomine, controllo).",
+        "Gestione del contenzioso passivo (ricezione contestazioni, coordinamento interno ed esterno, supporto legali esterni).",
+        "Tenuta e archiviazione dei Libri Sociali (gestione versioni fisiche e digitali).",
+        "Monitoraggio degli Organi Sociali e delle relative scadenze.",
+        "Fornitura di pareri e consulenze giuridiche interne."
+    ],
+    "processes": [
+        {
+            "name": "Gestione Contrattualistica",
+            "objective": "Creazione, modifica, validazione, firma e archiviazione di documenti contrattuali per l'azienda.",
+            "steps": [
+                "Ricezione della richiesta di controllo o creazione contratto da altri uffici.",
+                "Elaborazione del documento basandosi su template predefiniti, memoria storica e input personali.",
+                "Invio della bozza via email per la validazione interna.",
+                "Caricamento del documento validato su Extranet per il processo di raccolta firme.",
+                "Ottenimento della firma finale da parte dell'amministratore.",
+                "Passaggio del documento firmato a Silvia Caricato per la distribuzione e l'archiviazione."
+            ],
+            "notes": "Il processo di generazione si basa fortemente sulla conoscenza tacita e su template personali del responsabile."
+        },
+        {
+            "name": "Gestione GDPR",
+            "objective": "Assicurare la compliance aziendale al Regolamento Generale sulla Protezione dei Dati (GDPR).",
+            "steps": [
+                "Mappatura degli uffici interessati e conduzione di audit.",
+                "Generazione, revisione e validazione della privacy policy aziendale.",
+                "Gestione e distribuzione delle nomine ai responsabili del trattamento.",
+                "Monitoraggio continuo della percentuale di adeguamento tramite il gestionale PrivacyWeb."
+            ],
+            "notes": null
+        },
+        {
+            "name": "Gestione Contenzioso Passivo",
+            "objective": "Gestire le contestazioni ricevute dai clienti fino alla risoluzione o all'eventuale contenzioso giudiziario.",
+            "steps": [
+                "Ricezione e protocollazione della PEC di contestazione.",
+                "Notifica interna a figure chiave (CFO, Presidente).",
+                "Analisi interna del problema in collaborazione con l'ufficio tecnico.",
+                "Tentativo di risoluzione tramite scambio di comunicazioni con il cliente.",
+                "Presentazione dei dati all'amministratore per la decisione finale sul procedere con un contenzioso.",
+                "In caso di contenzioso, affidamento a un legale esterno e fornitura di supporto continuo."
+            ],
+            "notes": null
+        },
+        {
+            "name": "Tenuta Libri Sociali",
+            "objective": "Mantenere aggiornati e correttamente archiviati i libri sociali (delibere/determine) in formato fisico e digitale.",
+            "steps": [
+                "Stampa delle delibere/determine su carta bollata.",
+                "Archiviazione del documento cartaceo nel libro fisico.",
+                "Creazione e salvataggio della versione digitale in una cartella dedicata sul server locale."
+            ],
+            "notes": "L'archiviazione digitale è una soluzione personale creata dal responsabile."
+        }
+    ],
+    "tools": {
+        "software": [
+            "Extranet",
+            "Axeia",
+            "PrivacyWeb",
+            "Microsoft Excel"
+        ],
+        "communication": [
+            "Email",
+            "PEC"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Critico. La maggior parte delle procedure operative non è documentata. La gestione si basa sulla 'memoria storica' del responsabile e su strumenti 'artigianali' (mappe Excel) creati per sopperire a mancanze di sistema. Aree vitali come le polizze assicurative mancano di un controllo e di una documentazione centralizzata.",
+        "storageMethods": [
+            "Server Locale (per libri sociali digitali e mappe Excel personali)",
+            "Axeia (per archiviazione contratti)",
+            "Extranet (per scadenziario contratti e giro firme)",
+            "PrivacyWeb (per documentazione GDPR)",
+            "Archiviazione Fisica (per contratti e libri sociali)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "La gestione contrattualistica si basa sulla 'memoria storica' e su template non formalizzati a livello aziendale.",
+            "Il monitoraggio di dati critici come le scadenze degli organi sociali e le polizze assicurative è affidato a file Excel personali, non integrati e non condivisi.",
+            "L'assenza di procedure scritte rende la formazione e il subentro di nuovo personale estremamente dipendente dall'affiancamento diretto, con alti rischi di perdita di know-how."
+        ]
+    },
+    "criticalities": [
+        "Il processo di 'giro firme' su Extranet è inefficiente e troppo burocratico per contratti di minore importanza.",
+        "Mancanza di dati strutturati in ingresso per la validazione dei contratti, che rallenta il processo.",
+        "Lo scadenziario su Extranet è incompleto e non include documenti critici come le polizze assicurative, causando rinnovi automatici indesiderati.",
+        "Mancanza totale di procedure scritte per la maggior parte delle attività dell'ufficio.",
+        "La gestione delle polizze assicurative è un'area critica senza controllo centralizzato, documentazione o responsabilità chiare.",
+        "La conoscenza per il monitoraggio degli organi sociali è isolata in un file Excel non aziendale."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Ottimizzazione Processo di Richiesta Contratto",
+            "description": "Implementare un sistema (es. modulo digitale) che obblighi i richiedenti a fornire tutti i dati necessari al momento della richiesta, riducendo i tempi di attesa e le richieste di chiarimento."
+        },
+        {
+            "title": "Digitalizzazione e Workflow del Giro Firme",
+            "description": "Adottare una piattaforma di workflow per le firme che permetta di differenziare i flussi di approvazione in base all'importanza del documento, riducendo la burocrazia."
+        },
+        {
+            "title": "Centralizzazione e Standardizzazione Scadenziario",
+            "description": "Implementare un sistema di gestione documentale (DMS) che centralizzi tutti i contratti e le polizze con notifiche automatiche per le scadenze, evitando rinnovi indesiderati."
+        },
+        {
+            "title": "Documentazione delle Procedure Operative Standard (SOP)",
+            "description": "Avviare un progetto di documentazione delle procedure chiave dell'ufficio legale, estraendo la conoscenza tacita e salvandola in un repository aziendale accessibile."
+        },
+        {
+            "title": "Integrazione e Migrazione Strumenti Artigianali",
+            "description": "Integrare la logica delle mappe Excel (organi sociali, polizze) in un sistema aziendale strutturato per eliminare la dipendenza da file locali e garantire la business continuity."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4.0,
+        "copertura_documentazione": 0.8,
+        "livello_formalizzazione": 0.8,
+        "indice_insostituibilita": 1.0,
+        "tasso_cambiamento": 0.5,
+        "impatto_downstream": 0.9,
+        "maturita_strumenti": 0.7,
+        "facilita_passaggio_consegne": 0.9,
+        "impatto_cliente": 0.9,
+        "sensibilita_dati": 0.9,
+        "punti_singoli_fallimento": 1.0,
+        "segnale_rilavorazione": 0.6,
+        "tracciabilita_errori": 0.7,
+        "livello_automazione": 0.9,
+        "tempo_ripristino": 0.9,
+        "qualita_controlli": 0.8,
+        "frammentazione_integrazioni": 0.8
+    }
+}

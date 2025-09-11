@@ -37,6 +37,12 @@
         .chat-bubble-ai {
             background-color: #0d2a4e;
         }
+        .chat-bubble-ai p {
+            margin-bottom: 0.75rem; /* Aggiunge spazio tra i paragrafi */
+        }
+        .chat-bubble-ai p:last-child {
+            margin-bottom: 0; /* Rimuove lo spazio dall'ultimo paragrafo */
+        }
         .btn-primary {
             background-color: var(--accent);
             color: var(--background);
@@ -545,7 +551,8 @@
                 addMessageToChat(text, 'ai'); 
                 return; 
             }
-            loadingEl.textContent = text;
+            // Modifica: usa marked.parse() per convertire Markdown in HTML
+            loadingEl.innerHTML = marked.parse(text); 
             loadingEl.id = '';
             loadingEl = null;
         }
@@ -648,8 +655,15 @@
         
         function addMessageToChat(message, sender) {
             const el = document.createElement('div');
-            el.className = `p-3 rounded-lg max-w-xs break-words ${sender === 'user' ? 'chat-bubble-user self-end' : 'chat-bubble-ai self-start'}`;
-            el.textContent = message;
+            el.className = `p-3 rounded-lg max-w-xs break-words ${sender === 'user' ? 'chat-bubble-user self-end' : 'chat-bubble-ai self-start prose'}`; // Aggiunta la classe 'prose' per una migliore formattazione
+            
+            if (sender === 'user') {
+                el.textContent = message;
+            } else {
+                // Modifica: usa marked.parse() qui come fallback
+                el.innerHTML = marked.parse(message);
+            }
+
             chatWindow.appendChild(el);
             chatWindow.scrollTop = chatWindow.scrollHeight;
         }

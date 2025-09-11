@@ -1,0 +1,131 @@
+{
+    "id": "SC02",
+    "name": "Silvia Caricato",
+    "role": "Assistente ufficio legale",
+    "department": "Ufficio Legale",
+    "section": "Protocollo e Recupero Crediti",
+    "coreActivities": [
+        "Protocollazione e gestione delle PEC tramite il sistema Axeia.",
+        "Controllo dello stato di avanzamento e gestione dei documenti protocollati.",
+        "Gestione del processo di recupero crediti, dalla fase di monitoraggio interno fino all'eventuale passaggio a legale esterno.",
+        "Caricamento di nuovi contratti agenti su Extranet."
+    ],
+    "processes": [
+        {
+            "name": "Protocollazione PEC",
+            "objective": "Registrare, classificare e inoltrare le comunicazioni PEC in ingresso per l'ufficio legale, garantendone la tracciabilità.",
+            "steps": [
+                "Accedere alla webapp 'Pre internet' per aprire il protocollo.",
+                "Selezionare l'area 'Legale Contenzioni' e le PEC specifiche da elaborare.",
+                "Creare il protocollo, estrarre le informazioni chiave dalla PEC e inserirle nel modulo.",
+                "Classificare il documento (es. 'in gestione') e assegnarlo ai destinatari interni tramite Axeia."
+            ],
+            "notes": "Questa procedura non è documentata ed è stata insegnata 'per visualizzazione, a voce'."
+        },
+        {
+            "name": "Controllo dei Documenti Protocollati",
+            "objective": "Monitorare lo stato di avanzamento e la corretta gestione dei documenti protocollati da parte dei destinatari.",
+            "steps": [
+                "Accedere al sistema Axeia e selezionare un documento dalla lista.",
+                "Consultare la sezione 'storia' per visualizzare chi ha letto il documento e se lo stato è stato aggiornato."
+            ],
+            "notes": "Questa attività è resa necessaria dalla mancata adesione degli utenti, che spesso non aggiornano lo stato dei documenti."
+        },
+        {
+            "name": "Recupero Crediti",
+            "objective": "Gestire il processo di recupero dei crediti insoluti, coordinando azioni interne ed esterne fino all'eventuale ricorso legale.",
+            "steps": [
+                "Ricevere le posizioni da monitorare da Luca Savoia.",
+                "Controllare su Business Central i clienti passati a categoria D (legale interno).",
+                "Inviare un primo sollecito via PEC con richiesta di pagamento entro 7 giorni.",
+                "In caso di mancato pagamento, inviare una seconda PEC e contattare il cliente telefonicamente.",
+                "Coordinare con gli agenti di zona per effettuare solleciti diretti.",
+                "Dopo 2 mesi di insoluto, proporre un piano di rientro rateizzato.",
+                "In caso di fallimento del piano di rientro, inoltrare la pratica a un legale esterno."
+            ],
+            "notes": "Questa procedura è documentata e aggiornata."
+        },
+        {
+            "name": "Caricamento Contratti Nuovi Agenti",
+            "objective": "Inserire i nuovi contratti degli agenti nel sistema.",
+            "steps": [
+                "Accedere alla sezione 'contratti agenti' sull'Extranet.",
+                "Caricare il nuovo contratto compilando il template fornito dal sistema."
+            ],
+            "notes": null
+        }
+    ],
+    "tools": {
+        "software": [
+            "Axeia",
+            "Pre internet",
+            "Business Central",
+            "Extranet",
+            "Oikos (per invio PEC)"
+        ],
+        "communication": [
+            "PEC",
+            "Email",
+            "Telefono"
+        ]
+    },
+    "knowledgeManagement": {
+        "documentationStatus": "Critico. La procedura fondamentale di protocollazione PEC è completamente assente e basata su conoscenza tacita trasmessa verbalmente. Al contrario, la procedura di recupero crediti è ben documentata, evidenziando una gestione della conoscenza disomogenea e carente nelle aree di competenza esclusiva.",
+        "storageMethods": [
+            "Axeia (per protocollo e tracciamento documenti)",
+            "Business Central (per dati finanziari e anagrafiche clienti)",
+            "Extranet (per contratti agenti)"
+        ]
+    },
+    "riskAnalysis": {
+        "level": "Alto",
+        "reasons": [
+            "Il processo di protocollazione PEC, che gestisce tutte le comunicazioni legali ufficiali in ingresso, dipende interamente dalla conoscenza tacita di Silvia ('se lei non c’è non lo fa nessuno').",
+            "La sua assenza bloccherebbe completamente la gestione delle comunicazioni legali, con gravi ripercussioni su contenziosi e scadenze.",
+            "La mancata adozione del sistema Axeia da parte degli altri utenti la rende un collo di bottiglia, costringendola a un 'doppio lavoro' di sollecito manuale per garantire l'avanzamento delle pratiche."
+        ]
+    },
+    "criticalities": [
+        "Mancanza totale di documentazione per la procedura di protocollazione PEC, rendendola non replicabile.",
+        "Scarsa o nulla adozione del sistema di protocollo (Axeia) da parte degli altri utenti, che non aggiornano lo stato dei documenti.",
+        "Conseguente 'doppio lavoro' per Silvia, che deve sollecitare manualmente i colleghi, vanificando i benefici del sistema di tracciamento.",
+        "Mancanza di percezione del valore del protocollo da parte degli altri reparti, che lo vedono come un passaggio burocratico e non come uno strumento di tracciabilità e sicurezza."
+    ],
+    "improvementProposals": [
+        {
+            "title": "Documentazione e Standardizzazione Processo PEC",
+            "description": "Creare una documentazione dettagliata e standardizzata del processo di protocollazione PEC, con screenshot e passaggi chiari, e renderla disponibile su una piattaforma centralizzata."
+        },
+        {
+            "title": "Programma di Formazione e Sensibilizzazione sull'Uso di Axeia",
+            "description": "Implementare un programma di formazione obbligatorio per tutti gli utenti di Axeia, focalizzandosi non solo sul 'come' ma anche sul 'perché' (importanza della tracciabilità, compliance, business continuity)."
+        },
+        {
+            "title": "Revisione dei Flussi di Notifica Axeia",
+            "description": "Valutare la configurazione di notifiche più efficaci in Axeia, magari integrandole con Teams, per aumentare la visibilità e l'urgenza e ridurre la necessità di solleciti manuali."
+        },
+        {
+            "title": "Implementazione di Controlli Automatici o Dashboard di Monitoraggio",
+            "description": "Creare dashboard o report automatici che evidenzino i documenti non gestiti, permettendo un monitoraggio proattivo anche da parte del management."
+        }
+    ],
+    "riskFactors": {
+        "importanza_processo": 4.0,
+        "copertura_documentazione": 0.75,
+        "livello_formalizzazione": 0.7,
+        "indice_insostituibilita": 1.0,
+        "tasso_cambiamento": 0.2,
+        "impatto_downstream": 0.9,
+        "maturita_strumenti": 0.6,
+        "facilita_passaggio_consegne": 1.0,
+        "impatto_cliente": 0.9,
+        "sensibilita_dati": 0.9,
+        "punti_singoli_fallimento": 1.0,
+        "segnale_rilavorazione": 1.0,
+        "tracciabilita_errori": 0.5,
+        "livello_automazione": 0.8,
+        "tempo_ripristino": 0.9,
+        "qualita_controlli": 0.9,
+        "frammentazione_integrazioni": 0.8
+    }
+}

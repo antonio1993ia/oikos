@@ -112,22 +112,22 @@
         }
     ],
     "riskFactors": {
-        "importanza_processo": 4,
-        "copertura_documentazione": 0.3,
-        "livello_formalizzazione": 0.4,
-        "indice_insostituibilita": 0.8,
-        "tasso_cambiamento": 0.6,
-        "impatto_downstream": 0.7,
-        "maturita_strumenti": 0.6,
-        "facilita_passaggio_consegne": 0.3,
-        "impatto_cliente": 0.8,
-        "sensibilita_dati": 0.5,
-        "punti_singoli_fallimento": 0.8,
+        "importanza_processo": 5,
+        "copertura_documentazione": 0.9,
+        "livello_formalizzazione": 1.0,
+        "indice_insostituibilita": 0.9,
+        "tasso_cambiamento": 0.8,
+        "impatto_downstream": 0.8,
+        "maturita_strumenti": 0.9,
+        "facilita_passaggio_consegne": 1.0,
+        "impatto_cliente": 1.0,
+        "sensibilita_dati": 0.9,
+        "punti_singoli_fallimento": 0.9,
         "segnale_rilavorazione": 0.6,
-        "tracciabilita_errori": 0.4,
-        "livello_automazione": 0.4,
-        "tempo_ripristino": 0.7,
-        "qualita_controlli": 0.4,
-        "frammentazione_integrazioni": 0.7
+        "tracciabilita_errori": 0.9,
+        "livello_automazione": 0.9,
+        "tempo_ripristino": 1.0,
+        "qualita_controlli": 0.7,
+        "frammentazione_integrazioni": 0.9
     }
 }

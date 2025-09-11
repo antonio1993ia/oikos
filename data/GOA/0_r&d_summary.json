@@ -1,0 +1,48 @@
+{
+    "sottogruppo": "Laboratorio e R&D",
+    "stato_operativo_generale": "Il gruppo rappresenta il cuore dell'innovazione di prodotto, operando con un'elevata specializzazione tecnica ma con un'organizzazione basata quasi interamente su sistemi personali e conoscenza tacita. L'efficienza è legata a figure chiave che hanno costruito processi iper-organizzati ma 'artigianali' per sopperire a gravi lacune procedurali e dei sistemi informatici. Il modello è funzionale ma fragile, non scalabile e ad altissimo rischio per la continuità del know-how aziendale.",
+    "processi_chiave": {
+        "sviluppo_e_validazione_nuovi_prodotti": "Ciclo completo che parte dalla richiesta della direzione, passa per lo studio, le prove di laboratorio (PR), i test intermedi e la validazione finale.",
+        "gestione_prove_industriali_e_omologazione": "Coordinamento delle prove su scala industriale, raccolta dei risultati, gestione del processo di approvazione tramite 'girofirme' e certificazione finale della formula su gestionale.",
+        "gestione_documentale_formule_e_test": "Archiviazione di formule, risultati dei test e documentazione di progetto, gestita tramite un sistema misto di file su server locale, documentazione cartacea e piattaforme digitali (Extranet).",
+        "gestione_campionature_e_distinte_base": "Creazione e gestione delle campionature, con un processo manuale e critico per la differenziazione delle distinte base rispetto ai prodotti definitivi."
+    },
+    "stack_tecnologico": {
+        "descrizione": "L'ecosistema si basa su Business Central, utilizzato come database di formule ma con gravi lacune funzionali (mancata somma delle materie prime, mancato aggiornamento automatico delle distinte base). L'Extranet è usato per la gestione dei workflow (richieste, girofirme), ma il vero motore operativo sono i file Excel personali, usati per controlli critici e per il tracciamento delle attività.",
+        "strumenti_principali": [
+            "Business Central",
+            "Extranet",
+            "Excel",
+            "Server Locale (U:)",
+            "Template PDF"
+        ]
+    },
+    "gestione_conoscenza": {
+        "stato_documentazione": "Critico. Nonostante iniziative personali di documentazione ('wip' - work in progress), le procedure operative chiave sono assenti o trasferite verbalmente. Dati fondamentali, come la formula stessa, non sono integrati nei sistemi di tracciamento (Extranet), rendendo impossibile la comprensione delle modifiche senza il supporto di personale specifico.",
+        "archiviazione_dati": "I dati sono frammentati tra server locale, archivi cartacei ('dossier della PR') e file Excel personali. Manca una fonte unica di verità per il ciclo di vita del prodotto, dalla formula ai test fino alla certificazione."
+    },
+    "rischi_principali": {
+        "business_continuity": "Altissimo. L'intero sistema organizzativo del laboratorio è costruito attorno alla conoscenza tacita di figure chiave. La loro assenza renderebbe estremamente difficile gestire lo sviluppo di nuovi prodotti, validare formule e risolvere le criticità operative.",
+        "integrita_dei_dati_e_processo": "Elevato. La mancanza di automazione in Business Central, la gestione manuale delle campionature e la necessità di controlli esterni su Excel espongono il processo a un alto rischio di errore umano, con possibili ripercussioni dirette sulla produzione.",
+        "mancanza_di_agilita_strategica": "Medio-Alto. La comunicazione indiretta e non strutturata con l'area Commerciale impedisce al laboratorio di ricevere feedback diretti e tempestivi dal mercato, rallentando la capacità di reazione e di sviluppo proattivo di nuovi prodotti."
+    },
+    "criticita_operative": [
+        "Mancanza di documentazione scritta per le procedure di validazione e omologazione.",
+        "Gravi limitazioni di Business Central che costringono a controlli manuali e aggiornamenti ripetitivi (distinte base, sommatorie).",
+        "La formula di prodotto non è digitalizzata e tracciata all'interno del workflow su Extranet.",
+        "Processo di gestione delle campionature manuale e soggetto a errori che possono impattare la produzione.",
+        "Comunicazione con il reparto Commerciale indiretta, lenta e non strutturata.",
+        "Dipendenza da singole persone per comprendere le modifiche apportate alle formule."
+    ],
+    "punti_di_forza_emergenti": [
+        "Elevata capacità di auto-organizzazione e creazione di sistemi di lavoro personali, strutturati ed efficienti.",
+        "Proattività nell'eseguire test autonomamente per accelerare i processi e non dipendere da altre funzioni.",
+        "Sviluppo di soluzioni 'artigianali' intelligenti (es. file Excel di controllo) per garantire l'accuratezza dei dati nonostante le lacune dei sistemi."
+    ],
+    "opportunita_di_miglioramento": {
+        "digitalizzazione_e_integrazione_della_formula": "Integrare un modulo in Extranet o Business Central per la gestione completa della formula (versioning, tracciamento modifiche, visualizzazione), rendendola il cuore del processo documentale.",
+        "ottimizzazione_dei_workflow_in_business_central": "Automatizzare l'aggiornamento delle distinte base e implementare funzionalità di controllo (es. somma componenti) per eliminare la necessità di workaround manuali.",
+        "creazione_di_un_canale_di_comunicazione_strutturato": "Istituire un processo formale e incontri periodici tra Laboratorio e Commerciale per la condivisione di insight di mercato, feedback sui prodotti e analisi della concorrenza.",
+        "completamento_e_centralizzazione_della_documentazione": "Finalizzare le procedure in 'work in progress' e documentare i processi taciti in una knowledge base aziendale per ridurre i rischi e standardizzare l'operatività."
+    }
+}

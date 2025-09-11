@@ -1,0 +1,49 @@
+{
+    "sottogruppo": "HR e Amministrazione del Personale",
+    "stato_operativo_generale": "Il gruppo opera come una funzione duale, con una netta separazione tra le attività HR strategiche (Talent Acquisition, Sviluppo) e quelle amministrative (Payroll, Adempimenti). Entrambe le aree sono caratterizzate da un'elevata dipendenza dalla proattività e dai sistemi 'artigianali' delle singole specialiste, che hanno autonomamente costruito procedure e strumenti per sopperire a gravi lacune documentali e di processo a livello aziendale. L'operatività è funzionale ma fragile, inefficiente e ad altissimo rischio per la continuità del know-how.",
+    "processi_chiave": {
+        "gestione_ciclo_di_vita_del_dipendente": "Copre l'intero percorso del dipendente, dalla ricerca e selezione, alla valutazione annuale delle performance, fino alla gestione dell'uscita. I processi di Onboarding e Offboarding sono critici e gestiti tramite procedure personali non formalizzate.",
+        "amministrazione_e_payroll": "Processo end-to-end per la gestione delle paghe, che include il controllo giornaliero delle timbrature, la gestione di ferie, malattie e congedi, l'elaborazione dei dati per il consulente esterno e la verifica finale dei cedolini. Un processo complesso e basato su procedure non scritte.",
+        "sviluppo_e_formazione": "Gestione completa del ciclo formativo, dalla raccolta dei fabbisogni alla pianificazione con consulenti esterni, fino all'organizzazione dei corsi e alla raccolta dei feedback tramite strumenti digitali.",
+        "gestione_fringe_benefit_e_reporting": "Amministrazione dei benefit aziendali come auto e welfare, e produzione di reportistica manuale su KPI chiave come costi del personale e residui ferie/permessi."
+    },
+    "stack_tecnologico": {
+        "descrizione": "L'ecosistema è estremamente frammentato e si compone di molteplici piattaforme specialistiche non integrate tra loro (Startweb, Time&Work, TeamSystem-HR, Zucchetti). Questa frammentazione obbliga a un intenso lavoro manuale di estrazione e reinserimento dati. Strumenti non integrati come Excel e Microsoft Forms sono utilizzati per colmare le lacune funzionali e gestire processi critici (pianificazione, reporting).",
+        "strumenti_principali": [
+            "Excel",
+            "Startweb",
+            "Time&Work",
+            "TeamSystem-HR",
+            "Zucchetti Paghe",
+            "Microsoft Forms",
+            "Email",
+            "Extranet"
+        ]
+    },
+    "gestione_conoscenza": {
+        "stato_documentazione": "Critico. Esiste una profonda spaccatura: alcuni processi formali sono documentati (selezione, gestione fondi), ma le procedure operative più critiche e quotidiane sono completamente assenti (Onboarding, Offboarding, gestione paghe, amministrazione giornaliera). La conoscenza risiede in appunti personali o viene tramandata verbalmente.",
+        "archiviazione_dati": "I dati sono archiviati principalmente su un server locale in modo strutturato per candidato o per mese. Tuttavia, la logica di processo e le informazioni operative cruciali sono contenute in file Excel personali non centralizzati, rappresentando un grave rischio."
+    },
+    "rischi_principali": {
+        "business_continuity": "Altissimo. La mancanza di documentazione per i processi di Onboarding, Offboarding e per la chiusura mensile delle paghe rende il dipartimento totalmente dipendente dalla conoscenza tacita delle due specialiste. La loro assenza simultanea o la perdita di una delle due figure paralizzerebbe funzioni aziendali vitali.",
+        "efficienza_e_scalabilita": "Basso. L'eccessiva dipendenza da processi manuali, controlli ripetitivi e l'uso di file personali rende le operazioni lente, soggette a errori e non scalabili. Un aumento del numero di dipendenti metterebbe in crisi l'intero sistema.",
+        "conformita_e_rischio_legale": "Elevato. La mancanza di una procedura di Offboarding strutturata e di procedure aggiornate per la gestione dei fringe benefit (es. auto ibride) espone l'azienda a rischi di non conformità legale e a potenziali dispute."
+    },
+    "criticita_operative": [
+        "Mancanza totale di procedure aziendali formalizzate per l'Onboarding e l'Offboarding.",
+        "Il processo critico di chiusura mensile delle paghe non è documentato a livello aziendale, ma solo su appunti personali.",
+        "Eccessiva dipendenza da file Excel personali e non centralizzati per la gestione di processi chiave (formazione, comunicazione al consulente paghe).",
+        "Stack tecnologico frammentato che richiede numerosi controlli e inserimenti manuali di dati tra un sistema e l'altro.",
+        "Le procedure documentate sono spesso non aggiornate o mancano di dettagli operativi."
+    ],
+    "punti_di_forza_emergenti": [
+        "Eccezionale proattività e ownership individuale nel creare da zero procedure e strumenti 'artigianali' per garantire il funzionamento di processi critici non presidiati dall'azienda (es. procedura di Onboarding, appunti per la chiusura paghe).",
+        "Uso efficace di strumenti digitali semplici (Microsoft Forms) per strutturare la raccolta di dati come i feedback formativi.",
+        "Capacità di gestire processi amministrativi estremamente complessi e a più fasi (ciclo delle paghe) con un alto livello di accuratezza, nonostante la mancanza di supporto sistemico e documentale."
+    ],
+    "opportunita_di_miglioramento": {
+        "formalizzazione_del_ciclo_di_vita_del_dipendente": "Creare e implementare con urgenza procedure aziendali ufficiali per l'Onboarding e l'Offboarding, basandosi sulle best practice 'artigianali' già sviluppate internamente.",
+        "documentazione_e_automazione_del_processo_paghe": "Mappare e documentare in modo dettagliato l'intero processo di chiusura mensile delle paghe. Successivamente, analizzare i flussi di dati per identificare opportunità di automazione dei controlli manuali tra i vari sistemi.",
+        "centralizzazione_della_gestione_dati_hr": "Sostituire i file Excel personali con moduli o database centralizzati e condivisi (es. su SharePoint o tramite Power Apps) per la gestione delle richieste formative e per le comunicazioni strutturate al consulente paghe."
+    }
+}

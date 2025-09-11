@@ -687,7 +687,7 @@
         "name": "Management e Coordinamento Strategico",
         "area": "CMV",
         "sub_area": "Management e Coordinamento Strategico",
-        "file_path": "data/CMV/_management_summary.json",
+        "file_path": "data/CMV/0_management_summary.json",
         "type": "summary"
     },
     {
@@ -695,7 +695,7 @@
         "name": "Marketing Operativo, Digitale ed Eventi",
         "area": "CMV",
         "sub_area": "Marketing Operativo, Digitale ed Eventi",  
-        "file_path": "data/CMV/_marketingoperativo_summary.json",
+        "file_path": "data/CMV/0_marketingoperativo_summary.json",
         "type": "summary"
     },
     {
@@ -703,7 +703,7 @@
         "name": "Commerciale e Gestione Ordini",
         "area": "CMV",
         "sub_area": "Commerciale e Gestione Ordini",  
-        "file_path": "data/CMV/_commerciale_summary.json",
+        "file_path": "data/CMV/0_commerciale_summary.json",
         "type": "summary"
 
     },
@@ -712,7 +712,7 @@
         "name": "Academy e Formazione Tecnica",
         "area": "CMV",
         "sub_area": "Academy e Formazione Tecnica",  
-        "file_path": "data/CMV/_accademy_summary.json",
+        "file_path": "data/CMV/0_accademy_summary.json",
         "type": "summary"
     },
     {
@@ -720,7 +720,7 @@
         "name": "Assistenza Tecnica e Supporto Specialistico",
         "area": "CMV",
         "sub_area": "Assistenza Tecnica e Supporto Specialistico",  
-        "file_path": "data/CMV/_assistenzatecnica_summary.json",
+        "file_path": "data/CMV/0_assistenzatecnica_summary.json",
         "type": "summary"
     },
     {
@@ -728,7 +728,7 @@
         "name": "Produzione e Logistica",
         "area": "GOA",
         "sub_area": "Produzione e Logistica",  
-        "file_path": "data/GOA/_produzionelogistica_summary.json",
+        "file_path": "data/GOA/0_produzionelogistica_summary.json",
         "type": "summary"
     },
     {
@@ -736,7 +736,7 @@
         "name": "Laboratorio e R&D",
         "area": "GOA",
         "sub_area": "Laboratorio e R&D",  
-        "file_path": "data/GOA/_r&d_summary.json",
+        "file_path": "data/GOA/0_r&d_summary.json",
         "type": "summary"
     },
     {
@@ -744,7 +744,7 @@
         "name": "R&S Colore",
         "area": "GOA",
         "sub_area": "R&S Colore",  
-        "file_path": "data/GOA/_r&scolore_summary.json",
+        "file_path": "data/GOA/0_r&scolore_summary.json",
         "type": "summary"
     },
     {
@@ -752,7 +752,7 @@
         "name": "Tintometria",
         "area": "GOA",
         "sub_area": "Tintometria",  
-        "file_path": "data/GOA/_tintometria_summary.json",
+        "file_path": "data/GOA/0_tintometria_summary.json",
         "type": "summary"
     },
     {
@@ -760,7 +760,7 @@
         "name": "Approvvigionamenti",
         "area": "GOA",
         "sub_area": "Approvvigionamenti",  
-        "file_path": "data/GOA/_approvvigionamenti_summary.json",
+        "file_path": "data/GOA/0_approvvigionamenti_summary.json",
         "type": "summary"
     },
     {
@@ -768,7 +768,7 @@
         "name": "Controllo Qualità",
         "area": "GOA",
         "sub_area": "Controllo Qualità",  
-        "file_path": "data/GOA/_controlloqualità_summary.json",
+        "file_path": "data/GOA/0_controlloqualità_summary.json",
         "type": "summary"
     },
     {
@@ -776,7 +776,7 @@
         "name": "Amministrazione del Personale",
         "area": "OA",
         "sub_area": "Amministrazione del Personale",  
-        "file_path": "data/OA/_amministrazionepersonale_summary.json",
+        "file_path": "data/OA/0_amministrazionepersonale_summary.json",
         "type": "summary"
     },
     {
@@ -784,7 +784,7 @@
         "name": "Ufficio Legale",
         "area": "LEGALE",
         "sub_area": "Ufficio Legale",  
-        "file_path": "data/LEGALE/_ufficiolegale_summary.json",
+        "file_path": "data/LEGALE/0_ufficiolegale_summary.json",
         "type": "summary"
     }
     

@@ -1,0 +1,47 @@
+{
+    "sottogruppo": "Controllo Qualità",
+    "stato_operativo_generale": "Il gruppo Controllo Qualità agisce come un presidio fondamentale per gli standard di prodotto, ma opera in un ambiente caratterizzato da una forte dualità: alcuni processi sono documentati ma non strutturati, mentre altri, critici come la gestione delle non conformità, sono affidati interamente all'esperienza individuale. La conoscenza è frammentata e spesso non allineata con i dati a sistema (es. distinte base), creando un'operatività reattiva che dipende pesantemente dalla competenza e dalla comunicazione verbale del personale chiave.",
+    "processi_chiave": {
+        "controllo_materie_prime_in_ingresso": "Gestione completa del ciclo di accettazione delle materie prime, dalla ricerca e selezione al collaudo, con registrazione dei risultati su Extranet e manutenzione di un registro centrale (la 'bibbia' su Excel).",
+        "collaudo_prodotto_finito_e_istruzioni_operative": "Responsabilità del collaudo finale sui prodotti, che include l'associazione e l'aggiornamento continuo delle istruzioni di lavoro e degli strumenti da utilizzare in base alle formule definite dalla pianificazione.",
+        "gestione_non_conformita_e_segnalazioni": "Analisi e risoluzione delle non conformità di prodotto, sia interne che segnalate dai clienti, con un processo decisionale non strutturato e basato sulla consultazione tra reparti (CQ e Laboratorio) e una doppia archiviazione (digitale e cartacea).",
+        "gestione_strumenti_e_documentazione_normativa": "Monitoraggio, taratura e revisione di tutti gli strumenti di produzione e laboratorio, e gestione della documentazione critica come Schede di Sicurezza ed Etichette, assicurando la conformità normativa."
+    },
+    "stack_tecnologico": {
+        "descrizione": "L'ecosistema tecnologico è frammentato. L'Extranet è lo strumento principale per la registrazione dei dati (collaudi, non conformità), ma coesiste con un livello critico di 'Shadow IT' basato su file Excel che fungono da database non ufficiali ma vitali ('la bibbia'). I sistemi gestionali sottostanti soffrono di dati non aggiornati, rendendo l'affidabilità delle informazioni un problema costante.",
+        "strumenti_principali": [
+            "Extranet",
+            "Excel",
+            "Gestionale (per schede tecniche)",
+            "Epiplus (per schede di sicurezza)",
+            "Documentazione Cartacea"
+        ]
+    },
+    "gestione_conoscenza": {
+        "stato_documentazione": "Altamente disomogeneo. Si passa da processi con procedure scritte ma non strutturate (collaudo materie prime) a processi critici totalmente non documentati (gestione non conformità). La conoscenza risiede in manuali non aggiornati, template, e soprattutto nell'esperienza diretta delle persone.",
+        "archiviazione_dati": "I dati sono archiviati in modo ibrido e ridondante. Le informazioni vengono inserite sull'Extranet ma anche su registri cartacei e file Excel locali. Dati fondamentali come le formule corrette non sono aggiornati a sistema, ma sopravvivono come conoscenza tacita."
+    },
+    "rischi_principali": {
+        "integrita_dei_dati_di_produzione": "Altissimo. Le distinte base a sistema non sono aggiornate con le formule correnti. La produzione si basa sulla conoscenza tacita del personale per apportare le modifiche necessarie, rendendo i dati ufficiali inaffidabili e creando un rischio enorme di errori di produzione (fino a 40/50 quintali di prodotto perso).",
+        "business_continuity": "Alto. I processi decisionali per la gestione delle non conformità e la ricerca di materie prime non sono documentati. La perdita di personale chiave bloccherebbe la capacità del reparto di risolvere problemi complessi e di evolvere le specifiche dei materiali.",
+        "comunicazione_interfunzionale": "Critico. La mancanza di comunicazione efficace e di una cultura della condivisione porta a decisioni isolate, informazioni non reperibili e all'incapacità di risolvere i problemi in modo sistemico e preventivo."
+    },
+    "criticita_operative": [
+        "Le distinte base nel sistema gestionale non sono aggiornate e non riflettono le ricette reali.",
+        "Il processo di gestione delle non conformità non è documentato né strutturato, basandosi sull'esperienza individuale.",
+        "La documentazione esistente è spesso non aggiornata (es. manuale non conformità) o non strutturata.",
+        "Mancanza di una cultura aziendale orientata all'inserimento e all'aggiornamento sistematico delle informazioni.",
+        "Archiviazione dati frammentata e ridondante (digitale, cartacea, file locali).",
+        "La comunicazione tra reparti è inefficace e non orientata alla risoluzione collaborativa dei problemi."
+    ],
+    "punti_di_forza_emergenti": [
+        "Elevata proattività individuale nella creazione di strumenti 'artigianali' che diventano punti di riferimento per l'azienda (es. il 'Piano dei controlli in accettazione' è la 'bibbia' delle materie prime).",
+        "Sviluppo di iniziative per migliorare la circolazione delle informazioni nonostante le carenze sistemiche.",
+        "Approccio metodico all'archiviazione delle soluzioni per le non conformità sull'Extranet, creando uno storico digitale consultabile."
+    ],
+    "opportunita_di_miglioramento": {
+        "bonifica_e_sincronizzazione_delle_distinte_base": "Avviare un progetto prioritario per allineare le distinte base nel sistema gestionale con le formule e le ricette effettivamente in uso, creando un processo di aggiornamento controllato.",
+        "digitalizzazione_del_workflow_di_non_conformita": "Implementare un sistema digitale su Extranet o su una piattaforma dedicata per gestire l'intero ciclo di vita delle non conformità, con alberi decisionali ('istruzioni if/else') per guidare l'utente.",
+        "centralizzazione_e_aggiornamento_della_documentazione": "Creare una knowledge base unica e centralizzata per tutte le procedure di controllo qualità, garantendone l'aggiornamento costante e l'accessibilità a tutti i reparti coinvolti."
+    }
+}

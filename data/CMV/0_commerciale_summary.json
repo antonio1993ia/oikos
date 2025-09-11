@@ -1,0 +1,50 @@
+{
+    "sottogruppo": "Commerciale e Gestione Ordini",
+    "stato_operativo_generale": "Il gruppo opera in una modalità duale: alcuni processi sono semi-automatizzati (es. webapp per accordi), ma la maggior parte delle attività si affida a un intenso sforzo manuale, esperienza personale (\"a sentimento\") e un ecosistema di file Excel per superare le significative limitazioni dei sistemi gestionali. La comunicazione è frammentata, generando inefficienze e un'alta dipendenza dalla conoscenza tacita di figure chiave, con un conseguente elevato rischio operativo.",
+    "processi_chiave": {
+        "gestione_ciclo_dell_ordine_italia_estero": "Processamento completo degli ordini, dall'inserimento (e-commerce, email) alla gestione delle eccezioni (mancanze, urgenze), fino all'evasione, con procedure specifiche e spesso non documentate per i mercati internazionali.",
+        "supporto_commerciale_e_gestione_accordi": "Creazione e gestione di accordi commerciali, listini personalizzati, premi di fine anno e anagrafiche clienti, combinando l'uso di webapp dedicate con inserimenti, calcoli e controlli manuali.",
+        "gestione_non_conformita_e_crediti": "Gestione delle problematiche post-vendita, dalle non conformità di prodotto al recupero crediti, seguendo procedure a volte documentate (crediti) e a volte basate su controlli individuali non formalizzati (note di credito).",
+        "gestione_richieste_speciali_e_supporto_tecnico": "Evasione di richieste non standard come materiale pubblicitario, calcolo costi per spedizioni, certificazioni per l'estero e assistenza tecnica, processi gestiti prevalentemente tramite comunicazione diretta e strumenti personali."
+    },
+    "stack_tecnologico": {
+        "descrizione": "L'ecosistema è centrato su Business Central, le cui limitazioni operative forzano un massiccio ricorso a un 'universo parallelo' di file Excel critici, usati per analisi, calcoli e tracking manuale. Piattaforme come GAIA e una webapp per gli accordi coesistono con flussi di comunicazione frammentati su email, minando la centralizzazione dei dati.",
+        "strumenti_principali": [
+            "Business Central",
+            "Excel",
+            "GAIA",
+            "Outlook / Email",
+            "Piattaforma E-commerce",
+            "Power BI",
+            "Extranet",
+            "Webapp Accordi"
+        ]
+    },
+    "gestione_conoscenza": {
+        "stato_documentazione": "Estremamente eterogeneo e inaffidabile. Accanto a poche procedure ben documentate (es. recupero crediti), la maggior parte dei flussi operativi critici (gestione ordini internazionali, validazione note di credito, calcoli personalizzati) è completamente priva di documentazione formale o basata su versioni obsolete.",
+        "archiviazione_dati": "I dati sono frammentati tra sistemi ufficiali (GAIA, Business Central) e una grande quantità di file Excel locali o personali che contengono logiche di business critiche. La conoscenza è spesso condivisa verbalmente, con alcuni tentativi individuali di auto-documentazione non centralizzati."
+    },
+    "rischi_principali": {
+        "business_continuity": "Alto. Processi ad alto impatto finanziario e operativo (note di credito, listini, ordini internazionali) dipendono interamente dalla conoscenza tacita di individui chiave. La loro assenza metterebbe a rischio l'operatività e la coerenza delle attività commerciali.",
+        "integrita_dei_dati_e_rischio_errore": "Elevato. L'intensa manipolazione manuale dei dati, l'aggiornamento di file Excel critici e la mancanza di validazione automatica sull'input delle anagrafiche espongono l'azienda a un alto rischio di errori, dati incompleti e decisioni basate su informazioni non accurate.",
+        "inefficienza_operativa_e_colli_di_bottiglia": "Critico. La lentezza dei gestionali, i complessi workaround manuali e la dipendenza da passaggi di comunicazione via email creano colli di bottiglia e rallentano l'intero ciclo dell'ordine, impattando la capacità di servire il cliente in modo rapido e scalabile."
+    },
+    "criticita_operative": [
+        "Mancanza di documentazione per processi chiave (ordini internazionali, note di credito, anagrafiche).",
+        "Eccessiva dipendenza da processi manuali e file Excel per compensare le lacune dei sistemi.",
+        "Limitazioni e lentezza del gestionale Business Central (es. no modifiche in massa, gestione estero problematica).",
+        "Comunicazioni e notifiche frammentate via email invece che integrate nei sistemi.",
+        "Dati di input di bassa qualità (es. anagrafiche cliente) che richiedono correzioni manuali.",
+        "Processi obsoleti (es. showroom) o funzionalmente degradati (es. scadenziario) che creano inefficienza."
+    ],
+    "punti_di_forza_emergenti": [
+        "Elevata proattività nella creazione di strumenti 'artigianali' funzionali (webapp per accordi, file di calcolo, pro-forma) per automatizzare o standardizzare processi non supportati dai sistemi aziendali.",
+        "Forte cultura di problem-solving e conoscenza condivisa verbalmente all'interno dei micro-team per superare le difficoltà quotidiane.",
+        "Iniziative individuali di documentazione e creazione di procedure per tentare di formalizzare la conoscenza tacita."
+    ],
+    "opportunita_di_miglioramento": {
+        "documentazione_e_centralizzazione": "Avviare un progetto per formalizzare e centralizzare tutte le procedure non scritte in una knowledge base unica, eliminando la dipendenza dalla conoscenza individuale.",
+        "ottimizzazione_e_integrazione_dei_sistemi": "Potenziare e personalizzare Business Central per gestire le eccezioni (estero, modifiche massive) e integrare le notifiche, eliminando l'uso di email e riducendo la necessità di workaround manuali.",
+        "automazione_dei_processi_manuali": "Digitalizzare i processi ad alto impatto manuale come la generazione dello scadenziario, il calcolo dei listini e delle stime di costo, integrandoli direttamente nei sistemi gestionali."
+    }
+}

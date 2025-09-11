@@ -1,0 +1,50 @@
+{
+    "sottogruppo": "R&S Colore",
+    "stato_operativo_generale": "Il gruppo rappresenta il nucleo di competenza cromatica dell'azienda, ma opera in un ambiente altamente frammentato e dipendente da conoscenze individuali. I processi sono un ibrido tra procedure 'artigianali' e manuali per la creazione di campioni e un workflow basato su software lenti e problematici. La quasi totale assenza di documentazione e la dispersione delle informazioni (su carta, file Excel, software diversi) rendono il gruppo un'eccellenza tecnica fragile e a elevato rischio operativo.",
+    "processi_chiave": {
+        "formulazione_e_sviluppo_nuove_tinte": "Gestione dell'intero ciclo di vita del colore, dalla generazione di campioni su richiesta (tramite processi manuali e strumenti esterni) alla formulazione di nuove collezioni e all'aggiornamento delle esistenti tramite software dedicato.",
+        "controllo_qualita_colore_trasversale": "Esecuzione di controlli qualitativi e quantitativi (visivi e con spettrofotometro) in tutte le fasi: validazione di nuovi prodotti, controllo su campioni di produzione, validazione di materiali marketing (mazzette) e supporto all'assistenza tecnica.",
+        "gestione_sistema_tintometrico": "Caratterizzazione, calibrazione e inserimento di nuovi prodotti (basi e coloranti) nel sistema tintometrico per renderli disponibili alla formulazione automatica.",
+        "assistenza_tecnica_specialistica_colore": "Fornitura di supporto a clienti e produzione per problematiche relative a qualità, prezzo, colore e richieste di formulazioni ad hoc, attingendo da uno storico di soluzioni non centralizzato."
+    },
+    "stack_tecnologico": {
+        "descrizione": "L'ecosistema tecnologico è obsoleto e frammentato. Il software core (CromaShop) è lento e inaffidabile, costringendo a controlli manuali. Processi fondamentali si basano su strumenti non integrati (Google, Paint, siti esterni). L'uso di spettrofotometri diversi tra i reparti crea inoltre un problema critico di coerenza dei dati.",
+        "strumenti_principali": [
+            "CromaShop",
+            "Spettrofotometro",
+            "Excel",
+            "Tintometro",
+            "Paint",
+
+            "Google / Siti Esterni"
+        ]
+    },
+    "gestione_conoscenza": {
+        "stato_documentazione": "Critico. La documentazione delle procedure è quasi totalmente assente e la formazione è puramente esperienziale ('a trasmissione orale'). Le informazioni più importanti, come le formule corrette, sono archiviate su supporti fisici ('plico di fogli') o in file Excel non strutturati, rendendo la conoscenza inaccessibile e a rischio.",
+        "archiviazione_dati": "Le informazioni sono disperse e non centralizzate. I dati risiedono su software lenti, fogli di carta, file Excel su drive di rete e nella memoria dei singoli tecnici. Manca una fonte unica e affidabile per le formule e lo storico delle soluzioni."
+    },
+    "rischi_principali": {
+        "business_continuity": "Altissimo. L'intero know-how sulla formulazione e il controllo colore è tacito e legato a due figure chiave. La loro assenza comporterebbe l'incapacità di sviluppare nuovi colori, validare la produzione e risolvere problemi complessi dei clienti.",
+        "integrita_e_coerenza_dei_dati": "Elevato. La combinazione di archiviazione cartacea, campionari fisici non digitalizzati e l'uso di strumenti di misurazione diversi tra i reparti crea un alto rischio di dati incoerenti, errori di formulazione e contestazioni sulla qualità.",
+        "inefficienza_tecnologica": "Critico. La lentezza e l'inaffidabilità del software CromaShop costituisce un collo di bottiglia che rallenta l'intero processo di formulazione, impedisce il lavoro in parallelo e impatta negativamente sulla produttività."
+    },
+    "criticita_operative": [
+        "Mancanza quasi totale di procedure documentate per tutte le attività chiave.",
+        "Archiviazione di informazioni critiche (formule) su supporti cartacei, non digitalizzati e non condivisibili.",
+        "Il software principale (CromaShop) è lento, si blocca e non dispone di sistemi di alert automatici.",
+        "Processi manuali e frammentati per la generazione di colori a campione da input esterni (immagini, codici).",
+        "Utilizzo di spettrofotometri non allineati tra i reparti, che genera letture e dati incoerenti.",
+        "Campionario fisico non digitalizzato, che rallenta la ricerca e la condivisione delle informazioni."
+    ],
+    "punti_di_forza_emergenti": [
+        "Elevatissima competenza tecnica e capacità di risolvere problemi complessi basandosi sull'esperienza.",
+        "Creazione di soluzioni 'artigianali' per superare le lacune degli strumenti (es. uso di Paint per estrarre RGB, archiviazione storica su Excel).",
+        "Approccio metodico al controllo qualità, applicato in modo trasversale su produzione, marketing e assistenza."
+    ],
+    "opportunita_di_miglioramento": {
+        "digitalizzazione_e_centralizzazione_della_conoscenza_colore": "Creare un database del colore centralizzato e moderno per digitalizzare tutte le formule (dal cartaceo), lo storico delle soluzioni e il campionario fisico, rendendolo la fonte unica di verità.",
+        "upgrade_o_sostituzione_software_di_formulazione": "Valutare l'aggiornamento o la sostituzione di CromaShop con una soluzione più performante, stabile e dotata di sistemi di monitoraggio e alert automatici.",
+        "standardizzazione_degli_strumenti_e_dei_processi": "Documentare tutte le procedure operative e standardizzare la strumentazione di misurazione (spettrofotometri) in tutti i reparti per garantire la coerenza e l'affidabilità dei dati.",
+        "sviluppo_di_un_tool_integrato_per_la_campionatura": "Implementare un modulo software che automatizzi il processo di generazione colori da un input esterno (immagine, codice RGB), integrandosi direttamente con il database colori aziendale."
+    }
+}

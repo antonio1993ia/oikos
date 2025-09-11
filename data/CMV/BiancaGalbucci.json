@@ -2,8 +2,8 @@
     "id": "BG01",
     "name": "Bianca Galbucci",
     "role": "Gestione ordini clienti",
-    "department": "Non specificato",
-    "section": "CMV",
+    "department": "Customer Care",
+    "section": "Ordini e fatturazione",
     "coreActivities": [
         "Gestione degli ordini (da e-commerce ed email), inclusa la verifica dello stato di spedizione e ordine, e la gestione di prodotti mancanti o non disponibili (conversioni/resi)",
         "Gestione delle non conformità, dalla ricezione tramite extranet alla chiusura",

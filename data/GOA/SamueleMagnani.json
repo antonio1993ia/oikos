@@ -1,9 +1,9 @@
 {
     "id": "SM01",
     "name": "Samuele Magnani",
-    "role": "Controllo qualità / Responsabile collaudo su prodotti",
-    "department": "GOA",
-    "section": "Controllo Qualità",
+    "role": "Responsabile Controllo Qualità Prodotto",
+    "department": "Controllo Qualità",
+    "section": "Collaudo Prodotto Finito",
     "coreActivities": [
         "Responsabilità del collaudo sui prodotti",
         "Associare istruzioni di lavoro a formule inserite dalla pianificazione, aggiornandole e mettendole in controllo, inclusa l'aggiornamento degli strumenti da usare",

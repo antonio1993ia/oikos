@@ -1,9 +1,9 @@
 {
     "id": "MA01",
     "name": "Marica Andreoli",
-    "role": "Ordini approvvigionamento (packaging)",
-    "department": "Non specificato",
-    "section": "Non specificato",
+    "role": "Buyer Packaging",
+    "department": "Acquisti",
+    "section": "Approvvigionamenti Packaging",
     "coreActivities": [
         "Gestione e piazzamento ordini di packaging, inclusa l'analisi storica degli ordini",
         "Gestione ordini di materie terze",

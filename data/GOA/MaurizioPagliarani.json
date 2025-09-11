@@ -1,9 +1,9 @@
 {
     "id": "MP01",
     "name": "Maurizio Pagliarani",
-    "role": "Addetto Tintometri",
+    "role": "Tecnico Tintometrista",
     "department": "Produzione",
-    "section": "GOA (Gestione Ordini a Tintometro)",
+    "section": "Tintometria",
     "coreActivities": [
         "Scrittura e aggiornamento delle formule per i tintometri",
         "Gestione degli ordini per la colorazione, inclusa la preparazione delle etichette",

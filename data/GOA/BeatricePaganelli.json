@@ -1,9 +1,9 @@
 {
     "id": "BP01",
     "name": "Beatrice Paganelli",
-    "role": "Ufficio Approvvigionamenti",
+    "role": "Manager Ufficio Approvvigionamenti",
     "department": "Ufficio Approvvigionamenti",
-    "section": "Area GOA",
+    "section": "Management",
     "coreActivities": [
         "Acquisti di materie prime per la produzione",
         "Analisi del fabbisogno e gestione completa degli ordini con i fornitori",

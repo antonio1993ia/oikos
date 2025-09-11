@@ -1,0 +1,50 @@
+{
+    "sottogruppo": "Assistenza Tecnica e Supporto Specialistico",
+    "stato_operativo_generale": "Questo gruppo rappresenta il nucleo di conoscenza tecnica e di sistema dell'azienda, agendo come punto di riferimento per la risoluzione di problemi complessi sia interni che esterni. L'efficacia operativa si fonda quasi esclusivamente sull'esperienza profonda e sulla conoscenza tacita di specialisti che operano in assenza di procedure formalizzate. Il modello di lavoro è reattivo e basato su soluzioni 'artigianali', rendendo il gruppo un asset critico ma allo stesso tempo un punto di elevata vulnerabilità per la continuità aziendale.",
+    "processi_chiave": {
+        "gestione_assistenza_tecnica_multicanale": "Fornitura di supporto e consulenza su prodotti e macchinari attraverso canali frammentati (email, telefono, WhatsApp), con archiviazione delle soluzioni in database non integrati.",
+        "gestione_dati_tecnici_di_prodotto": "Creazione e gestione di schede tecniche e garanzie. Include un processo critico e non digitalizzato per l'aggiornamento delle formule di prodotto, basato su fogli cartacei e comunicazioni via email.",
+        "implementazione_e_supporto_sistemi_crm": "Gestione end-to-end del CRM aziendale: dalla configurazione con i fornitori alla formazione degli utenti, fino al supporto operativo e alla definizione autonoma delle metriche di analisi.",
+        "coordinamento_interventi_specialistici": "Gestione degli interventi di tecnici esterni e consulenza diretta per problematiche non risolvibili da remoto, inclusa l'installazione di software e il supporto per l'utilizzo degli strumenti."
+    },
+    "stack_tecnologico": {
+        "descrizione": "L'ecosistema tecnologico è un patchwork di sistemi gestionali ufficiali (Business Central, GAIA, CRM), piattaforme di comunicazione non strutturate (WhatsApp, Telegram) e un livello critico di database e file 'artigianali' (DB storici, fogli Excel). La mancanza di integrazione tra i canali di richiesta e i sistemi di archiviazione è una delle principali cause di inefficienza.",
+        "strumenti_principali": [
+            "Business Central",
+            "GAIA",
+            "CRM",
+            "Database Custom (Access/SQL)",
+            "Extranet",
+            "Excel",
+            "Outlook / Email",
+            "WhatsApp / Telegram",
+            "Teamviewer"
+        ]
+    },
+    "gestione_conoscenza": {
+        "stato_documentazione": "Critico. La maggior parte delle procedure è 'completamente mancante' o esiste solo in forma di bozza non aggiornata. Le conoscenze operative risiedono quasi interamente nella memoria degli specialisti, con dati fondamentali (come le formule di prodotto) ancora su supporto cartaceo.",
+        "archiviazione_dati": "Fortemente frammentata. Le informazioni sono disperse tra database obsoleti, sistemi gestionali non comunicanti, archivi email personali e fogli di calcolo locali. Manca una fonte unica e affidabile per la conoscenza tecnica e storica."
+    },
+    "rischi_principali": {
+        "business_continuity": "Altissimo. La dipendenza totale dalla conoscenza tacita di poche figure chiave rende il gruppo estremamente vulnerabile. La perdita di un singolo specialista comporterebbe l'immediata incapacità di gestire processi critici, dall'aggiornamento delle formule all'assistenza su macchinari specifici.",
+        "obsolescenza_del_know_how": "Elevato. L'assenza di un processo di documentazione e standardizzazione impedisce la capitalizzazione e l'evoluzione della conoscenza, che rischia di rimanere statica e legata all'esperienza passata dei singoli.",
+        "inefficienza_e_mancanza_di_scalabilita": "Critico. I processi manuali, la ricerca di informazioni frammentate e la comunicazione non strutturata rendono il servizio di assistenza poco scalabile e inefficiente, incapace di gestire un aumento dei volumi senza un impatto diretto sulla qualità e sui tempi di risposta."
+    },
+    "criticita_operative": [
+        "Mancanza totale di procedure scritte per attività ad alto impatto (aggiornamento formule, gestione non conformità).",
+        "Dati critici non digitalizzati (formule su carta) o archiviati in sistemi obsoleti e non integrati.",
+        "Flussi di comunicazione non strutturati che rendono difficile la tracciabilità e la gestione delle richieste.",
+        "Assenza di un flusso di lavoro validato per la condivisione delle informazioni tra i reparti (es. da Laboratorio a Schede Tecniche).",
+        "Mancanza di una visione unificata dello storico cliente al momento della richiesta di assistenza."
+    ],
+    "punti_di_forza_emergenti": [
+        "Elevatissima competenza ed esperienza sul prodotto e sui sistemi, che consente la risoluzione di problemi complessi.",
+        "Proattività individuale nella creazione di strumenti di supporto 'artigianali' (DB per storico soluzioni, procedure personali) che si sono dimostrati efficaci nel tempo.",
+        "Forte orientamento al cliente e flessibilità nell'adattarsi ai canali di comunicazione preferiti dall'utente."
+    ],
+    "opportunita_di_miglioramento": {
+        "digitalizzazione_e_centralizzazione_della_conoscenza": "Avviare un progetto prioritario per digitalizzare le formule di prodotto e creare una knowledge base tecnica centralizzata (es. Wiki) dove documentare tutte le procedure tacite.",
+        "implementazione_di_un_sistema_di_ticketing_unificato": "Adottare una piattaforma CRM/Service Desk moderna per consolidare tutte le richieste di assistenza da qualsiasi canale, garantendo tracciabilità, gestione delle priorità e creazione di uno storico strutturato.",
+        "creazione_di_workflow_interdipartimentali": "Disegnare e implementare flussi di lavoro digitali e validati per i processi che coinvolgono più reparti, come la creazione di un nuovo prodotto (dal laboratorio alla scheda tecnica) e l'aggiornamento delle formule."
+    }
+}

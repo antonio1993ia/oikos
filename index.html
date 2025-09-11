@@ -1,672 +1,625 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard BI Qualitativa</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        :root {
-            --background: #0a192f;
-            --primary: #1e293b;
-            --secondary: #334155;
-            --accent: #64ffda;
-            --text-primary: #cbd5e1;
-            --text-secondary: #94a3b8;
-        }
-        body {
-            background-color: var(--background);
-            color: var(--text-primary);
-            font-family: 'Inter', sans-serif;
-        }
-        .sidebar-item:hover {
-            background-color: var(--secondary);
-        }
-        .sidebar-item.active {
-            background-color: #475569;
-            color: var(--accent);
-        }
-        .card {
-            background-color: var(--primary);
-            border: 1px solid var(--secondary);
-        }
-        .chat-bubble-user {
-            background-color: var(--secondary);
-        }
-        .chat-bubble-ai {
-            background-color: #0d2a4e;
-        }
-        .chat-bubble-ai p {
-            margin-bottom: 0.75rem; /* Aggiunge spazio tra i paragrafi */
-        }
-        .chat-bubble-ai p:last-child {
-            margin-bottom: 0; /* Rimuove lo spazio dall'ultimo paragrafo */
-        }
-        .btn-primary {
-            background-color: var(--accent);
-            color: var(--background);
-            transition: background-color 0.3s;
-        }
-        .btn-primary:hover {
-            background-color: #52d9b8;
-        }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: var(--primary); }
-        ::-webkit-scrollbar-thumb { background: var(--secondary); border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #475569; }
-        details > summary { list-style: none; }
-        details > summary::-webkit-details-marker { display: none; }
-        details[open] > summary .arrow { transform: rotate(90deg); }
-        .arrow { transition: transform 0.2s; }
-        .prose { color: var(--text-primary); }
-        .prose h3 { color: var(--accent); }
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard BI Qualitativa</title>
+
+  <!-- Tailwind + Lucide -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Markdown renderer (fix per "marked is not defined") -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <style>
+    :root {
+      --background:#0a192f;
+      --primary:#1e293b;
+      --secondary:#334155;
+      --accent:#64ffda;
+      --text-primary:#cbd5e1;
+      --text-secondary:#94a3b8;
+    }
+    body{background-color:var(--background); color:var(--text-primary); font-family:'Inter',sans-serif}
+    .sidebar-item:hover{background-color:var(--secondary)}
+    .sidebar-item.active{background-color:#475569;color:var(--accent)}
+    .card{background-color:var(--primary); border:1px solid var(--secondary)}
+    .chat-bubble-user{background-color:var(--secondary)}
+    .chat-bubble-ai{background-color:#0d2a4e}
+    .chat-bubble-ai p{margin-bottom:.75rem}
+    .chat-bubble-ai p:last-child{margin-bottom:0}
+    .btn-primary{background-color:var(--accent);color:var(--background);transition:background-color .3s}
+    .btn-primary:hover{background-color:#52d9b8}
+    ::-webkit-scrollbar{width:8px}
+    ::-webkit-scrollbar-track{background:var(--primary)}
+    ::-webkit-scrollbar-thumb{background:var(--secondary);border-radius:4px}
+    ::-webkit-scrollbar-thumb:hover{background:#475569}
+    details>summary{list-style:none}
+    details>summary::-webkit-details-marker{display:none}
+    details[open]>summary .arrow{transform:rotate(90deg)}
+    .arrow{transition:transform .2s}
+    .prose{color:var(--text-primary)}
+    .prose h3{color:var(--accent)}
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="h-screen flex flex-col">
 
-    <header class="card p-4 flex items-center justify-between border-b-2 border-accent/50">
-        <h1 class="text-2xl font-bold flex items-center">
-            <i data-lucide="bar-chart-big" class="mr-3 text-accent"></i>
-            Dashboard BI Qualitativa
-        </h1>
-    </header>
+  <!-- Header -->
+  <header class="card p-4 flex items-center justify-between border-b-2 border-accent/50">
+    <h1 class="text-2xl font-bold flex items-center">
+      <i data-lucide="bar-chart-big" class="mr-3 text-accent"></i>
+      Dashboard BI Qualitativa
+    </h1>
+  </header>
 
-    <div class="flex flex-1 overflow-hidden">
-        <aside id="sidebar" class="w-1/4 xl:w-1/5 p-4 overflow-y-auto card">
-            <h2 class="text-lg font-semibold mb-4 text-accent">Navigazione Aree</h2>
-            <div id="navigation-tree"></div>
-        </aside>
+  <!-- Layout -->
+  <div class="flex flex-1 overflow-hidden">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="w-1/4 xl:w-1/5 p-4 overflow-y-auto card">
+      <h2 class="text-lg font-semibold mb-4 text-accent">Navigazione Aree</h2>
+      <div id="navigation-tree"></div>
+    </aside>
 
-        <main id="main-content" class="flex-1 p-6 overflow-y-auto">
-        </main>
+    <!-- Main -->
+    <main id="main-content" class="flex-1 p-6 overflow-y-auto"></main>
 
-        <aside class="w-1/3 xl:w-1/4 p-4 flex flex-col card overflow-hidden">
-            <h2 class="text-lg font-semibold mb-4 text-accent flex items-center">
-                <i data-lucide="sparkles" class="mr-2"></i>
-                Assistente AI
-            </h2>
-            <div id="chat-window" class="flex-1 overflow-y-auto mb-4 pr-2 space-y-4"></div>
-            <div class="mt-auto">
-                <form id="chat-form" class="flex gap-2">
-                    <input type="text" id="chat-input" placeholder="Chiedi qualcosa sui dati..." class="flex-1 p-2 rounded-md bg-secondary border border-slate-600 focus:outline-none focus:ring-2 focus:ring-accent">
-                    <button type="submit" class="btn-primary p-2 rounded-md flex items-center justify-center">
-                        <i data-lucide="send"></i>
-                    </button>
-                </form>
+    <!-- Chat -->
+    <aside class="w-1/3 xl:w-1/4 p-4 flex flex-col card overflow-hidden">
+      <h2 class="text-lg font-semibold mb-4 text-accent flex items-center">
+        <i data-lucide="sparkles" class="mr-2"></i>
+        Assistente AI
+      </h2>
+      <div id="chat-window" class="flex-1 overflow-y-auto mb-4 pr-2 space-y-4"></div>
+      <div class="mt-auto">
+        <form id="chat-form" class="flex gap-2">
+          <input type="text" id="chat-input" placeholder="Chiedi qualcosa sui dati..." class="flex-1 p-2 rounded-md bg-secondary border border-slate-600 focus:outline-none focus:ring-2 focus:ring-accent"/>
+          <button type="submit" class="btn-primary p-2 rounded-md flex items-center justify-center">
+            <i data-lucide="send"></i>
+          </button>
+        </form>
+      </div>
+    </aside>
+  </div>
+
+  <script>
+    // ------------------- CONFIG -------------------
+    const LAMBDA_ENDPOINT_URL = "https://kf6rrdd3wsa3ozgmt5mwwrxtvq0mocoo.lambda-url.eu-north-1.on.aws/";
+
+    window.APP_DATA = {
+      index: null,
+      employeeFiles: {},
+      chatHistory: [],
+      sessionId: null
+    };
+
+    // Markdown helper con fallback sicuro
+    function mdToHtml(text) {
+      if (window.marked && typeof marked.parse === 'function') {
+        return marked.parse(String(text ?? ''));
+      }
+      const safe = String(text ?? '')
+        .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+      return safe.replace(/\n/g,"<br>");
+    }
+
+    // ------------------- BOOT -------------------
+    document.addEventListener('DOMContentLoaded', async () => {
+      lucide.createIcons();
+      initializeSession();
+      await initializeApp();
+    });
+
+    function initializeSession() {
+      let sessionId = sessionStorage.getItem('sessionId');
+      if (!sessionId) {
+        sessionId = 'session_' + Math.random().toString(36).slice(2, 11);
+        sessionStorage.setItem('sessionId', sessionId);
+      }
+      window.APP_DATA.sessionId = sessionId;
+    }
+
+    async function initializeApp() {
+      const mainContent = document.getElementById('main-content');
+      try {
+        const indexResponse = await fetch('./data/index.json');
+        if (!indexResponse.ok) throw new Error(`Impossibile caricare index.json (status: ${indexResponse.status})`);
+        const indexData = await indexResponse.json();
+
+        // assegna ID stabili
+        indexData.forEach((item, i) => {
+          if (!item.id) {
+            item.id = item.type === 'summary'
+              ? `SUMMARY_${(item.sub_area||'SUB').replace(/\s+/g,'_')}_${i}`
+              : `ITEM_${i}`;
+          }
+        });
+
+        window.APP_DATA.index = indexData;
+
+        // carica i file per ciascun item
+        const dataPromises = indexData.map(item =>
+          fetch(`./${item.file_path}`)
+            .then(res => {
+              if (!res.ok) return Promise.reject(`File non trovato: ${item.file_path}`);
+              return res.json().catch(() => Promise.reject(`Errore JSON in: ${item.file_path}`));
+            })
+            .then(data => ({ id: item.id, data }))
+        );
+
+        const results = await Promise.allSettled(dataPromises);
+        results.forEach(r => {
+          if (r.status === 'fulfilled') {
+            window.APP_DATA.employeeFiles[r.value.id] = r.value.data;
+          } else {
+            console.error("Errore caricamento file:", r.reason);
+          }
+        });
+
+        renderNavigation(indexData);
+        renderWelcomeMessage();
+      } catch (err) {
+        console.error("Errore critico:", err);
+        mainContent.innerHTML = `<div class="text-red-400 p-4">Errore caricamento dati. Verifica 'data/index.json' e i percorsi.</div>`;
+      }
+    }
+
+    // ------------------- RENDER -------------------
+    function renderNavigation(indexData) {
+      const tree = {};
+      indexData.forEach(item => {
+        if (!tree[item.area]) tree[item.area] = {};
+        if (!tree[item.area][item.sub_area]) tree[item.area][item.sub_area] = [];
+        tree[item.area][item.sub_area].push(item);
+      });
+
+      const nav = document.getElementById('navigation-tree');
+      nav.innerHTML = '';
+
+      for (const area in tree) {
+        const areaDetails = document.createElement('details');
+        areaDetails.className = 'mt-2';
+        areaDetails.innerHTML = `
+          <summary class="font-bold cursor-pointer flex items-center justify-between sidebar-item p-2 rounded-md" data-type="area" data-id="${area}">
+            <span class="flex items-center">
+              <i data-lucide="building-2" class="w-4 h-4 mr-2"></i>${area}
+            </span>
+            <i data-lucide="chevron-right" class="w-4 h-4 arrow"></i>
+          </summary>
+        `;
+
+        const subAreaContainer = document.createElement('div');
+        subAreaContainer.className = 'ml-4';
+
+        for (const subArea in tree[area]) {
+          const subAreaDetails = document.createElement('details');
+          subAreaDetails.className = 'mt-1';
+          subAreaDetails.innerHTML = `
+            <summary class="font-semibold cursor-pointer flex items-center justify-between sidebar-item p-2 rounded-md" data-type="sub_area" data-id="${subArea}" data-area="${area}">
+              <span class="flex items-center">
+                <i data-lucide="users-2" class="w-4 h-4 mr-2"></i>${subArea}
+              </span>
+              <i data-lucide="chevron-right" class="w-4 h-4 arrow"></i>
+            </summary>
+          `;
+
+          const itemsUl = document.createElement('ul');
+          itemsUl.className = 'ml-4 pt-1 border-l border-secondary';
+
+          tree[area][subArea].forEach(item => {
+            if (item.type === 'summary') return; // i summary sono mostrati nella vista centrale
+            itemsUl.insertAdjacentHTML('beforeend', `
+              <li class="text-sm cursor-pointer mt-1 flex items-center sidebar-item p-2 rounded-md" data-type="employee" data-id="${item.id}">
+                <i data-lucide="user" class="w-4 h-4 mr-2"></i>${item.name}
+              </li>
+            `);
+          });
+
+          subAreaDetails.appendChild(itemsUl);
+          subAreaContainer.appendChild(subAreaDetails);
+        }
+
+        areaDetails.appendChild(subAreaContainer);
+        nav.appendChild(areaDetails);
+      }
+      lucide.createIcons();
+    }
+
+    function renderWelcomeMessage() {
+      document.getElementById('main-content').innerHTML = `
+        <div class="h-full flex flex-col items-center justify-center text-center">
+          <i data-lucide="bar-chart-big" class="w-24 h-24 text-accent/50 mb-4"></i>
+          <h2 class="text-3xl font-bold text-white">Benvenuto nel Dashboard</h2>
+          <p class="text-lg text-text-secondary mt-2">Seleziona un elemento dalla navigazione a sinistra per iniziare l'analisi.</p>
+        </div>
+      `;
+      lucide.createIcons();
+    }
+
+    function createSubgroupSummaryHTML(data) {
+      const card = (title, icon, content) => `
+        <div class="card p-6 rounded-lg !bg-background">
+          <h3 class="text-xl font-bold text-accent mb-4 flex items-center">
+            <i data-lucide="${icon}" class="w-5 h-5 mr-2"></i>${title}
+          </h3>
+          ${content}
+        </div>`;
+
+      const list = (items) => {
+        if (!items || !items.length) return '<p class="text-text-secondary">Nessun dato disponibile</p>';
+        return `<ul class="list-disc list-inside space-y-2 text-text-primary">${items.map(i=>`<li>${i}</li>`).join('')}</ul>`;
+      };
+
+      const obj = (o) => {
+        if (!o || !Object.keys(o).length) return '<p class="text-text-secondary">Nessun dato disponibile</p>';
+        return `<div class="space-y-3 text-text-primary">${
+          Object.entries(o).map(([k,v]) => `
+            <div class="border-l-4 border-secondary pl-4">
+              <strong class="capitalize text-text-secondary">${k.replace(/_/g,' ')}:</strong><br>${v}
+            </div>`).join('')
+        }</div>`;
+      };
+
+      return `
+        <div class="p-6 space-y-6">
+          ${data.stato_operativo_generale ? `
+            <div class="card p-6 rounded-lg !bg-background">
+              <p class="text-lg text-text-secondary">${data.stato_operativo_generale}</p>
+            </div>` : ''}
+          ${data.rischi_principali ? card('Rischi Principali','shield-alert',obj(data.rischi_principali)) : ''}
+          ${data.processi_chiave ? card('Processi Chiave','network',obj(data.processi_chiave)) : ''}
+          ${data.criticita_operative ? card('Criticità Operative','alert-triangle',list(data.criticita_operative)) : ''}
+          ${data.punti_di_forza_emergenti ? card('Punti di Forza Emergenti','trending-up',list(data.punti_di_forza_emergenti)) : ''}
+          ${data.stack_tecnologico ? card('Stack Tecnologico','cpu',`
+              <p class="mb-2 text-text-primary">${data.stack_tecnologico.descrizione || ''}</p>
+              <div class="flex flex-wrap gap-2">
+                ${(data.stack_tecnologico.strumenti_principali||[]).map(t=>`
+                  <span class="bg-secondary text-xs font-semibold px-2.5 py-0.5 rounded">${t}</span>`).join('')}
+              </div>`) : ''}
+          ${data.gestione_conoscenza ? card('Gestione Conoscenza','book-open',obj(data.gestione_conoscenza)) : ''}
+          ${data.opportunita_di_miglioramento ? card('Opportunità di Miglioramento','lightbulb',obj(data.opportunita_di_miglioramento)) : ''}
+        </div>
+      `;
+    }
+
+    function renderEmployeeView(data) {
+      const score = calculateUrgencyScore(data.riskFactors);
+      const scoreColor = score > 75 ? 'text-red-400' : score > 50 ? 'text-yellow-400' : 'text-green-400';
+      const main = document.getElementById('main-content');
+
+      main.innerHTML = `
+        <div class="space-y-6">
+          <div class="card p-6 rounded-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <h2 class="text-3xl font-bold text-white">${data.name}</h2>
+              <p class="text-lg text-text-secondary">${data.role}</p>
+              <p class="text-sm text-text-secondary">${data.department || data.area} > ${data.section || data.sub_area}</p>
             </div>
-        </aside>
-    </div>
+            <div class="text-center">
+              <div class="relative w-32 h-32">
+                <svg class="w-full h-full" viewBox="0 0 36 36">
+                  <path class="text-gray-700" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"/>
+                  <path class="${scoreColor.replace('text-','stroke-')}" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="${score}, 100"/>
+                </svg>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                  <span class="text-3xl font-bold ${scoreColor}">${score}</span>
+                </div>
+              </div>
+              <h3 class="text-sm font-bold text-white mt-2">Punteggio Urgenza</h3>
+            </div>
+          </div>
 
-    <script>
-        // --- CONFIGURAZIONE GLOBALE ---
-        window.APP_DATA = {
-            index: null,
-            employeeFiles: {},
-            chatHistory: [],
-            sessionId: null
-        };
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            ${data.coreActivities ? `
+              <div class="card p-6 rounded-lg">
+                <h3 class="text-xl font-bold text-accent mb-4 flex items-center">
+                  <i data-lucide="zap" class="w-5 h-5 mr-2"></i>Attività Core
+                </h3>
+                <ul class="list-disc list-inside space-y-2 text-text-primary">
+                  ${data.coreActivities.map(a=>`<li>${a}</li>`).join('')}
+                </ul>
+              </div>` : ''}
 
-        const LAMBDA_ENDPOINT_URL = "https://kf6rrdd3wsa3ozgmt5mwwrxtvq0mocoo.lambda-url.eu-north-1.on.aws/";
-    
-        // -----------------------------------------------------------------------------------------------------
-        // --- LOGICA PRINCIPALE DELL'APPLICAZIONE -------------------------------------------------------------
-        // -----------------------------------------------------------------------------------------------------
+            ${data.criticalities ? `
+              <div class="card p-6 rounded-lg">
+                <h3 class="text-xl font-bold text-accent mb-4 flex items-center">
+                  <i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Criticità Principali
+                </h3>
+                <ul class="list-disc list-inside space-y-2 text-text-primary">
+                  ${data.criticalities.map(c=>`<li>${c}</li>`).join('')}
+                </ul>
+              </div>` : ''}
 
-        document.addEventListener('DOMContentLoaded', async () => {
-            lucide.createIcons();
-            initializeSession();
-            await initializeApp();
+            ${data.processes ? `
+              <div class="lg:col-span-2 card p-6 rounded-lg">
+                <h3 class="text-xl font-bold text-accent mb-4 flex items-center">
+                  <i data-lucide="network" class="w-5 h-5 mr-2"></i>Processi Mappati
+                </h3>
+                <div class="space-y-4">
+                  ${data.processes.map(p=>`
+                    <details class="bg-secondary/50 rounded-lg">
+                      <summary class="p-4 font-semibold cursor-pointer flex justify-between items-center">
+                        <span>${p.name}</span>
+                        <i data-lucide="chevron-right" class="w-5 h-5 arrow"></i>
+                      </summary>
+                      <div class="p-4 border-t border-secondary">
+                        <p><strong>Obiettivo:</strong> ${p.objective}</p>
+                        <p class="mt-2"><strong>Passaggi:</strong></p>
+                        <ol class="list-decimal list-inside ml-4 space-y-1">
+                          ${p.steps.map(s=>`<li>${s}</li>`).join('')}
+                        </ol>
+                        ${p.notes ? `<p class="mt-2 text-sm text-yellow-400"><strong>Note:</strong> ${p.notes}</p>` : ''}
+                      </div>
+                    </details>`).join('')}
+                </div>
+              </div>` : ''}
+
+            ${data.improvementProposals ? `
+              <div class="lg:col-span-2 card p-6 rounded-lg">
+                <h3 class="text-xl font-bold text-accent mb-4 flex items-center">
+                  <i data-lucide="lightbulb" class="w-5 h-5 mr-2"></i>Proposte di Miglioramento
+                </h3>
+                <ul class="space-y-3 text-text-primary">
+                  ${data.improvementProposals.map(prop=>`
+                    <li class="border-l-4 border-accent pl-4">
+                      <strong>${prop.title}:</strong><br>${prop.description}
+                    </li>`).join('')}
+                </ul>
+              </div>` : ''}
+          </div>
+        </div>
+      `;
+      lucide.createIcons();
+      main.scrollTop = 0;
+    }
+
+    function renderSummaryView(type, id) {
+      const main = document.getElementById('main-content');
+      const employees = (type === 'area'
+        ? window.APP_DATA.index.filter(e => e.area === id && e.type !== 'summary')
+        : window.APP_DATA.index.filter(e => e.sub_area === id && e.type !== 'summary'));
+
+      const title = type === 'area' ? `Riepilogo Area: ${id}` : `Riepilogo Sottoarea: ${id}`;
+      const avgScore = employees.length
+        ? employees.reduce((acc, emp) => {
+            const d = window.APP_DATA.employeeFiles[emp.id];
+            return acc + (d ? calculateUrgencyScore(d.riskFactors) : 0);
+          }, 0) / employees.length
+        : 0;
+
+      let html = `
+        <div class="card p-6 rounded-lg">
+          <h2 class="text-3xl font-bold text-white">${title} (${employees.length} persone)</h2>
+          <p class="text-lg text-text-secondary mt-2">Punteggio medio di urgenza: <span class="font-bold text-accent">${avgScore.toFixed(0)}</span></p>
+          <div class="mt-4">
+            <h3 class="font-semibold text-accent">Personale nel gruppo:</h3>
+            <ul class="list-disc list-inside mt-2 space-y-1">
+              ${employees.map(e=>`<li>${e.name} (${e.role || ''})</li>`).join('')}
+            </ul>
+          </div>
+        </div>
+      `;
+
+      const subAreasToCheck = type === 'area'
+        ? [...new Set(window.APP_DATA.index.filter(e => e.area === id).map(e => e.sub_area))]
+        : [id];
+
+      const summaryItems = window.APP_DATA.index.filter(item =>
+        item.type === 'summary' && subAreasToCheck.includes((item.sub_area||'').trim())
+      );
+
+      if (summaryItems.length) {
+        html += `<div class="mt-6 space-y-4">`;
+        summaryItems.forEach(s => {
+          const data = window.APP_DATA.employeeFiles[s.id];
+          if (!data) return;
+          html += `
+            <details class="card rounded-lg overflow-hidden transition-all duration-300">
+              <summary class="p-4 font-bold text-lg cursor-pointer flex justify-between items-center bg-secondary/30 hover:bg-secondary/60">
+                <span>
+                  <i data-lucide="bar-chart-3" class="inline w-5 h-5 mr-2 text-accent"></i>
+                  Analisi Dettagliata: ${data.sottogruppo || s.name || s.sub_area}
+                </span>
+                <i data-lucide="chevron-right" class="w-5 h-5 arrow transition-transform"></i>
+              </summary>
+              ${createSubgroupSummaryHTML(data)}
+            </details>
+          `;
+        });
+        html += `</div>`;
+      }
+
+      main.innerHTML = html;
+      lucide.createIcons();
+      main.scrollTop = 0;
+    }
+
+    function calculateUrgencyScore(f) {
+      if (!f) return 0;
+      const n = {
+        importanza_processo:(f.importanza_processo - 1) / 4,
+        copertura_documentazione:f.copertura_documentazione,
+        livello_formalizzazione:f.livello_formalizzazione,
+        indice_insostituibilita:f.indice_insostituibilita,
+        tasso_cambiamento:f.tasso_cambiamento,
+        impatto_downstream:f.impatto_downstream,
+        maturita_strumenti:f.maturita_strumenti,
+        facilita_passaggio_consegne:f.facilita_passaggio_consegne,
+        impatto_cliente:f.impatto_cliente,
+        sensibilita_dati:f.sensibilita_dati,
+        punti_singoli_fallimento:f.punti_singoli_fallimento,
+        segnale_rilavorazione:f.segnale_rilavorazione,
+        tracciabilita_errori:f.tracciabilita_errori,
+        livello_automazione:f.livello_automazione,
+        tempo_ripristino:f.tempo_ripristino,
+        qualita_controlli:f.qualita_controlli,
+        frammentazione_integrazioni:f.frammentazione_integrazioni
+      };
+      const total = Object.values(n).reduce((s,v)=>s+(v||0),0);
+      const avg = total / Object.keys(n).length;
+      return Math.round((avg * 99) + 1);
+    }
+
+    // ------------------- EVENTI NAV -------------------
+    document.getElementById('navigation-tree').addEventListener('click', (e) => {
+      const target = e.target.closest('[data-type]');
+      if (!target) return;
+
+      if (target.dataset.type === 'employee') e.stopPropagation();
+
+      document.querySelectorAll('.sidebar-item.active').forEach(el => el.classList.remove('active'));
+      target.classList.add('active');
+
+      const { type, id } = target.dataset;
+
+      if (type === 'employee') {
+        const data = window.APP_DATA.employeeFiles[id];
+        if (data) renderEmployeeView(data);
+        else console.error(`Dati non trovati per dipendente ID: ${id}`);
+      } else if (type === 'area' || type === 'sub_area') {
+        renderSummaryView(type, id);
+      }
+    });
+
+    // ------------------- CHAT -------------------
+    const chatForm = document.getElementById('chat-form');
+    const chatInput = document.getElementById('chat-input');
+    const chatWindow = document.getElementById('chat-window');
+    let sending = false;
+    let loadingEl = null;
+
+    const bytesOf = (o) => { try { return new Blob([JSON.stringify(o)]).size } catch { return 0 } };
+
+    chatForm.addEventListener('submit', handleChatSubmit);
+
+    function showLoading() {
+      if (loadingEl) return;
+      loadingEl = document.createElement('div');
+      loadingEl.id = 'loading-bubble';
+      loadingEl.className = 'p-3 rounded-lg max-w-xs break-words chat-bubble-ai self-start';
+      loadingEl.innerHTML = `<div class="flex items-center"><div class="animate-spin rounded-full h-4 w-4 border-b-2 border-accent mr-2"></div><span>Sto elaborando…</span></div>`;
+      chatWindow.appendChild(loadingEl);
+      chatWindow.scrollTop = chatWindow.scrollHeight;
+    }
+
+    function replaceLoadingWith(text) {
+      if (!loadingEl) {
+        addMessageToChat(text, 'ai');
+        return;
+      }
+      loadingEl.classList.add('prose');
+      loadingEl.innerHTML = mdToHtml(text);
+      loadingEl.id = '';
+      loadingEl = null;
+    }
+
+    function addMessageToChat(message, sender) {
+      const el = document.createElement('div');
+      el.className = `p-3 rounded-lg max-w-xs break-words ${sender === 'user' ? 'chat-bubble-user self-end' : 'chat-bubble-ai self-start prose'}`;
+      if (sender === 'user') el.textContent = message;
+      else el.innerHTML = mdToHtml(message);
+      chatWindow.appendChild(el);
+      chatWindow.scrollTop = chatWindow.scrollHeight;
+    }
+
+    async function handleChatSubmit(e) {
+      e.preventDefault();
+      if (sending) return;
+      const userMessage = chatInput.value.trim();
+      if (!userMessage || !window.APP_DATA.index) return;
+
+      sending = true;
+      addMessageToChat(userMessage, 'user');
+      updateChatHistory({ role: 'user', content: userMessage });
+      chatInput.value = '';
+      showLoading();
+
+      try {
+        const planResponse = await callLambda({
+          step: 1,
+          query: userMessage,
+          history: window.APP_DATA.chatHistory,
+          index_data: window.APP_DATA.index
         });
 
-        function initializeSession() {
-            let sessionId = sessionStorage.getItem('sessionId');
-            if (!sessionId) {
-                sessionId = 'session_' + Math.random().toString(36).substr(2, 9);
-                sessionStorage.setItem('sessionId', sessionId);
-            }
-            window.APP_DATA.sessionId = sessionId;
-            console.log("Session ID:", window.APP_DATA.sessionId);
-        }
+        const retrievalPlan = planResponse?.retrieval_plan;
+        if (!retrievalPlan) throw new Error("retrieval_plan mancante");
 
-        async function initializeApp() {
-            const mainContent = document.getElementById('main-content');
-            try {
-                const indexResponse = await fetch('./data/index.json');
-                if (!indexResponse.ok) throw new Error(`Impossibile caricare index.json (status: ${indexResponse.status})`);
-                const indexData = await indexResponse.json();
-                
-                // FIX: Assegna ID ai summary items se mancano
-                indexData.forEach((item, index) => {
-                    if (!item.id) {
-                        item.id = item.type === 'summary' ? 
-                            `SUMMARY_${item.sub_area.replace(/\s+/g, '_')}_${index}` : 
-                            `ITEM_${index}`;
-                    }
-                });
-                
-                window.APP_DATA.index = indexData;
-
-                const dataPromises = indexData.map(item =>
-                    fetch(`./${item.file_path}`)
-                        .then(res => {
-                            if (!res.ok) return Promise.reject(`File non trovato: ${item.file_path}`);
-                            return res.json().catch(() => Promise.reject(`Errore JSON in: ${item.file_path}`));
-                        })
-                        .then(data => ({ id: item.id, data }))
-                );
-                
-                const dataResults = await Promise.allSettled(dataPromises);
-                
-                dataResults.forEach(result => {
-                    if (result.status === 'fulfilled') {
-                        window.APP_DATA.employeeFiles[result.value.id] = result.value.data;
-                    } else {
-                        console.error("Errore caricamento file:", result.reason);
-                    }
-                });
-                
-                renderNavigation(indexData);
-                renderWelcomeMessage();
-
-            } catch (error) {
-                console.error("Errore critico:", error);
-                mainContent.innerHTML = `<div class="text-red-400 p-4">Errore caricamento dati. Controlla che il file 'data/index.json' e i percorsi dei file siano corretti.</div>`;
-            }
-        }
-
-        // -----------------------------------------------------------------------------------------------------
-        // --- FUNZIONI DI RENDERING ---------------------------------------------------------------------------
-        // -----------------------------------------------------------------------------------------------------
-
-        function renderNavigation(indexData) {
-            const tree = {};
-            indexData.forEach(item => {
-                if (!tree[item.area]) tree[item.area] = {};
-                if (!tree[item.area][item.sub_area]) tree[item.area][item.sub_area] = [];
-                tree[item.area][item.sub_area].push(item);
-            });
-
-            const navContainer = document.getElementById('navigation-tree');
-            navContainer.innerHTML = '';
-            
-            for (const area in tree) {
-                const areaDetails = document.createElement('details');
-                areaDetails.className = 'mt-2';
-                areaDetails.innerHTML = `
-                    <summary class="font-bold cursor-pointer flex items-center justify-between sidebar-item p-2 rounded-md" 
-                             data-type="area" data-id="${area}">
-                        <span class="flex items-center">
-                            <i data-lucide="building-2" class="w-4 h-4 mr-2"></i>${area}
-                        </span>
-                        <i data-lucide="chevron-right" class="w-4 h-4 arrow"></i>
-                    </summary>`;
-                
-                const subAreaContainer = document.createElement('div');
-                subAreaContainer.className = 'ml-4';
-                
-                for (const subArea in tree[area]) {
-                    const subAreaDetails = document.createElement('details');
-                    subAreaDetails.className = 'mt-1';
-                    subAreaDetails.innerHTML = `
-                        <summary class="font-semibold cursor-pointer flex items-center justify-between sidebar-item p-2 rounded-md" 
-                                 data-type="sub_area" data-id="${subArea}" data-area="${area}">
-                            <span class="flex items-center">
-                                <i data-lucide="users-2" class="w-4 h-4 mr-2"></i>${subArea}
-                            </span>
-                            <i data-lucide="chevron-right" class="w-4 h-4 arrow"></i>
-                        </summary>`;
-                    
-                    const itemsContainer = document.createElement('ul');
-                    itemsContainer.className = 'ml-4 pt-1 border-l border-secondary';
-                    
-                    tree[area][subArea].forEach(item => {
-                        if (item.type === 'summary') {
-                            // Non mostrare i summary nella sidebar - sono visibili solo quando si clicca sulla sottoarea
-                        } else {
-                            itemsContainer.innerHTML += `
-                                <li class="text-sm cursor-pointer mt-1 flex items-center sidebar-item p-2 rounded-md" 
-                                    data-type="employee" data-id="${item.id}">
-                                    <i data-lucide="user" class="w-4 h-4 mr-2"></i>${item.name}
-                                </li>`;
-                        }
-                    });
-                    
-                    subAreaDetails.appendChild(itemsContainer);
-                    subAreaContainer.appendChild(subAreaDetails);
-                }
-                
-                areaDetails.appendChild(subAreaContainer);
-                navContainer.appendChild(areaDetails);
-            }
-            
-            lucide.createIcons();
-        }
-        
-        function renderWelcomeMessage() {
-            document.getElementById('main-content').innerHTML = `
-                <div class="h-full flex flex-col items-center justify-center text-center">
-                    <i data-lucide="bar-chart-big" class="w-24 h-24 text-accent/50 mb-4"></i>
-                    <h2 class="text-3xl font-bold text-white">Benvenuto nel Dashboard</h2>
-                    <p class="text-lg text-text-secondary mt-2">Seleziona un elemento dalla navigazione a sinistra per iniziare l'analisi.</p>
-                </div>`;
-            lucide.createIcons();
-        }
-
-        function createSubgroupSummaryHTML(data) {
-            const createCard = (title, icon, content) => `
-                <div class="card p-6 rounded-lg !bg-background">
-                    <h3 class="text-xl font-bold text-accent mb-4 flex items-center">
-                        <i data-lucide="${icon}" class="w-5 h-5 mr-2"></i>${title}
-                    </h3>
-                    ${content}
-                </div>`;
-
-            const listContent = (items) => {
-                if (!items || items.length === 0) return '<p class="text-text-secondary">Nessun dato disponibile</p>';
-                return `<ul class="list-disc list-inside space-y-2 text-text-primary">${items.map(item => `<li>${item}</li>`).join('')}</ul>`;
-            };
-            
-            const objectContent = (obj) => {
-                if (!obj || Object.keys(obj).length === 0) return '<p class="text-text-secondary">Nessun dato disponibile</p>';
-                return `<div class="space-y-3 text-text-primary">${Object.entries(obj).map(([key, value]) => 
-                    `<div class="border-l-4 border-secondary pl-4">
-                        <strong class="capitalize text-text-secondary">${key.replace(/_/g, ' ')}:</strong><br>${value}
-                    </div>`).join('')}</div>`;
-            };
-
-            return `
-                <div class="p-6 space-y-6">
-                    ${data.stato_operativo_generale ? `
-                        <div class="card p-6 rounded-lg !bg-background">
-                            <p class="text-lg text-text-secondary">${data.stato_operativo_generale}</p>
-                        </div>` : ''}
-                    ${data.rischi_principali ? createCard('Rischi Principali', 'shield-alert', objectContent(data.rischi_principali)) : ''}
-                    ${data.processi_chiave ? createCard('Processi Chiave', 'network', objectContent(data.processi_chiave)) : ''}
-                    ${data.criticita_operative ? createCard('Criticità Operative', 'alert-triangle', listContent(data.criticita_operative)) : ''}
-                    ${data.punti_di_forza_emergenti ? createCard('Punti di Forza Emergenti', 'trending-up', listContent(data.punti_di_forza_emergenti)) : ''}
-                    ${data.stack_tecnologico ? createCard('Stack Tecnologico', 'cpu', 
-                        `<p class="mb-2 text-text-primary">${data.stack_tecnologico.descrizione || ''}</p>
-                         <div class="flex flex-wrap gap-2">
-                            ${(data.stack_tecnologico.strumenti_principali || []).map(tool => 
-                                `<span class="bg-secondary text-xs font-semibold px-2.5 py-0.5 rounded">${tool}</span>`
-                            ).join('')}
-                         </div>`) : ''}
-                    ${data.gestione_conoscenza ? createCard('Gestione Conoscenza', 'book-open', objectContent(data.gestione_conoscenza)) : ''}
-                    ${data.opportunita_di_miglioramento ? createCard('Opportunità di Miglioramento', 'lightbulb', objectContent(data.opportunita_di_miglioramento)) : ''}
-                </div>
-            `;
-        }
-
-        function renderEmployeeView(employeeData) {
-            const score = calculateUrgencyScore(employeeData.riskFactors);
-            const scoreColor = score > 75 ? 'text-red-400' : score > 50 ? 'text-yellow-400' : 'text-green-400';
-            const mainContent = document.getElementById('main-content');
-            
-            mainContent.innerHTML = `
-                <div class="space-y-6">
-                    <div class="card p-6 rounded-lg flex flex-col sm:flex-row items-center justify-between gap-4">
-                        <div>
-                            <h2 class="text-3xl font-bold text-white">${employeeData.name}</h2>
-                            <p class="text-lg text-text-secondary">${employeeData.role}</p>
-                            <p class="text-sm text-text-secondary">${employeeData.department || employeeData.area} > ${employeeData.section || employeeData.sub_area}</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="relative w-32 h-32">
-                                <svg class="w-full h-full" viewBox="0 0 36 36">
-                                    <path class="text-gray-700" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" 
-                                          fill="none" stroke="currentColor" stroke-width="3" />
-                                    <path class="${scoreColor.replace('text-', 'stroke-')}" 
-                                          d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" 
-                                          fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="${score}, 100" />
-                                </svg>
-                                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                                    <span class="text-3xl font-bold ${scoreColor}">${score}</span>
-                                </div>
-                            </div>
-                            <h3 class="text-sm font-bold text-white mt-2">Punteggio Urgenza</h3>
-                        </div>
-                    </div>
-                    
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        ${employeeData.coreActivities ? `
-                            <div class="card p-6 rounded-lg">
-                                <h3 class="text-xl font-bold text-accent mb-4 flex items-center">
-                                    <i data-lucide="zap" class="w-5 h-5 mr-2"></i>Attività Core
-                                </h3>
-                                <ul class="list-disc list-inside space-y-2 text-text-primary">
-                                    ${employeeData.coreActivities.map(act => `<li>${act}</li>`).join('')}
-                                </ul>
-                            </div>` : ''}
-                        
-                        ${employeeData.criticalities ? `
-                            <div class="card p-6 rounded-lg">
-                                <h3 class="text-xl font-bold text-accent mb-4 flex items-center">
-                                    <i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Criticità Principali
-                                </h3>
-                                <ul class="list-disc list-inside space-y-2 text-text-primary">
-                                    ${employeeData.criticalities.map(crit => `<li>${crit}</li>`).join('')}
-                                </ul>
-                            </div>` : ''}
-                        
-                        ${employeeData.processes ? `
-                            <div class="lg:col-span-2 card p-6 rounded-lg">
-                                <h3 class="text-xl font-bold text-accent mb-4 flex items-center">
-                                    <i data-lucide="network" class="w-5 h-5 mr-2"></i>Processi Mappati
-                                </h3>
-                                <div class="space-y-4">
-                                    ${employeeData.processes.map(p => `
-                                        <details class="bg-secondary/50 rounded-lg">
-                                            <summary class="p-4 font-semibold cursor-pointer flex justify-between items-center">
-                                                <span>${p.name}</span>
-                                                <i data-lucide="chevron-right" class="w-5 h-5 arrow"></i>
-                                            </summary>
-                                            <div class="p-4 border-t border-secondary">
-                                                <p><strong>Obiettivo:</strong> ${p.objective}</p>
-                                                <p class="mt-2"><strong>Passaggi:</strong></p>
-                                                <ol class="list-decimal list-inside ml-4 space-y-1">
-                                                    ${p.steps.map(s => `<li>${s}</li>`).join('')}
-                                                </ol>
-                                                ${p.notes ? `<p class="mt-2 text-sm text-yellow-400"><strong>Note:</strong> ${p.notes}</p>` : ''}
-                                            </div>
-                                        </details>`).join('')}
-                                </div>
-                            </div>` : ''}
-                        
-                        ${employeeData.improvementProposals ? `
-                            <div class="lg:col-span-2 card p-6 rounded-lg">
-                                <h3 class="text-xl font-bold text-accent mb-4 flex items-center">
-                                    <i data-lucide="lightbulb" class="w-5 h-5 mr-2"></i>Proposte di Miglioramento
-                                </h3>
-                                <ul class="space-y-3 text-text-primary">
-                                    ${employeeData.improvementProposals.map(prop => `
-                                        <li class="border-l-4 border-accent pl-4">
-                                            <strong>${prop.title}:</strong><br>${prop.description}
-                                        </li>`).join('')}
-                                </ul>
-                            </div>` : ''}
-                    </div>
-                </div>`;
-            
-            lucide.createIcons();
-            mainContent.scrollTop = 0;
-        }
-        
-        function renderSummaryView(type, id) {
-            const mainContent = document.getElementById('main-content');
-
-            // Ottieni tutti i dipendenti dell'area o sottoarea
-            const employees = (type === 'area' 
-                ? window.APP_DATA.index.filter(e => e.area === id && e.type !== 'summary') 
-                : window.APP_DATA.index.filter(e => e.sub_area === id && e.type !== 'summary')
-            );
-            
-            const title = type === 'area' ? `Riepilogo Area: ${id}` : `Riepilogo Sottoarea: ${id}`;
-            const avgScore = employees.length > 0 
-                ? employees.reduce((acc, emp) => { 
-                    const empData = window.APP_DATA.employeeFiles[emp.id]; 
-                    return acc + (empData ? calculateUrgencyScore(empData.riskFactors) : 0); 
-                }, 0) / employees.length 
-                : 0;
-
-            let html = `
-                <div class="card p-6 rounded-lg">
-                    <h2 class="text-3xl font-bold text-white">${title} (${employees.length} persone)</h2>
-                    <p class="text-lg text-text-secondary mt-2">Punteggio medio di urgenza: <span class="font-bold text-accent">${avgScore.toFixed(0)}</span></p>
-                    <div class="mt-4">
-                        <h3 class="font-semibold text-accent">Personale nel gruppo:</h3>
-                        <ul class="list-disc list-inside mt-2 space-y-1">
-                            ${employees.map(e => `<li>${e.name} (${e.role || ''})</li>`).join('')}
-                        </ul>
-                    </div>
-                </div>
-            `;
-
-            // Cerca le analisi dettagliate per la sottoarea
-            const subAreasToCheck = type === 'area' 
-                ? [...new Set(window.APP_DATA.index.filter(e => e.area === id).map(e => e.sub_area))] 
-                : [id];
-
-            const summaryItems = window.APP_DATA.index.filter(item =>
-                item.type === 'summary' && subAreasToCheck.includes(item.sub_area.trim())
-            );
-
-            if (summaryItems.length > 0) {
-                html += `<div class="mt-6 space-y-4">`;
-                summaryItems.forEach(summaryItem => {
-                    const summaryData = window.APP_DATA.employeeFiles[summaryItem.id];
-                    if (summaryData) {
-                        html += `
-                            <details class="card rounded-lg overflow-hidden transition-all duration-300">
-                                <summary class="p-4 font-bold text-lg cursor-pointer flex justify-between items-center bg-secondary/30 hover:bg-secondary/60">
-                                    <span><i data-lucide="bar-chart-3" class="inline w-5 h-5 mr-2 text-accent"></i>Analisi Dettagliata: ${summaryData.sottogruppo || summaryItem.name}</span>
-                                    <i data-lucide="chevron-right" class="w-5 h-5 arrow transition-transform"></i>
-                                </summary>
-                                ${createSubgroupSummaryHTML(summaryData)}
-                            </details>
-                        `;
-                    }
-                });
-                html += `</div>`;
-            }
-
-            mainContent.innerHTML = html;
-            lucide.createIcons();
-            mainContent.scrollTop = 0;
-        }
-
-        function calculateUrgencyScore(factors) {
-            if (!factors) return 0;
-            const normalizedScores = { 
-                importanza_processo: (factors.importanza_processo - 1) / 4, 
-                copertura_documentazione: factors.copertura_documentazione, 
-                livello_formalizzazione: factors.livello_formalizzazione, 
-                indice_insostituibilita: factors.indice_insostituibilita, 
-                tasso_cambiamento: factors.tasso_cambiamento, 
-                impatto_downstream: factors.impatto_downstream, 
-                maturita_strumenti: factors.maturita_strumenti, 
-                facilita_passaggio_consegne: factors.facilita_passaggio_consegne, 
-                impatto_cliente: factors.impatto_cliente, 
-                sensibilita_dati: factors.sensibilita_dati, 
-                punti_singoli_fallimento: factors.punti_singoli_fallimento, 
-                segnale_rilavorazione: factors.segnale_rilavorazione, 
-                tracciabilita_errori: factors.tracciabilita_errori, 
-                livello_automazione: factors.livello_automazione, 
-                tempo_ripristino: factors.tempo_ripristino, 
-                qualita_controlli: factors.qualita_controlli, 
-                frammentazione_integrazioni: factors.frammentazione_integrazioni 
-            };
-            const totalScore = Object.values(normalizedScores).reduce((sum, val) => sum + (val || 0), 0);
-            const averageRisk = totalScore / Object.keys(normalizedScores).length;
-            return Math.round((averageRisk * 99) + 1);
-        }
-
-        // -----------------------------------------------------------------------------------------------------
-        // --- GESTIONE EVENTI ---------------------------------------------------------------------------------
-        // -----------------------------------------------------------------------------------------------------
-
-        document.getElementById('navigation-tree').addEventListener('click', (e) => {
-            const target = e.target.closest('[data-type]');
-            if (!target) return;
-            
-            // Previeni la propagazione per gli elementi employee
-            if (target.dataset.type === 'employee') { 
-                e.stopPropagation(); 
-            }
-            
-            // Rimuovi classe active da tutti gli elementi
-            document.querySelectorAll('.sidebar-item.active').forEach(el => el.classList.remove('active'));
-            target.classList.add('active');
-            
-            const { type, id } = target.dataset;
-            console.log(`Navigazione: type=${type}, id=${id}`);
-
-            if (type === 'employee') {
-                const employeeData = window.APP_DATA.employeeFiles[id];
-                if (employeeData) {
-                    renderEmployeeView(employeeData);
-                } else {
-                    console.error(`Dati non trovati per dipendente ID: ${id}`);
-                }
-            } else if (type === 'area' || type === 'sub_area') {
-                renderSummaryView(type, id);
-            }
+        const needsFullData = Object.values(retrievalPlan).some(v => {
+          if (v == null) return false;
+          if (Array.isArray(v)) return v.length > 0 && v[0] !== 'all';
+          return String(v) !== 'all';
         });
 
-        // -----------------------------------------------------------------------------------------------------
-        // --- LOGICA CHAT AI ------------------------------------------------------------------------------
-        // -----------------------------------------------------------------------------------------------------
+        let contextData = [];
+        if (needsFullData) {
+          const filtered = filterIndex(retrievalPlan, window.APP_DATA.index);
+          contextData = filtered.map(emp => window.APP_DATA.employeeFiles[emp.id]).filter(Boolean);
+          if (contextData.length > 50) contextData = contextData.slice(0, 50);
+        } else {
+          contextData = window.APP_DATA.index;
+        }
 
-        const chatForm = document.getElementById('chat-form');
-        const chatInput = document.getElementById('chat-input');
-        const chatWindow = document.getElementById('chat-window');
-        let sending = false;
-        let loadingEl = null;
-        
-        function bytesOf(o){ 
-            try{ 
-                return new Blob([JSON.stringify(o)]).size 
-            } catch{ 
-                return 0 
-            } 
-        }
-        
-        chatForm.addEventListener('submit', handleChatSubmit);
-        
-        function showLoading() {
-            if (loadingEl) return;
-            loadingEl = document.createElement('div');
-            loadingEl.id = 'loading-bubble';
-            loadingEl.className = 'p-3 rounded-lg max-w-xs break-words chat-bubble-ai self-start';
-            loadingEl.innerHTML = `<div class="flex items-center"><div class="animate-spin rounded-full h-4 w-4 border-b-2 border-accent mr-2"></div><span>Sto elaborando…</span></div>`;
-            chatWindow.appendChild(loadingEl);
-            chatWindow.scrollTop = chatWindow.scrollHeight;
-        }
-        
-        function replaceLoadingWith(text) {
-            if (!loadingEl) { 
-                addMessageToChat(text, 'ai'); 
-                return; 
-            }
-            // Modifica: usa marked.parse() per convertire Markdown in HTML
-            loadingEl.innerHTML = marked.parse(text); 
-            loadingEl.id = '';
-            loadingEl = null;
-        }
-        
-        async function handleChatSubmit(e){
-            e.preventDefault();
-            if (sending) return;
-            const userMessage = chatInput.value.trim();
-            if (!userMessage || !window.APP_DATA.index) return;
-            
-            sending = true;
-            addMessageToChat(userMessage, 'user');
-            updateChatHistory({ role: 'user', content: userMessage });
-            chatInput.value = '';
-            showLoading();
-            
-            try {
-                const planResponse = await callLambda({ 
-                    step: 1, 
-                    query: userMessage, 
-                    history: window.APP_DATA.chatHistory, 
-                    index_data: window.APP_DATA.index 
-                });
-                
-                const retrievalPlan = planResponse?.retrieval_plan;
-                if (!retrievalPlan) throw new Error("retrieval_plan mancante");
-                
-                const needsFullData = Object.values(retrievalPlan).some(v => {
-                    if (v == null) return false;
-                    if (Array.isArray(v)) return v.length > 0 && v[0] !== 'all';
-                    return String(v) !== 'all';
-                });
-                
-                let contextData = [];
-                if (needsFullData) {
-                    const filtered = filterIndex(retrievalPlan, window.APP_DATA.index);
-                    contextData = filtered.map(emp => window.APP_DATA.employeeFiles[emp.id]).filter(Boolean);
-                    if (contextData.length > 50) contextData = contextData.slice(0, 50);
-                } else {
-                    contextData = window.APP_DATA.index;
-                }
-                
-                const answerResponse = await callLambda({ 
-                    step: 2, 
-                    query: userMessage, 
-                    history: window.APP_DATA.chatHistory, 
-                    context_data: contextData 
-                });
-                
-                const finalText = answerResponse?.response ?? "Nessuna risposta.";
-                replaceLoadingWith(finalText);
-                updateChatHistory({ role: 'assistant', content: finalText });
-            } catch (error) {
-                replaceLoadingWith(`Errore: ${error.message}`);
-                updateChatHistory({ role: 'assistant', content: `Errore: ${error.message}` });
-            } finally {
-                sending = false;
-                chatWindow.scrollTop = chatWindow.scrollHeight;
-            }
-        }
-        
-        function filterIndex(plan, index){
-            const norm = v => (v == null ? null : Array.isArray(v) ? v : String(v));
-            const area = norm(plan.area), sub = norm(plan.sub_area), emp = norm(plan.employee);
-            let out = index;
-            if (area && !(Array.isArray(area) && area[0] === "all") && area !== "all") {
-                const allow = Array.isArray(area) ? area : [area];
-                out = out.filter(e => allow.includes(e.area));
-            }
-            if (sub && !(Array.isArray(sub) && sub[0] === "all") && sub !== "all") {
-                const allow = Array.isArray(sub) ? sub : [sub];
-                out = out.filter(e => allow.includes(e.sub_area));
-            }
-            if (emp && !(Array.isArray(emp) && emp[0] === "all") && emp !== "all") {
-                const allow = Array.isArray(emp) ? emp : [emp];
-                out = out.filter(e => allow.includes(e.id));
-            }
-            return out;
-        }
-        
-        async function callLambda(payload) {
-            const t0 = performance.now();
-            console.log("[callLambda] step:", payload.step, "size(bytes):", bytesOf(payload));
-            const res = await fetch(LAMBDA_ENDPOINT_URL, {
-                method: "POST",
-                headers: { "content-type": "application/json; charset=utf-8" },
-                body: JSON.stringify(payload)
-            });
-            const t1 = performance.now();
-            console.log("[callLambda] HTTP", res.status, res.statusText, "in", (t1 - t0).toFixed(1), "ms");
-            const text = await res.text();
-            if (!res.ok) throw new Error(`HTTP ${res.status}: ${text}`);
-            return JSON.parse(text);
-        }
-        
-        function updateChatHistory(newMessage) {
-            window.APP_DATA.chatHistory.push(newMessage);
-            if (window.APP_DATA.chatHistory.length > 20) window.APP_DATA.chatHistory.shift();
-        }
-        
-        function addMessageToChat(message, sender) {
-            const el = document.createElement('div');
-            el.className = `p-3 rounded-lg max-w-xs break-words ${sender === 'user' ? 'chat-bubble-user self-end' : 'chat-bubble-ai self-start prose'}`; // Aggiunta la classe 'prose' per una migliore formattazione
-            
-            if (sender === 'user') {
-                el.textContent = message;
-            } else {
-                // Modifica: usa marked.parse() qui come fallback
-                el.innerHTML = marked.parse(message);
-            }
+        const answerResponse = await callLambda({
+          step: 2,
+          query: userMessage,
+          history: window.APP_DATA.chatHistory,
+          context_data: contextData
+        });
 
-            chatWindow.appendChild(el);
-            chatWindow.scrollTop = chatWindow.scrollHeight;
-        }
-    </script>
+        const finalText = answerResponse?.response ?? "Nessuna risposta.";
+        replaceLoadingWith(finalText);
+        updateChatHistory({ role: 'assistant', content: finalText });
+      } catch (error) {
+        replaceLoadingWith(`Errore: ${error.message}`);
+        updateChatHistory({ role: 'assistant', content: `Errore: ${error.message}` });
+      } finally {
+        sending = false;
+        chatWindow.scrollTop = chatWindow.scrollHeight;
+      }
+    }
+
+    function filterIndex(plan, index) {
+      const norm = v => (v == null ? null : Array.isArray(v) ? v : String(v));
+      const area = norm(plan.area), sub = norm(plan.sub_area), emp = norm(plan.employee);
+      let out = index;
+      if (area && !(Array.isArray(area) && area[0] === "all") && area !== "all") {
+        const allow = Array.isArray(area) ? area : [area];
+        out = out.filter(e => allow.includes(e.area));
+      }
+      if (sub && !(Array.isArray(sub) && sub[0] === "all") && sub !== "all") {
+        const allow = Array.isArray(sub) ? sub : [sub];
+        out = out.filter(e => allow.includes(e.sub_area));
+      }
+      if (emp && !(Array.isArray(emp) && emp[0] === "all") && emp !== "all") {
+        const allow = Array.isArray(emp) ? emp : [emp];
+        out = out.filter(e => allow.includes(e.id));
+      }
+      return out;
+    }
+
+    async function callLambda(payload) {
+      const t0 = performance.now();
+      const res = await fetch(LAMBDA_ENDPOINT_URL, {
+        method: "POST",
+        headers: { "content-type": "application/json; charset=utf-8" },
+        body: JSON.stringify(payload)
+      });
+      const t1 = performance.now();
+      console.log("[callLambda]", payload.step, "HTTP", res.status, res.statusText, "in", (t1 - t0).toFixed(1), "ms");
+      const text = await res.text();
+      if (!res.ok) throw new Error(`HTTP ${res.status}: ${text}`);
+      return JSON.parse(text);
+    }
+
+    function updateChatHistory(m) {
+      window.APP_DATA.chatHistory.push(m);
+      if (window.APP_DATA.chatHistory.length > 20) window.APP_DATA.chatHistory.shift();
+    }
+  </script>
 </body>
 </html>
